@@ -8,13 +8,35 @@
 
   function ready(fn) { if (D.readyState !== 'loading') fn(); else D.addEventListener('DOMContentLoaded', fn); }
   ready(function () {
-    // 1. preview another notice variant
+    // 0. dated content: the build filtered past items, but a page stays online for weeks, so every validity
+    //    window is checked again against the visitor's clock. Expired text falls back; expired blocks hide.
+    var now = Date.now(), each = function (sel, fn) { Array.prototype.forEach.call(D.querySelectorAll(sel), fn); };
+    var todayISO = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/New_York', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
     var st = D.getElementById('status');
-    var m = /[?&]alert=(delay|closure|normal)\b/.exec(location.search);
-    if (st && m) {
-      var v = JSON.parse(st.getAttribute('data-variants'))[m[1]];
-      if (v) { st.setAttribute('data-state', m[1]); D.getElementById('st-msg').textContent = v.msg; D.getElementById('st-time').textContent = v.at; }
+    function setStatus(k) {
+      var v = JSON.parse(st.getAttribute('data-variants'))[k]; if (!v) return;
+      st.setAttribute('data-state', k);
+      st.querySelector('[data-today]').textContent = v.label; D.getElementById('st-msg').textContent = v.msg;
+      D.getElementById('st-time').textContent = v.at; D.getElementById('st-rf').hidden = !v.at;
     }
+    if (st && st.hasAttribute('data-until')) { if (now > Date.parse(st.getAttribute('data-until'))) setStatus('normal'); st.removeAttribute('data-until'); }
+    each('[data-until]', function (el) {
+      if (now <= Date.parse(el.getAttribute('data-until'))) return;
+      if (el.hasAttribute('data-fallback')) el.textContent = el.getAttribute('data-fallback'); else el.hidden = true;
+    });
+    each('[data-from]', function (el) { if (now >= Date.parse(el.getAttribute('data-from'))) el.hidden = false; });
+    each('[data-on]', function (el) {
+      if (el.getAttribute('data-on') === todayISO) return;
+      el.classList.remove('is-today'); Array.prototype.forEach.call(el.querySelectorAll('.tag'), function (t) { t.remove(); });
+    });
+    each('[data-deadline]', function (el) {
+      var left = Date.parse(el.getAttribute('data-deadline')) - now;
+      el.textContent = left < 0 ? el.getAttribute('data-fallback') : el.getAttribute('data-tpl').replace('{n}', Math.ceil(left / 864e5));
+    });
+
+    // 1. preview another notice variant
+    var m = /[?&]alert=(delay|closure|normal)\b/.exec(location.search);
+    if (st && m) setStatus(m[1]);
 
     // 2. language switch: remember the old "Today" word and the scroll position, keep them across the page change
     var todayEl = D.querySelector('[data-today]');

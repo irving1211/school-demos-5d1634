@@ -1,3 +1,5 @@
 # Private preview of a concept site: keep it out of search engines.
 User-agent: *
 Disallow: /
+
+Sitemap: https://irving1211.github.io/school-demos-5d1634/sites/catholic/sitemap-index.xml
