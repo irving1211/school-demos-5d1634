@@ -1,0 +1,123 @@
+{
+  "schema": "site-foundation/routes@1",
+  "generator": "@icbs/site-foundation@0.4.1",
+  "deployment": "demo",
+  "origin": "https://irving1211.github.io",
+  "base": "/school-demos-5d1634/r4/merrimack/",
+  "langs": [
+    "en",
+    "es"
+  ],
+  "defaultLocale": "en",
+  "routes": [
+    {
+      "path": "/",
+      "id": "home",
+      "lang": "en",
+      "template": "home",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/r4/merrimack/",
+      "equivalents": {
+        "en": "/",
+        "es": "/es/"
+      }
+    },
+    {
+      "path": "/es/",
+      "id": "home",
+      "lang": "es",
+      "template": "home",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/r4/merrimack/es/",
+      "equivalents": {
+        "en": "/",
+        "es": "/es/"
+      }
+    },
+    {
+      "path": "/admissions/",
+      "id": "admissions",
+      "lang": "en",
+      "template": "admissions",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/r4/merrimack/admissions/",
+      "equivalents": {
+        "en": "/admissions/",
+        "es": "/es/admissions/"
+      }
+    },
+    {
+      "path": "/es/admissions/",
+      "id": "admissions",
+      "lang": "es",
+      "template": "admissions",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/r4/merrimack/es/admissions/",
+      "equivalents": {
+        "en": "/admissions/",
+        "es": "/es/admissions/"
+      }
+    },
+    {
+      "path": "/visit/",
+      "id": "visit",
+      "lang": "en",
+      "template": "visit",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/r4/merrimack/visit/",
+      "equivalents": {
+        "en": "/visit/",
+        "es": "/es/visit/"
+      }
+    },
+    {
+      "path": "/es/visit/",
+      "id": "visit",
+      "lang": "es",
+      "template": "visit",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/r4/merrimack/es/visit/",
+      "equivalents": {
+        "en": "/visit/",
+        "es": "/es/visit/"
+      }
+    },
+    {
+      "path": "/full-site/",
+      "id": "full-site",
+      "lang": "en",
+      "template": "full-site",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/r4/merrimack/full-site/",
+      "equivalents": {
+        "en": "/full-site/",
+        "es": "/es/full-site/"
+      }
+    },
+    {
+      "path": "/es/full-site/",
+      "id": "full-site",
+      "lang": "es",
+      "template": "full-site",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/r4/merrimack/es/full-site/",
+      "equivalents": {
+        "en": "/full-site/",
+        "es": "/es/full-site/"
+      }
+    }
+  ],
+  "unrouted": [
+    "/404.html",
+    "/ht/",
+    "/pt/"
+  ]
+}
