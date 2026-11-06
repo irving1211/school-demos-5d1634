@@ -9,13 +9,14 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Fernhill Montessori School · Methuen, MA">
 <meta property="og:description" content="Children here learn with their hands, from 18 months to grade 8. Concept demo, fictional school.">
-<meta property="og:image" content="assets/work-sandpaper-1600.webp">
+<meta property="og:image" content="assets/work-table-1600.webp">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="es_US">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%233b2e26'/%3E%3Ctext x='16' y='22' font-family='Arial' font-size='17' font-weight='700' text-anchor='middle' fill='%23f7f4ee'%3EF%3C/text%3E%3C/svg%3E">
 <link rel="preload" href="assets/fonts/gantari-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" as="image" href="assets/work-sandpaper-800.webp" media="(max-width: 899px)" fetchpriority="high">
-<link rel="preload" as="image" href="assets/work-sandpaper-1600.webp" media="(min-width: 900px)" fetchpriority="high">
+<link rel="preload" as="image" href="assets/work-table-800.webp" media="(max-width: 767px)" fetchpriority="high">
+<link rel="preload" as="image" href="assets/work-table-1600.webp" media="(min-width: 768px)" fetchpriority="high">
+<link rel="canonical" href="https://fernhill.example/">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":["School","EducationalOrganization"],"name":"Fernhill Montessori School","description":"Independent Montessori school for children from 18 months to grade 8 (concept demo, fictional school).","telephone":"+1-978-555-0136","email":"office@fernhill.example","address":{"@type":"PostalAddress","streetAddress":"14 Orchard Hill Road","addressLocality":"Methuen","addressRegion":"MA","postalCode":"01844","addressCountry":"US"},"openingHours":"Mo-Fr 07:30-17:30","availableLanguage":["English","Spanish"],"image":"assets/work-sandpaper-1600.webp"}
 </script>
@@ -97,7 +98,8 @@ a:hover{text-decoration-thickness:2px}
 .label h1{font-size:var(--t-h1);line-height:1.08;font-weight:600;letter-spacing:-.02em;max-width:13ch;margin-bottom:var(--s2)}
 .label .what{font-size:var(--t-body);line-height:1.45;color:var(--walnut-2);max-width:30ch}
 .act{display:flex;flex-wrap:wrap;align-items:center;gap:var(--s3)}
-.ask{font-size:var(--t-body)}
+.ask{font-size:var(--t-body);flex-wrap:wrap;row-gap:0}
+.ask>*{white-space:nowrap}
 .ask a{font-weight:600}
 .ask .alt{font-weight:400;color:var(--walnut-2);text-decoration:underline;text-underline-offset:4px}
 .when{font-size:var(--t-chrome);color:var(--walnut-2);margin-top:var(--s3);padding-top:var(--s2);border-top:1px solid var(--pale)}
@@ -108,14 +110,30 @@ a:hover{text-decoration-thickness:2px}
 .menu a{display:flex;align-items:center;min-height:44px;font-size:var(--t-body);text-decoration:none}
 .menu a:hover{text-decoration:underline}
 .index{position:relative}
-@media (min-width:900px){
-  .open-photo img{aspect-ratio:16/9;height:auto;max-height:calc(100vh - 24px);min-height:560px}
-  .cards{position:absolute;top:0;bottom:0;right:var(--gut);width:min(40%,500px);padding:var(--s4) 0;justify-content:center;gap:var(--s4)}
-  .card-row{position:absolute;top:var(--s4);right:0;order:0}
+.cards>*,.card-row>*{max-width:100%}
+.index .menu{position:absolute;left:0;top:calc(100% + var(--s1));min-width:260px;z-index:10}
+/* tablet, 768-1023: the photo across the top, the label card laid half on its lower edge, the small cards and the token beside it */
+@media (min-width:768px) and (max-width:1023px){
+  .open-photo img{aspect-ratio:16/9}
+  .cards{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);grid-template-areas:"label row" "label act" "label sample";column-gap:var(--s5);row-gap:var(--s3);align-items:start;margin-top:calc(var(--s6) * -1);padding:0 var(--s5) var(--s6);position:relative}
+  .card-row{grid-area:row;order:0;padding-top:calc(var(--s6) + var(--s3))}
+  .label{grid-area:label;padding:var(--s5)}
+  .act{grid-area:act;flex-direction:column;align-items:flex-start}
+  .sample{grid-area:sample;justify-self:start}
+  .index .menu{left:auto;right:0}
+}
+/* desktop, 1024+: photo and cards share one grid cell, so the cell grows with the cards */
+@media (min-width:1024px){
+  .open{display:grid}
+  .open-photo,.cards{grid-area:1/1}
+  .open-photo{position:relative;min-height:max(560px,min(56.25vw,calc(100vh - 24px)))}
+  .open-photo picture,.open-photo img{position:absolute;inset:0;width:100%;height:100%;aspect-ratio:auto}
+  .cards{justify-self:end;align-self:stretch;width:min(42%,520px);margin-right:var(--gut);padding:var(--s4) 0;gap:var(--s3);position:relative;z-index:1}
+  .card-row{align-self:flex-end;order:0;margin-bottom:var(--s3)}
   .label{padding:var(--s5);margin-left:var(--s5)}
   .act{margin-left:var(--s2)}
-  .sample{position:absolute;bottom:var(--s3);right:0}
-  .menu{position:absolute;right:0;top:calc(100% + var(--s1));min-width:260px;z-index:10}
+  .sample{align-self:flex-end;margin-top:auto}
+  .index .menu{left:auto;right:0}
 }
 
 /* the worktable */
@@ -274,11 +292,10 @@ label.f input:focus,label.f select:focus{outline:3px solid var(--walnut);outline
   <linearGradient id="g-wt" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e8c993"/><stop offset="1" stop-color="#dcb67c"/></linearGradient>
 </defs></svg>
 
-<main id="main">
-<section class="open" aria-labelledby="h1">
+<header class="open">
   <figure class="open-photo">
     <picture>
-      <source media="(max-width: 899px)" srcset="assets/work-table-800.webp" width="800" height="600">
+      <source media="(max-width: 767px)" srcset="assets/work-table-800.webp" width="800" height="600">
       <img src="assets/work-table-1600.webp" width="1600" height="900" fetchpriority="high" alt="Seen from above: a child's hands at work on a wooden table during the morning work period" data-ia="alt:heroAlt">
     </picture>
   </figure>
@@ -311,7 +328,9 @@ label.f input:focus,label.f select:focus{outline:3px solid var(--walnut);outline
     </div>
     <p class="card small sample" data-i="sampleP">Sample photographs</p>
   </div>
-</section>
+</header>
+
+<main id="main">
 
 <section class="table" id="work" aria-labelledby="work-h">
   <div class="wrap">
@@ -469,8 +488,6 @@ label.f input:focus,label.f select:focus{outline:3px solid var(--walnut);outline
     <ul class="fam-links">
       <li><a href="#calendar"><span data-i="fa1">Calendar</span></a></li>
       <li><a href="sms:+19785550136"><span data-i="fa2">Report an absence by text</span><span class="num">(978) 555-0136</span></a></li>
-      <li><a href="#families"><span data-i="fa3">Make a payment</span><span data-i="demoLink">demo link</span></a></li>
-      <li><a href="#families"><span data-i="fa4">Parent portal</span><span data-i="demoLink">demo link</span></a></li>
       <li><a href="#programs"><span data-i="fa5">Before and after care</span></a></li>
     </ul>
     <div class="cal" id="calendar">
@@ -573,7 +590,7 @@ tblRegion:'Tabla de matrícula',tblCap:'Matrícula de ejemplo, 2026–27. Los he
 thProg:'Programa',thHours:'Horario',thYear:'Por año',thMonth:'Por mes (10)',
 pTodA:'18 meses a 3',pTodH:'Mañanas 8:15–11:45, o día completo hasta las 3:00',pChA:'3 a 6, incluye kínder',pChH:'Medio día 8:15–11:45, o día completo hasta las 3:00',pLeA:'6 a 9, grados 1.º a 3.º',pUeA:'9 a 12, grados 4.º a 6.º',pAdA:'12 a 14, grados 7.º y 8.º',
 aidP:'La ayuda con la matrícula se basa en la necesidad, no en las notas. Cerca de 1 de cada 3 familias recibe algo (ejemplo). Pregúntenos en inglés o en español; la respuesta es privada.',
-print:'Imprimir esta tabla',famH:'Para las familias actuales',fa1:'Calendario',fa2:'Reportar una ausencia por mensaje',fa3:'Hacer un pago',fa4:'Portal para padres',fa5:'Cuidado antes y después de clases',demoLink:'enlace de demostración',
+print:'Imprimir esta tabla',famH:'Para las familias actuales',fa1:'Calendario',fa2:'Reportar una ausencia por mensaje',fa5:'Cuidado antes y después de clases',
 calH:'Próximas fechas',printCal:'Imprimir el calendario',
 c1d:'10 y 12 nov.',c1:'Mañanas de observación, 8:45 y 9:30 a. m.',c2d:'11 nov.',c2:'Día de los Veteranos: no hay clases',c3d:'14 nov.',c3:'Casa abierta, de 10 a. m. a 12 p. m. Los niños son bienvenidos',c4d:'25–27 nov.',c4:'Receso de Acción de Gracias: no hay clases',c5d:'3 dic.',c5:'Noche de trabajo en familia: su hijo le muestra su trabajo, 6 p. m.',c6d:'21 dic.–1 ene.',c6:'Receso de invierno',
 hours:'Horario de oficina: lunes a viernes, de 7:30 a. m. a 5:30 p. m.',
