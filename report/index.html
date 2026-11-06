@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>School Demos Morning Report</title>
+<style>
+:root{--bg:#f6f4ef;--card:#fff;--ink:#1d1d1b;--muted:#5d5a52;--line:#dcd7cc;--accent:#1f5f4a;--warn:#8a4b0f}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#151514;--card:#1e1e1c;--ink:#ecebe6;--muted:#a9a69c;--line:#34332f;--accent:#6fc2a2;--warn:#e0a35c}}
+:root[data-theme="dark"]{--bg:#151514;--card:#1e1e1c;--ink:#ecebe6;--muted:#a9a69c;--line:#34332f;--accent:#6fc2a2;--warn:#e0a35c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:860px;margin:0 auto;padding:24px 16px 64px}
+h1{font-size:30px;line-height:1.15;margin:8px 0 6px}
+h2{font-size:22px;margin:40px 0 10px;padding-top:16px;border-top:1px solid var(--line)}
+h3{font-size:18px;margin:22px 0 6px}
+p,li{max-width:68ch}
+.muted{color:var(--muted);font-size:15px}
+.gist{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:16px 0}
+.sites{display:grid;gap:10px;grid-template-columns:1fr}
+@media (min-width:640px){.sites{grid-template-columns:1fr 1fr}}
+.site{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;color:inherit;text-decoration:none}
+.site b{display:block;font-size:18px;color:var(--accent)}
+.site span{font-size:15px;color:var(--muted)}
+img{max-width:100%;height:auto;border-radius:10px;border:1px solid var(--line);display:block;margin:8px 0}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;font-size:15px;width:100%;min-width:520px}
+th,td{border-bottom:1px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top}
+th{font-weight:600}
+.warn{color:var(--warn);font-weight:600}
+a{color:var(--accent)}
+ol li,ul li{margin:6px 0}
+code{font-size:14px;background:var(--card);border:1px solid var(--line);border-radius:5px;padding:1px 5px;word-break:break-word}
+</style>
+</head>
+<body>
+<main>
+<p class="muted">Friday, November 6, 2026 · overnight work while you slept</p>
+<h1>School demos: morning report</h1>
+
+<div class="gist">
+<p><b>Gist:</b> all four school demos are now <b>real multi-page websites</b>, live on the links below. Fernhill has 20 pages, St. Columba 24, Lantern 45, and Merrimack Commons 85 in four languages.</p>
+<p>Overnight I ran <b>three senior-reviewer rounds</b> with Codex as principal engineer, design director and studio owner. They covered the world generator, the workflow and the sites. I fixed every engineering finding, and an independent re-run confirmed each fix.</p>
+<p>What's left is design and business calls for you; they're listed at the bottom. <b>None of the sites is "accepted" yet:</b> the art-direction scores are still below the bar (details in "Honest status").</p>
+</div>
+
+<h2>Open the sites (phone links)</h2>
+<div class="sites">
+<a class="site" href="../sites/montessori/"><b>Fernhill Montessori</b><span>The worktable · 20 pages · EN/ES</span></a>
+<a class="site" href="../sites/catholic/"><b>St. Columba Parish School</b><span>The parish front page · 24 pages · EN/ES</span></a>
+<a class="site" href="../sites/lantern/"><b>Lantern Middle School</b><span>The journal cover · 45 pages · EN/ES</span></a>
+<a class="site" href="../sites/charter/"><b>Merrimack Commons Charter</b><span>The front counter · 85 pages · EN/ES/HT/PT</span></a>
+</div>
+<p class="muted">The demo index, with the old one-page prototypes for comparison: <a href="../">irving1211.github.io/school-demos-5d1634</a>. The pages are noindex and blocked in robots.txt.</p>
+
+<h2>Before and after</h2>
+<h3>Yesterday evening, round 1 (phone, first screen)</h3>
+<p class="muted">The four looked like one template: the same status strip, the same pill buttons, the same Call/Text pair and a colour block per section.</p>
+<img src="before-phone.jpg" alt="Round 1 phone first screens of the four schools, all sharing the same top strip, pill buttons and Call and Text button pair" loading="lazy">
+<h3>This morning (phone, first screen)</h3>
+<p class="muted">Each school has its own organising idea:</p>
+<ul class="muted">
+<li>Fernhill: a worktable and label card</li>
+<li>St. Columba: a newspaper front page with the tuition sentence</li>
+<li>Lantern: a journal cover</li>
+<li>Merrimack: a four-language welcome and a task counter</li>
+</ul>
+<img src="all-home-phone.jpg" alt="This morning's phone first screens: Fernhill worktable, St. Columba front page, Lantern journal cover, Merrimack task counter" loading="lazy">
+<h3>Desktop homes and Admissions</h3>
+<img src="all-home-desk.jpg" alt="Desktop home pages of the four sites" loading="lazy">
+<img src="all-adm-desk.jpg" alt="Desktop Admissions pages of the four sites, which still look structurally similar" loading="lazy">
+<p class="muted">The Admissions pages still converge. Each one is an intro, four dated steps and a form. The round-3 review flagged this, and it's the first design pass I recommend below.</p>
+
+<h2>What I built and fixed overnight</h2>
+<ol>
+<li><b>One-page demos became real Astro websites.</b> Each has:
+  <ul>
+    <li>its own inner pages (Admissions, Tuition/Cost, Calendar and menus, About and staff, Policies, Contact, a 404)</li>
+    <li>real <code>/es/</code> routes, plus <code>/ht/</code> and <code>/pt/</code> on the charter site, with hreflang and canonical links</li>
+    <li>content kept as data (alerts, events, menus, staff)</li>
+    <li>designed states: closure notice, empty week, form success, error and offline, no-JS</li>
+  </ul>
+  Lighthouse scores 98-100 and there are 0 accessibility (axe) errors on every page.</li>
+<li><b>Honesty fixes.</b>
+  <ul>
+    <li>Two demo forms were quietly sending what a visitor typed to the server while saying "nothing is sent". All four now send nothing, proven across 156 form states with 0 network requests.</li>
+    <li>Every sample photo is labelled as a sample on its page, in that page's language.</li>
+  </ul></li>
+<li><b>Dates that expire on their own, on Eastern time.</b> The four sites had four different clocks. One was off by an hour in summer, and one switched days at 7 PM. They now share one New York clock. Past open houses and old notices disappear without a rebuild. This was tested from UTC, New York and Tokyo, winter and summer, across midnight.</li>
+<li><b>A shared engineering foundation</b> (<code>packages/site-foundation</code>, versions 0.1 to 0.4.1). Routes, page metadata, sitemap, form handling, clock and photo manifest are shared code. The look stays separate per school. Each site pins an exact version, so an update can't silently change a live site. 27 contract tests pass in 3 time zones.</li>
+<li><b>Photos.</b> The Blender layout and Flow pipeline produced the new hero and inner photos (0 credits). Every image has a manifest entry with its source, licence and sample label. The licences were re-checked (CC0, CC BY 2.0 and CC BY-SA 2.0).</li>
+<li><b>The world generator</b> (<code>tools/worldgen</code>). It makes every new site a different "world" from a saved seed, Minecraft-style. Overnight it gained:
+  <ul>
+    <li>senior lint, which checks every page at every width, in every language</li>
+    <li>a sibling-convergence check</li>
+    <li>a Codex design judge with pass/fail/escalate</li>
+    <li>a demo vs production acceptance profile</li>
+    <li>release fingerprints, so the published files are proven identical to what was checked</li>
+    <li>a portfolio status: old results are marked stale and never shown as current</li>
+    <li>a production rule that a contact form must prove its enquiry actually arrived</li>
+  </ul>
+  The test suite grew from 0 to 86 checks, all passing, and I re-ran them myself.</li>
+<li><b>New rule for all our work:</b> <code>~/.claude/rules/senior-standard.md</code> (structure before surface, every state, a fresh-eyes review before you see anything, evidence over assertion).</li>
+<li><b>Your saved Instagram reels</b> (49 new) were ingested. Their checklists (launch hygiene, the "20 things vibe-coded sites miss", taste checks) are now built into the lint. Findings are in <code>Studio/research/2026-11-05-saved-reels/</code>.</li>
+</ol>
+
+<h2>The three senior-review rounds</h2>
+<div class="scroll"><table>
+<tr><th>Round</th><th>Reviewer seats</th><th>Found</th><th>Outcome</th></tr>
+<tr><td>1</td><td>Principal engineer + design-systems lead</td><td>13 findings, 10 High. The gate passed failed reviews, the novelty rule ran out of options, lint fought its own art direction, county exclusivity could be bypassed.</td><td>All fixed, 52/52 tests</td></tr>
+<tr><td>2</td><td>QA lead + design director + studio owner</td><td>12 findings. Coverage only sampled pages, error states were never entered, failed probes counted as passes, there was no demo vs production profile, and the sites were tested at the wrong address.</td><td>All fixed, 72/72 tests</td></tr>
+<tr><td>3</td><td>Agency creative director + systems lead + studio owner</td><td>10 findings. Demo forms sent data, nothing tied acceptance to the published files, the four clocks disagreed, Admissions converge, photos share one "gaze", a house voice is forming, and the demo scope risks being undersold at the entry price.</td><td>Engineering all fixed (86/86 tests, foundation package); design and business items are below for you</td></tr>
+</table></div>
+<p class="muted">Each round found a different class of problem: correctness, then QA and operations, then release, portfolio and business. That matches what we learned on the v2 build.</p>
+
+<h2>Honest status</h2>
+<div id="status">
+<p>Engineering checks (no Codex): <b>all four PASS</b>. That covers every route in every language at 390 and 1440 px, forms, tap targets, overflow, contrast, the photo labels and launch hygiene.</p>
+<p>Published copies match the checked builds file for file: Fernhill 45/45, St. Columba 47/47, Lantern 76/76, Merrimack 106/106. A wrong-address visit gets a real 404. On GitHub Pages that is the host's 404 page, not each school's own; a real host would serve the school's own 404.</p>
+<p id="judge"><b>The final acceptance run with the Codex design judge</b> ran on the exact published builds at 05:45-06:20. All four came back <span class="warn">DEMO ACCEPTANCE FAIL, on design only</span>.</p>
+<ul>
+<li>Lint passed on every site.</li>
+<li>Coverage completed: 278, 293, 372 and 703 checks.</li>
+<li>The art-direction score is the only thing below the bar of 8.</li>
+</ul>
+<div class="scroll"><table>
+<tr><th>School</th><th>Overall</th><th>The judge's top fixes</th></tr>
+<tr><td>Fernhill</td><td>6</td><td>Tighter phone header so the next section shows. A designed tablet hero. Inner pages led by materials, with observation dates right under the intro.</td></tr>
+<tr><td>St. Columba</td><td>7</td><td>A better phone crop of the classroom photo. Less title padding on inner pages. Carry the newspaper style into the forms and a staff directory.</td></tr>
+<tr><td>Lantern</td><td>6</td><td>A hero crop per screen size that keeps the people. The form before the timeline on phones. Inner pages that aren't the same hero repeated.</td></tr>
+<tr><td>Merrimack</td><td>6</td><td>A tighter language block on phones so tasks and a photo reach the first screen. Tighter inner pages. A matched arrival and classroom photo pair.</td></tr>
+</table></div>
+<p class="muted">Every fix the judge names is a composition change: inner pages, crops, tablet layouts and phone spacing. Not one is a bug. That matches round 3's call that the next gains are in ordinary pages and photo subjects. Photo truth is only noted, not failed, in demo mode, because every photo is a labelled sample. A real school still needs real photos.</p>
+</div>
+<p>Production launch for a real school still needs:</p>
+<ul>
+<li>real contact details</li>
+<li>a real form backend with a delivery receipt</li>
+<li>human Spanish review, plus Kreyòl and Portuguese for the charter</li>
+<li>real photos with permission</li>
+<li>a content owner</li>
+</ul>
+<p>Two sites (St. Columba, Lantern) also need a daily rebuild to drop past dates.</p>
+
+<h2>Business plan from round 3 (proposal, not market research)</h2>
+<div class="scroll"><table>
+<tr><th>Offer</th><th>Price</th><th>Boundary</th></tr>
+<tr><td>Local essentials</td><td>$1,500</td><td>3 pages EN/ES, 1 enquiry form, supplied content, 1 revision round</td></tr>
+<tr><td>Distinctive bilingual launch</td><td>$2,500+</td><td>5 pages EN/ES, one direction, 2 revision rounds, migration and handover, county/niche exclusivity</td></tr>
+<tr><td>School admissions project</td><td>from $2,500</td><td>A visit and admissions journey on the school's existing application system. A full site replacement is quoted separately.</td></tr>
+<tr><td>Care</td><td>$150/mo</td><td>Hosting, monitoring, up to 30 min of edits a month, a reply within 2 business days</td></tr>
+</table></div>
+<ul>
+<li><b>Economics:</b> plan at $75/h. Cap the $1,500 tier at about 16 h and the $2,500 tier at about 26 h. If a job runs over, raise the price or cut scope next time; don't absorb it into Care.</li>
+<li><b>The danger it names:</b> the demos have 20-85 pages. Showing them and quoting "$2,500" implies the whole system. Always list pages, languages, integrations and exclusions.</li>
+<li><b>Sales:</b>
+  <ol>
+    <li>Make a one-page report (3 evidenced observations, 30 min cap).</li>
+    <li>You send it with an invitation to a 15-minute call.</li>
+    <li>Show one relevant demo on a phone.</li>
+    <li>Send a fixed-scope proposal.</li>
+    <li>Take 50% up front.</li>
+  </ol></li>
+<li><b>Month target:</b> one paid delivery and a second booked project.</li>
+<li><b>Cut next month:</b> more school demos, more generator options, prospect videos, unpaid redesigns.</li>
+</ul>
+
+<h2>Decisions for you</h2>
+<ol>
+<li><b>Next design pass</b> (my recommendation): make Admissions belong to each world, with distinct photo subjects and distinct voices.
+  <ul>
+    <li>Fernhill: an observation morning</li>
+    <li>St. Columba: a household admissions docket</li>
+    <li>Lantern: a conversation with a named advisor</li>
+    <li>Merrimack: the counter with eligibility and a receipt</li>
+  </ul>
+  It takes a few hours and costs 0 Flow credits.</li>
+<li><b>Packages and prices</b> above: approve, change, or keep them internal.</li>
+<li><b>Generator pool additions:</b> 58 candidate options harvested from the galleries, staged in <code>worldgen/harvest/</code>, waiting for your approval.</li>
+<li><b>The "IC Business Systems" credit on the demos.</b> Builders removed it to silence a lint false alarm. The lint now allows it. Restore it?</li>
+<li><b>Language reviewers:</b> a human Spanish reviewer, plus Kreyòl and Portuguese for the charter, before any real school sees the demos as a promise.</li>
+<li><b>From the reels:</b>
+  <ul>
+    <li>AI wording in ICBS's own marketing</li>
+    <li>the PolyForm Shield licence (liquid-logo)</li>
+    <li>Strix trial spend</li>
+    <li>PHP2Shell wording in prospect reports</li>
+    <li>the trigger-list mail service</li>
+    <li>the interactive quote page and its signature wording</li>
+    <li>a Keyword Planner account</li>
+  </ul>
+  Details are in the two FINDINGS files.</li>
+<li><b>Deletions (needs your OK):</b>
+  <ul>
+    <li>a stray folder the tools wrote at <code>D:/c/Users/Irving/AppData/...</code> (a path-rewrite slip)</li>
+    <li><code>worldgen/out/r3-debug-deliver.mjs</code></li>
+    <li>the four <code>assets.manifest.old.json</code> backups</li>
+    <li>the round-1 prototype backups</li>
+    <li>old <code>.bak</code> files in worldgen</li>
+  </ul></li>
+</ol>
+
+<h2>Where things live</h2>
+<ul class="muted">
+<li>Sites: <code>D:/AgenticHub/projects/niche-demos-spike/sites/&lt;school&gt;/</code>. Each is a git repo with a commit per step.</li>
+<li>Foundation: <code>D:/AgenticHub/packages/site-foundation/</code> (releases are immutable tarballs).</li>
+<li>Generator: <code>D:/AgenticHub/tools/worldgen/</code>. The full improvement log (rows 1-65) is in IMPROVEMENTS.md, and the reviews are in <code>review/round-1..3.md</code>.</li>
+<li>School audit and targets: <code>ObsidianVault-v2/output/school-prospects-2026-11-05/</code>.</li>
+</ul>
+</main>
+</body>
+</html>
