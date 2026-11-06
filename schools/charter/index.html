@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Merrimack Commons Charter Public School · Free public charter K-8 · Lawrence, MA</title>
+<meta name="description" content="Tuition-free public charter school for kindergarten to grade 8 in Lawrence, MA. Apply for the 2027‑28 lottery by March 1 in English, Spanish, Haitian Creole or Portuguese. No tuition, no entrance test.">
+<meta name="theme-color" content="#072C29">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Merrimack Commons Charter Public School">
+<meta property="og:description" content="A free public school for kindergarten to grade 8 in Lawrence, MA. Applications for 2027‑28 close March 1.">
+<meta property="og:image" content="assets/hall-1600.webp">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="es_US">
+<meta property="og:locale:alternate" content="ht_HT">
+<meta property="og:locale:alternate" content="pt_BR">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27%3E%3Crect width=%2724%27 height=%2724%27 fill=%27%23072C29%27/%3E%3Cpath d=%27M6 18V6h3l3 6 3-6h3v12h-2.6V10.6L12.8 16h-1.6L8.6 10.6V18Z%27 fill=%27%23F7F7F2%27/%3E%3C/svg%3E">
+<link rel="preload" href="assets/overpass-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" media="(max-width: 899px)" href="assets/hall-phone-800.webp" fetchpriority="high">
+<link rel="preload" as="image" media="(min-width: 900px)" href="assets/hall-1600.webp" imagesrcset="assets/hall-800.webp 800w, assets/hall-1600.webp 1600w" imagesizes="(min-width: 1200px) 792px, 62vw" fetchpriority="high">
+<script>document.documentElement.classList.add('js')</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":["School","EducationalOrganization"],"name":"Merrimack Commons Charter Public School","description":"Tuition-free public charter school, kindergarten to grade 8, Lawrence, Massachusetts. Fictional school for a concept demo.","telephone":"+1-978-555-0136","email":"office@merrimackcommons.example","address":{"@type":"PostalAddress","streetAddress":"88 Mill Commons Way","addressLocality":"Lawrence","addressRegion":"MA","postalCode":"01840","addressCountry":"US"},"availableLanguage":["en","es","ht","pt"],"openingHours":"Mo-Fr 07:30-16:00","isAccessibleForFree":true}
+</script>
+<style>
+/* TYPE. One family: Overpass (drawn from the US Highway Gothic sign alphabet), 400 + 700.
+   Overpass Mono 500 has one job: timetable figures (update time, days left, step and event dates).
+   Scale, phone / desktop: chrome 13/14, body 16/18, label 20/24, section 32/48, h1 40/72, moment 56/104. */
+@font-face{font-family:"Overpass";src:url(assets/overpass-latin.woff2) format("woff2");font-weight:400 700;font-style:normal;font-display:swap}
+@font-face{font-family:"Overpass Mono";src:url(assets/overpass-mono-500-latin.woff2) format("woff2");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"OverpassFallback";src:local("Arial");size-adjust:99%;ascent-override:88%;descent-override:30%;line-gap-override:0%}
+@font-face{font-family:"OverpassMonoFallback";src:local("Courier New");size-adjust:104%;ascent-override:86%;descent-override:28%}
+:root{
+  /* COLOUR. One hue family (teal), one neutral (paper), one action accent (saffron, actions only). */
+  --teal:#0B3B36;--teal-deep:#072C29;--teal-pale:#DCE9E5;--teal-ink:#3C5B56;--teal-soft:#B9CCC7;--teal-line:#2C4F4A;--teal-rule:#C3D6D0;
+  --paper:#F7F7F2;--rule:#D9DDD6;
+  --saffron:#F4B632;--saffron-press:#DFA126;
+  /* SPACE. One scale: 4 8 16 24 40 64 96 144. */
+  --s1:4px;--s2:8px;--s3:16px;--s4:24px;--s5:40px;--s6:64px;--s7:96px;--s8:144px;
+  --t-chrome:.8125rem;--t-body:1rem;--t-label:1.25rem;--t-sec:2rem;--t-h1:2.5rem;--t-moment:3.5rem;
+  --f:"Overpass","OverpassFallback",Arial,sans-serif;--m:"Overpass Mono","OverpassMonoFallback","Courier New",monospace;
+  --gut:var(--s3);--pad-compact:var(--s5);--pad-std:var(--s6);--pad-feature:var(--s7);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;font-synthesis:none}
+body{margin:0;background:var(--paper);color:var(--teal);font:400 var(--t-body)/1.5 var(--f)}
+img{max-width:100%;display:block;height:auto}
+h1,h2,h3,p,ul,ol,table,figure{margin:0}
+ul,ol{padding:0;list-style:none}
+button{font:inherit;color:inherit}
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:.22em}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.on-dark :focus-visible{outline-color:var(--paper)}
+.sr{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;margin:-1px;padding:0;border:0}
+.skip{position:absolute;left:var(--s2);top:-64px;z-index:60;background:var(--paper);color:var(--teal);padding:var(--s2) var(--s3);font-weight:700}
+.skip:focus{top:var(--s2)}
+.wrap{max-width:1200px;margin:0 auto;padding:0 var(--gut)}
+/* ---- text roles ---- */
+.r-h1{font-weight:700;font-size:var(--t-h1);line-height:1.06;letter-spacing:-.02em;max-width:18ch;text-wrap:balance}
+.r-sec{font-weight:700;font-size:var(--t-sec);line-height:1.12;letter-spacing:-.01em;max-width:22ch;text-wrap:balance}
+.r-label{font-weight:700;font-size:var(--t-label);line-height:1.25}
+.r-body{font-size:var(--t-body);line-height:1.5;max-width:56ch}
+.r-fig{font-family:var(--m);font-weight:500;letter-spacing:0;font-variant-numeric:tabular-nums}
+.tel{white-space:nowrap;font-variant-numeric:tabular-nums lining-nums}
+/* ---- the application line: the one primary action ---- */
+.apply{display:flex;align-items:center;min-height:56px;padding:var(--s3) var(--s4);background:var(--saffron);color:var(--teal-deep);font-weight:700;font-size:var(--t-label);line-height:1.2;text-decoration:none;border-radius:0;transition:background-color .12s linear}
+.apply:hover{background:var(--saffron-press)}
+.apply:active,.apply.pressed{box-shadow:inset 0 0 0 3px var(--teal-deep);background:var(--saffron-press)}
+.on-dark .apply:focus-visible{outline-color:var(--paper)}
+/* ---- the chrome strip: languages, the day notice, office phone ---- */
+.strip{position:sticky;top:0;z-index:30;background:var(--teal-deep);color:var(--paper);font-size:var(--t-chrome);line-height:1.4}
+.strip-in{display:flex;flex-wrap:wrap;align-items:center;column-gap:var(--s4)}
+.langs{display:flex;flex-wrap:wrap;align-items:center;flex-basis:100%}
+.langs a{display:inline-flex;align-items:center;min-height:44px;padding:0 var(--s2);text-decoration:none;color:var(--paper)}
+.langs a:first-child{padding-left:0}
+.langs a[aria-current="true"]{text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:6px;font-weight:700}
+.langs a:hover{text-decoration:underline}
+.langs .dot{color:var(--teal-soft)}
+.status{display:block;padding:0 0 var(--s2);flex-basis:100%;--flap-bg:var(--teal-deep)}
+.status>span{margin-right:var(--s2)}
+.today-w{position:relative;display:inline-block;font-weight:700}
+.flap{position:absolute;left:0;top:0;bottom:0;min-width:100%;white-space:nowrap;background:var(--flap-bg);backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.flap.t{clip-path:inset(0 0 50% 0);transform-origin:50% 50%}
+.flap.b{clip-path:inset(50% 0 0 0);transform-origin:50% 50%}
+.st-upd{color:var(--teal-soft);white-space:nowrap}
+.status[data-state=delay]{background:var(--paper);color:var(--teal-deep);--flap-bg:var(--paper);margin:0 calc(-1 * var(--gut));flex-basis:calc(100% + 2 * var(--gut));padding:var(--s2) var(--gut);font-weight:700}
+.status[data-state=delay] .st-upd{color:var(--teal-ink);font-weight:400}
+.status[data-state=delay] .st-msg::before{content:"";display:inline-block;width:.9em;height:.8em;margin-right:var(--s2);background:var(--teal-deep);clip-path:polygon(50% 0,100% 100%,0 100%);vertical-align:-.05em}
+.office{display:none;color:var(--paper);text-decoration:none}
+.office:hover{text-decoration:underline}
+/* ---- masthead ---- */
+.mast{background:var(--paper);border-bottom:1px solid var(--rule)}
+.mast .wrap{display:flex;align-items:center;justify-content:space-between;gap:var(--s3);min-height:64px}
+.word{display:flex;flex-direction:column;text-decoration:none;padding:var(--s2) 0}
+.word b{font-weight:700;font-size:var(--t-label);line-height:1.1}
+.word span{font-size:var(--t-chrome);line-height:1.4;color:var(--teal-ink)}
+.menu-btn{border:0;background:none;padding:0 0 0 var(--s3);min-height:44px;font-weight:700;text-decoration:underline;text-underline-offset:.22em;cursor:pointer}
+.mnav{display:none}
+.menu-panel{border-bottom:1px solid var(--rule)}
+.menu-panel[hidden]{display:none}
+.menu-panel ul{padding:var(--s2) 0}
+.menu-panel a{display:flex;align-items:center;min-height:48px;font-weight:700;text-decoration:none}
+/* ---- the counter: admissions beside this week ---- */
+.counter{display:grid;grid-template-columns:minmax(0,1fr);grid-template-areas:"main" "facts";padding:var(--s4) 0 var(--pad-compact)}
+.main{grid-area:main;padding:0 var(--gut)}
+.intro{margin-top:var(--s3);color:var(--teal-ink)}
+.main .apply{margin-top:var(--s4)}
+.ask{margin-top:var(--s1)}
+.ask a{display:inline-block;padding:var(--s2) 0;line-height:28px;font-weight:700}
+.hero-fig{margin-top:var(--s3)}
+.hero-fig img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:50% 72%}
+.facts{grid-area:facts;background:var(--teal-pale);margin:var(--s5) var(--gut) 0;padding:var(--s4)}
+.facts h2{margin-bottom:var(--s2)}
+.fact{display:grid;grid-template-columns:24px minmax(0,1fr);gap:var(--s3);padding:var(--s3) 0;border-top:1px solid var(--teal-rule)}
+.fact svg{width:24px;height:24px;fill:var(--teal)}
+.fact p{line-height:1.45}
+/* ---- directory ---- */
+.dir{padding:var(--pad-std) 0}
+.dir .r-body{margin-top:var(--s3);color:var(--teal-ink)}
+.dlist{margin-top:var(--s4);border-top:2px solid var(--teal)}
+.dlist li{border-bottom:1px solid var(--rule)}
+.dlist a{display:flex;flex-direction:column;justify-content:center;min-height:56px;padding:var(--s2) 0;text-decoration:none}
+.dlist a:hover .dn{text-decoration:underline;text-decoration-thickness:2px}
+.dn{font-weight:700;line-height:1.3}
+.dd{font-size:var(--t-chrome);line-height:1.4;color:var(--teal-ink)}
+/* ---- admissions: the deadline first ---- */
+.adm{background:var(--teal-deep);color:var(--paper);padding:var(--pad-feature) 0}
+.adm h2{max-width:none}
+.lot-a{display:block;font-size:var(--t-sec);line-height:1.12;letter-spacing:-.01em}
+.lot-date{display:block;margin-top:var(--s2);font-size:var(--t-moment);line-height:1.02;letter-spacing:-.03em;max-width:12ch}
+.days{margin-top:var(--s4);font-size:var(--t-chrome);color:var(--teal-soft)}
+.adm .r-body{margin-top:var(--s3);color:var(--paper)}
+.adm-grid{display:grid;gap:var(--s5);margin-top:var(--s6)}
+.steps-h,.need h3{font-weight:700;font-size:var(--t-label);line-height:1.25;padding-bottom:var(--s2);border-bottom:2px solid var(--paper)}
+.steps li{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--s1);padding:var(--s3) 0;border-bottom:1px solid var(--teal-line)}
+.steps .when{font-size:var(--t-chrome);color:var(--teal-soft)}
+.steps p{max-width:56ch}
+.prio{margin-top:var(--s4);font-size:var(--t-chrome);color:var(--teal-soft);max-width:60ch}
+.need li{padding:var(--s2) 0;border-bottom:1px solid var(--teal-line)}
+.need .note{margin-top:var(--s2);font-size:var(--t-chrome);color:var(--teal-soft)}
+.need .apply{margin-top:var(--s4)}
+.need .ask a{color:var(--paper)}
+.adm-fig{margin-top:var(--s5)}
+.adm-fig img{width:100%;aspect-ratio:3/2;object-fit:cover}
+/* ---- lunch + coming up ---- */
+.lunch{padding:var(--pad-std) 0}
+.lunch-grid{display:grid;gap:var(--s5)}
+.wk{margin-top:var(--s2);font-size:var(--t-chrome);color:var(--teal-ink)}
+.free{margin-top:var(--s3);font-weight:700}
+.menu{margin-top:var(--s4);width:100%;border-collapse:collapse;line-height:1.4}
+.menu th{text-align:left;font-weight:700;padding:var(--s2) var(--s2) var(--s2) 0;border-bottom:2px solid var(--teal)}
+.menu td,.menu tbody th{vertical-align:top;text-align:left;padding:var(--s2) var(--s2) var(--s2) 0;border-bottom:1px solid var(--rule)}
+.menu tbody th{width:5em}
+.menu .side{display:block;color:var(--teal-ink);font-size:var(--t-chrome)}
+.menu tr.is-today>*{background:var(--teal-pale)}
+.menu tr.is-today th{padding-left:var(--s2)}
+.menu .tag{display:block;font-size:var(--t-chrome);text-decoration:underline;text-underline-offset:.22em}
+.note2{margin-top:var(--s2);font-size:var(--t-chrome);color:var(--teal-ink)}
+.printb{margin-top:var(--s2);background:none;border:0;padding:0;min-height:44px;font-weight:700;text-decoration:underline;text-underline-offset:.22em;cursor:pointer}
+.printb:hover{text-decoration-thickness:2px}
+.lunch-fig img{width:100%;aspect-ratio:1000/595;object-fit:cover}
+.coming{margin-top:var(--s5)}
+.ev{margin-top:var(--s2);border-top:2px solid var(--teal)}
+.ev li{display:grid;grid-template-columns:7em minmax(0,1fr);gap:var(--s3);padding:var(--s2) 0;border-bottom:1px solid var(--rule);line-height:1.45}
+.ev .r-fig{font-size:var(--t-chrome);padding-top:var(--s1)}
+/* ---- footer: the institutional directory ---- */
+.foot{background:var(--teal-deep);color:var(--paper);padding:var(--pad-std) 0 var(--s8)}
+.f-grid{display:grid;gap:var(--s5)}
+.foot h2{font-weight:700;font-size:var(--t-label);line-height:1.25;padding-bottom:var(--s2);border-bottom:2px solid var(--paper)}
+.foot address{font-style:normal;margin-top:var(--s3);line-height:1.5}
+.foot .bldg{display:block;color:var(--teal-soft)}
+.f-links{margin-top:var(--s2);display:flex;flex-direction:column;align-items:flex-start}
+.f-links a{display:inline-block;padding:var(--s2) 0;line-height:28px;font-weight:700}
+.f-docs li{border-bottom:1px solid var(--teal-line)}
+.f-docs a{display:flex;align-items:center;min-height:48px;text-decoration:none}
+.f-docs a:hover{text-decoration:underline}
+.legal{margin-top:var(--s5);display:grid;gap:var(--s3);max-width:68ch}
+.legal p{color:var(--teal-soft)}
+.legal strong{color:var(--paper);font-weight:700}
+.f-base{margin-top:var(--s5);padding-top:var(--s3);border-top:1px solid var(--teal-line);display:flex;flex-wrap:wrap;gap:var(--s2) var(--s5);align-items:center;font-size:var(--t-chrome);color:var(--teal-soft)}
+.credits summary{cursor:pointer;min-height:44px;display:flex;align-items:center;text-decoration:underline;text-underline-offset:.22em;color:var(--paper)}
+.credits ul{display:grid;gap:var(--s2);padding-bottom:var(--s2)}
+/* ---- phone rail (once the first application line has scrolled away; no entrance animation) ---- */
+.rail{position:fixed;left:0;right:0;bottom:0;z-index:40;background:var(--teal-deep);display:none;align-items:stretch;padding-bottom:env(safe-area-inset-bottom)}
+.rail.on{display:flex}
+.rail .apply{flex:1;min-height:56px}
+.rail .rcall{display:flex;align-items:center;padding:0 var(--s4);color:var(--paper);font-weight:700}
+html:not(.js) .rail{display:none!important}
+section[id],footer[id],#coming,#apply{scroll-margin-top:104px}
+/* ---- desktop ---- */
+@media (min-width:900px){
+  :root{--t-chrome:.875rem;--t-body:1.125rem;--t-label:1.5rem;--t-sec:3rem;--t-h1:4.5rem;--t-moment:6.5rem;--gut:var(--s5);--pad-compact:var(--s6);--pad-std:var(--s7);--pad-feature:var(--s8)}
+  .langs{flex-basis:auto}
+  .status{flex:1 1 0;min-width:0;padding:0}
+  .status[data-state=delay]{margin:0;flex-basis:0;padding:var(--s2) var(--s3)}
+  .office{display:inline-flex;align-items:center;min-height:44px}
+  .mast .wrap{min-height:80px}
+  .menu-btn{display:none}
+  .mnav{display:flex;gap:var(--s4)}
+  .mnav a{display:inline-flex;align-items:center;min-height:44px;font-weight:700;text-decoration:none}
+  .mnav a:hover{text-decoration:underline}
+  .counter{grid-template-columns:280px minmax(0,1fr);grid-template-areas:"facts main";column-gap:var(--s5);padding:var(--s5) var(--gut) var(--pad-compact);max-width:1200px;margin:0 auto}
+  .facts{margin:0;align-self:start}
+  .main{padding:0}
+  .main .apply{max-width:480px;margin-top:var(--s5)}
+  .hero-fig{margin-top:var(--s5)}
+  .hero-fig img{aspect-ratio:2/1;object-position:50% 85%}
+  .dlist{display:grid;grid-template-columns:1fr 1fr;column-gap:var(--s5);border-top:0}
+  .dlist li:nth-child(-n+2){border-top:2px solid var(--teal)}
+  .dlist a{flex-direction:row;align-items:baseline;justify-content:space-between;gap:var(--s3)}
+  .dd{text-align:right}
+  .adm-grid{grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:var(--s6);margin-top:var(--s7)}
+  .steps li{grid-template-columns:10em minmax(0,1fr);column-gap:var(--s4)}
+  .steps li .when{grid-row:1/3;padding-top:var(--s1)}
+  .lunch-grid{grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:var(--s6);align-items:start}
+  .f-grid{grid-template-columns:minmax(0,5fr) minmax(0,4fr);gap:var(--s6)}
+  .foot{padding-bottom:var(--pad-compact)}
+  .rail{display:none!important}
+  section[id],footer[id],#coming,#apply{scroll-margin-top:64px}
+}
+.tour,.tour *{cursor:none!important}
+/* ---- print: only the lunch menu and calendar ---- */
+.print-head{display:none}
+@media print{
+  body{background:#fff;color:#000;font-size:11pt}
+  .strip,.mast,.menu-panel,.counter,.dir,.adm,.rail,.skip,.printb,.lunch-fig,.foot{display:none!important}
+  .lunch{padding:0}
+  .lunch-grid{display:block}
+  .print-head{display:block;margin-bottom:12pt;padding-bottom:6pt;border-bottom:2pt solid #000}
+  .menu tr.is-today>*{background:none}
+  .coming{margin-top:18pt}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main" data-k="skip">Skip to main content</a>
+
+<div class="strip on-dark" id="strip">
+  <div class="wrap strip-in">
+    <nav class="langs" aria-label="Language" data-k-aria="langLabel">
+      <a href="?lang=en" lang="en" hreflang="en" data-lang="en" aria-current="true">English</a><span class="dot" aria-hidden="true">·</span><a href="?lang=es" lang="es" hreflang="es" data-lang="es">Español</a><span class="dot" aria-hidden="true">·</span><a href="?lang=ht" lang="ht" hreflang="ht" data-lang="ht">Kreyòl</a><span class="dot" aria-hidden="true">·</span><a href="?lang=pt" lang="pt" hreflang="pt" data-lang="pt">Português</a>
+    </nav>
+    <p class="status" id="status" data-state="ok"><span class="today-w" data-k="today">Today</span><span class="st-msg" id="st-msg" data-k="statusOk">No delays or closings</span><span class="st-upd"><span data-k="updated">Updated</span> <span class="r-fig" id="st-time" data-k="timeOk">6:40 AM</span></span></p>
+    <a class="office" href="tel:+19785550136"><span data-k="office">Front office</span>&nbsp;<span class="tel">(978) 555-0136</span></a>
+  </div>
+</div>
+
+<header class="mast">
+  <div class="wrap">
+    <a class="word" href="#main"><b>Merrimack Commons</b><span>Charter Public School, Lawrence MA</span></a>
+    <nav class="mnav" aria-label="Main" data-k-aria="navLabel">
+      <a href="#admissions" data-k="navApply">Admissions</a><a href="#families" data-k="navFamilies">Families</a><a href="#lunch" data-k="navLunch">Lunch</a><a href="#contact" data-k="navContact">Contact</a>
+    </nav>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu-panel" data-k="menu">Menu</button>
+  </div>
+</header>
+<nav class="menu-panel" id="menu-panel" aria-label="Main menu" data-k-aria="navLabel2" hidden>
+  <ul class="wrap">
+    <li><a href="#admissions" data-k="navApply">Admissions</a></li>
+    <li><a href="#families" data-k="navFamilies">Families</a></li>
+    <li><a href="#lunch" data-k="navLunch">Lunch</a></li>
+    <li><a href="#coming" data-k="navCalendar">Calendar</a></li>
+    <li><a href="#contact" data-k="navContact">Contact</a></li>
+  </ul>
+</nav>
+
+<main id="main">
+  <div class="counter">
+    
+    <section class="main" aria-labelledby="h1">
+      <h1 class="r-h1" id="h1" data-k="h1">A free public school for kindergarten to grade 8 in Lawrence</h1>
+      <p class="r-body intro" data-k="deck">Admission is by lottery, with no tuition and no test. Applications for 2027‑28 close Monday, March 1, at 5 PM.</p>
+      <a class="apply" id="hero-apply" href="#apply" data-k="apply">Apply for 2027‑28</a>
+      <p class="ask" data-kh="askHero"><a href="tel:+19785550136">Call <span class="tel">(978) 555-0136</span></a> or <a href="sms:+19785550136">text us</a>.</p>
+      <figure class="hero-fig">
+        <!-- replace with the school's own photo -->
+        <picture>
+          <source media="(max-width: 899px)" srcset="assets/hall-phone-800.webp" width="800" height="600">
+          <img src="assets/hall-800.webp" srcset="assets/hall-800.webp 800w, assets/hall-1600.webp 1600w" sizes="(min-width: 1200px) 792px, 62vw" width="1600" height="900" alt="Students walking down a school hallway between classes" data-k-alt="photoAlt" fetchpriority="high">
+        </picture>
+      </figure>
+    </section>
+
+    <section class="facts" aria-labelledby="facts-h">
+      <h2 class="r-label" id="facts-h" data-k="factsH">This week</h2>
+      <div class="fact"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M6 2h12a2 2 0 0 1 2 2v15H4V4a2 2 0 0 1 2-2Zm0 3v6h12V5H6Zm1.5 8.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Zm9 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3ZM5 19h3v3H5Zm11 0h3v3h-3ZM1 6h2v5H1Zm20 0h2v5h-2Z"/></svg><p data-k="f1">Bus 4 runs 10 minutes late until Friday (road work).</p></div>
+      <div class="fact"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M4 5h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm0 2v11h8V7H4Zm10 0v4.5h6V7h-6Zm0 6.5V18h6v-4.5h-6ZM8 9.5a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg><p data-k="f2">Lunch today: baked chicken or mac and cheese.</p></div>
+      <div class="fact"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M7 1h2v3h6V1h2v3h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2V1ZM5 10v10h14V10H5Zm2 2h5v5H7v-5Z"/></svg><p data-k="f3">No school Wednesday, Nov 11, for Veterans Day.</p></div>
+      <div class="fact"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 1.5a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7ZM5.5 13.5a6.5 4 0 0 1 13 0ZM1 15h22v3H1Zm2 4h18v4H3Z"/></svg><p data-k="f4">Front office open 7:30 AM to 4 PM.</p></div>
+          </section>
+  </div>
+
+  <section class="dir" id="families" aria-labelledby="dir-h">
+    <div class="wrap">
+      <h2 class="r-sec" id="dir-h" data-k="famH">Family directory</h2>
+      <p class="r-body" data-k="famP">For families who already attend: the things people ask the front office for most.</p>
+      <ul class="dlist">
+        <li><a href="sms:+19785550138"><span class="dn" data-k="d1">Report an absence</span><span class="dd" data-k="d1s">Text (978) 555-0138 before 9 AM</span></a></li>
+        <li><a href="#coming"><span class="dn" data-k="d2">Bus routes</span><span class="dd" data-k="d2s">Stops and pickup times</span></a></li>
+        <li><a href="#lunch"><span class="dn" data-k="d3">Lunch menu</span><span class="dd" data-k="d3s">This week, free for every student</span></a></li>
+        <li><a href="#coming"><span class="dn" data-k="d4">Calendar</span><span class="dd" data-k="d4s">No school Wed, Nov 11</span></a></li>
+        <li><a href="#contact"><span class="dn" data-k="d5">Parent portal</span><span class="dd" data-k="d5s">Grades and attendance</span></a></li>
+        <li><a href="#contact"><span class="dn" data-k="d6">Uniforms</span><span class="dd" data-k="d6s">Navy and white. The first set is free</span></a></li>
+        <li><a href="sms:+19785550136?body=ALERTS"><span class="dn" data-k="d7">Text alerts</span><span class="dd" data-k="d7s">Delays and closings on your phone</span></a></li>
+        <li><a href="tel:+19785550136"><span class="dn" data-k="d8">Front office</span><span class="dd tel">(978) 555-0136</span></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="adm on-dark" id="admissions" aria-labelledby="adm-h">
+    <div class="wrap">
+      <h2 id="adm-h"><span class="lot-a" data-k="lotA">Applications for 2027‑28 close</span> <span class="lot-date" data-k="lotDate">Monday, March 1, 5 PM</span></h2>
+      <p class="r-fig days" id="days" data-k="daysLeft">116 days left to apply.</p>
+      <p class="r-body" data-k="lotP">It is free and there is no test. Every child who applies by the deadline has the same chance in the lottery.</p>
+      <div class="adm-grid">
+        <div>
+          <h3 class="steps-h" data-k="stepsH">How it works (sample dates)</h3>
+          <ol class="steps">
+            <li><span class="r-fig when" data-k="s1d">Nov 2 to Mar 1</span><b data-k="s1t">1. Apply</b><p data-k="s1b">Online, on paper at the front office, or by phone with us. It takes about 10 minutes, in any of our four languages.</p></li>
+            <li><span class="r-fig when" data-k="s2d">Thu, Mar 4, 6 PM</span><b data-k="s2t">2. Public lottery</b><p data-k="s2b">A public drawing in the school gym, also shown live online. You do not have to be there.</p></li>
+            <li><span class="r-fig when" data-k="s3d">By Fri, Mar 12</span><b data-k="s3t">3. Answers</b><p data-k="s3b">We call, text and email every family: a seat, or a place on the waitlist.</p></li>
+            <li><span class="r-fig when" data-k="s4d">By Fri, Mar 26</span><b data-k="s4t">4. Register</b><p data-k="s4b">Accept your seat and bring proof of age and address. We help with every form.</p></li>
+          </ol>
+          <p class="prio" data-k="prio">Brothers and sisters of current students are drawn first, then Lawrence residents (sample rules).</p>
+        </div>
+        <div class="need" id="apply">
+          <h3 data-k="needH">To apply you need</h3>
+          <ul>
+            <li data-k="n1">Your child's name and date of birth</li>
+            <li data-k="n2">Your address</li>
+            <li data-k="n3">A phone number</li>
+          </ul>
+          <p class="note" data-k="needNote">No documents and no fee to apply.</p>
+          <a class="apply" href="#apply" data-k="apply">Apply for 2027‑28</a>
+          <p class="ask" data-kh="askAdm">Questions? Call <a href="tel:+19785550136"><span class="tel">(978) 555-0136</span></a>.</p>
+          <figure class="adm-fig">
+            <!-- replace with the school's own photo -->
+            <img src="assets/class-600.webp" srcset="assets/class-600.webp 600w, assets/class-1000.webp 1000w" sizes="(min-width: 900px) 360px, 100vw" width="1000" height="667" loading="lazy" decoding="async" alt="A student works through geometry problems with a calculator and a pencil" data-k-alt="classAlt">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="lunch" id="lunch" aria-labelledby="lunch-h">
+    <div class="wrap lunch-grid">
+      <div>
+        <div class="print-head"><b>Merrimack Commons Charter Public School</b> · 88 Mill Commons Way, Lawrence, MA · (978) 555-0136</div>
+        <h2 class="r-sec" id="lunch-h" data-k="lunchH">This week's lunch</h2>
+        <p class="wk r-fig" data-k="lunchWeek">Mon, Nov 2 to Fri, Nov 6</p>
+        <p class="free" data-k="lunchFree">Breakfast and lunch are free for every student.</p>
+        <table class="menu">
+          <caption class="sr" data-k="lunchCap">Lunch menu, Nov 2 to 6</caption>
+          <thead><tr><th scope="col" data-k="thDay">Day</th><th scope="col" data-k="thLunch">Lunch</th><th scope="col" data-k="thVeg">Vegetarian</th></tr></thead>
+          <tbody>
+            <tr><th scope="row" data-k="ld1">Mon 2</th><td><span data-k="m1">Chicken and rice with red beans</span><span class="side" data-k="m1s">Broccoli, orange slices</span></td><td data-k="v1">Rice and red beans with cheese</td></tr>
+            <tr><th scope="row" data-k="ld2">Tue 3</th><td><span data-k="m2">Cheese pizza</span><span class="side" data-k="m2s">Garden salad, apple</span></td><td data-k="v2">Cheese pizza</td></tr>
+            <tr><th scope="row" data-k="ld3">Wed 4</th><td><span data-k="m3">Beef tacos on corn tortillas</span><span class="side" data-k="m3s">Pico de gallo, corn</span></td><td data-k="v3">Black bean tacos</td></tr>
+            <tr class="is-today"><th scope="row"><span data-k="ld4">Thu 5</span><span class="tag" data-k="todayTag">Today</span></th><td><span data-k="m4">Baked chicken, mashed potatoes</span><span class="side" data-k="m4s">Green beans, whole-wheat roll</span></td><td data-k="v4">Baked mac and cheese</td></tr>
+            <tr><th scope="row" data-k="ld5">Fri 6</th><td><span data-k="m5">Pasta with meat sauce</span><span class="side" data-k="m5s">Caesar salad, grapes</span></td><td data-k="v5">Pasta with tomato sauce</td></tr>
+          </tbody>
+        </table>
+        <p class="note2" data-k="lunchNote">Milk comes with every meal. The menu can change. Tell the office about allergies.</p>
+        <button class="printb" type="button" id="print" data-k="print">Print this week's menu</button>
+      </div>
+      <div>
+        <figure class="lunch-fig">
+          <!-- replace with the school's own photo -->
+          <img src="assets/lunch-600.webp" srcset="assets/lunch-600.webp 600w, assets/lunch-1000.webp 1000w" sizes="(min-width: 900px) 440px, 100vw" width="1000" height="595" loading="lazy" decoding="async" alt="A cafeteria worker hands a slice of pizza to a student holding a lunch tray" data-k-alt="lunchAlt">
+        </figure>
+        <div class="coming" id="coming">
+          <h3 class="r-label" data-k="weekH">Coming up</h3>
+          <ul class="ev">
+            <li><span class="r-fig" data-k="e1d">Thu, Nov 5</span><span data-k="e1">Bus 4 pickups run 10 minutes late through Friday (road work)</span></li>
+            <li><span class="r-fig" data-k="e2d">Wed, Nov 11</span><span data-k="e2">No school: Veterans Day</span></li>
+            <li><span class="r-fig" data-k="e3d">Thu, Nov 12</span><span data-k="e3">Family night: how to read a report card. 6 PM, with interpreters in all 4 languages</span></li>
+            <li><span class="r-fig" data-k="e4d">Wed, Nov 25</span><span data-k="e4">Early release at 12:15 PM</span></li>
+            <li><span class="r-fig" data-k="e5d">Nov 26-27</span><span data-k="e5">No school: Thanksgiving</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot on-dark" id="contact">
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <h2 data-k="visitH">Visit or call</h2>
+        <address>Merrimack Commons Charter Public School<br>88 Mill Commons Way, Lawrence, MA 01840<span class="bldg" data-k="bldg">Our classrooms fill a restored 1882 mill on the North Canal (sample).</span><span class="bldg" data-k="hours">Front office: Monday to Friday, 7:30 AM to 4 PM</span></address>
+        <p class="f-links"><a href="tel:+19785550136"><span data-k="callLink">Call</span> <span class="tel">(978) 555-0136</span></a><a href="sms:+19785550136" data-k="textLink">Text the office</a><a href="mailto:office@merrimackcommons.example">office@merrimackcommons.example</a></p>
+      </div>
+      <div>
+        <h2 data-k="infoH">School information</h2>
+        <ul class="f-docs" id="reports">
+          <li><a href="#reports" data-k="doc1">Annual report and transparency (sample)</a></li>
+          <li><a href="#reports" data-k="doc2">Anti-bullying plan (sample)</a></li>
+          <li><a href="#reports" data-k="doc3">Board meetings and minutes</a></li>
+          <li><a href="#reports" data-k="doc4">Jobs</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <p data-kh="a11y"><strong>Accessibility.</strong> We build this site to meet WCAG 2.1 AA. If any part of it does not work for you, tell us and we will fix it or give you the information another way. Call <a href="tel:+19785550137">(978) 555-0137</a> or email <a href="mailto:access@merrimackcommons.example">access@merrimackcommons.example</a>.</p>
+      <p data-kh="nd"><strong>Nondiscrimination.</strong> Merrimack Commons does not discriminate in admission, programs or employment on the basis of race, color, national origin, ethnicity, creed, sex, gender identity, sexual orientation, disability, age, ancestry, athletic performance, special need, English language proficiency or academic achievement. Title IX and Section 504 Coordinator: Dana Ferreira (sample), <a href="tel:+19785550139">(978) 555-0139</a>, <a href="mailto:compliance@merrimackcommons.example">compliance@merrimackcommons.example</a>.</p>
+    </div>
+    <div class="f-base">
+      <span data-k="concept">Concept demo · fictional school · IC Business Systems</span>
+      <details class="credits">
+        <summary data-k="credits">Photo credits</summary>
+        <ul>
+          <li>Hallway: "20220526-FNS-LSC-1226", U.S. Department of Agriculture, public domain (cropped, graded).</li>
+          <li>Geometry homework: "Math Workshop Portland 7", U.S. Department of Education, CC BY 2.0 (resized, graded).</li>
+          <li>Lunch line: "20130308-FNS-LSC-0384", U.S. Department of Agriculture, public domain (cropped, graded).</li>
+          <li>Typefaces: Overpass and Overpass Mono, Delve Withrington, Dave Bailey and Thomas Jockin, SIL Open Font License.</li>
+        </ul>
+      </details>
+    </div>
+  </div>
+</footer>
+
+<div class="rail on-dark" id="rail">
+  <a class="apply" href="#apply" data-k="railApply">Apply for 2027‑28</a>
+  <a class="rcall" href="tel:+19785550136" data-k="callLink">Call</a>
+</div>
+<p class="sr" id="live" aria-live="polite"></p>
+
+<!-- review: Kreyòl and Portuguese strings below need a native speaker's review before launch -->
+<script>
+(function(){
+"use strict";
+var T={
+es:{lotDate:"lunes 1 de marzo, 5 p. m.",lotA:"Las solicitudes para 2027‑28 cierran el",factsH:"Esta semana",title:"Merrimack Commons Charter Public School · Escuela chárter pública gratuita K-8 · Lawrence, MA",desc:"Escuela chárter pública y gratuita, de kínder a 8.º grado, en Lawrence, MA. Solicite un cupo para la lotería 2027‑28 antes del 1 de marzo, en inglés, español, criollo haitiano o portugués. Sin costo y sin examen.",
+announce:"Página en español",skip:"Saltar al contenido principal",langLabel:"Idioma",navLabel:"Principal",navLabel2:"Menú principal",office:"Oficina",menu:"Menú",
+navApply:"Admisiones",navFamilies:"Familias",navLunch:"Almuerzo",navCalendar:"Calendario",navContact:"Contacto",
+today:"Hoy",statusOk:"Sin retrasos ni cierres",statusDelay:"Retraso de 2 horas: la escuela abre a las 9:50 a. m. y los autobuses pasan 2 horas tarde",updated:"Actualizado",timeOk:"6:40 a. m.",timeDelay:"5:52 a. m.",
+h1:"Escuela pública gratuita de kínder a 8.º grado en Lawrence",deck:"La admisión es por lotería, sin costo y sin examen. Las solicitudes para 2027‑28 cierran el lunes 1 de marzo a las 5:00 p. m.",
+apply:"Solicitar cupo para 2027‑28",railApply:"Solicitar cupo 2027‑28",
+askHero:'<a href="tel:+19785550136">Llame al <span class="tel">(978) 555-0136</span></a> o <a href="sms:+19785550136">envíe un texto</a>.',
+photoAlt:"Estudiantes caminando por un pasillo de la escuela entre clases",
+factsH:"Esta semana",f1:"El autobús 4 pasa 10 minutos tarde hasta el viernes (obras).",f2:"Almuerzo de hoy: pollo al horno o macarrones con queso.",f3:"No hay clases el miércoles 11 de nov., Día de los Veteranos.",f4:"Oficina abierta de 7:30 a. m. a 4:00 p. m.",callLink:"Llamar",textLink:"Enviar un texto a la oficina",
+famH:"Directorio para familias",famP:"Para las familias que ya estudian aquí: lo que más se pide en la oficina.",
+d1:"Reportar una ausencia",d1s:"Texto al (978) 555-0138 antes de las 9 a. m.",d2:"Rutas de autobús",d2s:"Paradas y horas de recogida",d3:"Menú del almuerzo",d3s:"Esta semana, gratis para todos",d4:"Calendario",d4s:"No hay clases el miér. 11 de nov.",d5:"Portal de padres",d5s:"Notas y asistencia",d6:"Uniformes",d6s:"Azul marino y blanco. El primer juego es gratis",d7:"Avisos por texto",d7s:"Retrasos y cierres en su celular",d8:"Oficina",
+daysLeft:"Quedan {n} días para solicitar.",lotP:"Es gratis y no hay examen. Todo niño que presente su solicitud a tiempo tiene la misma oportunidad en la lotería.",
+stepsH:"Cómo funciona (fechas de muestra)",s1d:"2 nov. a 1 mar.",s1t:"1. Solicitud",s1b:"En línea, en papel en la oficina o por teléfono con nosotros. Toma unos 10 minutos, en cualquiera de nuestros cuatro idiomas.",
+s2d:"Jue. 4 mar., 6 p. m.",s2t:"2. Lotería pública",s2b:"Un sorteo público en el gimnasio de la escuela, también transmitido en vivo. No tiene que estar presente.",
+s3d:"Antes del vie. 12 mar.",s3t:"3. Respuestas",s3b:"Llamamos y enviamos texto y correo a todas las familias: un cupo o un lugar en la lista de espera.",
+s4d:"Antes del vie. 26 mar.",s4t:"4. Inscripción",s4b:"Acepte el cupo y traiga prueba de edad y de domicilio. Le ayudamos con cada formulario.",
+prio:"Los hermanos de estudiantes actuales salen primero y después los residentes de Lawrence (reglas de muestra).",
+needH:"Para solicitar necesita",n1:"El nombre y la fecha de nacimiento de su hijo o hija",n2:"Su dirección",n3:"Un número de teléfono",needNote:"No se piden documentos ni se paga nada para solicitar.",
+askAdm:'¿Preguntas? Llame al <a href="tel:+19785550136"><span class="tel">(978) 555-0136</span></a>.',classAlt:"Un estudiante resuelve problemas de geometría con calculadora y lápiz",
+lunchH:"El almuerzo de esta semana",lunchWeek:"Lun. 2 a vie. 6 de nov.",lunchFree:"El desayuno y el almuerzo son gratis para todos los estudiantes.",lunchCap:"Menú del almuerzo, 2 al 6 de noviembre",thDay:"Día",thLunch:"Almuerzo",thVeg:"Vegetariano",
+ld1:"Lun. 2",m1:"Arroz con pollo y habichuelas rojas",m1s:"Brócoli, gajos de naranja",v1:"Arroz con habichuelas rojas y queso",
+ld2:"Mar. 3",m2:"Pizza de queso",m2s:"Ensalada verde, manzana",v2:"Pizza de queso",
+ld3:"Miér. 4",m3:"Tacos de res en tortilla de maíz",m3s:"Pico de gallo, maíz",v3:"Tacos de habichuelas negras",
+ld4:"Jue. 5",todayTag:"Hoy",m4:"Pollo al horno, puré de papas",m4s:"Habichuelas tiernas, pan integral",v4:"Macarrones con queso al horno",
+ld5:"Vie. 6",m5:"Pasta con salsa de carne",m5s:"Ensalada César, uvas",v5:"Pasta con salsa de tomate",
+lunchNote:"Se sirve leche con cada comida. El menú puede cambiar. Avise a la oficina si su hijo tiene alergias.",print:"Imprimir el menú de esta semana",lunchAlt:"Una trabajadora de la cafetería le entrega una pizza a un estudiante con su bandeja",
+weekH:"Próximas fechas",e1d:"Jue. 5 nov.",e1:"El autobús 4 pasa 10 minutos tarde hasta el viernes (obras en la calle)",e2d:"Miér. 11 nov.",e2:"No hay clases: Día de los Veteranos",e3d:"Jue. 12 nov.",e3:"Noche de familias: cómo leer el boletín de notas. 6 p. m., con intérpretes en los 4 idiomas",e4d:"Miér. 25 nov.",e4:"Salida temprano a las 12:15 p. m.",e5d:"26-27 nov.",e5:"No hay clases: Día de Acción de Gracias",
+visitH:"Visítenos o llame",bldg:"Nuestras aulas ocupan un molino de 1882 restaurado junto al North Canal (muestra).",hours:"Oficina: lunes a viernes, de 7:30 a. m. a 4:00 p. m.",infoH:"Información de la escuela",
+doc1:"Informe anual y transparencia (muestra)",doc2:"Plan contra el acoso escolar (muestra)",doc3:"Reuniones y actas de la junta",doc4:"Empleos",
+a11y:'<strong>Accesibilidad.</strong> Este sitio está hecho para cumplir con WCAG 2.1 AA. Si alguna parte no le funciona, díganos: la arreglamos o le damos la información de otra manera. Llame al <a href="tel:+19785550137">(978) 555-0137</a> o escriba a <a href="mailto:access@merrimackcommons.example">access@merrimackcommons.example</a>.',
+nd:'<strong>No discriminación.</strong> Merrimack Commons no discrimina en la admisión, los programas ni el empleo por raza, color, origen nacional, etnia, credo, sexo, identidad de género, orientación sexual, discapacidad, edad, ascendencia, rendimiento deportivo, necesidades especiales, dominio del inglés o rendimiento académico. Coordinadora de Título IX y Sección 504: Dana Ferreira (muestra), <a href="tel:+19785550139">(978) 555-0139</a>, <a href="mailto:compliance@merrimackcommons.example">compliance@merrimackcommons.example</a>.',
+concept:"Demo de concepto · escuela ficticia · IC Business Systems",credits:"Créditos de las fotos"},
+ht:{lotDate:"lendi 1ye mas, 5 PM",lotA:"Aplikasyon pou 2027‑28 fèmen",factsH:"Semèn sa a",title:"Merrimack Commons Charter Public School · Lekòl charter piblik gratis K-8 · Lawrence, MA",desc:"Lekòl charter piblik gratis, depi kindègadenn rive 8yèm ane, nan Lawrence, MA. Aplike pou lotri 2027‑28 la anvan 1ye mas, an angle, panyòl, kreyòl ayisyen oswa pòtigè. Ou pa peye, pa gen egzamen.",
+announce:"Paj la an kreyòl",skip:"Ale dirèkteman nan kontni prensipal la",langLabel:"Lang",navLabel:"Prensipal",navLabel2:"Meni prensipal",office:"Biwo a",menu:"Meni",
+navApply:"Admisyon",navFamilies:"Fanmi",navLunch:"Manje midi",navCalendar:"Kalandriye",navContact:"Kontak",
+today:"Jodi a",statusOk:"Pa gen reta ni fèmti",statusDelay:"Reta 2 èdtan: lekòl la ouvri 9:50 AM, bis yo pase 2 èdtan pita",updated:"Mizajou",timeOk:"6:40 AM",timeDelay:"5:52 AM",
+h1:"Lekòl piblik gratis depi kindègadenn rive 8yèm ane nan Lawrence",deck:"Admisyon an fèt pa lotri, san peye e san egzamen. Aplikasyon pou 2027‑28 fèmen lendi 1ye mas a 5:00 PM.",
+apply:"Aplike pou 2027‑28",railApply:"Aplike pou 2027‑28",
+askHero:'<a href="tel:+19785550136">Rele <span class="tel">(978) 555-0136</span></a> oswa <a href="sms:+19785550136">voye yon tèks</a>.',
+photoAlt:"Elèv k ap mache nan yon koridò lekòl ant de klas",
+factsH:"Semèn sa a",f1:"Bis 4 an reta 10 minit jiska vandredi (travay nan lari).",f2:"Manje midi jodi a: poul nan fou oswa makawoni ak fwomaj.",f3:"Pa gen lekòl mèkredi 11 nov., Jou Veteran yo.",f4:"Biwo a louvri 7:30 AM rive 4:00 PM.",callLink:"Rele",textLink:"Voye yon tèks bay biwo a",
+famH:"Repètwa pou fanmi",famP:"Pou fanmi ki deja nan lekòl la: sa moun mande biwo a pi souvan.",
+d1:"Rapòte yon absans",d1s:"Voye tèks nan (978) 555-0138 anvan 9 AM",d2:"Wout bis yo",d2s:"Arè ak lè bis la pase",d3:"Meni manje midi",d3s:"Semèn sa a, gratis pou tout elèv",d4:"Kalandriye",d4s:"Pa gen lekòl mèkredi 11 nov.",d5:"Pòtay paran",d5s:"Nòt ak prezans",d6:"Inifòm",d6s:"Ble maren ak blan. Premye seri a gratis",d7:"Alèt pa tèks",d7s:"Reta ak fèmti sou telefòn ou",d8:"Biwo a",
+daysLeft:"Rete {n} jou pou aplike.",lotP:"Li gratis e pa gen egzamen. Chak timoun ki aplike anvan dat limit la gen menm chans nan lotri a.",
+stepsH:"Kijan sa mache (dat egzanp)",s1d:"2 nov. rive 1ye mas",s1t:"1. Aplikasyon",s1b:"Sou entènèt, sou papye nan biwo a, oswa nan telefòn avèk nou. Sa pran anviwon 10 minit, nan nenpòt nan kat lang nou yo.",
+s2d:"Jedi 4 mas, 6 PM",s2t:"2. Lotri piblik",s2b:"Yon tiraj piblik nan jimnaz lekòl la, ki pase an dirèk sou entènèt tou. Ou pa oblije la.",
+s3d:"Anvan vandredi 12 mas",s3t:"3. Repons yo",s3b:"Nou rele, nou voye tèks ak imèl bay chak fanmi: yon plas, oswa yon plas sou lis datant lan.",
+s4d:"Anvan vandredi 26 mas",s4t:"4. Enskripsyon",s4b:"Aksepte plas la epi pote prèv laj ak adrès. Nou ede w ak chak fòm.",
+prio:"Frè ak sè elèv ki deja nan lekòl la soti an premye, apre sa moun ki rete Lawrence (règ egzanp).",
+needH:"Pou aplike ou bezwen",n1:"Non ak dat nesans pitit ou",n2:"Adrès ou",n3:"Yon nimewo telefòn",needNote:"Pa gen papye ni frè pou aplike.",
+askAdm:'Kesyon? Rele <a href="tel:+19785550136"><span class="tel">(978) 555-0136</span></a>.',classAlt:"Yon elèv ap rezoud pwoblèm jeyometri ak yon kalkilatris ak yon kreyon",
+lunchH:"Manje midi semèn sa a",lunchWeek:"Lendi 2 rive vandredi 6 nov.",lunchFree:"Manje maten ak manje midi gratis pou tout elèv.",lunchCap:"Meni manje midi, 2 rive 6 novanm",thDay:"Jou",thLunch:"Manje midi",thVeg:"Vejetaryen",
+ld1:"Lendi 2",m1:"Diri ak poul ak pwa wouj",m1s:"Bwokoli, tranch zoranj",v1:"Diri ak pwa wouj ak fwomaj",
+ld2:"Madi 3",m2:"Pitza fwomaj",m2s:"Salad vèt, pòm",v2:"Pitza fwomaj",
+ld3:"Mèkredi 4",m3:"Tako vyann bèf nan tòtiya mayi",m3s:"Pico de gallo, mayi",v3:"Tako pwa nwa",
+ld4:"Jedi 5",todayTag:"Jodi a",m4:"Poul nan fou, pòmdetè kraze",m4s:"Pwa tann, ti pen ble antye",v4:"Makawoni ak fwomaj nan fou",
+ld5:"Vandredi 6",m5:"Pasta ak sòs vyann",m5s:"Salad Seza, rezen",v5:"Pasta ak sòs tomat",
+lunchNote:"Nou bay lèt ak chak repa. Meni an ka chanje. Di biwo a si pitit ou gen alèji.",print:"Enprime meni semèn sa a",lunchAlt:"Yon travayè kafeterya ap bay yon elèv ki kenbe plato li yon moso pitza",
+weekH:"Sa k ap vini",e1d:"Jedi 5 nov.",e1:"Bis 4 ap pase 10 minit an reta jiska vandredi (travay nan lari a)",e2d:"Mèkredi 11 nov.",e2:"Pa gen lekòl: Jou Veteran yo",e3d:"Jedi 12 nov.",e3:"Swa fanmi: kijan pou li yon kanè. 6 PM, ak entèprèt nan 4 lang yo",e4d:"Mèkredi 25 nov.",e4:"Lage bonè a 12:15 PM",e5d:"26-27 nov.",e5:"Pa gen lekòl: Jou Aksyon de Gras",
+visitH:"Vin wè nou oswa rele",bldg:"Klas nou yo nan yon ansyen moulen 1882 yo renove bò North Canal la (egzanp).",hours:"Biwo a: lendi rive vandredi, 7:30 AM rive 4:00 PM",infoH:"Enfòmasyon sou lekòl la",
+doc1:"Rapò anyèl ak transparans (egzanp)",doc2:"Plan kont entimidasyon (egzanp)",doc3:"Reyinyon ak rapò konsèy la",doc4:"Travay",
+a11y:'<strong>Aksesibilite.</strong> Nou fè sit sa a pou l respekte WCAG 2.1 AA. Si yon pati pa mache pou ou, di nou: n ap ranje l oswa ba ou enfòmasyon an yon lòt jan. Rele <a href="tel:+19785550137">(978) 555-0137</a> oswa ekri <a href="mailto:access@merrimackcommons.example">access@merrimackcommons.example</a>.',
+nd:'<strong>Pa gen diskriminasyon.</strong> Merrimack Commons pa fè diskriminasyon nan admisyon, pwogram oswa travay sou baz ras, koulè, orijin nasyonal, etnisite, kwayans, sèks, idantite seksyèl, oryantasyon seksyèl, andikap, laj, zansèt, pèfòmans nan espò, bezwen espesyal, konesans nan lang angle oswa rezilta lekòl. Kowòdonatris Tit IX ak Seksyon 504: Dana Ferreira (egzanp), <a href="tel:+19785550139">(978) 555-0139</a>, <a href="mailto:compliance@merrimackcommons.example">compliance@merrimackcommons.example</a>.',
+concept:"Demo konsèp · lekòl fiktif · IC Business Systems",credits:"Kredi foto yo"},
+pt:{lotDate:"segunda, 1º de março, 17h",lotA:"As inscrições para 2027‑28 fecham",factsH:"Esta semana",title:"Merrimack Commons Charter Public School · Escola charter pública gratuita K-8 · Lawrence, MA",desc:"Escola charter pública e gratuita, do jardim (K) ao 8º ano, em Lawrence, MA. Inscreva-se no sorteio 2027‑28 até 1º de março, em inglês, espanhol, crioulo haitiano ou português. Sem mensalidade e sem prova.",
+announce:"Página em português",skip:"Pular para o conteúdo principal",langLabel:"Idioma",navLabel:"Principal",navLabel2:"Menu principal",office:"Secretaria",menu:"Menu",
+navApply:"Matrícula",navFamilies:"Famílias",navLunch:"Almoço",navCalendar:"Calendário",navContact:"Contato",
+today:"Hoje",statusOk:"Sem atrasos nem fechamentos",statusDelay:"Atraso de 2 horas: a escola abre às 9h50 e os ônibus passam 2 horas depois",updated:"Atualizado",timeOk:"6h40",timeDelay:"5h52",
+h1:"Escola pública gratuita, do jardim (K) ao 8º ano, em Lawrence",deck:"A matrícula é por sorteio, sem mensalidade e sem prova. As inscrições para 2027‑28 fecham segunda-feira, 1º de março, às 17h.",
+apply:"Inscreva-se para 2027‑28",railApply:"Inscreva-se para 2027‑28",
+askHero:'<a href="tel:+19785550136">Ligue <span class="tel">(978) 555-0136</span></a> ou <a href="sms:+19785550136">mande mensagem</a>.',
+photoAlt:"Alunos andando por um corredor da escola entre as aulas",
+factsH:"Esta semana",f1:"O ônibus 4 atrasa 10 minutos até sexta (obras).",f2:"Almoço de hoje: frango assado ou macarrão com queijo.",f3:"Sem aula na quarta, 11 de nov., Dia dos Veteranos.",f4:"Secretaria aberta das 7h30 às 16h.",callLink:"Ligar",textLink:"Mandar mensagem para a secretaria",
+famH:"Guia para as famílias",famP:"Para as famílias que já estudam aqui: o que mais pedem à secretaria.",
+d1:"Avisar uma falta",d1s:"Mensagem para (978) 555-0138 até as 9h",d2:"Rotas de ônibus",d2s:"Pontos e horários",d3:"Cardápio do almoço",d3s:"Desta semana, grátis para todos",d4:"Calendário",d4s:"Sem aula qua., 11 de nov.",d5:"Portal dos pais",d5s:"Notas e frequência",d6:"Uniformes",d6s:"Azul-marinho e branco. O primeiro kit é grátis",d7:"Avisos por mensagem",d7s:"Atrasos e fechamentos no seu celular",d8:"Secretaria",
+daysLeft:"Faltam {n} dias para se inscrever.",lotP:"É gratuito e não há prova. Toda criança inscrita dentro do prazo tem a mesma chance no sorteio.",
+stepsH:"Como funciona (datas de exemplo)",s1d:"2/11 a 1/3",s1t:"1. Inscrição",s1b:"Pela internet, em papel na secretaria ou por telefone com a gente. Leva cerca de 10 minutos, em qualquer um dos nossos quatro idiomas.",
+s2d:"Qui., 4/3, 18h",s2t:"2. Sorteio público",s2b:"Sorteio público no ginásio da escola, também transmitido ao vivo. Você não precisa estar presente.",
+s3d:"Até sex., 12/3",s3t:"3. Resultados",s3b:"Ligamos e mandamos mensagem e e-mail para todas as famílias: uma vaga ou um lugar na lista de espera.",
+s4d:"Até sex., 26/3",s4t:"4. Matrícula",s4b:"Aceite a vaga e traga comprovante de idade e de endereço. Ajudamos com todos os formulários.",
+prio:"Irmãos de alunos atuais são sorteados primeiro, depois os moradores de Lawrence (regras de exemplo).",
+needH:"Para se inscrever você precisa de",n1:"Nome e data de nascimento da criança",n2:"Seu endereço",n3:"Um número de telefone",needNote:"Não é preciso documento nem taxa para se inscrever.",
+askAdm:'Dúvidas? Ligue <a href="tel:+19785550136"><span class="tel">(978) 555-0136</span></a>.',classAlt:"Um aluno resolve problemas de geometria com calculadora e lápis",
+lunchH:"O almoço desta semana",lunchWeek:"Seg., 2/11 a sex., 6/11",lunchFree:"Café da manhã e almoço são grátis para todos os alunos.",lunchCap:"Cardápio do almoço, 2 a 6 de novembro",thDay:"Dia",thLunch:"Almoço",thVeg:"Vegetariano",
+ld1:"Seg. 2",m1:"Arroz com frango e feijão vermelho",m1s:"Brócolis, gomos de laranja",v1:"Arroz com feijão vermelho e queijo",
+ld2:"Ter. 3",m2:"Pizza de queijo",m2s:"Salada verde, maçã",v2:"Pizza de queijo",
+ld3:"Qua. 4",m3:"Tacos de carne em tortilha de milho",m3s:"Pico de gallo, milho",v3:"Tacos de feijão preto",
+ld4:"Qui. 5",todayTag:"Hoje",m4:"Frango assado, purê de batata",m4s:"Vagem, pãozinho integral",v4:"Macarrão com queijo gratinado",
+ld5:"Sex. 6",m5:"Macarrão à bolonhesa",m5s:"Salada Caesar, uvas",v5:"Macarrão ao molho de tomate",
+lunchNote:"Servimos leite em todas as refeições. O cardápio pode mudar. Avise a secretaria sobre alergias.",print:"Imprimir o cardápio da semana",lunchAlt:"Uma funcionária da cantina entrega uma pizza a um aluno com a bandeja",
+weekH:"Próximos dias",e1d:"Qui., 5/11",e1:"O ônibus 4 passa 10 minutos atrasado até sexta (obras na rua)",e2d:"Qua., 11/11",e2:"Sem aula: Dia dos Veteranos",e3d:"Qui., 12/11",e3:"Noite das famílias: como ler o boletim. 18h, com intérpretes nos 4 idiomas",e4d:"Qua., 25/11",e4:"Saída mais cedo às 12h15",e5d:"26-27/11",e5:"Sem aula: Dia de Ação de Graças",
+visitH:"Visite ou ligue",bldg:"Nossas salas ficam numa antiga fábrica de 1882, restaurada, junto ao North Canal (exemplo).",hours:"Secretaria: segunda a sexta, das 7h30 às 16h",infoH:"Informações da escola",
+doc1:"Relatório anual e transparência (exemplo)",doc2:"Plano contra o bullying (exemplo)",doc3:"Reuniões e atas do conselho",doc4:"Vagas de emprego",
+a11y:'<strong>Acessibilidade.</strong> Este site foi feito para atender à WCAG 2.1 AA. Se alguma parte não funcionar para você, avise: corrigimos ou passamos a informação de outro jeito. Ligue <a href="tel:+19785550137">(978) 555-0137</a> ou escreva para <a href="mailto:access@merrimackcommons.example">access@merrimackcommons.example</a>.',
+nd:'<strong>Não discriminação.</strong> A Merrimack Commons não discrimina na admissão, nos programas ou no emprego com base em raça, cor, origem nacional, etnia, crença, sexo, identidade de gênero, orientação sexual, deficiência, idade, ascendência, desempenho esportivo, necessidade especial, domínio do inglês ou desempenho acadêmico. Coordenadora do Título IX e da Seção 504: Dana Ferreira (exemplo), <a href="tel:+19785550139">(978) 555-0139</a>, <a href="mailto:compliance@merrimackcommons.example">compliance@merrimackcommons.example</a>.',
+concept:"Demonstração de conceito · escola fictícia · IC Business Systems",credits:"Créditos das fotos"}
+};
+var D=document,html=D.documentElement,LANGS=["en","es","ht","pt"];
+var EN_EXTRA={announce:"Page in English",statusDelay:"2-hour delay: school opens 9:50 AM, buses run 2 hours late",timeDelay:"5:52 AM",title:D.title,desc:D.querySelector("meta[name=description]").content,langLabel:"Language",navLabel:"Main",navLabel2:"Main menu",daysLeft:"{n} days left to apply."};
+var RM=matchMedia("(prefers-reduced-motion: reduce)").matches;
+var nK=[].slice.call(D.querySelectorAll("[data-k]")),nH=[].slice.call(D.querySelectorAll("[data-kh]")),nA=[].slice.call(D.querySelectorAll("[data-k-alt]")),nR=[].slice.call(D.querySelectorAll("[data-k-aria]"));
+var EN={};nK.forEach(function(n){if(!(n.dataset.k in EN))EN[n.dataset.k]=n.textContent.replace(/\s+/g," ").trim()});
+nH.forEach(function(n){EN[n.dataset.kh]=n.innerHTML.trim()});nA.forEach(function(n){EN[n.dataset.kAlt]=n.alt});
+for(var k in EN_EXTRA)EN[k]=EN_EXTRA[k];T.en=EN;
+function tr(l,k){return (T[l]&&T[l][k]!=null)?T[l][k]:EN[k]}
+
+/* days left: one figure, computed when the page loads */
+var DEADLINE=Date.parse("2027-03-01T17:00:00-05:00");
+function daysLeft(){return Math.max(0,Math.ceil((DEADLINE-Date.now())/864e5))}
+
+/* The one moving detail: the "Today" sign turns over once, like a single flap, when the language changes.
+   Old word's top half folds down (90 ms), the new word's bottom half folds up (90 ms). Nothing else moves. */
+var todayW=D.querySelector(".today-w"),FL=90;
+function flapWord(el,text){
+  var old=el.textContent;
+  if(RM||!el.animate){el.textContent=text;return}
+  var r=el.getBoundingClientRect();if(r.bottom<0||r.top>innerHeight){el.textContent=text;return}
+  el.querySelectorAll(".flap").forEach(function(f){f.remove()});
+  el.textContent=text;
+  var mk=function(c,t){var s=D.createElement("span");s.className="flap "+c;s.textContent=t;s.setAttribute("aria-hidden","true");el.appendChild(s);return s};
+  var bo=mk("b",old),ft=mk("t",old),fb=mk("b",text);
+  ft.animate([{transform:"perspective(80px) rotateX(0deg)"},{transform:"perspective(80px) rotateX(-90deg)"}],{duration:FL,easing:"cubic-bezier(.55,0,1,.45)",fill:"forwards"});
+  var a=fb.animate([{transform:"perspective(80px) rotateX(90deg)"},{transform:"perspective(80px) rotateX(0deg)"}],{duration:FL,delay:FL,easing:"cubic-bezier(0,.55,.45,1)",fill:"backwards"});
+  setTimeout(function(){bo.remove()},FL);
+  a.onfinish=function(){ft.remove();fb.remove()};
+}
+window.__flap=function(ms){FL=ms};/* QA only: lets the frame proof slow the flap down */
+
+var cur="en",links=[].slice.call(D.querySelectorAll(".langs a")),live=D.getElementById("live");
+function setLang(l,opt){
+  opt=opt||{};if(LANGS.indexOf(l)<0)l="en";
+  var changed=l!==cur;
+  /* keep the reader's place: measure the block just under the sticky bar before and after the swap */
+  var anchor=null,before=0;
+  if(changed&&!opt.instant){var y=D.querySelector(".strip").getBoundingClientRect().bottom+8;var e=D.elementFromPoint(innerWidth/2,y);anchor=e&&e.closest("li,tr,p,h1,h2,h3,figure,section");if(anchor)before=anchor.getBoundingClientRect().top}
+  nK.forEach(function(n){var v=tr(l,n.dataset.k);if(n.dataset.k==="daysLeft")v=v.replace("{n}",daysLeft());
+    if(n===todayW){if(changed&&!opt.instant)flapWord(n,v);else n.textContent=v}else if(n.textContent!==v)n.textContent=v});
+  nH.forEach(function(n){n.innerHTML=tr(l,n.dataset.kh)});
+  nA.forEach(function(n){n.alt=tr(l,n.dataset.kAlt)});
+  nR.forEach(function(n){n.setAttribute("aria-label",tr(l,n.dataset.kAria))});
+  html.lang=l;D.title=tr(l,"title");D.querySelector("meta[name=description]").content=tr(l,"desc");
+  links.forEach(function(a){if(a.dataset.lang===l)a.setAttribute("aria-current","true");else a.removeAttribute("aria-current")});
+  cur=l;
+  if(anchor){var after=anchor.getBoundingClientRect().top;if(Math.abs(after-before)>1)scrollBy(0,after-before)}
+  try{sessionStorage.setItem("mc-lang",l)}catch(e){}
+  if(!opt.instant){try{var u=new URL(location.href);if(l==="en")u.searchParams.delete("lang");else u.searchParams.set("lang",l);history.replaceState(null,"",u)}catch(e){}}
+  if(changed&&!opt.silent){live.textContent="";setTimeout(function(){live.textContent=tr(l,"announce")+". "+tr(l,"h1")},60)}
+}
+links.forEach(function(a){a.addEventListener("click",function(ev){ev.preventDefault();setLang(a.dataset.lang)})});
+
+/* delay / closing notice */
+var st=D.getElementById("status"),stMsg=D.getElementById("st-msg"),stTime=D.getElementById("st-time");
+function setAlert(state){st.dataset.state=state;stMsg.dataset.k=state==="delay"?"statusDelay":"statusOk";stTime.dataset.k=state==="delay"?"timeDelay":"timeOk";stMsg.textContent=tr(cur,stMsg.dataset.k);stTime.textContent=tr(cur,stTime.dataset.k)}
+
+/* init */
+var P=new URLSearchParams(location.search),start=P.get("lang");
+if(!start){try{start=sessionStorage.getItem("mc-lang")}catch(e){}}
+D.getElementById("days").textContent=tr("en","daysLeft").replace("{n}",daysLeft());
+if(start&&start!=="en"&&LANGS.indexOf(start)>-1)setLang(start,{instant:true,silent:true});
+if(P.get("alert")==="1")setAlert("delay");
+
+/* menu */
+var mb=D.querySelector(".menu-btn"),mp=D.getElementById("menu-panel");
+mb.addEventListener("click",function(){var o=mb.getAttribute("aria-expanded")==="true";mb.setAttribute("aria-expanded",String(!o));mp.hidden=o});
+mp.addEventListener("click",function(e){if(e.target.closest("a")){mb.setAttribute("aria-expanded","false");mp.hidden=true}});
+D.addEventListener("keydown",function(e){if(e.key==="Escape"&&!mp.hidden){mp.hidden=true;mb.setAttribute("aria-expanded","false");mb.focus()}});
+/* phone rail: appears once the first application line has scrolled away */
+var rail=D.getElementById("rail");
+if("IntersectionObserver" in window)new IntersectionObserver(function(es){es.forEach(function(e){rail.classList.toggle("on",!e.isIntersecting&&e.boundingClientRect.top<0)})}).observe(D.getElementById("hero-apply"));
+D.getElementById("print").addEventListener("click",function(){window.print()});
+
+/* ?tour=1 for the promo recording */
+if(P.get("tour")==="1"){
+  html.classList.add("tour");
+  var wait=function(ms){return new Promise(function(r){setTimeout(r,ms)})};
+  var ease=function(t){return t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2};
+  var scrollToY=function(y,dur){return new Promise(function(res){var s=scrollY,d=y-s,t0=performance.now();(function f(now){var p=Math.min(1,(now-t0)/dur);scrollTo(0,s+d*ease(p));p<1?requestAnimationFrame(f):res()})(t0)})};
+  var off=function(sel){var e=D.querySelector(sel);return e.getBoundingClientRect().top+scrollY-D.querySelector(".strip").getBoundingClientRect().height-16};
+  var L=function(l){D.querySelector('.langs a[data-lang="'+l+'"]').click()};
+  (async function(){
+    scrollTo(0,0);await wait(1800);var T0=performance.now();var mark=function(n){console.log("[tour] "+((performance.now()-T0)/1000).toFixed(1)+"s "+n)};
+    mark("start EN");await wait(600);
+    L("es");mark("ES");await wait(2600);
+    L("ht");mark("KREYOL");await wait(2600);
+    L("pt");mark("PT");await wait(2600);
+    L("es");mark("ES");await wait(2200);
+    setAlert("delay");mark("delay notice");await wait(2800);
+    await scrollToY(off("#families"),1300);mark("directory");await wait(1200);
+    L("en");mark("directory EN");await wait(2000);
+    await scrollToY(off("#admissions"),1300);mark("deadline");await wait(2400);
+    L("es");mark("deadline ES");await wait(2400);
+    await scrollToY(off("#lunch"),1300);mark("lunch");await wait(1200);
+    L("pt");mark("lunch PT");await wait(2200);
+    L("es");mark("lunch ES");await wait(1600);
+    await scrollToY(0,1500);mark("top");await wait(700);
+    var ap=D.getElementById("hero-apply");ap.classList.add("pressed");mark("apply press");await wait(220);ap.classList.remove("pressed");await wait(400);
+    await scrollToY(off("#apply"),1400);mark("apply box");await wait(2200);mark("end");
+  })();
+}
+})();
+</script>
+</body>
+</html>
