@@ -122,10 +122,10 @@ a:hover{text-decoration-thickness:2px}
 @media (min-width:900px){
   .open{padding:0 0 var(--s7)}
   .open .g{align-items:stretch}
-  .open-copy{grid-column:1/6;align-self:center;padding:var(--s5) 0}
-  .open-photo{grid-column:6/13;margin:0 calc(var(--gut)*-1) 0 0}
+  .open-copy{grid-column:8/13;grid-row:1;align-self:center;padding:var(--s5) 0 var(--s5) var(--s5)}
+  .open-photo{grid-column:1/8;grid-row:1;margin:0 0 0 calc(var(--gut)*-1)}
   .open-photo img{aspect-ratio:auto;height:min(640px,calc(100vh - 200px));min-height:440px}
-  .open-photo figcaption{padding:var(--s2) var(--gut) 0 0}
+  .open-photo figcaption{padding:var(--s2) 0 0 var(--gut)}
 }
 
 /* the worktable */
@@ -155,7 +155,7 @@ a:hover{text-decoration-thickness:2px}
 @media (min-width:1200px){.tray{--k:.44}}
 .js .piece.off{opacity:0;transform:translateY(-16px);pointer-events:none}
 .build{margin-top:var(--s5);display:flex;flex-wrap:wrap;align-items:center;column-gap:var(--s4)}
-.no-js .build{display:none}
+.no-js .build,.no-js .shelf{display:none}
 .count{font-size:var(--t-num);line-height:1;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums lining-nums;margin-bottom:var(--s3)}
 .work-txt h3{margin-bottom:var(--s2)}
 .day{margin-top:var(--s4);padding-top:var(--s3);border-top:1px solid var(--pale)}
