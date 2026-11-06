@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Owner Backend Pick</title>
+<style>
+:root{--bg:#f5f3ee;--card:#fff;--ink:#1c1c1a;--muted:#66625a;--line:#ddd8cd;--accent:#862A00}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141413;--card:#1f1f1d;--ink:#eceae4;--muted:#a6a298;--line:#34322e;--accent:#F6A78D}}
+:root[data-theme="dark"]{--bg:#141413;--card:#1f1f1d;--ink:#eceae4;--muted:#a6a298;--line:#34322e;--accent:#F6A78D}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:1000px;margin:0 auto;padding:20px 16px 60px}
+h1{font-size:26px;margin:0 0 6px}h2{font-size:21px;margin:32px 0 6px;padding-top:14px;border-top:1px solid var(--line)}h3{font-size:17px;margin:0 0 4px}
+p,li{max-width:66ch}.muted{color:var(--muted);font-size:15px}
+.grid{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}@media(min-width:760px){.grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.wide{display:grid;gap:12px;grid-template-columns:1fr}@media(min-width:760px){.wide{grid-template-columns:1fr 1fr}}
+figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:8px}
+figure img{width:100%;height:auto;display:block;border-radius:8px}
+figcaption{font-size:14px;padding:6px 2px 2px}figcaption b{color:var(--accent)}
+.opt{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:10px 0}
+.scroll{overflow-x:auto}table{border-collapse:collapse;font-size:14px;min-width:560px;width:100%}th,td{border-bottom:1px solid var(--line);padding:7px 6px;text-align:left;vertical-align:top}
+</style>
+</head>
+<body>
+<main>
+<h1>Owner backend: pick a style and a setup</h1>
+<p class="muted">The goal: the school office updates alerts, lunch, the calendar and bus changes in about a minute, on a phone, and feels the site is theirs. Nothing over the top.</p>
+
+<h2>1. Our own dashboard, three styles (mockups in Merrimack's colours)</h2>
+<p class="muted">These are design targets, not built yet. Pick one, or mix them ("tiles home + the alert composer").</p>
+<div class="grid">
+<figure><img src="img/dash-tiles.jpg" alt="Tiles style: Good morning Denise, six big tiles for Alert, Lunch, Calendar, Bus, Staff, News, and a Post an update button"><figcaption><b>A. Tiles</b>: one tap per thing. Like Edlio or Square.</figcaption></figure>
+<figure><img src="img/dash-today.jpg" alt="Today style: a checklist of what families see right now with switches and edit links and a live preview of the alert bar"><figcaption><b>B. Today</b>: "what families see right now", with on/off switches.</figcaption></figure>
+<figure><img src="img/dash-compose.jpg" alt="Composer: post an alert with English and Spanish text, a type chip, a show-until time and a live preview"><figcaption><b>C. Composer</b>: post an alert in EN + ES in one screen, and it expires on its own.</figcaption></figure>
+<figure><img src="img/dash-desktop.jpg" alt="Desktop dashboard: sidebar, lunch menu form on the left, live homepage preview on the right"><figcaption><b>D. Desktop</b>: edit on the left, live preview of the site on the right. (The generator misspelled one dish and invented the school name; the real one would show Merrimack.)</figcaption></figure>
+</div>
+
+<h2>2. Real admin screens for reference</h2>
+<p class="muted">The editors and dashboards worth looking at. Tell me what you like in any of them.</p>
+<div class="wide">
+<figure><img src="img/ref-edlio-admin-dashboard.jpg" alt="Edlio school CMS admin home with tiles"><figcaption><b>Edlio</b> (school CMS competitors use): tile home with "+ Add" shortcuts.</figcaption></figure>
+<figure><img src="img/ref-square-dashboard.jpg" alt="Square Dashboard"><figcaption><b>Square Dashboard</b>: calm small-business admin.</figcaption></figure>
+<figure><img src="img/ref-shopify-mobile-app.jpg" alt="Shopify mobile admin app"><figcaption><b>Shopify mobile</b>: run it all from a phone.</figcaption></figure>
+<figure><img src="img/ref-sveltia-phone-list.jpg" alt="Sveltia CMS phone list"><figcaption><b>Sveltia CMS</b> (free) on a phone: a list of entries.</figcaption></figure>
+<figure><img src="img/ref-sveltia-phone-editor.jpg" alt="Sveltia CMS phone editor"><figcaption><b>Sveltia CMS</b> editor on a phone, with a language switch.</figcaption></figure>
+<figure><img src="img/ref-storyblok-visual-editor.jpg" alt="Storyblok visual editor"><figcaption><b>Storyblok</b>: click on the page to edit it. $99/mo, too costly.</figcaption></figure>
+<figure><img src="img/ref-tina-demo-visual-editor.jpg" alt="TinaCMS visual editor"><figcaption><b>TinaCMS</b>: live visual editing. Free for 2 users.</figcaption></figure>
+<figure><img src="img/ref-pagescms-editor-mock.jpg" alt="Pages CMS editor"><figcaption><b>Pages CMS</b> (free): simple forms; the client needs no GitHub account.</figcaption></figure>
+</div>
+
+<h2>3. How it runs behind the scenes (pick one)</h2>
+<div class="opt"><h3>Option 1, my recommendation: our own small dashboard for the weekly things</h3>
+<p>Alerts, lunch, calendar, bus: one phone-first dashboard in the school's own colours (the mockups above), on Cloudflare. The office signs in with an emailed code, not a password and not GitHub. Changes show on the site within seconds, with no rebuild. Alerts expire on their own. Every field has English and Spanish.</p>
+<p class="muted">Cost to the school: $0 extra on Cloudflare's free tier. Our side: we build it once and every client reuses it, because it's part of the page kit. That's the thing Finalsite (about $6k/yr, third-party estimate) and Apptegy ($10k+/yr) sell, at our price. Risk: we own the security and the backups, so it stays small: 4-6 content types, no page builder.</p></div>
+<div class="opt"><h3>Option 2: a free editor (Pages CMS) plus our alert screen</h3>
+<p>A ready-made free editor covers lunch, events, staff and news: forms, an email invite, no GitHub. It takes 1-2 minutes until the change is live. Our one-screen alert composer (style C) handles urgent alerts, because the free editor can't schedule yet.</p>
+<p class="muted">Cheaper for us to set up. Less "theirs": the editor looks generic, not like their school.</p></div>
+<div class="opt"><h3>Option 3: Google Sheets</h3>
+<p>The office edits a shared sheet, one tab per thing, with start/end dates and EN/ES columns. The site reads it.</p>
+<p class="muted">Free, and everyone knows Sheets. But it's awkward on a phone, one bad cell can break a page (we'd add checks), and it doesn't feel like owning a website.</p></div>
+
+<div class="scroll"><table>
+<tr><th></th><th>Our dashboard</th><th>Pages CMS + alert</th><th>Google Sheets</th></tr>
+<tr><td>Feels like theirs</td><td>Most (their colours, their words)</td><td>Some</td><td>Least</td></tr>
+<tr><td>Phone</td><td>Designed for it</td><td>Vendor says yes (untested)</td><td>Awkward</td></tr>
+<tr><td>Change goes live</td><td>Seconds</td><td>1-2 min (alerts: seconds)</td><td>Minutes</td></tr>
+<tr><td>Alert expires on its own</td><td>Yes</td><td>Alerts only</td><td>With date columns</td></tr>
+<tr><td>English + Spanish</td><td>Every field</td><td>Set up per field</td><td>Extra columns</td></tr>
+<tr><td>Cost to school</td><td>$0 extra</td><td>$0</td><td>$0</td></tr>
+<tr><td>Our build / upkeep</td><td>Highest, built once and reused</td><td>Low</td><td>Low + a checker</td></tr>
+</table></div>
+<p class="muted">Sources: vendor pricing and docs pages (Nov 2026); Finalsite/Apptegy prices are third-party directory estimates. Full comparison: D:/AgenticHub/tools/worldgen/BACKEND-OPTIONS.md</p>
+</main>
+</body>
+</html>
