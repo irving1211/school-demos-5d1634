@@ -60,7 +60,7 @@ a:hover{text-decoration-thickness:2px}
 .r-h1{font-weight:700;font-size:var(--t-h1);line-height:1.06;letter-spacing:-.02em;max-width:18ch;text-wrap:balance}
 .r-sec{font-weight:700;font-size:var(--t-sec);line-height:1.12;letter-spacing:-.01em;max-width:22ch;text-wrap:balance}
 .r-label{font-weight:700;font-size:var(--t-label);line-height:1.25}
-.r-body{font-size:var(--t-body);line-height:1.5;max-width:56ch}
+.r-body{font-size:var(--t-body);line-height:1.5;max-width:50ch}
 .r-fig{font-family:var(--m);font-weight:500;letter-spacing:0;font-variant-numeric:tabular-nums}
 .tel{white-space:nowrap;font-variant-numeric:tabular-nums lining-nums}
 /* ---- the application line: the one primary action ---- */
@@ -79,7 +79,7 @@ a:hover{text-decoration-thickness:2px}
 .langs .dot{color:var(--teal-soft)}
 .status{display:block;padding:0 0 var(--s2);flex-basis:100%;--flap-bg:var(--teal-deep)}
 .status>span{margin-right:var(--s2)}
-.today-w{position:relative;display:inline-block;font-weight:700}
+.today-w{position:relative;display:inline-block;min-width:3.6em;font-weight:700}
 .flap{position:absolute;left:0;top:0;bottom:0;min-width:100%;white-space:nowrap;background:var(--flap-bg);backface-visibility:hidden;-webkit-backface-visibility:hidden}
 .flap.t{clip-path:inset(0 0 50% 0);transform-origin:50% 50%}
 .flap.b{clip-path:inset(50% 0 0 0);transform-origin:50% 50%}
@@ -135,7 +135,7 @@ a:hover{text-decoration-thickness:2px}
 .steps-h,.need h3{font-weight:700;font-size:var(--t-label);line-height:1.25;padding-bottom:var(--s2);border-bottom:2px solid var(--paper)}
 .steps li{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--s1);padding:var(--s3) 0;border-bottom:1px solid var(--teal-line)}
 .steps .when{font-size:var(--t-chrome);color:var(--teal-soft)}
-.steps p{max-width:56ch}
+.steps p{max-width:50ch}
 .prio{margin-top:var(--s4);font-size:var(--t-chrome);color:var(--teal-soft);max-width:60ch}
 .need li{padding:var(--s2) 0;border-bottom:1px solid var(--teal-line)}
 .need .note{margin-top:var(--s2);font-size:var(--t-chrome);color:var(--teal-soft)}
@@ -175,7 +175,7 @@ a:hover{text-decoration-thickness:2px}
 .f-docs li{border-bottom:1px solid var(--teal-line)}
 .f-docs a{display:flex;align-items:center;min-height:48px;text-decoration:none}
 .f-docs a:hover{text-decoration:underline}
-.legal{margin-top:var(--s5);display:grid;gap:var(--s3);max-width:68ch}
+.legal{margin-top:var(--s5);display:grid;gap:var(--s3);max-width:48ch}
 .legal p{color:var(--teal-soft)}
 .legal strong{color:var(--paper);font-weight:700}
 .f-base{margin-top:var(--s5);padding-top:var(--s3);border-top:1px solid var(--teal-line);display:flex;flex-wrap:wrap;gap:var(--s2) var(--s5);align-items:center;font-size:var(--t-chrome);color:var(--teal-soft)}
@@ -270,7 +270,7 @@ section[id],footer[id],#coming,#apply{scroll-margin-top:104px}
     
     <section class="main" aria-labelledby="h1">
       <h1 class="r-h1" id="h1" data-k="h1">A free public school for kindergarten to grade 8 in Lawrence</h1>
-      <p class="r-body intro" data-k="deck">Admission is by lottery, with no tuition and no test. Applications for 2027‑28 close Monday, March 1, at 5 PM.</p>
+      <p class="r-body intro" data-k="deck">No tuition and no test. Admission is by lottery: apply by Monday, March 1.</p>
       <a class="apply" id="hero-apply" href="#apply" data-k="apply">Apply for 2027‑28</a>
       <p class="ask" data-kh="askHero"><a href="tel:+19785550136">Call <span class="tel">(978) 555-0136</span></a> or <a href="sms:+19785550136">text us</a>.</p>
       <figure class="hero-fig">
@@ -436,7 +436,7 @@ es:{lotDate:"lunes 1 de marzo, 5 p. m.",lotA:"Las solicitudes para 2027‑28 cie
 announce:"Página en español",skip:"Saltar al contenido principal",langLabel:"Idioma",navLabel:"Principal",navLabel2:"Menú principal",office:"Oficina",menu:"Menú",
 navApply:"Admisiones",navFamilies:"Familias",navLunch:"Almuerzo",navCalendar:"Calendario",navContact:"Contacto",
 today:"Hoy",statusOk:"Sin retrasos ni cierres",statusDelay:"Retraso de 2 horas: la escuela abre a las 9:50 a. m. y los autobuses pasan 2 horas tarde",updated:"Actualizado",timeOk:"6:40 a. m.",timeDelay:"5:52 a. m.",
-h1:"Escuela pública gratuita de kínder a 8.º grado en Lawrence",deck:"La admisión es por lotería, sin costo y sin examen. Las solicitudes para 2027‑28 cierran el lunes 1 de marzo a las 5:00 p. m.",
+h1:"Escuela pública gratuita de kínder a 8.º grado en Lawrence",deck:"Sin costo y sin examen. La admisión es por lotería: solicite antes del lunes 1 de marzo.",
 apply:"Solicitar cupo para 2027‑28",railApply:"Solicitar cupo 2027‑28",
 askHero:'<a href="tel:+19785550136">Llame al <span class="tel">(978) 555-0136</span></a> o <a href="sms:+19785550136">envíe un texto</a>.',
 photoAlt:"Estudiantes caminando por un pasillo de la escuela entre clases",
@@ -468,7 +468,7 @@ ht:{lotDate:"lendi 1ye mas, 5 PM",lotA:"Aplikasyon pou 2027‑28 fèmen",factsH:
 announce:"Paj la an kreyòl",skip:"Ale dirèkteman nan kontni prensipal la",langLabel:"Lang",navLabel:"Prensipal",navLabel2:"Meni prensipal",office:"Biwo a",menu:"Meni",
 navApply:"Admisyon",navFamilies:"Fanmi",navLunch:"Manje midi",navCalendar:"Kalandriye",navContact:"Kontak",
 today:"Jodi a",statusOk:"Pa gen reta ni fèmti",statusDelay:"Reta 2 èdtan: lekòl la ouvri 9:50 AM, bis yo pase 2 èdtan pita",updated:"Mizajou",timeOk:"6:40 AM",timeDelay:"5:52 AM",
-h1:"Lekòl piblik gratis depi kindègadenn rive 8yèm ane nan Lawrence",deck:"Admisyon an fèt pa lotri, san peye e san egzamen. Aplikasyon pou 2027‑28 fèmen lendi 1ye mas a 5:00 PM.",
+h1:"Lekòl piblik gratis depi kindègadenn rive 8yèm ane nan Lawrence",deck:"Ou pa peye e pa gen egzamen. Admisyon an fèt pa lotri: aplike anvan lendi 1ye mas.",
 apply:"Aplike pou 2027‑28",railApply:"Aplike pou 2027‑28",
 askHero:'<a href="tel:+19785550136">Rele <span class="tel">(978) 555-0136</span></a> oswa <a href="sms:+19785550136">voye yon tèks</a>.',
 photoAlt:"Elèv k ap mache nan yon koridò lekòl ant de klas",
@@ -500,7 +500,7 @@ pt:{lotDate:"segunda, 1º de março, 17h",lotA:"As inscrições para 2027‑28 f
 announce:"Página em português",skip:"Pular para o conteúdo principal",langLabel:"Idioma",navLabel:"Principal",navLabel2:"Menu principal",office:"Secretaria",menu:"Menu",
 navApply:"Matrícula",navFamilies:"Famílias",navLunch:"Almoço",navCalendar:"Calendário",navContact:"Contato",
 today:"Hoje",statusOk:"Sem atrasos nem fechamentos",statusDelay:"Atraso de 2 horas: a escola abre às 9h50 e os ônibus passam 2 horas depois",updated:"Atualizado",timeOk:"6h40",timeDelay:"5h52",
-h1:"Escola pública gratuita, do jardim (K) ao 8º ano, em Lawrence",deck:"A matrícula é por sorteio, sem mensalidade e sem prova. As inscrições para 2027‑28 fecham segunda-feira, 1º de março, às 17h.",
+h1:"Escola pública gratuita, do jardim (K) ao 8º ano, em Lawrence",deck:"Sem mensalidade e sem prova. A matrícula é por sorteio: inscreva-se até segunda, 1º de março.",
 apply:"Inscreva-se para 2027‑28",railApply:"Inscreva-se para 2027‑28",
 askHero:'<a href="tel:+19785550136">Ligue <span class="tel">(978) 555-0136</span></a> ou <a href="sms:+19785550136">mande mensagem</a>.',
 photoAlt:"Alunos andando por um corredor da escola entre as aulas",

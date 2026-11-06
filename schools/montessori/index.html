@@ -48,6 +48,7 @@ button,input,select{font:inherit;color:inherit}
 a{color:inherit;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
 a:hover{text-decoration-thickness:2px}
 :focus-visible{outline:3px solid var(--walnut);outline-offset:4px}
+[hidden]{display:none!important}
 .vh{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .skip{position:absolute;left:var(--s3);top:-80px;z-index:50;background:var(--light);padding:var(--s2) var(--s3)}
 .skip:focus{top:var(--s2)}
@@ -84,14 +85,16 @@ a:hover{text-decoration-thickness:2px}
 .notice{order:5;flex:1 1 100%;display:flex;flex-wrap:wrap;align-items:center;column-gap:var(--s3);border-top:1px solid var(--pale)}
 .notice p{margin-right:auto;padding:var(--s2) 0;color:var(--walnut-2)}
 .notice p b{color:var(--walnut);font-weight:600}
-.notice.delay p{color:var(--walnut)}
-.notice.delay p b::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--walnut);margin-right:var(--s2);vertical-align:1px}
+.chrome.delay{background:var(--walnut);color:var(--light);border-bottom-color:var(--walnut)}
+.chrome.delay .notice{border-top-color:rgba(228,221,211,.3)}
+.chrome.delay .notice p,.chrome.delay .notice p b{color:var(--light)}
 .chrome a,.chrome button{min-height:44px;display:inline-flex;align-items:center}
 .chrome .tel{text-decoration:none;font-weight:600}
 .langs{display:flex;column-gap:var(--s2)}
 .langs a{text-decoration:none}
+.langs .both a+a::before{content:"/";color:var(--walnut-2);margin-right:var(--s2);text-decoration:none;display:inline-block}
 .langs a[aria-current="true"]{text-decoration:underline;text-decoration-thickness:2px;font-weight:600}
-.langs .both{display:none}
+.langs .both{display:none;align-items:center}
 .menu-btn{background:none;border:0;padding:0;font-weight:600;cursor:pointer;text-decoration:underline;text-underline-offset:4px}
 .menu{display:none;border-bottom:1px solid var(--pale);background:var(--light)}
 .menu.open{display:block}
@@ -99,9 +102,11 @@ a:hover{text-decoration-thickness:2px}
 .menu a{display:flex;align-items:center;min-height:44px;font-size:var(--t-body);text-decoration:none}
 .menu a:hover{text-decoration:underline}
 @media (min-width:900px){
-  .notice{order:0;flex:0 1 auto;border:0;margin-right:auto}
+  .chrome .wrap{flex-wrap:nowrap}
+  .notice{order:0;flex:1 1 0;min-width:0;border:0;margin-right:var(--s4)}
+  .notice p{flex:1 1 0;min-width:0}
   .name{margin-right:var(--s4)}
-  .langs .both{display:flex;column-gap:var(--s2)}.langs .one{display:none}
+  .langs .both{display:flex;align-items:center;column-gap:var(--s2)}.langs .one{display:none}
   .menu ul{grid-template-columns:repeat(3,auto);justify-content:start;column-gap:var(--s5)}
 }
 
@@ -117,9 +122,9 @@ a:hover{text-decoration-thickness:2px}
 @media (min-width:900px){
   .open{padding:0 0 var(--s7)}
   .open .g{align-items:stretch}
-  .open-copy{grid-column:1/6;padding-top:var(--s6)}
+  .open-copy{grid-column:1/6;align-self:center;padding:var(--s5) 0}
   .open-photo{grid-column:6/13;margin:0 calc(var(--gut)*-1) 0 0}
-  .open-photo img{aspect-ratio:auto;height:min(680px,calc(100vh - 160px));min-height:480px}
+  .open-photo img{aspect-ratio:auto;height:min(640px,calc(100vh - 200px));min-height:440px}
   .open-photo figcaption{padding:var(--s2) var(--gut) 0 0}
 }
 
@@ -251,8 +256,8 @@ label.f input:focus,label.f select:focus{outline:3px solid var(--walnut);outline
 @media (min-width:900px){.foot .g>div{grid-column:span 4}}
 
 /* phone action rail (no entrance animation) */
-.rail{position:fixed;left:0;right:0;bottom:0;z-index:20;display:none;align-items:center;column-gap:var(--s4);padding:var(--s2) var(--gut) calc(var(--s2) + env(safe-area-inset-bottom));background:var(--light);border-top:1px solid var(--pale)}
-.rail .token{min-height:48px;padding:0 var(--s4)}
+.rail{position:fixed;left:0;right:0;bottom:0;z-index:20;display:none;align-items:center;column-gap:var(--s3);padding:var(--s2) var(--gut) calc(var(--s2) + env(safe-area-inset-bottom));background:var(--light);border-top:1px solid var(--pale)}
+.rail .token{min-height:48px;padding:0 var(--s3);white-space:nowrap}
 .rail.on{display:flex}
 @media (min-width:900px){.rail{display:none!important}}
 @media (max-width:899px){body{padding-bottom:var(--s7)}}
@@ -281,12 +286,12 @@ label.f input:focus,label.f select:focus{outline:3px solid var(--walnut);outline
   <div class="wrap">
     <a class="name" href="#main">Fernhill Montessori School</a>
     <div class="notice" id="notice" role="status">
-      <p id="notice-p"><span data-i="alertOk">No delays or closings today.</span> <span data-i="alertUpd">Updated 6:40 AM.</span></p>
-      <a class="tel num" href="tel:+19785550136" aria-label="Call the office, (978) 555-0136" data-ia="aria-label:callLabel"><span data-i="callW">Call</span>&nbsp;(978)&nbsp;555-0136</a>
+      <p id="notice-p" data-i="alertOk">Open as usual today. Updated 6:40 AM.</p>
+      <a class="tel num" href="tel:+19785550136" data-i="callNum">Call (978)&nbsp;555-0136</a>
       <a href="sms:+19785550136" aria-label="Text the office, (978) 555-0136" data-ia="aria-label:textLabel" data-i="textS">Text</a>
     </div>
     <div class="langs">
-      <span class="both"><a href="?lang=en" hreflang="en" lang="en" data-l="en" aria-current="true">English</a><span aria-hidden="true">/</span><a href="?lang=es" hreflang="es" lang="es" data-l="es">Español</a></span>
+      <span class="both"><a href="?lang=en" hreflang="en" lang="en" data-l="en" aria-current="true">English</a><a href="?lang=es" hreflang="es" lang="es" data-l="es">Español</a></span>
       <span class="one"><a href="?lang=es" hreflang="es" lang="es" data-l="es" class="other">Español</a></span>
     </div>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" data-i="menu">Menu</button>
@@ -308,10 +313,10 @@ label.f input:focus,label.f select:focus{outline:3px solid var(--walnut);outline
   <div class="wrap g">
     <div class="open-copy">
       <h1 id="h1" class="r-display" data-i="h1">Children here learn with their hands</h1>
-      <p class="r-lead" data-i="lead">An independent Montessori school in Methuen for children from 18 months to grade 8.</p>
+      <p class="r-lead" data-i="lead">A Montessori school in Methuen for children from 18 months to grade 8.</p>
       <div class="act" id="hero-acts">
         <a class="token" href="#observe" data-i="ctaObserve">Observe a class</a>
-        <p class="r-meta" data-i="nextObs">Next observation morning: Tuesday, November 10, 8:45 AM</p>
+        <p class="r-meta" data-i="nextObs">Next observation: Tuesday, Nov 10, 8:45&nbsp;AM</p>
       </div>
     </div>
     <figure class="open-photo">
@@ -319,7 +324,7 @@ label.f input:focus,label.f select:focus{outline:3px solid var(--walnut);outline
         <source media="(max-width: 899px)" srcset="assets/work-sandpaper-800.webp" width="800" height="600">
         <img src="assets/work-sandpaper-1600.webp" width="1600" height="1000" fetchpriority="high" alt="A child traces a sandpaper letter m on a pink board with two fingers while the other hand holds the board still" data-ia="alt:heroAlt">
       </picture>
-      <figcaption class="r-meta" data-i="heroCap">Tracing a sandpaper letter: the hand learns the shape before the pencil does. Sample photo.</figcaption>
+      <figcaption class="r-meta" data-i="heroCap">Sandpaper letter work. Sample photo.</figcaption>
     </figure>
   </div>
 </section>
@@ -336,7 +341,7 @@ label.f input:focus,label.f select:focus{outline:3px solid var(--walnut);outline
     </div>
     <div class="g" id="work-panel" role="tabpanel" aria-labelledby="t-ch">
       <div class="work-obj">
-        <div class="stage" id="stage">/*TRAY*/</div>
+        <div class="stage" id="stage"><div class="tray" id="tray" role="img" aria-label="The golden bead material at true relative scale: one unit bead, a ten-bar, a hundred-square and a thousand-cube"><div class="piece c1"><img src="assets/studies/gb1.webp" width="64" height="46" style="--w:64" alt="" decoding="async"><p class="cap"><b>1</b><span class="w">unit</span></p></div><div class="piece c10"><img src="assets/studies/gb10.webp" width="308" height="143" style="--w:308" alt="" decoding="async"><p class="cap"><b>10</b><span class="w">ten</span></p></div><div class="piece c100"><img src="assets/studies/gb100.webp" width="496" height="268" style="--w:496" alt="" decoding="async"><p class="cap"><b>100</b><span class="w">hundred</span></p></div><div class="piece c1000"><img src="assets/studies/gb1000.webp" width="592" height="584" style="--w:592" alt="" decoding="async"><p class="cap"><b>1000</b><span class="w">thousand</span></p></div></div></div>
         <div class="build" id="build">
           <button class="tx" type="button" id="stepbtn" data-i="gbStart">Build it from one bead</button>
           <p class="r-meta" id="say" aria-live="polite"></p>
@@ -549,13 +554,13 @@ metaDesc:'Fernhill Montessori es una escuela independiente en Methuen, MA, para 
 skip:'Saltar al contenido principal',menuLabel:'Menú',menu:'Menú',
 navWork:'El trabajo, edad por edad',navPlain:'Qué es Montessori',navProg:'Programas y costos',navFam:'Para las familias actuales',navAcad:'¿Es lo bastante académico?',
 ctaObserve:'Observar una clase',
-alertOk:'Hoy no hay retrasos ni cierres.',alertUpd:'Actualizado a las 6:40 a. m.',
-callW:'Llamar al',textS:'Mensaje',callR:'Llamar',callLabel:'Llamar a la oficina, (978) 555-0136',textLabel:'Enviar un mensaje de texto a la oficina, (978) 555-0136',
+alertOk:'Hoy abrimos como siempre. Actualizado a las 6:40 a. m.',
+callNum:'Llamar al (978)&nbsp;555-0136',textS:'Mensaje',callR:'Llamar',textLabel:'Mensaje de texto a la oficina, (978) 555-0136',
 h1:'Aquí los niños aprenden con las manos',
-lead:'Una escuela Montessori independiente en Methuen para niños de 18 meses a 8.º grado.',
-nextObs:'Próxima mañana de observación: martes 10 de noviembre, 8:45 a. m.',
+lead:'Una escuela Montessori en Methuen para niños de 18 meses a 8.º grado.',
+nextObs:'Próxima observación: martes 10 de nov., 8:45&nbsp;a.&nbsp;m.',
 heroAlt:'Un niño recorre con dos dedos la letra m de lija sobre una tabla rosada mientras sostiene la tabla con la otra mano',
-heroCap:'Recorrer una letra de lija: la mano aprende la forma antes que el lápiz. Foto de muestra.',
+heroCap:'Trabajo con letras de lija. Foto de muestra.',
 workH:'El trabajo, edad por edad',agesLabel:'Grupo de edad',ageTodA:'18 meses–3',
 ageTod:'Comunidad infantil',ageCh:'Casa de los Niños',ageLe:'Primaria baja',ageUe:'Primaria alta',ageAd:'Adolescentes',
 gbStart:'Construirlo desde una perla',shelfL:'También en el estante a esta edad',
@@ -625,7 +630,7 @@ const f=n=>Math.round(n*10)/10;
 const INK='#3b2e26';
 const sh=(cx,cy,rx,ry,o=1)=>`<ellipse cx="${f(cx)}" cy="${f(cy)}" rx="${f(rx)}" ry="${f(ry)}" fill="url(#g-sh)" opacity="${o}"/>`;
 const STAIR=['#d8352c','#3d9a4c','#f293b3','#f4cf3c','#8fcaed','#a77fca','#f6f2ea','#8b5a2f','#2d3f93','#d9a23f'];
-/*DIMS*/
+const DIMS={"gb1":[64,46],"gb10":[308,143],"gb100":[496,268],"gb1000":[592,584],"tower":[320,460],"cyl":[600,320],"stair":[600,251],"box":[521,460]};
 
 const M={
 gold:{name:{en:'Golden beads',es:'Perlas doradas'},kind:'build',
@@ -705,7 +710,7 @@ ledger:{name:{en:'Farm stand ledger',es:'Cuentas del puesto'},kind:'svg',
 };
 
 /* map defs (Natural Earth, public domain) */
-const GEO=/*GEO*/null;
+const GEO={"w":"M17.8 92.7 15.2 94.4 12.8 94.1 13.3 93 17.8 92.7ZM18.8 82.2 16.5 83.4 15.3 82.4 16.3 81.7 19.7 79.7 18.8 82.2ZM29.2 77.1 26.9 77 22.9 79.2 21.7 83.1 19.1 86.2 13.2 87.6 11.1 86.9 11.2 88.5 9 89.4 9.8 93.2 8.9 94.9 12 94.7 12.3 95.8 16.3 97 18 96.3 17.1 95.3 19.2 94.6 25.8 97.3 29.3 97.1 32.8 98.1 32 99 33.2 98.6 17.2 102.6 1 104 -15.2 102.9 -31.1 99.2 -40 96 -37.5 97 -37.2 95.3 -29.7 91.4 -24.7 95.7 -19.1 96.6 -17.8 98.2 -8.5 97.6 -0 100 -9.3 97.2 -8.4 97 -8.9 96.2 -5.8 96.4 -4.5 95.3 -10.6 92.6 -9.2 92.3 -9.6 90.5 -12.5 90.6 -15.5 89 -13.1 88.6 -12.9 85.6 -10 83.7 -1.6 81.9 -0.9 83 3.6 83.8 2.8 80.8 5.7 82.1 9.1 81.4 13.4 84.2 17.4 84.1 22.7 78.2 26.6 76.7 30.4 76.4 29.2 77.1ZM31.4 63.9 32.7 65.4 30.1 65.8 27.4 63 27 61.5 28.9 63.5 31 62.1 31.4 63.9ZM-66.6 59.2 -65.3 59.3 -63.8 62.9 -63.9 68.4 -65.4 68.7 -66.4 67.2 -66.6 59.2ZM-69.4 52.4 -66.3 53.8 -65 53 -64.6 59 -67.2 57.1 -68.3 54 -72.3 51 -69.4 52.4ZM39.8 -23.7 44.6 -22.6 41.8 -21.9 41.4 -21.1 38.1 -21.7 40.3 -22.3 39 -23.3 39.8 -23.7ZM31.8 -26.5 38 -24 34.3 -23.2 34.9 -23.9 32.4 -25.1 29.6 -26.2 26.4 -25.1 29.1 -26.8 31.8 -26.5ZM41.7 -63.1 41.9 -61.9 45.4 -61.6 46.9 -59.3 45.2 -60.2 44.9 -58.9 41.5 -58.7 40.9 -63.6 41.6 -64.3 41.7 -63.1ZM14.1 -74.3 17.9 -72.8 16.5 -72.4 13.8 -71.7 14.1 -74.3ZM40.8 -94 43.1 -93.5 44.9 -90.1 43.3 -88.7 41.6 -88.9 41.7 -89.8 39.5 -90.1 41 -90.9 40.8 -94ZM-32.6 -83.1 -31 -82.5 -31.3 -81.1 -34.5 -80.3 -34.5 -82.3 -35.3 -83 -34.6 -83.7 -36.5 -83.1 -31.3 -86.7 -32.6 -83.1ZM9.7 -78 12.3 -75.7 12 -78.8 13.4 -78.9 15.4 -76.3 13.4 -75.2 13.3 -73.1 10.3 -68.2 10.5 -66 12.6 -64.1 20.4 -63 23.7 -58.9 24.2 -60.6 22.4 -62.8 23.8 -65.4 21.4 -67.6 19.8 -71.5 22.3 -72.3 25.6 -71.5 28.7 -68.8 29.1 -71.7 33.8 -68 37.9 -67.2 40.9 -64.9 39.2 -61.6 34.5 -60.1 32.6 -55.4 36.1 -59.3 38.3 -56 40.8 -56.2 40.9 -57.7 42.2 -56.7 38.9 -52.7 37.8 -53.6 38.8 -54.9 34.9 -51.9 35.9 -49.6 32.9 -48.2 34.4 -48.4 32.7 -47.9 32.5 -45.7 31.8 -46.3 32.1 -43.6 31.1 -45.7 32.8 -41.7 28.5 -36.3 30.7 -29.2 26 -34.5 20.9 -34.4 20.1 -33 16.3 -33.4 13.1 -31.2 12.8 -25.1 15.1 -21.1 16.7 -20.4 19.9 -21.3 20.9 -23.8 24.3 -24.6 22.8 -18 28.8 -17.6 28.7 -12.8 31.5 -10.2 33.5 -11.2 36.6 -10.2 38.5 -13.1 41.8 -14.9 42.2 -10.9 42.3 -13.2 43.8 -14.7 45.9 -12.8 52.8 -13.4 52.3 -12.4 58.5 -7.7 62 -7.5 65.1 -5.6 66.7 -2.3 65.9 -0.3 68.2 0.3 68.2 1.7 69.1 0.8 72.3 2.2 72.6 3.8 77.7 4.2 82.7 8.2 82.3 13.5 77.5 19 75.4 25.7 72.1 31.1 64.1 33.6 61.2 38.2 53.7 44.3 51.3 44.3 49.7 42.7 49.8 46.7 46.7 48.3 43.9 47.8 42.4 50.3 40.4 49.8 41 51.9 36.3 54.6 35.7 55.4 36.8 56.9 32.2 60.2 32 62.2 28.8 63.2 27 60.9 28.2 56.7 30.1 55 29 54.4 31.1 51.7 31.9 52.3 33.2 50 31.5 50.7 34.3 43.8 37.9 38.6 42.4 23.8 41.4 20.8 36.9 17.3 34.1 9.8 31.8 7.1 31.7 5.5 33.6 3.1 32.2 2.6 32.3 1.2 36.5 -4.5 35.1 -9.7 33.5 -10.4 32.2 -8.4 26.8 -11.4 24.6 -15.2 7 -20.4 -3.9 -35.1 -4.8 -35.4 -4.7 -33.5 0.6 -26 -0 -25.4 -2.3 -27.5 -2.4 -28.9 -5.2 -30.8 -4.2 -31.8 -7.2 -36.8 -10.3 -38.7 -12.8 -43.6 -12.2 -54 -10.7 -52.7 -10.6 -54.8 -14 -57.1 -16.7 -65.9 -23.8 -70.7 -27.7 -69.7 -25.6 -71.8 -34.2 -67.7 -39.5 -67.5 -33.6 -68.9 -31.1 -70.6 -34.3 -71.5 -33.4 -72.5 -34.6 -74.3 -31.7 -76.8 -29.2 -76.6 -28.3 -77.6 -30.6 -78.3 -30.8 -80.3 -28.3 -80.3 -27.5 -79.2 -26.6 -83 -20.4 -83.4 -13.4 -78 -8.7 -79 -7.9 -77.7 -7 -78.4 -7.2 -77.5 -2.7 -76.6 -2.8 -75.5 0.6 -74.9 2 -76.5 4.6 -75.3 6.4 -76.5 7.5 -75.2 8 -77.2 6.6 -78.2 6.7 -80.3 9.7 -78ZM-1.8 -81.3 0 -81.1 0.8 -79.6 1.5 -81.2 4.4 -78 3.9 -76.5 1.5 -76.8 -3.1 -76.9 -3.6 -77.8 -1.2 -78.2 -3.8 -78.5 -2.9 -79.3 -4.3 -79.7 -1.8 -81.3ZM9.9 -82.3 10.5 -81.7 11.3 -83.3 12.9 -81.7 13.7 -82.7 16.8 -82.2 19.7 -81.4 20.5 -79.8 25.2 -79.2 25.8 -76.8 22.8 -77.4 26.7 -75 27.1 -74.2 24.2 -74.6 27 -73.1 20.3 -74.5 18.3 -73.9 20.3 -75.5 19.7 -77.7 14.9 -79.9 10.2 -79.1 8.8 -81 9 -82.5 9.9 -82.3ZM4 -82.2 5.4 -81.9 5.4 -79.4 3.3 -80.7 4 -82.2ZM7.3 -81.4 6.6 -80.5 6 -82.4 8 -82.7 7.3 -81.4ZM-4.9 -79.5 -6.2 -79.1 -7.2 -80.3 -6 -82.9 -4.6 -83 -2.3 -81.7 -4.9 -79.5ZM4 -85.5 4.6 -83.6 3.4 -84.2 2.7 -84.9 4 -85.5ZM0.6 -84.7 1.4 -83.4 -2.5 -83.4 -1.9 -85 -0.3 -83.9 0.1 -85.3 0.6 -84.7ZM5.2 -86 7.7 -84.7 10.5 -85.5 11.4 -84.4 6.8 -83.7 4.5 -85.5 5.2 -86ZM-2 -86.3 -2.5 -85.1 -4.7 -84.8 -2 -86.3ZM-14.3 -103 -31.2 -99.2 -29 -99.9 -33.4 -97 -32.9 -94.8 -35 -93.3 -33.6 -91 -34.5 -89.7 -32.2 -90.5 -31.3 -86.7 -36.5 -83.1 -37.9 -83.6 -39.6 -81 -43.1 -82.2 -46.7 -81.9 -46.3 -83.1 -49.1 -84.8 -56.8 -80.7 -64.3 -79.5 -56.1 -85.8 -44.9 -86.8 -49.1 -87 -47.5 -88.4 -48.6 -89.4 -52.6 -88.4 -53.4 -89.2 -51.6 -90.3 -64.5 -81.6 -77.4 -69.5 -69.7 -77.2 -80.6 -65.7 -88.9 -54.1 -95.4 -41.5 -100.6 -26.4 -96.5 -38.7 -93.9 -44.6 -98.7 -32.9 -101.9 -20.9 -103.9 -4 -100.6 -26.3 -92.5 -47.6 -86.2 -58.2 -78.1 -68.7 -61.9 -83.5 -55.4 -88 -73 -74.1 -61.5 -83.9 -46.6 -93 -36.5 -97.4 -21.9 -101.7 2.8 -104 26.4 -100.6 43.1 -94.6 60.4 -84.7 48.6 -91.9 40.8 -95.7 54.9 -88.4 67.8 -78.8 83.1 -62.5 92.9 -46.7 84.1 -61.2 74.1 -73 85.3 -59.5 94.6 -43.2 86.9 -57.2 96 -40 102.1 -19.9 104 -1.2 102.7 16.4 99.2 31.4 92.4 47.7 84.5 60.6 74.7 72.4 86.2 58.3 93.8 44.9 99.2 31.1 102.4 18.4 103.9 4.5 103.5 -9.7 101.7 -21.6 99.2 -26.1 98.8 -32.4 92.9 -46.8 83.8 -61.6 74.6 -72.5 64.4 -81.7 69.8 -77.1 57.3 -86.8 44.6 -94 60.2 -84.8 73.5 -73.5 65.8 -80.5 75.1 -72 69.4 -77.5 83.2 -62.4 74.2 -72.9 63.9 -82.1 52.4 -89.8 40.4 -95.8 31.7 -99 52.2 -90 36.8 -97.3 19.9 -102.1 3.5 -103.9 -14.3 -103ZM6.4 -89.2 6 -87.4 3.9 -88.8 4.2 -90.6 6.4 -89.2ZM7.5 -94 9.4 -93.9 10.2 -90.6 9.2 -89.6 10.9 -86.9 7.2 -85.6 6.9 -87.3 8.1 -87.1 6 -89.8 7.2 -90.4 4.1 -91.4 7.5 -94ZM11.1 -98.5 12.6 -99.1 13.4 -97.3 13.7 -98.6 15.3 -98.3 14.1 -99.7 15.2 -100.2 17.1 -98.5 27.1 -96.4 28.3 -94.7 30.3 -94.5 29.8 -93.8 32.9 -93.8 31.1 -93 32.8 -91.9 33.7 -93.2 36.2 -86.6 35.9 -83.6 40.8 -77.2 38.5 -77.1 36.5 -76.7 29.6 -80.3 26.6 -84.7 26.3 -83.4 24.8 -84.1 25.6 -85.1 22.9 -85.2 17.8 -88.2 14.4 -87.3 12.6 -87.9 13.6 -88.8 11.2 -88.7 11.9 -90.8 10.6 -91.2 10 -93.8 10.9 -95.1 12.7 -95.3 10.5 -96.4 11.1 -98.5Z","e":"M-36.8 97.3 -23.3 101.4 -9.7 103.5 -13.4 103.1 -16.9 100.2 -18.7 100.3 -18.2 101.5 -20.6 101.4 -30.6 91.6 -29.4 91 -30.4 90.3 -27.8 89 -27.7 85.4 -25.5 85.5 -25.6 84.1 -23.9 83 -19.8 81.9 -18.3 78.8 -15.2 79.5 -8.8 73.6 -4.6 75.7 -0.6 75.5 -0.9 79.8 -0.1 80.3 1.9 77.7 10.1 74.2 10.7 75.4 15.9 76.6 18.5 75.2 19.4 77.1 23.9 77.3 24.8 79.1 33 82.7 34.1 81.9 33 83.7 35.8 86.6 34.6 89 35.5 91 32.1 98.8 24.6 98 19.7 99.6 18.9 98.6 15.7 98.7 8.8 101.6 0 100 9.8 101.9 8.8 102.2 9.5 103 4.9 103.9 17.8 102.5 -2.5 104 -19.8 102.1 -36.8 97.3ZM65.5 58.4 67.6 59.7 65.1 62 63.5 62.2 65.5 58.4ZM-21.7 15.4 -21.2 17.8 -23.8 28.4 -26.9 28.7 -28.1 24.5 -27.6 18.6 -24.2 16.6 -22.8 13.7 -21.7 15.4ZM79.7 20.4 81.3 22.5 80.8 28.6 82.7 31.3 82.5 34.5 83.5 34.9 83.6 41.2 80 48.3 72 56 67.7 56.5 67.7 54.5 65.8 55.2 64.6 53.8 63.7 49.1 64.5 47.6 62.8 48.3 65.1 45.5 62.3 47.5 62.1 44.1 60 41.9 44.6 43 43.5 41.7 45 39.5 45.1 34.9 44.5 31.8 45.4 32.1 45 29.7 46.5 26.6 46.4 27.6 49.4 25.7 54 24.9 60.4 18.5 62 18.2 64.5 20 66.1 16.9 68.3 16.5 67.6 15.3 72.6 16.6 70.8 20.8 74.9 25.4 77.3 21.9 78.9 16.2 79.7 20.4ZM59.8 13.1 58.7 13.2 59.4 12 61.6 11 63.2 11.1 59.8 13.1ZM58.3 10.4 56.4 11.4 55 10.7 58.3 10.4ZM42.7 8.1 45.1 7.8 50.4 10.4 44.8 9.8 39.1 8.1 39.9 7 42.7 8.1ZM90.7 8.8 88.1 9.9 86.6 8.9 88.6 7.9 89.4 8.7 91 6.7 90.7 8.8ZM67.1 4.2 67.5 5.2 65 4.6 64.5 3.8 67.1 4.2ZM71.3 1.6 72.6 4.7 75.9 2.4 82.7 5.8 85.8 9.4 85.1 11.3 88.5 16.3 85.4 15.6 82.4 11.4 79.8 13.7 76.2 11.6 74.5 11.9 75.8 10.5 75.2 7.7 70.6 4.9 69.8 5.6 68.8 3.8 70.7 3.1 67.2 1.3 69.3 0.5 71.3 1.6ZM61.4 -1.9 59.7 -0.3 55.8 -0.3 56.6 1.8 59.3 0.8 57.2 2.4 58.9 6.9 57.9 6.8 58.4 5.7 57.1 5.8 56.6 3.3 55.8 7 54.7 6.8 54.1 3.5 55.6 -0.7 61.4 -1.9ZM65.2 -1.5 64.9 1 64.1 0.4 64 -2.4 65.2 -1.5ZM39.7 6.9 36.1 5 31.8 -2.1 28.1 -5.7 30.5 -6.1 37.6 -0.1 37.2 0.8 40.1 3.6 39.7 6.9ZM53.2 -2.3 54.4 -1.1 53.1 -1 51.2 5 49.8 5.1 44.7 3.5 43.3 -0.5 44.1 -2.4 44.9 -2 52.1 -8.6 54.5 -6.8 52.5 -4 53.2 -2.3ZM62.1 -11 61.3 -7.3 59.1 -10.1 58.3 -9.6 57.6 -8.8 57.7 -10.3 61.1 -11.7 60.9 -12.7 62.1 -11ZM12.4 -6.9 10.9 -7.6 11.2 -11 11.9 -10.4 13 -8.4 12.4 -6.9ZM59.2 -13.3 58.3 -11.6 58 -13.2 59.2 -14.5 59.2 -13.3ZM56.7 -15.2 58.1 -14.9 57.7 -13.8 57.1 -13.3 56.7 -15.2ZM60.6 -15.8 60.7 -13.5 59.7 -14.1 59.2 -16.2 60.6 -15.8ZM54.8 -23.5 55.8 -23.6 56.4 -21.9 56.1 -18.3 58.6 -17.8 59 -16.2 58.1 -16.8 55 -17.6 54.2 -18.9 54.8 -23.5ZM43.1 -22.5 41.4 -22.2 42.7 -24.2 43.6 -23.8 43.1 -22.5ZM53.5 -28.8 53.3 -27.8 52.5 -28.7 52.5 -30.9 53.6 -31.7 53.5 -28.8ZM61.5 -46.2 61.7 -44.8 60.1 -44.1 60 -45.6 61.5 -46.2ZM-50.2 -48.6 -51.4 -46.7 -52.3 -47.6 -52.8 -49.2 -50.2 -48.6ZM-53.7 -53.9 -54.7 -51.3 -55.7 -51.6 -54.7 -53.9 -53.7 -53.9ZM65 -52.1 65.8 -49.2 63.5 -47.5 63 -45.6 61.6 -46.9 58.4 -44.8 59.7 -44.2 59.6 -41.1 57.3 -43.7 59 -47.2 61.6 -48.3 61.3 -50.8 62.2 -50.5 62.9 -52.9 61.3 -57 62 -57.6 63.5 -56.1 65 -52.1ZM61.4 -62 62.1 -62.9 63.4 -61.6 62.8 -59.1 61 -59.3 61.5 -57.7 60.7 -57.3 58.7 -63 61.4 -62ZM54.7 -69.7 57.1 -68.1 55.9 -67.9 56.9 -65.9 59.2 -64.3 58.1 -64.7 58.4 -63.5 54.9 -67.8 50.1 -73 54.7 -69.7ZM-54.8 -72.7 -57 -73.6 -54.4 -75.8 -51.8 -76.2 -51.6 -74.8 -54.8 -72.7ZM-45.5 -78 -48.6 -75.3 -49.4 -69.9 -51 -68.4 -56.6 -69.9 -53.8 -70.4 -54.3 -71.8 -50.8 -73.1 -49.8 -75.8 -50.6 -75.5 -49.2 -77.3 -46.4 -78.8 -45.5 -78ZM-38.8 -89.5 -40.6 -88.1 -44.3 -88.9 -44.4 -91.1 -43.1 -92.3 -42.5 -91.6 -40.8 -93.1 -41.2 -91.4 -38.8 -89.5ZM23.2 -93.1 24.1 -92.4 23.4 -91 22 -91 21.2 -92.1 23.2 -93.1ZM-6 -78.9 -7.8 -79.1 -8.3 -80.7 -3.2 -84.8 -0.4 -85.1 -6.5 -80.8 -6 -78.9ZM12.2 -87.6 15.4 -87.4 15.3 -85.1 19.6 -85.6 21.6 -87.5 26.3 -86 25.3 -87.1 27.9 -88.7 26.2 -90 29 -92 31.8 -92.1 32.7 -94.1 35.2 -94 35.6 -96.7 37.3 -96.9 34.6 -98.1 51.5 -90.3 50.6 -90.8 51.9 -89.6 51.1 -88.2 58.3 -82.9 61.4 -76 53.3 -81.6 49.1 -89.3 47 -90.8 49.2 -87.1 47.1 -87.8 46.9 -86.3 49.7 -83.5 44.6 -78.1 45.6 -71 48.3 -71 48.9 -72.1 50.8 -71.4 54.7 -65.7 55.3 -57.8 54.8 -56.7 53.4 -56.8 51.9 -51.2 55.4 -48.1 56 -45.8 54 -44.3 53 -47.5 50.4 -48.5 50.2 -50.4 46.8 -48.6 46.2 -51.1 44 -48.3 45.6 -46.4 47.1 -47.3 49.1 -46.5 47 -43.4 51 -40 52.2 -35.7 50.4 -30.6 48 -28.1 43 -25.8 42.9 -24.5 40.6 -26 38.2 -23.4 42.1 -18.3 42.9 -14 38.8 -10.2 38.6 -11.7 32.8 -15.6 32.2 -10.7 36.5 -6.5 38 -1.5 34.9 -3.2 33.3 -7.5 31.3 -9 31.5 -13.3 29.3 -19.5 27.5 -18 26.2 -18.3 26.1 -20.8 22.5 -25.9 18 -24.2 17.6 -22.7 11.2 -17.8 10.8 -11.6 8.3 -8.9 3.8 -17.8 2.8 -23.7 0.5 -23.2 -3.8 -28.3 -8.8 -28 -13 -28.8 -13.9 -30.4 -17 -30.2 -21.1 -34.4 -22.2 -34.1 -21.7 -31.4 -20 -28 -19 -29.1 -19 -27.1 -16.7 -27.1 -14.1 -29.6 -13.7 -27.2 -10.7 -24.9 -15.9 -19.3 -29 -14.5 -29.5 -19.3 -35.9 -33.1 -35.3 -34.8 -36.8 -32.7 -37.7 -35.5 -34.8 -21.8 -29.2 -14.3 -29.9 -13.5 -27.9 -12 -20.7 -13.6 -20.8 -12 -23.7 -6.1 -33 3 -34.1 5.5 -34.5 7.6 -31.7 17 -37.5 23.4 -36 28.4 -38.6 30.6 -38.2 34.2 -41.5 40.2 -47.8 43.4 -49.6 42.9 -50.9 39.9 -55.7 34.9 -58.9 28.2 -62.7 22.1 -61.6 14.8 -64.3 6.7 -68 1.5 -66.8 -4.1 -68.1 -6.5 -71.1 -5.9 -72.6 -8.8 -74.4 -8.8 -79.7 -6.9 -82.7 -7.8 -86.4 -6.7 -91.4 -12.6 -94.1 -20.3 -94.2 -24.8 -91.2 -29.9 -89.9 -36.2 -84.6 -41.9 -77.6 -45.5 -75.5 -49 -70.1 -52.1 -67.4 -49.9 -63.3 -50.5 -54.8 -48.3 -57.2 -44.4 -50.6 -38.1 -47.2 -40.7 -40.8 -37.1 -35.5 -36.8 -32.1 -42.9 -40 -44.2 -40.2 -47.7 -32.6 -49.4 -28.7 -47.5 -25.7 -47.8 -25.5 -49.1 -28.7 -52.7 -25.9 -54.6 -29.7 -54.1 -29 -52.6 -31.4 -52.1 -32.2 -53.4 -31.2 -54.1 -33 -55.1 -37.4 -51.1 -37.1 -49.1 -42.9 -49.4 -42.9 -46 -43.6 -46.5 -44.8 -44.8 -45.7 -50.1 -44.8 -51.8 -47.5 -58.2 -49 -56.4 -46.5 -50.2 -47.8 -50.9 -49.8 -48.1 -49.2 -50.8 -51.7 -57.8 -54.5 -57 -57.2 -58.1 -64.4 -52.6 -69.5 -52.1 -69.7 -53.9 -71.6 -54.7 -66.3 -62.9 -64.6 -63.2 -60.6 -60.3 -57.8 -63.2 -57.4 -67.7 -55.5 -66.5 -54.6 -67.9 -54.4 -67.1 -52.2 -67.1 -47.3 -69.3 -44.7 -68.6 -41.1 -72.4 -39.4 -72.5 -42 -70.3 -42.5 -68.3 -36.6 -66.4 -33.1 -69.2 -31.8 -68.2 -30.7 -70.8 -26.6 -70.5 -30.5 -71.6 -30.7 -72.9 -28.5 -75.4 -25 -76.7 -25 -77.9 -30.8 -75.8 -32.5 -74.5 -32.6 -72.8 -37.7 -69.2 -40.1 -69.2 -37.9 -74.4 -40.1 -73.8 -41.2 -74.9 -37.9 -78.6 -23.6 -82.7 -18.7 -82.4 -18.8 -80.3 -15.5 -77.3 -16.6 -75.5 -19.9 -76.9 -19.6 -73.3 -18.8 -74.7 -17.8 -73.7 -15.4 -75.5 -14.6 -74.8 -13.6 -77.6 -12.4 -77 -13 -75.2 -8.4 -77 -8.1 -76.1 -5.3 -76.1 -4.7 -77.8 -0.8 -75.7 -1.6 -78.9 -0 -81.2 1.3 -80.3 1.4 -73.5 2.7 -75.3 1.4 -79.4 2 -81 3 -79.1 3.4 -80.4 5.3 -80 4.4 -82 6.9 -82.6 6.6 -84 10.7 -86.4 10.8 -88.1 12.2 -87.6ZM10.6 -88.8 9.2 -87.8 8.9 -89.5 10.6 -88.8ZM-13.1 -92 -13.3 -90.9 -16.8 -89.7 -16.2 -91.3 -14.6 -93.1 -13.1 -92ZM8.7 -88.9 5.5 -89.8 6.1 -91.1 8.7 -88.9ZM-11.3 -100.3 -12.7 -99.3 -13.8 -100.8 -13.8 -99.5 -15.4 -99.3 -13.9 -98.4 -14.8 -97.6 -17.1 -98.5 -27 -96.1 -29 -96.9 -30.8 -96 -30.7 -96.9 -33.3 -95 -32.3 -96.7 -34.4 -96.4 -34.3 -94.9 -38.1 -96.8 -46.5 -93 -34.3 -98.2 -21.2 -101.8 -11 -103.4 -13.7 -102.9 -11.2 -102.4 -11.3 -100.3Z","clip":{"w":{"na":"M-99.8 -7 -49.3 -4.9 16.6 -4.5 16.6 -6.7 35 -8.1 36 -11.3 54.1 -18.9 71.3 -20.9 86.1 -23.4 81.4 -38.2 76 -49.4 67.3 -62.5 58.8 -71.9 49.1 -80.3 38.3 -87.5 35.2 -94.1 31.5 -98.5 19.2 -100.5 6.9 -100.7 6.9 -99.3 6.3 -98 3.4 -96.1 1.1 -95.6 -1.7 -95.7 -4 -96.3 -5.8 -97.5 -14 -93.1 -23.8 -86.4 -34.6 -76.6 -41.8 -81.7 -44.7 -84.8 -46.9 -88.3 -55.9 -82.9 -64.3 -76.6 -71.9 -69.5 -78.8 -61.6 -84.8 -53 -88.3 -46.9 -92.7 -37.5 -96.1 -27.6 -97.8 -20.8 -99.5 -10.5Z","sa":"M36 -11.3 54.1 -18.9 77.7 -21.9 96.6 -25.9 99.2 -12.4 100 1.4 98.9 15.1 95.8 28.5 92.4 38.2 88 47.6 82.6 56.4 78.5 61.9 71.7 69.7 66.7 74.5 61.5 78.9 53 84.8 50.2 81.1 46.8 77.8 42.9 74.9 37.4 71.9 31.5 69.4 25.2 67.5 10.5 64.9 13.2 49.4 15.3 31.4 16.4 13.5 16.6 -6.7 35 -8.1 35.5 -9.7Z","as2":"M-6.8 -100.9 -6.9 -99.1 -5.8 -97.5 -14 -93.1 -23.8 -86.4 -30.5 -80.7 -38.5 -72.4 -43.7 -75.5 -48.4 -79.2 -52.2 -83.6 -54.8 -88.4 -41.1 -95.5 -27.8 -100.2 -24.3 -101.1 -20.8 -101.3 -10.3 -101.2Z","eu2":"M44.4 -86.8 47.1 -92.5 40 -95.2 38.1 -90.1 42.3 -87.9Z","au2":"M-86.6 50 -78 45.7 -67 41.7 -60.4 54.7 -51.9 66.7 -59.2 71.6 -64.3 76.6 -71.9 69.5 -76.6 64.3 -84.8 53Z","an":"M-50 86.6 -47.4 83 -44.3 79.7 -36.5 74.5 -26.1 70.3 -13.3 67.6 1.3 66.7 14.7 67.7 27.3 70.7 37.5 75.1 42.5 78.3 46.7 82.1 50 86.6 51.6 90.3 43.1 94.7 34.8 98 25.5 100.8 16.3 102.7 8.3 103.7 0 104 -8.3 103.7 -18.3 102.4 -27.2 100.4 -34.8 98 -43.1 94.7 -51.6 90.3 -49.4 85.7 -45.1 80.5 -39.6 76.3 -32 72.4 -25 80.7 -16.9 88.5 -7.7 95.4 -0 100 -13.9 99 -24.2 97 -37.5 92.7 -46.9 88.3Z"},"e":{"gl":"M-33.9 -98.3 -43.9 -94.3 -53.2 -89.4 -50.8 -84.7 -47.2 -80.3 -36.8 -87.3 -28.3 -91.8 -16.3 -96.4 -6.8 -98.8 -6.6 -101.4 -4.2 -103.6 -6.2 -103.8 -18.5 -102.3 -31.6 -99.1Z","eu":"M-83.9 -61.4 -84.4 -60.8 -81.7 -58.8 -72.9 -53.6 -69.8 -52.1 -55.2 -49.5 -45.2 -42.3 -41.6 -42.5 -40 -48.1 -36.8 -49.2 -25.8 -47.8 -20.7 -47.7 -15.7 -53 -9.6 -57 -7.8 -61.4 -5.3 -75.8 -1.5 -84.5 -0.1 -93.7 0 -95.6 -3.4 -96.1 -5.9 -97.6 -6.9 -99.1 -6.9 -100.7 -20.5 -100.6 -30.8 -99.3 -37.3 -97.1 -46.8 -92.9 -58.8 -85.8 -67.1 -79.4 -74.8 -72.2 -81.8 -64.2Z","af":"M-83.9 -61.4 -84.4 -60.8 -80.3 -57.8 -69.8 -52.1 -55.2 -49.5 -48.2 -44.2 -37.3 -37.5 -37.3 -32.7 -36.6 -30.8 -33.5 -23.5 -29 -14.5 -19.7 -13.6 -16.1 14.8 -8.1 55.8 -19.4 56.8 -28.8 58.5 -37.9 60.8 -45.1 63.4 -53.2 67.4 -59.2 71.6 -65.2 77.7 -66.6 79.8 -66 80.4 -76.5 70.5 -85.5 59.2 -91.3 49.8 -94.6 43.3 -99.7 29.5 -102.9 15.1 -104 0.4 -103 -14.3 -100 -28.7 -94.9 -42.5 -91.7 -49.1 -86 -58.4Z","as":"M-41.6 -42.5 -40 -48.1 -36.8 -49.2 -25.8 -47.8 -20.7 -47.7 -15.7 -53 -9.6 -57 -7.8 -61.4 -5.3 -75.8 -1.5 -84.5 0 -95.6 3.2 -96 5.5 -97.2 7 -99.6 6.2 -102 9.3 -102.9 12.5 -103.2 15.6 -102.8 27.8 -100.2 40 -96 48.9 -91.8 57.5 -86.6 65.9 -80.5 73.8 -73.3 81.1 -65.1 87.7 -55.9 93.4 -45.7 98 -34.8 101.4 -23.1 103.4 -11 104 1.4 103.6 9.6 101.7 21.8 102.3 19 100.5 18.6 83.2 15.9 61.4 13.7 43.9 12.7 33.3 12.6 -10.9 13.4 -11.1 -5.6 -19.7 -13.6 -29 -14.5 -33.5 -23.5 -36.6 -30.8 -37.3 -32.7 -37.3 -37.5 -40.6 -41.3Z","au":"M43.9 12.7 76.7 15.1 89.7 16.8 102.3 19 100.3 27.5 96.7 38.2 93.7 45.1 88.4 54.8 84.3 60.9 77.4 69.4 72.4 74.6 64.4 81.7 66.6 79.8 66 78.9 62.4 74.5 56.9 69.8 51.9 66.7 45.1 63.4 31.9 59.2 35.7 50.1 39.4 38.6 42 26.9 43.7 15Z","an":"M50 86.6 51.6 90.3 38.7 96.5 25.5 100.8 16.3 102.7 6.3 103.8 -4.2 103.9 -14.4 103 -23.8 101.2 -33.4 98.5 -43.1 94.7 -51.6 90.3 -50 86.6 -46.7 82.1 -42.5 78.3 -37.5 75.1 -29.7 71.5 -19.8 68.7 -9.4 67.1 1.3 66.7 12 67.4 22.4 69.3 32 72.4 39.6 76.3 44.3 79.7 47.4 83 50 86.6 51.6 90.3 42.1 95.1 30.7 99.4 19.5 102.2 8.3 103.7 -0 100 13.9 99 24.2 97 37.5 92.7 46.9 88.3Z"}}};
 let mapDefs=false;
 function ensureMapDefs(){if(mapDefs||!GEO)return;mapDefs=true;let s='<clipPath id="mc"><circle r="100"/></clipPath>';
  for(const h of ['w','e']){s+=`<path id="land-${h}" d="${GEO[h]}"/>`;for(const[k,d] of Object.entries(GEO.clip[h]))s+=`<clipPath id="rg-${h}-${k}"><path d="${d}"/></clipPath>`}
@@ -745,7 +750,7 @@ document.addEventListener('click',e=>{const a=e.target.closest('.langs a[data-l]
 
 /* ---------- notice ---------- */
 let delay=Q.get('alert')==='1';
-function setAlert(){$('#notice').classList.toggle('delay',delay);if(delay)$('#notice-p').innerHTML=L(T.alertDelay)}
+function setAlert(){$('.chrome').classList.toggle('delay',delay);if(delay)$('#notice-p').innerHTML=L(T.alertDelay)}
 
 /* ---------- menu ---------- */
 const mb=$('.menu-btn'),menu=$('#menu');mb.addEventListener('click',()=>{const o=mb.getAttribute('aria-expanded')!=='true';mb.setAttribute('aria-expanded',o);menu.classList.toggle('open',o)});

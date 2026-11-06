@@ -23,8 +23,8 @@
 </script>
 <style>
 @font-face{font-family:"Piazzolla";src:url(assets/fonts/piazzolla-sub.woff2) format("woff2");font-weight:400 500;font-style:normal;font-display:swap}
-@font-face{font-family:"Piazzolla Fallback";src:local("Georgia");font-weight:400;size-adjust:97%;ascent-override:95%;descent-override:26%;line-gap-override:0%}
-@font-face{font-family:"Piazzolla Fallback";src:local("Georgia");font-weight:500;size-adjust:99%;ascent-override:93%;descent-override:25%;line-gap-override:0%}
+@font-face{font-family:"Piazzolla Fallback";src:local("Georgia");font-weight:400;size-adjust:93.5%;ascent-override:98%;descent-override:27%;line-gap-override:0%}
+@font-face{font-family:"Piazzolla Fallback";src:local("Georgia");font-weight:500;size-adjust:94.3%;ascent-override:97%;descent-override:27%;line-gap-override:0%}
 :root{
   /* hue 1: indigo family */ --indigo:#151a35; --indigo-2:#222944; --indigo-soft:#4a5070; --indigo-line:#c9cddc; --indigo-pale:#e1e4ed;
   /* hue 2: paper (neutral) */ --paper:#f4f3ee; --paper-light:#fcfbf8;
@@ -77,7 +77,7 @@ a{color:inherit;text-decoration-thickness:1px;text-underline-offset:4px}
 .act:active,.act.is-pressed{text-decoration-color:var(--amber-press);text-decoration-thickness:5px}
 .tl{display:inline-flex;align-items:center;min-height:44px;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
 .tl:hover{text-decoration-thickness:2px}
-.inl a{display:inline-block;padding:var(--t8) 0}
+.inl a{display:inline-block;padding:var(--t8) 0;min-height:44px}
 .submit{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:var(--t8) var(--t24);border:0;border-radius:4px;background:var(--amber);color:var(--indigo);font:500 var(--f-body)/1.25 var(--serif);cursor:pointer;transition:background-color .12s}
 .submit:hover{background:#f0c066}
 .submit:active{background:var(--amber-press)}
@@ -111,6 +111,7 @@ a{color:inherit;text-decoration-thickness:1px;text-underline-offset:4px}
 .menu-btn{background:none;border:0;padding:0;min-height:48px;min-width:48px;font:400 var(--f-chrome)/1 var(--serif);color:var(--indigo);text-decoration:underline;text-underline-offset:4px;cursor:pointer}
 .menu{border-top:1px solid var(--indigo-line);padding:var(--t8) 0 var(--t24)}
 .menu ul{list-style:none;padding:0;display:grid}
+html:not(.js) .menu[hidden]{display:block}
 .menu a{display:flex;align-items:center;min-height:48px;text-decoration:none;border-bottom:1px solid var(--indigo-line)}
 @media (min-width:900px){
   .mh__row{gap:var(--t40)}
@@ -141,11 +142,14 @@ a{color:inherit;text-decoration-thickness:1px;text-underline-offset:4px}
   .open__rail{display:contents}
   .open__rail .lock{order:2}
   .open__fig{order:3}
-  .open__fig img{aspect-ratio:16/9}
+  .open__fig img{aspect-ratio:4/3}
   .open__fig .more{display:none}
   .open__rail .p-act{order:4}
   .open__rail .calls{order:5;margin-top:calc(-1*var(--t16))}
-  .open__rail .sup{order:6;margin:0}
+  .open__rail .sup{display:none}
+  .open__fig{margin:0 calc(-1*var(--gut))}
+  .open__fig figcaption{padding:0 var(--gut)}
+  html[lang=es] .open h1{font-size:var(--f-h2);line-height:1.08}
 }
 
 /* ----- essay (indigo) ----- */
@@ -182,7 +186,7 @@ a{color:inherit;text-decoration-thickness:1px;text-underline-offset:4px}
 .track__base{position:absolute;left:0;right:0;top:24px;height:2px;background:var(--indigo-2)}
 .track__run{position:absolute;left:0;right:0;top:24px;height:4px;background:var(--on-indigo);transform-origin:left center;transform:scaleX(1)}
 html.js:not(.rm) .line:not(.drawn) .track__run{transform:scaleX(.3334)}
-html.js:not(.rm) .track__run{transition:transform 2.4s cubic-bezier(.25,.6,.3,1)}
+html.js:not(.rm) .track__run{transition:transform 2.4s cubic-bezier(.45,.05,.3,1)}
 .ticks{position:absolute;inset:0;display:grid;grid-template-columns:repeat(12,1fr)}
 .ticks i{border-left:2px solid var(--indigo-soft);height:16px;margin-top:16px}
 .ticks i.grad{border-left-color:var(--on-indigo);height:40px;margin-top:4px}
@@ -206,6 +210,7 @@ html.js:not(.rm) .track__run{transition:transform 2.4s cubic-bezier(.25,.6,.3,1)
 .sec .lede{margin-top:var(--t16);color:var(--indigo-soft)}
 @media (min-width:900px){.sec{padding:var(--t96) 0}.sec--compact{padding:var(--t64) 0}}
 .zero p{color:var(--indigo-soft);margin-top:var(--t8);max-width:32ch}
+.zero .r-moment{color:var(--indigo);margin:0}
 .checks{list-style:none;padding:0}
 .checks li{padding:var(--t8) 0 var(--t8) var(--t40);border-top:1px solid var(--indigo-line);position:relative}
 .checks li::before{content:"";position:absolute;left:4px;top:20px;width:12px;height:6px;border-left:2px solid var(--indigo);border-bottom:2px solid var(--indigo);transform:rotate(-45deg)}
@@ -261,6 +266,7 @@ html.js:not(.rm) .track__run{transition:transform 2.4s cubic-bezier(.25,.6,.3,1)
 .field label,.vol legend{display:block;font-weight:500;margin-bottom:var(--t8)}
 .field input{width:100%;min-height:48px;padding:var(--t8) var(--t16);font:400 var(--f-body)/1.3 var(--serif);color:var(--indigo);background:var(--paper-light);border:1px solid var(--indigo-soft);border-radius:4px}
 .vol fieldset{border:0;padding:0;margin:0 0 var(--t16)}
+legend{padding:0}
 .check{display:flex;gap:var(--t16);align-items:flex-start;min-height:44px;padding:var(--t8) 0;cursor:pointer}
 .check input{margin-top:var(--t4)!important}
 .formmsg{margin-top:var(--t16)}
@@ -279,6 +285,7 @@ html.js:not(.rm) .track__run{transition:transform 2.4s cubic-bezier(.25,.6,.3,1)
 .ft h3{font-size:var(--f-body);font-weight:500;margin-bottom:var(--t8);color:var(--on-indigo)}
 .ft p,.ft li{color:var(--on-indigo-2);max-width:62ch}
 .ft ul{list-style:none;padding:0}
+.ft li a{display:inline-flex;align-items:center;min-height:44px}
 .ft .g{row-gap:var(--t40)}
 .ft__base{margin-top:var(--t40);padding-top:var(--t24);border-top:1px solid var(--indigo-2);display:flex;flex-wrap:wrap;gap:var(--t8) var(--t40);color:var(--on-indigo-2)}
 .ft summary{cursor:pointer;min-height:44px;display:inline-flex;align-items:center;color:var(--on-indigo)}
@@ -314,7 +321,6 @@ html.tour,html.tour *{cursor:none!important}
     <p class="status" role="status"><span class="sdate" id="sdate"></span><span id="statusText">No delays today (6:40 AM)</span></p>
     <div class="ch-right">
       <div class="langs"><a href="?lang=en" lang="en" data-lang="en" aria-current="true">English</a><a href="?lang=es" lang="es" data-lang="es">Español</a></div>
-      <a class="ch-tel fig" href="tel:+19785550174" aria-label="Call the office, (978) 555-0174" data-i-aria="telAria">(978) 555-0174</a>
     </div>
   </div>
 </div>
@@ -329,12 +335,11 @@ html.tour,html.tour *{cursor:none!important}
         <a href="#four-years" data-i="nav1">Four years</a>
         <a href="#apply" data-i="nav2">Apply</a>
         <a href="#give" data-i="nav4">Give</a>
-        <a href="#contact" data-i="nav5">Contact</a>
       </nav>
       <a class="act mh__apply" href="#apply" data-i="mhApply">Apply, it's free</a>
       <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" data-i="menuBtn">Menu</button>
     </div>
-    <div class="menu" id="menu">
+    <div class="menu" id="menu" hidden>
       <ul>
         <li><a href="#four-years" data-i="nav1b">Four years</a></li>
         <li><a href="#apply" data-i="nav2b">Apply</a></li>
@@ -357,13 +362,13 @@ html.tour,html.tour *{cursor:none!important}
           <source media="(max-width: 899px)" srcset="assets/r2/hero-800.webp" width="800" height="533">
           <img src="assets/r2/hero-1600.webp" width="1600" height="1067" fetchpriority="high" decoding="async" alt="A teacher points to a line on a math worksheet while a student writes beside him" data-i-alt="heroAlt">
         </picture>
-        <figcaption class="r-chrome" data-i="heroCap">Study hall, 4:10 PM. <span class="more">The teacher who taught the lesson stays until the homework makes sense. </span>Sample photo.</figcaption>
+        <figcaption class="r-chrome" data-i="heroCap">Study hall, 4:10 PM. Sample photo.</figcaption>
       </figure>
       <div class="open__rail c6-8">
         <p class="r-body lock" data-i="lock">A free middle school for grades 5 to 8 in Lawrence, open from 7:30 to 5:00.</p>
         <p class="p-act"><a class="act" href="#apply" id="openApply" data-i="openApply">Apply for 5th grade, it's free</a></p>
-        <p class="calls r-body inl" data-i="calls"><a href="tel:+19785550174">Call</a> or <a href="sms:+19785550174">text</a> <span class="nw fig">(978) 555-0174</span></p>
-        <p class="sup r-chrome" data-i="sup">For supporters: <a class="tl" href="#give">give or volunteer</a></p>
+        <p class="calls r-body inl" data-i="calls"><a href="tel:+19785550174">Call</a> or <a href="sms:+19785550174">text</a> (978)&nbsp;555-0174</p>
+        <p class="sup r-chrome"><a class="tl" href="#give" data-i="sup">Supporters: give or volunteer</a></p>
       </div>
     </div>
   </div>
@@ -687,12 +692,12 @@ nav1b:"Cuatro años",nav2b:"Solicitar",nav3b:"El día",nav4b:"Donar",nav5b:"Cont
 telAria:"Llamar a la oficina, (978) 555-0174",telAria2:"Llamar a la oficina, (978) 555-0174",mhApply:"Solicitar, es gratis",menuBtn:"Menú",
 h1:"Alguien se queda con sus hijos hasta las cinco, y los sigue acompañando por años",
 heroAlt:"Un maestro señala una línea en una hoja de matemáticas mientras un estudiante escribe a su lado",
-heroCap:"Sala de estudio, 4:10 p. m. <span class=\"more\">El maestro que dio la clase se queda hasta que la tarea tenga sentido. </span>Foto de ejemplo.",
+heroCap:"Sala de estudio, 4:10 p. m. Foto de ejemplo.",
 lock:"Una escuela intermedia gratuita para los grados 5 a 8 en Lawrence, abierta de 7:30 a 5:00.",
 openApply:"Solicite un cupo para 5.º grado, es gratis",
 openNote:"Unos diez minutos, en español o en inglés. Las solicitudes para el otoño de 2027 vencen el 5 de marzo (ejemplo).",
-calls:"<a href=\"tel:+19785550174\">Llame</a> o <a href=\"sms:+19785550174\">envíe un texto</a> al <span class=\"nw fig\">(978) 555-0174</span>",
-sup:"Para quienes nos apoyan: <a class=\"tl\" href=\"#give\">done o sea voluntario</a>",
+calls:"<a href=\"tel:+19785550174\">Llame</a> o <a href=\"sms:+19785550174\">envíe un texto</a> al (978)&nbsp;555-0174",
+sup:"Quienes nos apoyan: done o sea voluntario",
 essayH:"Cuatro años, y lo que viene después",essayDek:"Un retrato compuesto de los años de nuestros estudiantes, desde la primera mañana de quinto grado hasta la universidad. Los nombres y detalles son de ejemplo.",
 chapAria:"Capítulos",ch1:"5.º grado",ch2:"6.º grado",ch3:"7.º grado",ch4:"8.º grado",ch5:"Después",
 e5alt:"Una mano con un lápiz recién afilado sobre la primera página de una libreta",e5cap:"Una libreta nueva, la primera semana de septiembre. Foto de ejemplo.",
@@ -801,7 +806,7 @@ function renderDate(){
   var t=new Date(),s='';
   try{s=t.toLocaleDateString(S[lang].locale,{weekday:'long',month:'long',day:'numeric'})}catch(e){s=t.toDateString()}
   s=s.charAt(0).toUpperCase()+s.slice(1);
-  Q('#sdate').textContent=innerWidth>=900?s+'. ':'';
+  Q('#sdate').textContent='';
   Q('#statusText').textContent=alertState==='delay'?S[lang].delay:S[lang].ok;
   Q('#chrome').classList.toggle('is-delay',alertState==='delay');
 }

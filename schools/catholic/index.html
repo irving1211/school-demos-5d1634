@@ -59,7 +59,7 @@ button,input,select{font:inherit;color:inherit}
 
 .c{font:500 var(--t1)/1.4 var(--sans);font-variant-numeric:lining-nums}
 .h3{font:700 var(--t3)/1.2 var(--serif)}
-.h2{font:700 var(--t4)/1.1 var(--serif);letter-spacing:-.01em}
+.h2{font:700 var(--t4)/1.1 var(--serif)}
 .moment{font:700 var(--t6)/1 var(--serif);letter-spacing:-.02em;font-variant-numeric:lining-nums}
 .lk{text-decoration:underline;display:inline-flex;align-items:center;min-height:44px}
 
@@ -74,16 +74,16 @@ button,input,select{font:inherit;color:inherit}
 .chrome .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:0 var(--s3)}
 .notice{padding:var(--s2) 0 0}
 @media (min-width:1024px){.notice{padding:var(--s2) 0}}
-.notice b{font-weight:500}
+
 .chrome.is-delay{background:var(--navy-deep);color:var(--paper)}
-.chrome.is-delay b{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px}
+.chrome.is-delay .notice{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px}
 .chrome.is-delay :focus-visible{outline-color:var(--paper)}
 .ctl{display:flex;align-items:center;gap:var(--s3)}
 .ctl a,.ctl button{display:inline-flex;align-items:center;min-height:44px;text-decoration:none;background:none;border:0;padding:0;cursor:pointer;color:inherit}
 .ctl a[aria-current="true"]{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:5px}
 .ctl .tel{text-decoration:underline}
 .langs{display:flex;gap:var(--s3)}
-.ctl .tel,.st-date{display:none}
+.ctl .tel{display:none}
 .cbtn{text-decoration:underline!important;text-underline-offset:5px}
 html:not(.js) .cbtn{display:none!important}
 
@@ -91,6 +91,7 @@ html:not(.js) .cbtn{display:none!important}
 .mast .wrap{display:grid;align-items:center}
 .nameplate{display:block;text-align:center;text-decoration:none;padding:var(--s3) 0}
 .np{display:block;font:700 var(--t3)/1 var(--serif);white-space:nowrap}
+.slot{white-space:nowrap}
 .ear{display:none}
 .mnav{border-bottom:1px solid var(--rule)}
 .mnav ul{display:flex;flex-wrap:wrap;justify-content:center;gap:0 var(--s4);padding:0 var(--pad)}
@@ -99,7 +100,7 @@ html:not(.js) .cbtn{display:none!important}
 
 .front{display:grid}
 .lead{padding:var(--s4) var(--pad) 0}
-.lead h1{font:700 var(--t4)/1.05 var(--serif);letter-spacing:-.01em;max-width:16ch}
+.lead h1{font:700 var(--t4)/1.05 var(--serif);max-width:16ch}
 .plate{margin-top:var(--s3)}
 .plate img{width:100%;height:auto;aspect-ratio:12/5;object-fit:cover}
 .say{padding:var(--s3) var(--pad) 0}
@@ -157,7 +158,7 @@ td.n,th.n{text-align:right;white-space:nowrap;padding-right:0;padding-left:var(-
 .day-grid{display:grid;gap:var(--s5);margin-top:var(--s5)}
 .clockrow{display:grid;grid-template-columns:120px 1fr;gap:var(--s4);align-items:center}
 .clock{width:120px;height:120px}
-.clock .num{font:700 19px/1 var(--serif);fill:var(--navy);text-anchor:middle;font-variant-numeric:lining-nums}
+.clock .num{font:700 18px/1 var(--serif);fill:var(--navy);text-anchor:middle;font-variant-numeric:lining-nums}
 .hand{transform-origin:120px 120px}
 .now-time{white-space:nowrap}
 .now-text{margin-top:var(--s2);color:var(--on-navy-2)}
@@ -228,30 +229,34 @@ html:not(.js) .rail{display:none!important}
 @media (min-width:700px){
   :root{--pad:40px}
   .tbl{display:block}.recs{display:none}
+  .lead h1{font-size:var(--t5);letter-spacing:-.02em}
   .plate img{aspect-ratio:2/1}
 }
 @media (min-width:1024px){
   :root{--pad:24px}
-  .ctl .tel,.st-date{display:inline-flex}
+  .ctl .tel{display:inline-flex}
+  .front .act .lks{display:none}
+  .docket-btn{font-size:var(--t3);min-height:56px}
   .cbtn{display:none!important}
   .mast .wrap{grid-template-columns:1fr auto 1fr}
   .ear{display:flex;gap:var(--s4)}
   .ear a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none}
   .ear a:hover{text-decoration:underline}
   .ear-r{justify-content:flex-end}
-  .np{font-size:var(--t4);letter-spacing:-.01em}
+  .np{font-size:var(--t4)}
   .mnav,.js .mnav{display:none!important}
-  .front{grid-template-columns:minmax(0,7fr) minmax(0,5fr);grid-template-rows:auto auto 1fr;min-height:calc(100vh - 140px)}
-  .lead,.say,.act{grid-column:1;padding-left:max(var(--pad),calc((100vw - var(--wrap))/2 + var(--pad)));padding-right:var(--s5)}
-  .lead{padding-top:var(--s6)}
-  .lead h1{font-size:var(--t6);line-height:1.02;letter-spacing:-.02em;max-width:15ch}
-  .plate{grid-column:2;grid-row:1/4;margin:0;position:relative;min-height:560px}
+  .front{grid-template-columns:minmax(0,7fr) minmax(0,5fr);grid-template-rows:auto auto auto 1fr;min-height:calc(100vh - 140px)}
+  .lead{grid-column:1/-1;padding:var(--s5) max(var(--pad),calc((100vw - var(--wrap))/2 + var(--pad))) var(--s5)}
+  .lead h1{font-size:var(--t6);line-height:1.02;letter-spacing:-.02em;max-width:30ch;text-wrap:balance}
+  .say,.act{grid-column:2;padding-left:var(--s5);padding-right:max(var(--pad),calc((100vw - var(--wrap))/2 + var(--pad)))}
+  .act{grid-row:3}
+  .plate{grid-column:1;grid-row:2/5;margin:0;position:relative;min-height:480px}
   .plate img{position:absolute;inset:0;width:100%;height:100%;aspect-ratio:auto}
-  .say{padding-top:var(--s5)}
+  .say{grid-row:2;padding-top:0}
   .stmt{font-size:var(--t3);line-height:1.6}
   .stmt select{font-size:var(--t3);padding-right:var(--s4);background-size:10px 6px}
   .amt{font-size:var(--t4)}
-  .act{align-self:start;padding-top:var(--s5)}
+  .act{align-self:start;padding-top:var(--s4)}
   .h2{font-size:var(--t5);line-height:1.05;letter-spacing:-.02em}
   .moment{font-size:var(--t7)}
   .sheet{grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gut)}
@@ -292,7 +297,7 @@ html.tour,html.tour *{cursor:none!important}
 
 <div class="chrome c" id="chrome">
   <div class="wrap">
-    <p class="notice" role="status"><span class="st-date" id="stDate"></span> <b id="stMsg">No delays or closings today.</b> <span id="stTime">Updated 6:40 AM</span></p>
+    <p class="notice" role="status" id="notice">No delays or closings today. Updated 6:40 AM</p>
     <div class="ctl">
       <span class="langs" role="group" aria-label="Language" data-ia="aria-label:langLabel"><a href="?lang=en" hreflang="en" lang="en" data-lang="en" aria-current="true">English</a><a href="?lang=es" hreflang="es" lang="es" data-lang="es" aria-current="false">Español</a></span>
       <a class="tel" href="tel:+19785550137" data-i="chromeTel">Call or text (978) 555-0137</a>
@@ -322,8 +327,8 @@ html.tour,html.tour *{cursor:none!important}
     </picture>
   </figure>
   <form class="say" id="stmt" aria-label="Tuition estimate for 2027–28" data-ia="aria-label:stmtLabel" onsubmit="return false">
-    <p class="stmt"><span data-i="sA">For</span> <label class="sr-only" for="kids" data-i="lKids">Children</label><select id="kids" name="kids"><option value="1" data-i="k1">one child</option><option value="2" data-i="k2">two children</option><option value="3" data-i="k3">three or more</option></select> <span data-i="sB">in</span> <label class="sr-only" for="band" data-i="lBand">Grade next fall</label><select id="band" name="band"><option value="prek" data-i="bP">Pre-K</option><option value="k5" selected data-i="bK">K to grade 5</option><option value="m8" data-i="bM">grades 6 to 8</option></select><span data-i="sC">, as</span> <label class="sr-only" for="house" data-i="lHouse">Household</label><select id="house" name="house"><option value="0" data-i="h0">non-parishioners</option><option value="1" data-i="h1o">parishioners</option><option value="2" data-i="h2o">non-parishioners with aid</option><option value="3" data-i="h3o">parishioners with aid</option></select><span data-i="sD">, tuition is</span> <span class="amt" id="amt" aria-hidden="true">$690</span> <span data-i="sE">a month.</span><span class="was" id="was" hidden></span></p>
-    <p class="stmt-sub c"><span id="year">$6,900</span> <span data-i="sYear">a year for 2027–28, in 10 payments. Sample rates.</span> <a href="#tuition" data-i="sSheet">Full sheet</a></p>
+    <p class="stmt" id="sent">For <span class="slot" id="slKids"><label class="sr-only" for="kids" data-i="lKids">Children</label><select id="kids" name="kids"><option value="1" data-i="k1">one child</option><option value="2" data-i="k2">two children</option><option value="3" data-i="k3">three or more</option></select></span> in <span class="slot" id="slBand"><label class="sr-only" for="band" data-i="lBand">Grade next fall</label><select id="band" name="band"><option value="prek" data-i="bP">Pre-K</option><option value="k5" selected data-i="bK">K to grade 5</option><option value="m8" data-i="bM">grades 6 to 8</option></select></span>, as <span class="slot" id="slHouse"><label class="sr-only" for="house" data-i="lHouse">Household</label><select id="house" name="house"><option value="0" data-i="h0">non-parishioners</option><option value="1" data-i="h1o">parishioners</option><option value="2" data-i="h2o">non-parishioners with aid</option><option value="3" data-i="h3o">parishioners with aid</option></select></span>, tuition is <span class="amt" id="amt" aria-hidden="true">$690</span> a month.<span class="was" id="was" hidden></span></p>
+    <p class="stmt-sub c" id="sub">$6,900 a year for 2027–28, in 10 payments. Sample rates.</p>
     <p class="sr-only" id="live" aria-live="polite"></p>
   </form>
   <div class="act">
@@ -681,22 +686,26 @@ function applyLang(l){
   $$('.langs a').forEach(function(a){a.setAttribute('aria-current',a.getAttribute('data-lang')===l?'true':'false')});
   try{sessionStorage.setItem('stc-lang',l)}catch(e){}
   try{var u=new URL(location.href);if(l==='es')u.searchParams.set('lang','es');else u.searchParams.delete('lang');history.replaceState(null,'',u)}catch(e){}
-  renderStatus();calc(true);buildSched();setDay(+range.value,true);
+  renderStatus();renderSentence();calc(true);buildSched();setDay(+range.value,true);
   if($('#confirm').classList.contains('show'))confirmText();
 }
 $$('.langs a').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();var y=scrollY;applyLang(a.getAttribute('data-lang'));scrollTo(0,y);a.focus()})});
 
 var delay=false;try{delay=new URLSearchParams(location.search).get('alert')==='1'}catch(e){}
 function renderStatus(){
-  var t=T[lang];$('#chrome').classList.toggle('is-delay',delay);
-  $('#stMsg').textContent=delay?t.delay:t.ok;$('#stTime').textContent=delay?t.delayT:t.okT;
-  try{$('#stDate').textContent=new Intl.DateTimeFormat(t.locale,{weekday:'long',month:'long',day:'numeric'}).format(new Date())+' ·'}catch(e){}
+  var t=T[lang],d='';$('#chrome').classList.toggle('is-delay',delay);
+  try{if(innerWidth>=1024)d=new Intl.DateTimeFormat(t.locale,{weekday:'long',month:'long',day:'numeric'}).format(new Date())+' · '}catch(e){}
+  $('#notice').textContent=d+(delay?t.delay:t.ok)+' '+(delay?t.delayT:t.okT);
 }
 function setAlert(on){delay=on;renderStatus()}
 
 /* the revised statement: the page's one signature moment */
 var RATES={prek:[9200,8400],k5:[6900,6000],m8:[7300,6400]},SIB=[1,.85,.7],AID=2000;
 var form=$('#stmt'),amt=$('#amt'),was=$('#was'),lastM=null;
+var SENT={en:'For {kids} in {band}, as {house}, tuition is {amt} a month.',es:'Para {kids} en {band}, como {house}, el costo es de {amt} al mes.'};
+var SUB={en:'{y} a year for 2027–28, in 10 payments. Sample rates.',es:'{y} al año en 2027–28, en 10 pagos. Tarifas de ejemplo.'};
+var SLOTS={kids:$('#slKids'),band:$('#slBand'),house:$('#slHouse'),amt:amt};
+function renderSentence(){var p=$('#sent');p.textContent='';SENT[lang].split(/(\{\w+\})/).forEach(function(part){var m=part.match(/^\{(\w+)\}$/);if(m)p.appendChild(SLOTS[m[1]]);else if(part)p.appendChild(document.createTextNode(part))});p.appendChild(was)}
 function money(n){return '$'+Math.round(n).toLocaleString('en-US')}
 function calc(quiet){
   var band=form.band.value,kids=+form.kids.value,h=+form.house.value,par=h===1||h===3,aid=h>=2;
@@ -708,7 +717,7 @@ function calc(quiet){
     amt.classList.remove('set');void amt.offsetWidth;if(!RM)amt.classList.add('set');
     requestAnimationFrame(function(){requestAnimationFrame(function(){was.classList.add('struck')})});
   } else if(!was.hidden){was.textContent=T[lang].was+' '+was.getAttribute('data-v')}
-  amt.textContent=txt;$('#year').textContent=money(y);
+  amt.textContent=txt;$('#sub').textContent=SUB[lang].replace('{y}',money(y));
   $('#live').textContent=T[lang].live(txt,money(y));lastM=m;
 }
 form.addEventListener('change',function(){calc(false)});calc(true);
