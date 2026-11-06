@@ -36,14 +36,14 @@
   --garnet:#8e1b2e;--garnet-press:#711525;
   --ink:#101d35;--ink-2:#3d4a63;--on-navy-2:#d5dbe6;
   --s1:4px;--s2:8px;--s3:16px;--s4:24px;--s5:40px;--s6:64px;--s7:96px;--s8:144px;
-  --t1:14px;--t2:18px;--t3:24px;--t4:32px;--t5:48px;--t6:72px;--t7:104px;
+  --t1:13px;--t2:16px;--t3:21px;--t4:28px;--t5:40px;--t6:64px;--t7:96px;
   --serif:"Alegreya","Alegreya FB",Georgia,serif;
   --sans:"Alegreya Sans","Alegreya Sans FB",Arial,sans-serif;
   --wrap:1200px;--gut:24px;--pad:16px;
 }
 *,*::before,*::after{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;scroll-padding-top:var(--s5)}
-body{margin:0;background:var(--paper);color:var(--ink);font:400 var(--t2)/1.5 var(--serif);font-variant-numeric:oldstyle-nums proportional-nums;font-synthesis:none;text-rendering:optimizeLegibility}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 var(--t2)/1.55 var(--serif);font-variant-numeric:oldstyle-nums proportional-nums;font-synthesis:none;text-rendering:optimizeLegibility}
 img,svg{display:block;max-width:100%}
 a{color:inherit;text-underline-offset:3px;text-decoration-thickness:1px}
 h1,h2,h3{font-family:var(--serif);font-weight:700;margin:0}
@@ -70,40 +70,7 @@ button,input,select{font:inherit;color:inherit}
 .docket-btn:active,.docket-btn.is-press{background:var(--garnet-press);box-shadow:inset 0 3px 0 rgba(0,0,0,.25)}
 .pale .docket-tab{background:var(--paper-light)}
 
-.chrome{background:var(--navy-pale);color:var(--navy)}
-.chrome .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:0 var(--s3)}
-.notice{padding:var(--s2) 0 0}
-@media (min-width:1024px){.notice{padding:var(--s2) 0}}
-
-.chrome.is-delay{background:var(--navy-deep);color:var(--paper)}
-.chrome.is-delay .notice{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px}
-.chrome.is-delay :focus-visible{outline-color:var(--paper)}
-.ctl{display:flex;align-items:center;gap:var(--s3)}
-.ctl a,.ctl button{display:inline-flex;align-items:center;min-height:44px;text-decoration:none;background:none;border:0;padding:0;cursor:pointer;color:inherit}
-.ctl a[aria-current="true"]{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:5px}
-.ctl .tel{text-decoration:underline}
-.langs{display:flex;gap:var(--s3)}
-.ctl .tel{display:none}
-.cbtn{text-decoration:underline!important;text-underline-offset:5px}
-html:not(.js) .cbtn{display:none!important}
-
-.mast{border-bottom:4px double var(--navy)}
-.mast .wrap{display:grid;align-items:center}
-.nameplate{display:block;text-align:center;text-decoration:none;padding:var(--s3) 0}
-.np{display:block;font:700 var(--t3)/1 var(--serif);white-space:nowrap}
 .slot{white-space:nowrap}
-.ear{display:none}
-.mnav{border-bottom:1px solid var(--rule)}
-.mnav ul{display:flex;flex-wrap:wrap;justify-content:center;gap:0 var(--s4);padding:0 var(--pad)}
-.mnav a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none}
-.js .mnav{display:none}.js .mnav.open{display:block}
-
-.front{display:grid}
-.lead{padding:var(--s4) var(--pad) 0}
-.lead h1{font:700 var(--t4)/1.05 var(--serif);max-width:16ch}
-.plate{margin-top:var(--s3)}
-.plate img{width:100%;height:auto;aspect-ratio:12/5;object-fit:cover}
-.say{padding:var(--s3) var(--pad) 0}
 .stmt{font:400 var(--t2)/1.75 var(--serif);max-width:30em}
 .stmt select{-webkit-appearance:none;appearance:none;font:700 var(--t2)/1.3 var(--serif);color:var(--navy);background:transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6'%3E%3Cpath d='M0 0h10L5 6z' fill='%23172b50'/%3E%3C/svg%3E") no-repeat right 2px center/8px 5px;border:0;border-bottom:2px solid var(--navy);border-radius:0;padding:0 var(--s3) 0 0;min-height:44px;max-width:100%;cursor:pointer;transition:background-color .15s ease;field-sizing:content}
 .stmt select:focus-visible{outline:3px solid var(--navy);outline-offset:2px}
@@ -116,8 +83,80 @@ html:not(.js) .cbtn{display:none!important}
 .was::after{content:"";position:absolute;left:-2px;right:-2px;top:50%;height:2px;background:var(--garnet);transform-origin:left center;transform:scaleX(0)}
 .was.struck::after{transform:scaleX(1);transition:transform .3s cubic-bezier(.3,.7,.2,1)}
 .stmt-sub{margin-top:var(--s1);color:var(--ink-2)}
-.act{display:flex;flex-wrap:wrap;align-items:flex-end;gap:0 var(--s4);padding:var(--s3) var(--pad) var(--s5)}
-.act .lks{display:flex;gap:var(--s3)}
+/* ---- front page: nameplate masthead, dateline, banner, columns (St. Columba only) ---- */
+.sc{font-variant-caps:all-small-caps;font-synthesis-small-caps:auto;letter-spacing:.06em;font-variant-numeric:lining-nums}
+.cap{font:400 var(--t1)/1.4 var(--sans);color:var(--ink-2);margin-top:var(--s2);font-variant-numeric:lining-nums}
+.mast{background:var(--paper)}
+.mast-grid{display:grid;grid-template-columns:1fr auto;grid-template-areas:"l b" "n n" "r r";align-items:center;column-gap:var(--s3)}
+.ear-l{grid-area:l}.cbtn{grid-area:b}.nameplate{grid-area:n}.ear-r{grid-area:r}.edition{grid-area:e;display:none}
+.ear a,.cbtn{display:inline-flex;align-items:center;min-height:44px;color:inherit}
+.ear-l a{text-decoration:none}.ear-l a[aria-current="true"]{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:2px}
+.ear-r{text-align:center;margin-top:calc(-1 * var(--s2))}
+.ear-r a{text-decoration:underline;text-underline-offset:3px}
+.sep{color:var(--ink-2)}
+.cbtn{justify-self:end;background:none;border:0;padding:0;cursor:pointer;text-decoration:underline;text-underline-offset:4px;font-size:var(--t2)}
+html:not(.js) .cbtn{display:none}
+.nameplate{display:block;text-align:center;text-decoration:none;padding:var(--s2) 0}
+.np{display:block;font:700 var(--t3)/1.05 var(--serif);letter-spacing:-.01em}
+.edition{text-align:center;font-style:italic;color:var(--ink-2);padding-bottom:var(--s2)}
+.dl-row{border-top:1px solid var(--navy);border-bottom:4px double var(--navy)}
+.dateline{text-align:center;padding:var(--s2) 0;font:400 var(--t1)/1.4 var(--sans);font-variant-numeric:lining-nums}
+.mast.is-delay .dateline{color:var(--garnet)}
+.contents{border-bottom:1px solid var(--rule)}
+.contents ul{display:flex;flex-wrap:wrap;justify-content:center;gap:0 var(--s4)}
+.contents a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none}
+.contents a:hover{text-decoration:underline}
+.js .contents{display:none}.js .contents.open{display:block}
+
+.front{display:grid;padding-bottom:var(--s5)}
+.lead{padding:var(--s4) var(--pad) var(--s3)}
+.lead h1{font:700 var(--t4)/1.04 var(--serif);text-wrap:balance}
+.notice-box{margin:0 var(--pad) var(--s3);border:2px solid var(--garnet);padding:var(--s3)}
+.notice-box[hidden]{display:none}
+.nb-label{color:var(--garnet);font-weight:700}
+.plate img{width:100%;height:auto;aspect-ratio:2/1;object-fit:cover}
+.plate .cap{padding:0 var(--pad)}
+.say{padding:var(--s4) var(--pad) 0}
+.say-h{color:var(--ink-2);border-top:1px solid var(--navy);padding-top:var(--s2)}
+.stmt{font:400 var(--t3)/1.6 var(--serif);margin-top:var(--s2)}
+.stmt select{font-size:var(--t3)}
+.amt{font-size:var(--t4)}
+.stmt-sub{font:400 var(--t1)/1.4 var(--sans);color:var(--ink-2);margin-top:var(--s1)}
+.act{display:flex;flex-direction:column;align-items:flex-start;gap:var(--s2);padding:var(--s4) 0 0}
+.oh-line{font:400 var(--t1)/1.4 var(--sans);color:var(--ink-2)}
+
+.cols{border-top:1px solid var(--navy)}
+.cols-grid{display:grid}
+.col{padding:var(--s4) 0;border-bottom:1px solid var(--rule)}
+.col-h{font:700 var(--t2)/1.3 var(--serif);border-bottom:1px solid var(--navy);padding-bottom:var(--s1);margin-bottom:var(--s2)}
+.col-t+.col-t{margin-top:var(--s2)}
+.sig{margin-top:var(--s2);font-style:italic}
+.wk li{padding:var(--s1) 0}
+.wk b{font-weight:700;margin-right:var(--s1)}
+
+@media (min-width:700px){
+  .cols-grid{grid-template-columns:repeat(3,minmax(0,1fr));column-gap:var(--s4)}
+  .col{border-bottom:0;padding:var(--s4) 0 var(--s5)}
+  .col+.col{border-left:1px solid var(--rule);padding-left:var(--s4)}
+}
+@media (min-width:1024px){
+  .mast-grid{grid-template-columns:1fr auto 1fr;grid-template-areas:"l n r" "e e e";padding-top:var(--s2)}
+  .cbtn{display:none}
+  .edition{display:block}
+  .ear-r{text-align:right;margin-top:0}
+  .np{font-size:var(--t5);letter-spacing:-.02em}
+  .js .contents,.contents{display:block}
+  .front{grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gut);max-width:var(--wrap);margin:0 auto;padding:0 var(--pad) var(--s6)}
+  .lead{grid-column:1/-1;padding:var(--s5) 0 var(--s4)}
+  .lead h1{font-size:var(--t6);line-height:1.02;max-width:none}
+  .notice-box{grid-column:1/8;margin:0 0 var(--s3)}
+  .plate{grid-column:1/8}
+  .plate img{aspect-ratio:3/2}
+  .plate .cap{padding:0}
+  .say{grid-column:8/13;grid-row:2/5;padding:0 0 0 var(--s4);border-left:1px solid var(--rule)}
+  .front:has(.notice-box:not([hidden])) .say{grid-row:2/6}
+  .say-h{border-top:0;padding-top:0}
+}
 
 .sec{padding:var(--s6) 0}
 .sec.std{padding:var(--s7) 0}
@@ -229,34 +268,10 @@ html:not(.js) .rail{display:none!important}
 @media (min-width:700px){
   :root{--pad:40px}
   .tbl{display:block}.recs{display:none}
-  .lead h1{font-size:var(--t5);letter-spacing:-.02em}
-  .plate img{aspect-ratio:2/1}
 }
 @media (min-width:1024px){
   :root{--pad:24px}
-  .ctl .tel{display:inline-flex}
-  .front .act .lks{display:none}
   .docket-btn{font-size:var(--t3);min-height:56px}
-  .cbtn{display:none!important}
-  .mast .wrap{grid-template-columns:1fr auto 1fr}
-  .ear{display:flex;gap:var(--s4)}
-  .ear a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none}
-  .ear a:hover{text-decoration:underline}
-  .ear-r{justify-content:flex-end}
-  .np{font-size:var(--t4)}
-  .mnav,.js .mnav{display:none!important}
-  .front{grid-template-columns:minmax(0,7fr) minmax(0,5fr);grid-template-rows:auto auto auto 1fr;min-height:calc(100vh - 140px)}
-  .lead{grid-column:1/-1;padding:var(--s5) max(var(--pad),calc((100vw - var(--wrap))/2 + var(--pad))) var(--s5)}
-  .lead h1{font-size:var(--t6);line-height:1.02;letter-spacing:-.02em;max-width:30ch;text-wrap:balance}
-  .say,.act{grid-column:2;padding-left:var(--s5);padding-right:max(var(--pad),calc((100vw - var(--wrap))/2 + var(--pad)))}
-  .act{grid-row:3}
-  .plate{grid-column:1;grid-row:2/5;margin:0;position:relative;min-height:480px}
-  .plate img{position:absolute;inset:0;width:100%;height:100%;aspect-ratio:auto}
-  .say{grid-row:2;padding-top:0}
-  .stmt{font-size:var(--t3);line-height:1.6}
-  .stmt select{font-size:var(--t3);padding-right:var(--s4);background-size:10px 6px}
-  .amt{font-size:var(--t4)}
-  .act{align-self:start;padding-top:var(--s4)}
   .h2{font-size:var(--t5);line-height:1.05;letter-spacing:-.02em}
   .moment{font-size:var(--t7)}
   .sheet{grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gut)}
@@ -295,45 +310,65 @@ html.tour,html.tour *{cursor:none!important}
 <body>
 <a class="skip" href="#main" data-i="skip">Skip to main content</a>
 
-<div class="chrome c" id="chrome">
-  <div class="wrap">
-    <p class="notice" role="status" id="notice">No delays or closings today. Updated 6:40 AM</p>
-    <div class="ctl">
-      <span class="langs" role="group" aria-label="Language" data-ia="aria-label:langLabel"><a href="?lang=en" hreflang="en" lang="en" data-lang="en" aria-current="true">English</a><a href="?lang=es" hreflang="es" lang="es" data-lang="es" aria-current="false">Español</a></span>
-      <a class="tel" href="tel:+19785550137" data-i="chromeTel">Call or text (978) 555-0137</a>
-      <button class="cbtn" type="button" aria-expanded="false" aria-controls="mnav" data-i="contentsBtn">Contents</button>
-    </div>
-  </div>
-</div>
-
-<header class="mast">
-  <div class="wrap">
-    <nav class="ear c" aria-label="Contents, part one" data-ia="aria-label:navA"><a href="#tuition" data-i="navTuition">Tuition</a><a href="#day" data-i="navDay">School day</a><a href="#faith" data-i="navFaith">Faith</a></nav>
+<header class="mast" id="mast">
+  <div class="wrap mast-grid">
+    <p class="ear ear-l sc"><span class="langs" role="group" aria-label="Language" data-ia="aria-label:langLabel"><a href="?lang=en" hreflang="en" lang="en" data-lang="en" aria-current="true">English</a><span class="sep" aria-hidden="true"> · </span><a href="?lang=es" hreflang="es" lang="es" data-lang="es" aria-current="false">Español</a></span></p>
+    <button class="cbtn sc" type="button" aria-expanded="false" aria-controls="mnav" data-i="contentsBtn">Contents</button>
     <a class="nameplate" href="#main"><span class="np">St. Columba Parish School</span></a>
-    <nav class="ear ear-r c" aria-label="Contents, part two" data-ia="aria-label:navB"><a href="#visit" data-i="navVisit">Visit</a><a href="#families" data-i="navFamilies">Families</a></nav>
+    <p class="ear ear-r sc"><span data-i="earOffice">Office</span> <a href="tel:+19785550137">(978) 555-0137</a><span data-i="earCall">, call or</span> <a href="sms:+19785550137" data-i="earText">text</a></p>
+    <p class="edition" data-i="edition">The parish school of St. Columba Church, Lawrence, Massachusetts · Pre-K to Grade 8 · Since 1928</p>
   </div>
+  <div class="dl-row"><div class="wrap"><p class="dateline" id="dateline" role="status">No delays or closings today. Updated 6:40 AM</p></div></div>
+  <nav class="contents sc" id="mnav" aria-label="Contents" data-ia="aria-label:contentsBtn"><div class="wrap"><ul>
+    <li><a href="#tuition" data-i="navTuition">Tuition</a></li><li><a href="#day" data-i="navDay">School day</a></li><li><a href="#faith" data-i="navFaith">Faith</a></li><li><a href="#visit" data-i="navVisit">Visit</a></li><li><a href="#families" data-i="navFamilies">Families</a></li><li><a href="#lunch" data-i="qLunch">Lunch menu</a></li>
+  </ul></div></nav>
 </header>
-<nav class="mnav c" id="mnav" aria-label="Contents" data-ia="aria-label:contentsBtn"><ul>
-  <li><a href="#tuition" data-i="navTuition">Tuition</a></li><li><a href="#day" data-i="navDay">School day</a></li><li><a href="#faith" data-i="navFaith">Faith</a></li><li><a href="#visit" data-i="navVisit">Visit</a></li><li><a href="#families" data-i="navFamilies">Families</a></li><li><a href="#lunch" data-i="qLunch">Lunch menu</a></li>
-</ul></nav>
 
 <main id="main">
 <section class="front" aria-labelledby="h1">
   <div class="lead"><h1 id="h1" data-i="h1">A Catholic education Lawrence families can afford</h1></div>
+  <aside class="notice-box" id="noticeBox" aria-labelledby="nb-h" hidden><p class="nb-label sc" id="nb-h" data-i="nbLabel">Notice</p><p id="nbText"></p></aside>
   <figure class="plate">
     <picture>
       <source media="(min-width: 1024px)" srcset="assets/r2-hero-1600.webp" width="1600" height="1067">
-      <img src="assets/r2-hero-800.webp" srcset="assets/r2-hero-600.webp 600w, assets/r2-hero-800.webp 800w" sizes="100vw" width="800" height="487" alt="A sixth grader’s hands steady a ruler on a spiral notebook at a wooden desk (sample photo)" data-ia="alt:heroAlt" fetchpriority="high">
+      <img src="assets/r2-hero-800.webp" srcset="assets/r2-hero-600.webp 600w, assets/r2-hero-800.webp 800w" sizes="100vw" width="800" height="487" alt="A sixth grader’s hands steady a ruler on a spiral notebook at a wooden desk" data-ia="alt:heroAlt" fetchpriority="high">
     </picture>
+    <figcaption class="cap" data-i="heroCap">Grade 6 geometry, measured by hand.</figcaption>
   </figure>
   <form class="say" id="stmt" aria-label="Tuition estimate for 2027–28" data-ia="aria-label:stmtLabel" onsubmit="return false">
+    <p class="say-h sc" data-i="sayH">Tuition, 2027–28</p>
     <p class="stmt" id="sent">For <span class="slot" id="slKids"><label class="sr-only" for="kids" data-i="lKids">Children</label><select id="kids" name="kids"><option value="1" data-i="k1">one child</option><option value="2" data-i="k2">two children</option><option value="3" data-i="k3">three or more</option></select></span> in <span class="slot" id="slBand"><label class="sr-only" for="band" data-i="lBand">Grade next fall</label><select id="band" name="band"><option value="prek" data-i="bP">Pre-K</option><option value="k5" selected data-i="bK">K to grade 5</option><option value="m8" data-i="bM">grades 6 to 8</option></select></span>, as <span class="slot" id="slHouse"><label class="sr-only" for="house" data-i="lHouse">Household</label><select id="house" name="house"><option value="0" data-i="h0">non-parishioners</option><option value="1" data-i="h1o">parishioners</option><option value="2" data-i="h2o">non-parishioners with aid</option><option value="3" data-i="h3o">parishioners with aid</option></select></span>, tuition is <span class="amt" id="amt" aria-hidden="true">$690</span> a month.<span class="was" id="was" hidden></span></p>
-    <p class="stmt-sub c" id="sub">$6,900 a year for 2027–28, in 10 payments. Sample rates.</p>
+    <p class="stmt-sub" id="sub">$6,900 a year for 2027–28, in 10 payments. Sample rates.</p>
     <p class="sr-only" id="live" aria-live="polite"></p>
+    <div class="act">
+      <div class="docket"><span class="docket-tab" aria-hidden="true" data-i="tabVisits">Visits</span><a class="docket-btn" href="#visit" data-i="goVisit">Schedule a visit</a></div>
+      <p class="oh-line" data-i="ohLine">Open house Saturday, Nov. 21, 10 to noon.</p>
+    </div>
   </form>
-  <div class="act">
-    <div class="docket"><span class="docket-tab" aria-hidden="true" data-i="tabVisits">Visits</span><a class="docket-btn" href="#visit" data-i="goVisit">Schedule a visit</a></div>
-    <p class="lks c"><a class="lk" href="tel:+19785550137" data-i="callLk">Call the office</a><a class="lk" href="sms:+19785550137" data-i="textLk">Text the office</a></p>
+</section>
+
+<section class="cols" aria-label="This week at St. Columba" data-ia="aria-label:colsLabel">
+  <div class="wrap cols-grid">
+    <article class="col">
+      <h2 class="col-h sc" data-i="prH">From the principal</h2>
+      <p class="col-t" data-i="prT">Welcome, neighbours. This fall we opened a second after-care room, so no family waits on a list for 3 to 6 PM care. If you are deciding about next year, come by any school morning before 8:30. I am usually at the front door, and my office door is open after that.</p>
+      <p class="sig" data-i="prSig">Mrs. Teresa Duarte, Principal</p>
+    </article>
+    <article class="col">
+      <h2 class="col-h sc" data-i="wkH">This week</h2>
+      <ul class="wk">
+        <li><b data-i="wk1d">Wed.</b> <span data-i="wk1">No school, Veterans Day.</span></li>
+        <li><b data-i="wk2d">Thu.</b> <span data-i="wk2">Grade 4 science fair, gym, 2:00. Families welcome.</span></li>
+        <li><b data-i="wk3d">Fri.</b> <span data-i="wk3">School Mass, 9:00, St. Columba Church.</span></li>
+        <li><b data-i="wk4d">Sat.</b> <span data-i="wk4">Open house, 10 to noon. Ms. Marisol Vega answers questions about aid, in English and Spanish.</span></li>
+      </ul>
+    </article>
+    <article class="col">
+      <h2 class="col-h sc" data-i="pnH">Parish notes</h2>
+      <p class="col-t" data-i="pn1">The uniform closet is open Tuesdays, 2:45 to 3:30, in the old convent porch. Everything is free.</p>
+      <p class="col-t" data-i="pn2">Sunday Mass in Spanish is at 12:30. Families from the school do the readings on the first Sunday of each month.</p>
+      <p class="col-t" data-i="pn3">St. Columba Hall: $3.1 million of $4.2 million pledged (sample).</p>
+    </article>
   </div>
 </section>
 
@@ -377,7 +412,7 @@ html.tour,html.tour *{cursor:none!important}
   <div class="wrap known">
     <figure class="photo">
       <img src="assets/r2-letters.webp" srcset="assets/r2-letters-640.webp 640w, assets/r2-letters.webp 960w" sizes="(min-width: 1024px) 40vw, 100vw" width="960" height="560" loading="lazy" decoding="async" style="aspect-ratio:12/7" alt="A young child’s hands practising cursive capital letters on lined paper" data-ia="alt:lettersAlt">
-      <figcaption class="c" data-i="lettersCap">Kindergarten, 8:15: capital L, ten times (sample photo)</figcaption>
+      <figcaption class="c" data-i="lettersCap">Kindergarten, 8:15: capital L, ten times.</figcaption>
     </figure>
     <div class="known-text">
       <h2 class="h2" id="kn-h" data-i="knH">Will my child be known, and safe?</h2>
@@ -427,7 +462,7 @@ html.tour,html.tour *{cursor:none!important}
   <div class="wrap faith">
     <figure class="photo">
       <img src="assets/r2-chapel.webp" srcset="assets/r2-chapel-640.webp 640w, assets/r2-chapel.webp 960w" sizes="(min-width: 1024px) 55vw, 100vw" width="960" height="639" loading="lazy" decoding="async" style="aspect-ratio:3/2" alt="A side chapel with red votive candles, a statue of Mary against a brick wall and a stained-glass window" data-ia="alt:chapelAlt">
-      <figcaption class="c" data-i="chapelCap">The side chapel is open to families before school (sample photo)</figcaption>
+      <figcaption class="c" data-i="chapelCap">The side chapel is open to families before school.</figcaption>
     </figure>
     <div class="faith-text">
       <h2 class="h2" id="fa-h" data-i="faH">How faith is part of the day</h2>
@@ -578,7 +613,7 @@ html.tour,html.tour *{cursor:none!important}
       </div>
     </div>
     <div class="foot-base c">
-      <p data-i="crP">Photos: StockSnap, CC0. Sample photos; the school’s own replace them.</p>
+      <p data-i="crP">Photographs in this issue are samples (StockSnap, CC0).</p>
       <p data-i="concept">Concept demo · fictional school · IC Business Systems · © 2026</p>
     </div>
   </div>
@@ -586,7 +621,7 @@ html.tour,html.tour *{cursor:none!important}
 
 <div class="rail" id="rail">
   <div class="docket"><span class="docket-tab" aria-hidden="true" data-i="tabVisits">Visits</span><a class="docket-btn" href="#visit" data-i="goVisit">Schedule a visit</a></div>
-  <p class="lks c"><a class="lk" href="tel:+19785550137" data-i="railCall">Call</a><a class="lk" href="sms:+19785550137" data-i="railText">Text</a></p>
+  <a class="lk rail-tel" href="tel:+19785550137">(978) 555-0137</a>
 </div>
 
 <script>
@@ -598,6 +633,12 @@ var $=function(s,c){return (c||document).querySelector(s)},$$=function(s,c){retu
 var lang='en';
 
 var ES={
+earOffice:"Oficina",earCall:", llame o envíe un",earText:"texto",edition:"La escuela parroquial de la iglesia de St. Columba, Lawrence, Massachusetts · Pre-K a 8.º grado · Desde 1928",nbLabel:"Aviso",
+sayH:"Costos, 2027–28",ohLine:"Casa abierta el sábado 21 de nov., de 10 a 12.",colsLabel:"Esta semana en St. Columba",
+prH:"De la directora",prT:"Bienvenidos, vecinos. Este otoño abrimos un segundo salón de cuidado después de clases, así que ninguna familia espera en una lista para el cuidado de 3 a 6 p. m. Si está pensando en el próximo año, venga cualquier mañana de clases antes de las 8:30. Casi siempre estoy en la puerta principal, y después mi oficina está abierta.",prSig:"Sra. Teresa Duarte, directora",
+wkH:"Esta semana",wk1d:"Mié.",wk1:"No hay clases, Día de los Veteranos.",wk2d:"Jue.",wk2:"Feria de ciencias de 4.º grado, gimnasio, 2:00. Las familias son bienvenidas.",wk3d:"Vie.",wk3:"Misa escolar, 9:00, iglesia de St. Columba.",wk4d:"Sáb.",wk4:"Casa abierta, de 10 a 12. La Sra. Marisol Vega responde preguntas sobre la ayuda financiera, en inglés y en español.",
+pnH:"Notas de la parroquia",pn1:"El ropero de uniformes abre los martes de 2:45 a 3:30, en el portal del antiguo convento. Todo es gratis.",pn2:"La misa del domingo en español es a las 12:30. Las familias de la escuela hacen las lecturas el primer domingo de cada mes.",pn3:"St. Columba Hall: $3.1 millones prometidos de $4.2 millones (ejemplo).",
+heroCap:"Geometría de 6.º grado, medida a mano.",
 skip:"Ir al contenido principal",langLabel:"Idioma",contentsBtn:"Contenido",navA:"Contenido, primera parte",navB:"Contenido, segunda parte",chromeTel:"Llame o escriba al (978) 555-0137",
 navTuition:"Costos",navDay:"El día escolar",navFaith:"La fe",navVisit:"Visítenos",navFamilies:"Familias",
 h1:"Una educación católica que las familias de Lawrence pueden pagar",
@@ -614,14 +655,14 @@ dSib:"Hermanos",ddSib:"Segundo hijo, 15% de descuento. Del tercer hijo en adelan
 dAid:"Ayuda financiera",ddAid:"El 62% de nuestras familias recibe ayuda (ejemplo). Solicítela antes del 15 de febrero. La ayuda depende de la necesidad de cada familia, y el formulario está en inglés y en español.",
 dCare:"Cuidado antes y después de clases",ddCare:"En la mañana, de 7:00 a 7:50: $6 al día, sin inscripción previa. En la tarde, de 2:45 a 6:00: $14 al día o $230 al mes.",
 dFees:"Cuotas",ddFees:"Inscripción: $150 por familia. Libros y tecnología: $250 por estudiante.",dPay:"Formas de pago",ddPay:"10 o 12 pagos mensuales, por transferencia bancaria o con tarjeta.",
-lettersAlt:"Las manos de un niño pequeño practicando letras mayúsculas en cursiva sobre papel rayado",lettersCap:"Kínder, 8:15: la L mayúscula, diez veces (foto de ejemplo)",
+lettersAlt:"Las manos de un niño pequeño practicando letras mayúsculas en cursiva sobre papel rayado",lettersCap:"Kínder, 8:15: la L mayúscula, diez veces.",
 knH:"¿Conocerán bien a mi hijo? ¿Estará seguro?",
 kn1:"Hay una clase por grado, y las clases tienen unos 18 estudiantes en promedio (ejemplo). Para octubre, el personal del comedor, el guardia de cruce y la directora ya saben el nombre de su hijo. La mayoría de nuestros maestros lleva más de diez años aquí (ejemplo).",
 s1:"<b>Una sola entrada.</b> La puerta principal tiene personal de 7 a. m. a 6 p. m., y todo visitante se registra.",
 s2:"<b>Salida por nombre.</b> Entregamos a cada niño a un adulto de su lista de recogida.",
 s3:"<b>Simulacros cada mes.</b> Si pasa algo fuera de lo normal, cada familia recibe un mensaje de texto en pocos minutos.",
 dayH:"Un día de clases, de 7 a. m. a 6 p. m.",dayP:"Mueva el reloj o elija una hora para ver dónde estaría su hijo.",rangeLbl:"Hora del día",sc7:"7 a. m.",sc12:"Mediodía",sc6:"6 p. m.",
-chapelAlt:"Una capilla lateral con velas rojas, una imagen de la Virgen María contra una pared de ladrillo y un vitral",chapelCap:"La capilla lateral está abierta a las familias antes de clases (foto de ejemplo)",
+chapelAlt:"Una capilla lateral con velas rojas, una imagen de la Virgen María contra una pared de ladrillo y un vitral",chapelCap:"La capilla lateral está abierta a las familias antes de clases.",
 faH:"Cómo la fe forma parte del día",faP:"Rezamos juntos cada mañana y antes del almuerzo. Todos los grados tienen clase de religión, y la escuela camina a la iglesia de al lado para la misa de los viernes y los días de precepto. Los niños de segundo grado se preparan para la Primera Comunión con su parroquia.",
 faP2:"<b>¿No son católicos? Aquí son bienvenidos.</b> Cerca de un tercio de nuestras familias tiene otra religión o ninguna (ejemplo). Su hijo participa en la clase de religión y en la misa con todos, y a nadie se le pide que se convierta.",
 masses:"Misas en la iglesia de St. Columba: sábado a las 4:00 p. m. Domingo a las 8:30 a. m., 11:00 a. m. y 12:30 p. m. en español (ejemplo).",
@@ -647,16 +688,16 @@ uni2:"Los uniformes usados en buen estado son gratis en el ropero escolar, los m
 hours:"Horario de oficina: lunes a viernes, de 7:30 a. m. a 4:00 p. m.",accH:"Accesibilidad",
 accP:"Queremos que todas las familias puedan usar este sitio, con lector de pantalla, con teclado o ampliando la pantalla del teléfono. Lo construimos y lo revisamos según las pautas WCAG 2.1 AA. Si algo le impide usarlo, escriba a <a href=\"mailto:access@stcolumba.example\">access@stcolumba.example</a> o llame al (978) 555-0137, y lo arreglaremos o le daremos la información de otra forma en un plazo de dos días escolares.",
 ndH:"No discriminación",ndP:"St. Columba Parish School admite estudiantes de cualquier raza, color y origen nacional o étnico a todos los derechos, privilegios, programas y actividades que la escuela ofrece a sus estudiantes. No discrimina por raza, color ni origen nacional o étnico en sus políticas educativas, de admisión, de ayuda financiera, deportivas ni en otros programas escolares. Las familias de todas las religiones son bienvenidas.",
-crP:"Fotos: StockSnap, CC0. Son fotos de ejemplo; las de la escuela las reemplazan.",concept:"Demostración conceptual · escuela ficticia · IC Business Systems · © 2026"
+crP:"Las fotografías de esta edición son de ejemplo (StockSnap, CC0).",concept:"Demostración conceptual · escuela ficticia · IC Business Systems · © 2026"
 };
 var META={en:{title:document.title,desc:$('meta[name=description]').content},
 es:{title:"St. Columba Parish School · Escuela católica de Pre-K a 8.º en Lawrence, MA",desc:"Escuela católica de Pre-K a 8.º grado en Lawrence, MA. Vea cuánto pagaría su familia, recorra un día de clases de 7 a. m. a 6 p. m. y agende una visita, en español o en inglés."}};
 var T={
-en:{ok:"No delays or closings today.",okT:"Updated 6:40 AM",delay:"Two-hour delay today: doors 9:50 AM, morning care 9:00 AM.",delayT:"Updated 5:52 AM",was:"was",
+en:{ok:"No delays or closings.",dlDelay:"Two-hour delay today; see the notice.",okT:"Updated 6:40 AM",delay:"Two-hour delay today. Doors open at 9:50 AM, and morning care starts at 9:00. Lunch is served as usual.",delayT:"Updated 5:52 AM",was:"was",
   live:function(m,y){return 'Revised estimate: '+m+' a month, '+y+' a year'},errName:"Please add your name.",errContact:"Add a phone number or email so we can reach you.",
   when:{oh:"the open house on Saturday, November 21",tour:"a tour on a school morning",call:"a good time to talk"},
   cf:function(n,w){return 'Thank you, '+n+'. Ms. Marisol Vega in admissions will call or text you by tomorrow afternoon to set up '+w+'. (Demo: nothing was sent.)'},locale:'en-US'},
-es:{ok:"Sin retrasos ni cierres hoy.",okT:"Actualizado 6:40 a. m.",delay:"Hoy, 2 horas de retraso: puertas 9:50 a. m., cuidado 9:00 a. m.",delayT:"Actualizado 5:52 a. m.",was:"antes",
+es:{ok:"Sin retrasos ni cierres.",dlDelay:"Hoy hay 2 horas de retraso; vea el aviso.",okT:"Actualizado 6:40 a. m.",delay:"Hoy hay 2 horas de retraso. Las puertas abren a las 9:50 a. m. y el cuidado de la mañana empieza a las 9:00. El almuerzo se sirve como siempre.",delayT:"Actualizado 5:52 a. m.",was:"antes",
   live:function(m,y){return 'Cálculo revisado: '+m+' al mes, '+y+' al año'},errName:"Escriba su nombre, por favor.",errContact:"Escriba un teléfono o correo electrónico para comunicarnos con usted.",
   when:{oh:"la casa abierta del sábado 21 de noviembre",tour:"una visita en una mañana de clases",call:"un buen momento para hablar"},
   cf:function(n,w){return 'Gracias, '+n+'. La Sra. Marisol Vega, de admisiones, le llamará o le escribirá antes de mañana en la tarde para coordinar '+w+'. (Demostración: no se envió nada.)'},locale:'es-US'}
@@ -693,9 +734,10 @@ $$('.langs a').forEach(function(a){a.addEventListener('click',function(e){e.prev
 
 var delay=false;try{delay=new URLSearchParams(location.search).get('alert')==='1'}catch(e){}
 function renderStatus(){
-  var t=T[lang],d='';$('#chrome').classList.toggle('is-delay',delay);
-  try{if(innerWidth>=1024)d=new Intl.DateTimeFormat(t.locale,{weekday:'long',month:'long',day:'numeric'}).format(new Date())+' · '}catch(e){}
-  $('#notice').textContent=d+(delay?t.delay:t.ok)+' '+(delay?t.delayT:t.okT);
+  var t=T[lang],d='';$('#mast').classList.toggle('is-delay',delay);
+  try{d=new Intl.DateTimeFormat(t.locale,{weekday:'long',month:'long',day:'numeric'}).format(new Date());d=d.charAt(0).toUpperCase()+d.slice(1)+' · '}catch(e){}
+  $('#dateline').textContent=d+(delay?t.dlDelay:t.ok)+' '+(delay?t.delayT:t.okT);
+  var nb=$('#noticeBox');nb.hidden=!delay;$('#nbText').textContent=t.delay;
 }
 function setAlert(on){delay=on;renderStatus()}
 
