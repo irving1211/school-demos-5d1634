@@ -1,0 +1,4133 @@
+{
+ "groups": {
+  "home": [
+   {
+    "code": "H01",
+    "base": "H01-g-agrumea",
+    "site": "agrumea",
+    "kind": "gallery",
+    "title": "Agrumea Farm | Jams, pestos and flavours of Sicily",
+    "url": "https://www.agrumeafarm.it/en",
+    "words": {
+     "first": 23,
+     "total": 26
+    },
+    "hasD": true
+   },
+   {
+    "code": "H02",
+    "base": "H02-g-unesco-museum",
+    "site": "unesco-museum",
+    "kind": "gallery",
+    "title": "UNESCO Virtual Museum of Stolen Cultural Objects",
+    "url": "https://museum.unesco.org",
+    "words": {
+     "first": 46,
+     "total": 46
+    },
+    "hasD": true
+   },
+   {
+    "code": "H03",
+    "base": "H03-g-belgrade-arbor",
+    "site": "belgrade-arbor",
+    "kind": "gallery",
+    "title": "Belgrade Arbor | Residential & Business Complex in New Belgrade",
+    "url": "https://belgradearbor.rs/en",
+    "words": {
+     "first": 32,
+     "total": 571
+    },
+    "hasD": true
+   },
+   {
+    "code": "H04",
+    "base": "H04-g-odyssee",
+    "site": "odyssee",
+    "kind": "gallery",
+    "title": "Odyssée",
+    "url": "https://www.odysseeclinic.com.au/",
+    "words": {
+     "first": 20,
+     "total": 202
+    },
+    "hasD": true
+   },
+   {
+    "code": "H05",
+    "base": "H05-g-icomat",
+    "site": "icomat",
+    "kind": "gallery",
+    "title": "ICOMAT - Engineer Without Limits™",
+    "url": "https://www.icomat.co.uk/",
+    "words": {
+     "first": 33,
+     "total": 802
+    },
+    "hasD": true
+   },
+   {
+    "code": "H06",
+    "base": "H06-g-overlake",
+    "site": "overlake",
+    "kind": "gallery",
+    "title": "Welcome to The Overlake School | The Overlake School",
+    "url": "https://www.overlake.org/",
+    "words": {
+     "first": 130,
+     "total": 1102
+    },
+    "hasD": true
+   },
+   {
+    "code": "H07",
+    "base": "H07-g-aventura",
+    "site": "aventura",
+    "kind": "gallery",
+    "title": "Home | ADA",
+    "url": "https://aventuradentalarts.com/",
+    "words": {
+     "first": 68,
+     "total": 538
+    },
+    "hasD": true
+   },
+   {
+    "code": "H08",
+    "base": "H08-g-kuemmerlein",
+    "site": "kuemmerlein",
+    "kind": "gallery",
+    "title": "Kümmerlein – Make it simple, but significant",
+    "url": "https://www.kuemmerlein.de/",
+    "words": {
+     "first": 160,
+     "total": 993
+    },
+    "hasD": true
+   },
+   {
+    "code": "H09",
+    "base": "H09-g-carles-faus",
+    "site": "carles-faus",
+    "kind": "gallery",
+    "title": "Carles Faus Arquitectura",
+    "url": "https://www.carlesfaus.com/",
+    "words": {
+     "first": 16,
+     "total": 16
+    },
+    "hasD": true
+   },
+   {
+    "code": "H10",
+    "base": "H10-g-gufram",
+    "site": "gufram",
+    "kind": "gallery",
+    "title": "Gufram",
+    "url": "https://gufram.it/en/",
+    "words": {
+     "first": 10,
+     "total": 67
+    },
+    "hasD": true
+   },
+   {
+    "code": "H11",
+    "base": "H11-g-design-society",
+    "site": "design-society",
+    "kind": "gallery",
+    "title": "The Design Society Lyon — la communauté des designers",
+    "url": "https://www.thedesignsociety.fr/",
+    "words": {
+     "first": 78,
+     "total": 400
+    },
+    "hasD": true
+   },
+   {
+    "code": "H12",
+    "base": "H12-g-a24",
+    "site": "a24",
+    "kind": "gallery",
+    "title": "A24",
+    "url": "https://a24films.com/",
+    "words": {
+     "first": 7,
+     "total": 343
+    },
+    "hasD": true
+   },
+   {
+    "code": "H13",
+    "base": "H13-g-nakashima",
+    "site": "nakashima",
+    "kind": "gallery",
+    "title": "George Nakashima Woodworkers - New Hope, Pennsylvania",
+    "url": "https://nakashimawoodworkers.com/",
+    "words": {
+     "first": 131,
+     "total": 289
+    },
+    "hasD": true
+   },
+   {
+    "code": "H14",
+    "base": "H14-g-osmo",
+    "site": "osmo",
+    "kind": "gallery",
+    "title": "Osmo Supply - Dev Toolkit Built to Flex",
+    "url": "https://www.osmo.supply/",
+    "words": {
+     "first": 186,
+     "total": 1179
+    },
+    "hasD": true
+   },
+   {
+    "code": "H15",
+    "base": "H15-g-frans-hals",
+    "site": "frans-hals",
+    "kind": "gallery",
+    "title": "Haarlem's art museum: welcome to the Frans Hals Museum",
+    "url": "https://www.franshalsmuseum.nl/en/",
+    "words": {
+     "first": 12,
+     "total": 301
+    },
+    "hasD": true
+   },
+   {
+    "code": "H16",
+    "base": "H16-g-letude",
+    "site": "letude",
+    "kind": "gallery",
+    "title": "L'Étude — Modular Creative Studio",
+    "url": "https://letude.group/",
+    "words": {
+     "first": 27,
+     "total": 258
+    },
+    "hasD": true
+   },
+   {
+    "code": "H17",
+    "base": "H17-g-smithsonian",
+    "site": "smithsonian",
+    "kind": "gallery",
+    "title": "Smithsonian Institution | Home",
+    "url": "https://www.si.edu/",
+    "words": {
+     "first": 133,
+     "total": 726
+    },
+    "hasD": true
+   },
+   {
+    "code": "H18",
+    "base": "H18-g-studio-museum",
+    "site": "studio-museum",
+    "kind": "gallery",
+    "title": "Studio Museum in Harlem",
+    "url": "https://studiomuseum.org/",
+    "words": {
+     "first": 63,
+     "total": 335
+    },
+    "hasD": true
+   },
+   {
+    "code": "H19",
+    "base": "H19-g-amsterdam-museum",
+    "site": "amsterdam-museum",
+    "kind": "gallery",
+    "title": "Amsterdam Museum",
+    "url": "https://www.amsterdammuseum.nl/en",
+    "words": {
+     "first": 52,
+     "total": 719
+    },
+    "hasD": true
+   },
+   {
+    "code": "H20",
+    "base": "H20-g-mam",
+    "site": "mam",
+    "kind": "gallery",
+    "title": "Milwaukee Art Museum",
+    "url": "https://mam.org/",
+    "words": {
+     "first": 16,
+     "total": 347
+    },
+    "hasD": true
+   },
+   {
+    "code": "H21",
+    "base": "H21-g-rom",
+    "site": "rom",
+    "kind": "gallery",
+    "title": "Royal Ontario Museum (ROM) | Royal Ontario Museum",
+    "url": "https://www.rom.on.ca/",
+    "words": {
+     "first": 40,
+     "total": 847
+    },
+    "hasD": true
+   },
+   {
+    "code": "H22",
+    "base": "H22-g-moooi",
+    "site": "moooi",
+    "kind": "gallery",
+    "title": "Together, we create A Life Extraordinary - Moooi",
+    "url": "https://www.moooi.com/en",
+    "words": {
+     "first": 23,
+     "total": 104
+    },
+    "hasD": true
+   },
+   {
+    "code": "H23",
+    "base": "H23-g-branksome",
+    "site": "branksome",
+    "kind": "gallery",
+    "title": "Branksome Hall | Empowering Girls Through Innovation",
+    "url": "https://branksome.on.ca/",
+    "words": {
+     "first": 79,
+     "total": 1505
+    },
+    "hasD": true
+   },
+   {
+    "code": "H24",
+    "base": "H24-g-silo",
+    "site": "silo",
+    "kind": "gallery",
+    "title": "Silo",
+    "url": "https://www.silosilosilo.com/",
+    "words": {
+     "first": 27,
+     "total": 70
+    },
+    "hasD": true
+   },
+   {
+    "code": "H25",
+    "base": "H25-g-la-palatine",
+    "site": "la-palatine",
+    "kind": "gallery",
+    "title": "Ensemble La Palatine",
+    "url": "https://www.ensemblelapalatine.com/",
+    "words": {
+     "first": 28,
+     "total": 1269
+    },
+    "hasD": true
+   },
+   {
+    "code": "H26",
+    "base": "H26-g-locomotive",
+    "site": "locomotive",
+    "kind": "gallery",
+    "title": "Locomotive | Montreal web agency",
+    "url": "https://locomotive.ca/en",
+    "words": {
+     "first": 7,
+     "total": 279
+    },
+    "hasD": true
+   },
+   {
+    "code": "H27",
+    "base": "H27-g-atlason",
+    "site": "atlason",
+    "kind": "gallery",
+    "title": "Atlason",
+    "url": "https://atlason.com/",
+    "words": {
+     "first": 81,
+     "total": 82
+    },
+    "hasD": true
+   },
+   {
+    "code": "H28",
+    "base": "H28-g-sinai-temple",
+    "site": "sinai-temple",
+    "kind": "gallery",
+    "title": "Sinai Temple in West Los Angeles",
+    "url": "https://www.sinaitemple.org/",
+    "words": {
+     "first": 55,
+     "total": 447
+    },
+    "hasD": true
+   },
+   {
+    "code": "H29",
+    "base": "H29-g-frederick-gunn",
+    "site": "frederick-gunn",
+    "kind": "gallery",
+    "title": "Home - The Frederick Gunn School",
+    "url": "https://www.frederickgunn.org/",
+    "words": {
+     "first": 1,
+     "total": 907
+    },
+    "hasD": true
+   },
+   {
+    "code": "H30",
+    "base": "H30-g-palmer",
+    "site": "palmer",
+    "kind": "gallery",
+    "title": "Palmer - Explore Palmer's Dinnerware Collections",
+    "url": "https://www.palmer-dinnerware.com/",
+    "words": {
+     "first": 100,
+     "total": 220
+    },
+    "hasD": true
+   },
+   {
+    "code": "H31",
+    "base": "H31-g-united-carriers",
+    "site": "united-carriers",
+    "kind": "gallery",
+    "title": "United Carriers | Global Freight Forwarding and Logistics",
+    "url": "https://unitedcarriers.com/",
+    "words": {
+     "first": 103,
+     "total": 1221
+    },
+    "hasD": true
+   },
+   {
+    "code": "H32",
+    "base": "H32-g-btay",
+    "site": "btay",
+    "kind": "gallery",
+    "title": "Vancouver Web Designer | Brittany Taylor",
+    "url": "https://btay.ca/",
+    "words": {
+     "first": 19,
+     "total": 487
+    },
+    "hasD": true
+   },
+   {
+    "code": "H33",
+    "base": "H33-g-westminster-abbey",
+    "site": "westminster-abbey",
+    "kind": "gallery",
+    "title": "A royal church | Westminster Abbey",
+    "url": "https://www.westminster-abbey.org/",
+    "words": {
+     "first": 77,
+     "total": 442
+    },
+    "hasD": true
+   },
+   {
+    "code": "H34",
+    "base": "H34-g-andmade",
+    "site": "andmade",
+    "kind": "gallery",
+    "title": "ANDMADE Inc.",
+    "url": "https://andmade.jp/",
+    "words": {
+     "first": 190,
+     "total": 455
+    },
+    "hasD": true
+   },
+   {
+    "code": "H35",
+    "base": "H35-g-sagrada",
+    "site": "sagrada",
+    "kind": "gallery",
+    "title": "Sagrada Família - Official ticket vendors - Sagrada Familia",
+    "url": "https://sagradafamilia.org/en",
+    "words": {
+     "first": 39,
+     "total": 308
+    },
+    "hasD": true
+   },
+   {
+    "code": "H36",
+    "base": "H36-g-vam",
+    "site": "vam",
+    "kind": "gallery",
+    "title": "The V&A is a family of museums dedicated to the power of creativity · ",
+    "url": "https://www.vam.ac.uk/",
+    "words": {
+     "first": 61,
+     "total": 908
+    },
+    "hasD": true
+   },
+   {
+    "code": "H37",
+    "base": "H37-g-massgov",
+    "site": "massgov",
+    "kind": "gallery",
+    "title": "Mass.gov",
+    "url": "https://www.mass.gov/",
+    "words": {
+     "first": 94,
+     "total": 211
+    },
+    "hasD": true
+   },
+   {
+    "code": "H38",
+    "base": "H38-g-govuk",
+    "site": "govuk",
+    "kind": "gallery",
+    "title": "Welcome to GOV.UK",
+    "url": "https://www.gov.uk/",
+    "words": {
+     "first": 63,
+     "total": 530
+    },
+    "hasD": true
+   },
+   {
+    "code": "H39",
+    "base": "H39-g-boston-gov",
+    "site": "boston-gov",
+    "kind": "gallery",
+    "title": "Homepage | Boston.gov",
+    "url": "https://www.boston.gov/",
+    "words": {
+     "first": 176,
+     "total": 712
+    },
+    "hasD": true
+   },
+   {
+    "code": "H40",
+    "base": "H40-g-charitywater",
+    "site": "charitywater",
+    "kind": "gallery",
+    "title": "charity: water | Help Bring Clean and Safe Water to Communities",
+    "url": "https://www.charitywater.org/",
+    "words": {
+     "first": 16,
+     "total": 532
+    },
+    "hasD": true
+   },
+   {
+    "code": "H41",
+    "base": "H41-g-tartine",
+    "site": "tartine",
+    "kind": "gallery",
+    "title": "Tartine Bakery – Tartine is a thoughtful expression of modern craft th",
+    "url": "https://www.tartinebakery.com/",
+    "words": {
+     "first": 16,
+     "total": 411
+    },
+    "hasD": true
+   },
+   {
+    "code": "H42",
+    "base": "H42-g-heath",
+    "site": "heath",
+    "kind": "gallery",
+    "title": "Heath Ceramics | Curated Home Goods | Sustainably Handcrafted",
+    "url": "https://www.heathceramics.com/",
+    "words": {
+     "first": 146,
+     "total": 884
+    },
+    "hasD": true
+   },
+   {
+    "code": "H43",
+    "base": "H43-g-nypl",
+    "site": "nypl",
+    "kind": "gallery",
+    "title": "The New York Public Library",
+    "url": "https://www.nypl.org/",
+    "words": {
+     "first": 57,
+     "total": 333
+    },
+    "hasD": true
+   },
+   {
+    "code": "H44",
+    "base": "H44-g-gladeye",
+    "site": "gladeye",
+    "kind": "gallery",
+    "title": "Digital Product & Brand Experience Agency - Gladeye",
+    "url": "https://gladeye.com/",
+    "words": {
+     "first": 44,
+     "total": 44
+    },
+    "hasD": true
+   },
+   {
+    "code": "H45",
+    "base": "H45-g-landonorris",
+    "site": "landonorris",
+    "kind": "gallery",
+    "title": "McLaren Formula 1 Driver — Lando Norris",
+    "url": "https://landonorris.com/",
+    "words": {
+     "first": 45,
+     "total": 453
+    },
+    "hasD": true
+   },
+   {
+    "code": "H46",
+    "base": "H46-g-kinfolk",
+    "site": "kinfolk",
+    "kind": "gallery",
+    "title": "Home - Kinfolk",
+    "url": "https://www.kinfolk.com/",
+    "words": {
+     "first": 117,
+     "total": 726
+    },
+    "hasD": true
+   },
+   {
+    "code": "H47",
+    "base": "H47-g-nationaltrust",
+    "site": "nationaltrust",
+    "kind": "gallery",
+    "title": "Home | National Trust",
+    "url": "https://www.nationaltrust.org.uk/",
+    "words": {
+     "first": 74,
+     "total": 842
+    },
+    "hasD": true
+   },
+   {
+    "code": "H48",
+    "base": "H48-g-surfers-site",
+    "site": "surfers-site",
+    "kind": "gallery",
+    "title": "The Surfer's Journal",
+    "url": "https://www.surfersjournal.com/",
+    "words": {
+     "first": 111,
+     "total": 388
+    },
+    "hasD": true
+   },
+   {
+    "code": "H49",
+    "base": "H49-s-mas-charter-school",
+    "site": "mas-charter-school",
+    "kind": "school",
+    "title": "Mission Achievement and Success Charter School | MAS Charter School",
+    "url": "https://www.mascharterschool.com/",
+    "words": {
+     "first": 161,
+     "total": 3872
+    },
+    "hasD": true
+   },
+   {
+    "code": "H50",
+    "base": "H50-s-malden-catholic",
+    "site": "malden-catholic",
+    "kind": "school",
+    "title": "Malden Catholic | Catholic School for Grades 6–12 | Malden, MA",
+    "url": "https://www.maldencatholic.org",
+    "words": {
+     "first": 76,
+     "total": 406
+    },
+    "hasD": true
+   },
+   {
+    "code": "H51",
+    "base": "H51-s-salesianum-school",
+    "site": "salesianum-school",
+    "kind": "school",
+    "title": "Salesianum School | Official Site",
+    "url": "https://www.salesianum.org/",
+    "words": {
+     "first": 65,
+     "total": 431
+    },
+    "hasD": true
+   },
+   {
+    "code": "H52",
+    "base": "H52-s-christopher-columbus-hs",
+    "site": "christopher-columbus-hs",
+    "kind": "school",
+    "title": "Home - Christopher Columbus High School",
+    "url": "https://www.columbushs.com/",
+    "words": {
+     "first": 30,
+     "total": 1340
+    },
+    "hasD": true
+   },
+   {
+    "code": "H53",
+    "base": "H53-s-shady-side-academy",
+    "site": "shady-side-academy",
+    "kind": "school",
+    "title": "Private Pre-K - 12 School in Pittsburgh | Shady Side Academy",
+    "url": "https://www.shadysideacademy.org/",
+    "words": {
+     "first": 14,
+     "total": 623
+    },
+    "hasD": true
+   },
+   {
+    "code": "H54",
+    "base": "H54-s-fairfield-college-prep",
+    "site": "fairfield-college-prep",
+    "kind": "school",
+    "title": "Fairfield College Preparatory School | Fairfield, CT | Jesuit College ",
+    "url": "https://www.fairfieldprep.org/",
+    "words": {
+     "first": 21,
+     "total": 682
+    },
+    "hasD": true
+   },
+   {
+    "code": "H55",
+    "base": "H55-s-broward-county-public-schools",
+    "site": "broward-county-public-schools",
+    "kind": "school",
+    "title": "Home - Broward County Public Schools",
+    "url": "https://www.browardschools.com/",
+    "words": {
+     "first": 14,
+     "total": 674
+    },
+    "hasD": true
+   },
+   {
+    "code": "H56",
+    "base": "H56-s-henderson-collegiate",
+    "site": "henderson-collegiate",
+    "kind": "school",
+    "title": "Home - Henderson Collegiate",
+    "url": "https://www.hendersoncollegiate.org/",
+    "words": {
+     "first": 6,
+     "total": 2359
+    },
+    "hasD": true
+   },
+   {
+    "code": "H57",
+    "base": "H57-s-ricardo-flores-magon-academy",
+    "site": "ricardo-flores-magon-academy",
+    "kind": "school",
+    "title": "Home - Ricardo Flores Magon Academy",
+    "url": "https://www.magonacademy.org/",
+    "words": {
+     "first": 37,
+     "total": 485
+    },
+    "hasD": true
+   },
+   {
+    "code": "H58",
+    "base": "H58-s-stem-school-highlands-ranch",
+    "site": "stem-school-highlands-ranch",
+    "kind": "school",
+    "title": "STEM K-12 | Tuition-Free Charter School | Highlands Ranch, CO",
+    "url": "https://www.stemk12.org/",
+    "words": {
+     "first": 22,
+     "total": 728
+    },
+    "hasD": true
+   },
+   {
+    "code": "H59",
+    "base": "H59-s-metro-nashville-public-schools",
+    "site": "metro-nashville-public-schools",
+    "kind": "school",
+    "title": "Home - Metropolitan Nashville Public Schools",
+    "url": "https://www.mnps.org/",
+    "words": {
+     "first": 43,
+     "total": 1025
+    },
+    "hasD": true
+   },
+   {
+    "code": "H60",
+    "base": "H60-s-ridgewood-public-schools-nspra",
+    "site": "ridgewood-public-schools-nspra",
+    "kind": "school",
+    "title": "Ridgewood Public Schools | Home",
+    "url": "https://www.ridgewood.k12.nj.us/",
+    "words": {
+     "first": 25,
+     "total": 520
+    },
+    "hasD": true
+   },
+   {
+    "code": "H61",
+    "base": "H61-s-eden-prairie-schools",
+    "site": "eden-prairie-schools",
+    "kind": "school",
+    "title": "Home - Eden Prairie Schools",
+    "url": "https://www.edenpr.org/",
+    "words": {
+     "first": 95,
+     "total": 2169
+    },
+    "hasD": true
+   },
+   {
+    "code": "H62",
+    "base": "H62-s-warwick-valley-csd",
+    "site": "warwick-valley-csd",
+    "kind": "school",
+    "title": "Home - Warwick Valley Central School District",
+    "url": "https://www.warwickvalleyschools.com/",
+    "words": {
+     "first": 14,
+     "total": 2617
+    },
+    "hasD": true
+   },
+   {
+    "code": "H63",
+    "base": "H63-s-littleton-public-schools-nspra",
+    "site": "littleton-public-schools-nspra",
+    "kind": "school",
+    "title": "Home | A Destination District",
+    "url": "https://www.littletonpublicschools.net/",
+    "words": {
+     "first": 18,
+     "total": 588
+    },
+    "hasD": true
+   },
+   {
+    "code": "H64",
+    "base": "H64-s-newport-news-public-schools-nspr",
+    "site": "newport-news-public-schools-nspr",
+    "kind": "school",
+    "title": "Newport News Public Schools: Home",
+    "url": "https://www.nnschools.org/",
+    "words": {
+     "first": 12,
+     "total": 932
+    },
+    "hasD": true
+   },
+   {
+    "code": "H65",
+    "base": "H65-s-mckinney-isd-nspra",
+    "site": "mckinney-isd-nspra",
+    "kind": "school",
+    "title": "McKinney ISD | Home",
+    "url": "https://www.mckinneyisd.net/",
+    "words": {
+     "first": 10,
+     "total": 1136
+    },
+    "hasD": true
+   },
+   {
+    "code": "H66",
+    "base": "H66-s-plano-isd",
+    "site": "plano-isd",
+    "kind": "school",
+    "title": "Home - Plano Independent School District",
+    "url": "https://www.pisd.edu/",
+    "words": {
+     "first": 57,
+     "total": 4576
+    },
+    "hasD": true
+   },
+   {
+    "code": "H67",
+    "base": "H67-s-valdosta-city-schools-nspra",
+    "site": "valdosta-city-schools-nspra",
+    "kind": "school",
+    "title": "Home | Valdosta City Schools",
+    "url": "https://www.gocats.org/",
+    "words": {
+     "first": 38,
+     "total": 1050
+    },
+    "hasD": true
+   },
+   {
+    "code": "H68",
+    "base": "H68-s-immaculate-heart",
+    "site": "immaculate-heart",
+    "kind": "school",
+    "title": "Immaculate Heart Middle & High School",
+    "url": "https://www.immaculateheart.org/",
+    "words": {
+     "first": 41,
+     "total": 557
+    },
+    "hasD": true
+   },
+   {
+    "code": "H69",
+    "base": "H69-s-fayetteville-public-schools-nspr",
+    "site": "fayetteville-public-schools-nspr",
+    "kind": "school",
+    "title": "Home | Fayetteville Public Schools",
+    "url": "https://www.fayar.net/",
+    "words": {
+     "first": 20,
+     "total": 646
+    },
+    "hasD": true
+   },
+   {
+    "code": "H70",
+    "base": "H70-s-adams-12-nspra",
+    "site": "adams-12-nspra",
+    "kind": "school",
+    "title": "Home - Adams 12 Five Star Schools",
+    "url": "https://www.adams12.org/",
+    "words": {
+     "first": 53,
+     "total": 515
+    },
+    "hasD": true
+   },
+   {
+    "code": "H71",
+    "base": "H71-s-hotchkiss",
+    "site": "hotchkiss",
+    "kind": "school",
+    "title": "Top Boarding School in Connecticut | The Hotchkiss School",
+    "url": "https://www.hotchkiss.org/",
+    "words": {
+     "first": 132,
+     "total": 1423
+    },
+    "hasD": true
+   },
+   {
+    "code": "H72",
+    "base": "H72-s-lakeside",
+    "site": "lakeside",
+    "kind": "school",
+    "title": "Lakeside School: Home",
+    "url": "https://www.lakesideschool.org/",
+    "words": {
+     "first": 45,
+     "total": 261
+    },
+    "hasD": true
+   },
+   {
+    "code": "H73",
+    "base": "H73-s-dalton",
+    "site": "dalton",
+    "kind": "school",
+    "title": "The Dalton School, A Leading Private K-12 Day School in New York",
+    "url": "https://www.dalton.org/",
+    "words": {
+     "first": 61,
+     "total": 684
+    },
+    "hasD": true
+   },
+   {
+    "code": "H74",
+    "base": "H74-s-exeter",
+    "site": "exeter",
+    "kind": "school",
+    "title": "Home - Phillips Exeter Academy",
+    "url": "https://www.exeter.edu/",
+    "words": {
+     "first": 43,
+     "total": 657
+    },
+    "hasD": true
+   },
+   {
+    "code": "H75",
+    "base": "H75-s-harvard-westlake",
+    "site": "harvard-westlake",
+    "kind": "school",
+    "title": "Harvard-Westlake School",
+    "url": "https://www.hw.com/",
+    "words": {
+     "first": 8,
+     "total": 247
+    },
+    "hasD": true
+   },
+   {
+    "code": "H76",
+    "base": "H76-s-nueva",
+    "site": "nueva",
+    "kind": "school",
+    "title": "The Nueva School | Learn by Doing, Learn by Caring",
+    "url": "https://www.nuevaschool.org/",
+    "words": {
+     "first": 67,
+     "total": 493
+    },
+    "hasD": true
+   },
+   {
+    "code": "H77",
+    "base": "H77-s-avenues",
+    "site": "avenues",
+    "kind": "school",
+    "title": "Avenues | The World School | New York and São Paulo",
+    "url": "https://www.avenues.org/",
+    "words": {
+     "first": 26,
+     "total": 886
+    },
+    "hasD": true
+   },
+   {
+    "code": "H78",
+    "base": "H78-s-thacher",
+    "site": "thacher",
+    "kind": "school",
+    "title": "A Private Boarding School in Ojai, California",
+    "url": "https://www.thacher.org/",
+    "words": {
+     "first": 34,
+     "total": 402
+    },
+    "hasD": true
+   },
+   {
+    "code": "H79",
+    "base": "H79-s-success-academy",
+    "site": "success-academy",
+    "kind": "school",
+    "title": "Public Charter Schools NYC | K-12 | Success Academy",
+    "url": "https://www.successacademies.org/",
+    "words": {
+     "first": 70,
+     "total": 856
+    },
+    "hasD": true
+   },
+   {
+    "code": "H80",
+    "base": "H80-s-deerfield",
+    "site": "deerfield",
+    "kind": "school",
+    "title": "Deerfield Academy",
+    "url": "https://deerfield.edu/",
+    "words": {
+     "first": 24,
+     "total": 1605
+    },
+    "hasD": true
+   },
+   {
+    "code": "H81",
+    "base": "H81-s-khan-lab",
+    "site": "khan-lab",
+    "kind": "school",
+    "title": "Khan Lab School",
+    "url": "https://www.khanlabschool.org/",
+    "words": {
+     "first": 21,
+     "total": 452
+    },
+    "hasD": true
+   },
+   {
+    "code": "H82",
+    "base": "H82-ours-r1-montessori",
+    "site": "ours-r1-montessori",
+    "kind": "ours-r1",
+    "title": "Our round-1 montessori prototype",
+    "url": "",
+    "words": null,
+    "hasD": true
+   },
+   {
+    "code": "H83",
+    "base": "H83-ours-r1-catholic",
+    "site": "ours-r1-catholic",
+    "kind": "ours-r1",
+    "title": "Our round-1 catholic prototype",
+    "url": "",
+    "words": null,
+    "hasD": true
+   },
+   {
+    "code": "H84",
+    "base": "H84-ours-r1-lantern",
+    "site": "ours-r1-lantern",
+    "kind": "ours-r1",
+    "title": "Our round-1 lantern prototype",
+    "url": "",
+    "words": null,
+    "hasD": true
+   },
+   {
+    "code": "H85",
+    "base": "H85-ours-r1-charter",
+    "site": "ours-r1-charter",
+    "kind": "ours-r1",
+    "title": "Our round-1 charter prototype",
+    "url": "",
+    "words": null,
+    "hasD": true
+   }
+  ],
+  "admissions": [
+   {
+    "code": "A01",
+    "base": "A01-s-mas-charter-school",
+    "site": "mas-charter-school",
+    "kind": "school",
+    "title": "Enroll/Register - Mission Achievement and Success Charter School",
+    "url": "https://www.mascharterschool.com/enroll-register",
+    "words": {
+     "first": 20,
+     "total": 833
+    },
+    "hasD": true
+   },
+   {
+    "code": "A02",
+    "base": "A02-s-malden-catholic",
+    "site": "malden-catholic",
+    "kind": "school",
+    "title": "Admissions | Malden Catholic School, Grades 6–12 | Malden, MA",
+    "url": "https://www.maldencatholic.org/admissions",
+    "words": {
+     "first": 61,
+     "total": 398
+    },
+    "hasD": true
+   },
+   {
+    "code": "A03",
+    "base": "A03-s-salesianum-school",
+    "site": "salesianum-school",
+    "kind": "school",
+    "title": "Admissions Welcome | Salesianum",
+    "url": "https://www.salesianum.org/admissions",
+    "words": {
+     "first": 51,
+     "total": 450
+    },
+    "hasD": true
+   },
+   {
+    "code": "A04",
+    "base": "A04-s-christopher-columbus-hs",
+    "site": "christopher-columbus-hs",
+    "kind": "school",
+    "title": "ADMISSIONS - Christopher Columbus High School",
+    "url": "https://www.columbushs.com/admission",
+    "words": {
+     "first": 212,
+     "total": 537
+    },
+    "hasD": true
+   },
+   {
+    "code": "A05",
+    "base": "A05-s-shady-side-academy",
+    "site": "shady-side-academy",
+    "kind": "school",
+    "title": "Explore Admission | Shady Side Academy Pre-K–12",
+    "url": "https://www.shadysideacademy.org/explore-admission/explore",
+    "words": {
+     "first": 13,
+     "total": 478
+    },
+    "hasD": true
+   },
+   {
+    "code": "A06",
+    "base": "A06-s-fairfield-college-prep",
+    "site": "fairfield-college-prep",
+    "kind": "school",
+    "title": "Admissions Process | Fairfield College Preparatory School",
+    "url": "https://www.fairfieldprep.org/admission/process",
+    "words": {
+     "first": 25,
+     "total": 280
+    },
+    "hasD": true
+   },
+   {
+    "code": "A07",
+    "base": "A07-s-henderson-collegiate",
+    "site": "henderson-collegiate",
+    "kind": "school",
+    "title": "Start Here! - Henderson Collegiate",
+    "url": "https://www.hendersoncollegiate.org/enroll/start-here",
+    "words": {
+     "first": 78,
+     "total": 1506
+    },
+    "hasD": true
+   },
+   {
+    "code": "A08",
+    "base": "A08-s-ricardo-flores-magon-academy",
+    "site": "ricardo-flores-magon-academy",
+    "kind": "school",
+    "title": "Enrollment - Ricardo Flores Magon Academy",
+    "url": "https://www.magonacademy.org/about/enrollment",
+    "words": {
+     "first": 102,
+     "total": 441
+    },
+    "hasD": true
+   },
+   {
+    "code": "A09",
+    "base": "A09-s-stem-school-highlands-ranch",
+    "site": "stem-school-highlands-ranch",
+    "kind": "school",
+    "title": "ENROLL TODAY - STEM School Highlands Ranch",
+    "url": "https://www.stemk12.org/enrollment/enroll",
+    "words": {
+     "first": 28,
+     "total": 737
+    },
+    "hasD": true
+   },
+   {
+    "code": "A10",
+    "base": "A10-s-metro-nashville-public-schools",
+    "site": "metro-nashville-public-schools",
+    "kind": "school",
+    "title": "How to Apply - Metropolitan Nashville Public Schools",
+    "url": "https://www.mnps.org/careers/how-to-apply",
+    "words": {
+     "first": 25,
+     "total": 384
+    },
+    "hasD": true
+   },
+   {
+    "code": "A11",
+    "base": "A11-s-eden-prairie-schools",
+    "site": "eden-prairie-schools",
+    "kind": "school",
+    "title": "Enroll - Eden Prairie Schools",
+    "url": "https://www.edenpr.org/enroll",
+    "words": {
+     "first": 127,
+     "total": 1036
+    },
+    "hasD": true
+   },
+   {
+    "code": "A12",
+    "base": "A12-s-littleton-public-schools-nspra",
+    "site": "littleton-public-schools-nspra",
+    "kind": "school",
+    "title": "How to Enroll | A Destination District",
+    "url": "https://www.littletonpublicschools.net/o/lps/page/how-to-enroll",
+    "words": {
+     "first": 76,
+     "total": 474
+    },
+    "hasD": true
+   },
+   {
+    "code": "A13",
+    "base": "A13-s-newport-news-public-schools-nspr",
+    "site": "newport-news-public-schools-nspr",
+    "kind": "school",
+    "title": "Registration at NNPS",
+    "url": "https://www.nnschools.org/registration/",
+    "words": {
+     "first": 214,
+     "total": 1263
+    },
+    "hasD": true
+   },
+   {
+    "code": "A14",
+    "base": "A14-s-mckinney-isd-nspra",
+    "site": "mckinney-isd-nspra",
+    "kind": "school",
+    "title": "Enrollment | McKinney ISD",
+    "url": "https://www.mckinneyisd.net/page/enrollment",
+    "words": {
+     "first": 40,
+     "total": 757
+    },
+    "hasD": true
+   },
+   {
+    "code": "A15",
+    "base": "A15-s-plano-isd",
+    "site": "plano-isd",
+    "kind": "school",
+    "title": "Guide to Online Enrollment",
+    "url": "https://www.pisd.edu/students-families-a6/enrollment2",
+    "words": {
+     "first": 41,
+     "total": 301
+    },
+    "hasD": true
+   },
+   {
+    "code": "A16",
+    "base": "A16-s-immaculate-heart",
+    "site": "immaculate-heart",
+    "kind": "school",
+    "title": "inquire about ih",
+    "url": "https://www.immaculateheart.org/inquire",
+    "words": {
+     "first": 56,
+     "total": 266
+    },
+    "hasD": true
+   },
+   {
+    "code": "A17",
+    "base": "A17-s-adams-12-nspra",
+    "site": "adams-12-nspra",
+    "kind": "school",
+    "title": "Enroll Now - Adams 12 Five Star Schools",
+    "url": "https://www.adams12.org/enroll/enroll-now",
+    "words": {
+     "first": 48,
+     "total": 288
+    },
+    "hasD": true
+   },
+   {
+    "code": "A18",
+    "base": "A18-s-hotchkiss",
+    "site": "hotchkiss",
+    "kind": "school",
+    "title": "Admissions - New England Boarding School | Hotchkiss",
+    "url": "https://www.hotchkiss.org/admission",
+    "words": {
+     "first": 18,
+     "total": 620
+    },
+    "hasD": true
+   },
+   {
+    "code": "A19",
+    "base": "A19-s-lakeside",
+    "site": "lakeside",
+    "kind": "school",
+    "title": "Overview - Lakeside School",
+    "url": "https://www.lakesideschool.org/admissions/overview",
+    "words": {
+     "first": 118,
+     "total": 642
+    },
+    "hasD": true
+   },
+   {
+    "code": "A20",
+    "base": "A20-s-dalton",
+    "site": "dalton",
+    "kind": "school",
+    "title": "Apply | Dalton",
+    "url": "https://www.dalton.org/apply",
+    "words": {
+     "first": 115,
+     "total": 935
+    },
+    "hasD": true
+   },
+   {
+    "code": "A21",
+    "base": "A21-s-exeter",
+    "site": "exeter",
+    "kind": "school",
+    "title": "Admissions - Phillips Exeter Academy",
+    "url": "https://exeter.edu/admissions/",
+    "words": {
+     "first": 65,
+     "total": 444
+    },
+    "hasD": true
+   },
+   {
+    "code": "A22",
+    "base": "A22-s-harvard-westlake",
+    "site": "harvard-westlake",
+    "kind": "school",
+    "title": "How to Apply",
+    "url": "https://www.hw.com/admission/How-to-Apply",
+    "words": {
+     "first": 38,
+     "total": 553
+    },
+    "hasD": true
+   },
+   {
+    "code": "A23",
+    "base": "A23-s-nueva",
+    "site": "nueva",
+    "kind": "school",
+    "title": "Welcome to Nueva Admissions | The Nueva School",
+    "url": "https://www.nuevaschool.org/admissions/welcome",
+    "words": {
+     "first": 30,
+     "total": 860
+    },
+    "hasD": true
+   },
+   {
+    "code": "A24",
+    "base": "A24-s-thacher",
+    "site": "thacher",
+    "kind": "school",
+    "title": "How to Apply",
+    "url": "https://www.thacher.org/admission",
+    "words": {
+     "first": 219,
+     "total": 490
+    },
+    "hasD": true
+   },
+   {
+    "code": "A25",
+    "base": "A25-s-success-academy",
+    "site": "success-academy",
+    "kind": "school",
+    "title": "Public Charter Schools NYC | K-12 | Success Academy",
+    "url": "https://www.successacademies.org/",
+    "words": {
+     "first": 70,
+     "total": 856
+    },
+    "hasD": true
+   },
+   {
+    "code": "A26",
+    "base": "A26-s-deerfield",
+    "site": "deerfield",
+    "kind": "school",
+    "title": "Admission – Deerfield Academy",
+    "url": "https://deerfield.edu/admission/",
+    "words": {
+     "first": 42,
+     "total": 602
+    },
+    "hasD": true
+   },
+   {
+    "code": "A27",
+    "base": "A27-s-khan-lab",
+    "site": "khan-lab",
+    "kind": "school",
+    "title": "Applications are open at Khan Lab School",
+    "url": "https://khanlabschool.org/Apply-Now",
+    "words": {
+     "first": 29,
+     "total": 442
+    },
+    "hasD": true
+   }
+  ],
+  "about": [
+   {
+    "code": "B01",
+    "base": "B01-g-belgrade-arbor",
+    "site": "belgrade-arbor",
+    "kind": "gallery",
+    "title": "About the Investor | Belgrade Arbor",
+    "url": "https://belgradearbor.rs/en/about-the-investor",
+    "words": {
+     "first": 109,
+     "total": 245
+    },
+    "hasD": true
+   },
+   {
+    "code": "B02",
+    "base": "B02-g-odyssee",
+    "site": "odyssee",
+    "kind": "gallery",
+    "title": "Odyssée | About Us",
+    "url": "https://www.odysseeclinic.com.au/about",
+    "words": {
+     "first": 34,
+     "total": 351
+    },
+    "hasD": true
+   },
+   {
+    "code": "B03",
+    "base": "B03-g-overlake",
+    "site": "overlake",
+    "kind": "gallery",
+    "title": "Mission-Vision-Values | The Overlake School",
+    "url": "https://www.overlake.org/mission-vision-values",
+    "words": {
+     "first": 117,
+     "total": 272
+    },
+    "hasD": true
+   },
+   {
+    "code": "B04",
+    "base": "B04-g-aventura",
+    "site": "aventura",
+    "kind": "gallery",
+    "title": "About us | ADA",
+    "url": "https://aventuradentalarts.com/about",
+    "words": {
+     "first": 141,
+     "total": 785
+    },
+    "hasD": true
+   },
+   {
+    "code": "B05",
+    "base": "B05-g-carles-faus",
+    "site": "carles-faus",
+    "kind": "gallery",
+    "title": "Estudio — Carles Faus Arquitectura",
+    "url": "https://www.carlesfaus.com/estudio",
+    "words": {
+     "first": 388,
+     "total": 449
+    },
+    "hasD": true
+   },
+   {
+    "code": "B06",
+    "base": "B06-g-gufram",
+    "site": "gufram",
+    "kind": "gallery",
+    "title": "Gufram",
+    "url": "https://gufram.it/en/history/",
+    "words": {
+     "first": 52,
+     "total": 97
+    },
+    "hasD": true
+   },
+   {
+    "code": "B07",
+    "base": "B07-g-nakashima",
+    "site": "nakashima",
+    "kind": "gallery",
+    "title": "History & Team — George Nakashima Woodworkers",
+    "url": "https://nakashimawoodworkers.com/philosophy/history-team/",
+    "words": {
+     "first": 32,
+     "total": 3432
+    },
+    "hasD": true
+   },
+   {
+    "code": "B08",
+    "base": "B08-g-osmo",
+    "site": "osmo",
+    "kind": "gallery",
+    "title": "The Vault - Resources for Creative Developers - Osmo",
+    "url": "https://www.osmo.supply/product/vault",
+    "words": {
+     "first": 103,
+     "total": 1483
+    },
+    "hasD": true
+   },
+   {
+    "code": "B09",
+    "base": "B09-g-frans-hals",
+    "site": "frans-hals",
+    "kind": "gallery",
+    "title": "Discover the Frans Hals Museum: the world’s largest Frans Hals collect",
+    "url": "https://franshalsmuseum.nl/en/about-us",
+    "words": {
+     "first": 19,
+     "total": 82
+    },
+    "hasD": true
+   },
+   {
+    "code": "B10",
+    "base": "B10-g-letude",
+    "site": "letude",
+    "kind": "gallery",
+    "title": "Work: Atomic Mission Gear — L'Étude",
+    "url": "https://letude.group/work/atomic-mission-gear",
+    "words": {
+     "first": 14,
+     "total": 35
+    },
+    "hasD": true
+   },
+   {
+    "code": "B11",
+    "base": "B11-g-smithsonian",
+    "site": "smithsonian",
+    "kind": "gallery",
+    "title": "Explore History & Culture | Smithsonian Institution",
+    "url": "https://www.si.edu/explore/history",
+    "words": {
+     "first": 100,
+     "total": 1139
+    },
+    "hasD": true
+   },
+   {
+    "code": "B12",
+    "base": "B12-g-studio-museum",
+    "site": "studio-museum",
+    "kind": "gallery",
+    "title": "The Studio Museum in Harlem | Studio Museum in Harlem",
+    "url": "https://www.studiomuseum.org/history",
+    "words": {
+     "first": 56,
+     "total": 3879
+    },
+    "hasD": true
+   },
+   {
+    "code": "B13",
+    "base": "B13-g-amsterdam-museum",
+    "site": "amsterdam-museum",
+    "kind": "gallery",
+    "title": "About the Amsterdam Museum | Amsterdam Museum",
+    "url": "https://www.amsterdammuseum.nl/en/about-us",
+    "words": {
+     "first": 411,
+     "total": 1551
+    },
+    "hasD": true
+   },
+   {
+    "code": "B14",
+    "base": "B14-g-mam",
+    "site": "mam",
+    "kind": "gallery",
+    "title": "Milwaukee Art Museum | History",
+    "url": "https://mam.org/info/history/",
+    "words": {
+     "first": 12,
+     "total": 970
+    },
+    "hasD": true
+   },
+   {
+    "code": "B15",
+    "base": "B15-g-rom",
+    "site": "rom",
+    "kind": "gallery",
+    "title": "Membership | Royal Ontario Museum",
+    "url": "https://www.rom.on.ca/join-donate/membership",
+    "words": {
+     "first": 53,
+     "total": 452
+    },
+    "hasD": true
+   },
+   {
+    "code": "B16",
+    "base": "B16-g-branksome",
+    "site": "branksome",
+    "kind": "gallery",
+    "title": "Our History | Celebrating Branksome Hall ’s Legacy of Success",
+    "url": "https://branksome.on.ca/about/our-history/",
+    "words": {
+     "first": 45,
+     "total": 690
+    },
+    "hasD": true
+   },
+   {
+    "code": "B17",
+    "base": "B17-g-locomotive",
+    "site": "locomotive",
+    "kind": "gallery",
+    "title": "Lightship | Locomotive",
+    "url": "https://locomotive.ca/en/work/lightship-1",
+    "words": {
+     "first": 13,
+     "total": 259
+    },
+    "hasD": true
+   },
+   {
+    "code": "B18",
+    "base": "B18-g-sinai-temple",
+    "site": "sinai-temple",
+    "kind": "gallery",
+    "title": "About - Sinai Temple",
+    "url": "https://www.sinaitemple.org/about/",
+    "words": {
+     "first": 103,
+     "total": 397
+    },
+    "hasD": true
+   },
+   {
+    "code": "B19",
+    "base": "B19-g-frederick-gunn",
+    "site": "frederick-gunn",
+    "kind": "gallery",
+    "title": "Welcome From Our Head of School - The Frederick Gunn School",
+    "url": "https://www.frederickgunn.org/about/welcome-from-head-of-school",
+    "words": {
+     "first": 10,
+     "total": 1117
+    },
+    "hasD": true
+   },
+   {
+    "code": "B20",
+    "base": "B20-g-palmer",
+    "site": "palmer",
+    "kind": "gallery",
+    "title": "About • Palmer Dinnerware",
+    "url": "https://www.palmer-dinnerware.com/about",
+    "words": {
+     "first": 53,
+     "total": 284
+    },
+    "hasD": true
+   },
+   {
+    "code": "B21",
+    "base": "B21-g-united-carriers",
+    "site": "united-carriers",
+    "kind": "gallery",
+    "title": "About us",
+    "url": "https://unitedcarriers.com/about",
+    "words": {
+     "first": 218,
+     "total": 1289
+    },
+    "hasD": true
+   },
+   {
+    "code": "B22",
+    "base": "B22-g-btay",
+    "site": "btay",
+    "kind": "gallery",
+    "title": "Vancouver Web Designer | Brittany Taylor",
+    "url": "https://btay.ca/",
+    "words": {
+     "first": 19,
+     "total": 487
+    },
+    "hasD": true
+   },
+   {
+    "code": "B23",
+    "base": "B23-g-westminster-abbey",
+    "site": "westminster-abbey",
+    "kind": "gallery",
+    "title": "A royal church | Westminster Abbey",
+    "url": "https://www.westminster-abbey.org/",
+    "words": {
+     "first": 77,
+     "total": 442
+    },
+    "hasD": true
+   },
+   {
+    "code": "B24",
+    "base": "B24-g-andmade",
+    "site": "andmade",
+    "kind": "gallery",
+    "title": "About - ANDMADE Inc.",
+    "url": "https://andmade.jp/about/",
+    "words": {
+     "first": 102,
+     "total": 593
+    },
+    "hasD": true
+   },
+   {
+    "code": "B25",
+    "base": "B25-g-sagrada",
+    "site": "sagrada",
+    "kind": "gallery",
+    "title": "History of the Temple - Sagrada Família - Sagrada Familia",
+    "url": "https://sagradafamilia.org/en/history-of-the-temple",
+    "words": {
+     "first": 79,
+     "total": 1417
+    },
+    "hasD": true
+   },
+   {
+    "code": "B26",
+    "base": "B26-g-vam",
+    "site": "vam",
+    "kind": "gallery",
+    "title": "About us · V&A",
+    "url": "https://www.vam.ac.uk/info/about-us",
+    "words": {
+     "first": 81,
+     "total": 1012
+    },
+    "hasD": true
+   },
+   {
+    "code": "B27",
+    "base": "B27-g-massgov",
+    "site": "massgov",
+    "kind": "gallery",
+    "title": "Apply for RAFT (emergency help for housing costs) | Mass.gov",
+    "url": "https://www.mass.gov/how-to/apply-for-raft-emergency-help-for-housing-costs",
+    "words": {
+     "first": 122,
+     "total": 1055
+    },
+    "hasD": true
+   },
+   {
+    "code": "B28",
+    "base": "B28-g-govuk",
+    "site": "govuk",
+    "kind": "gallery",
+    "title": "Check the MOT history of a vehicle - GOV.UK",
+    "url": "https://www.gov.uk/check-mot-history",
+    "words": {
+     "first": 121,
+     "total": 453
+    },
+    "hasD": true
+   },
+   {
+    "code": "B29",
+    "base": "B29-g-boston-gov",
+    "site": "boston-gov",
+    "kind": "gallery",
+    "title": "Michelle Wu | Boston.gov",
+    "url": "https://www.boston.gov/node/396",
+    "words": {
+     "first": 194,
+     "total": 674
+    },
+    "hasD": true
+   },
+   {
+    "code": "B30",
+    "base": "B30-g-charitywater",
+    "site": "charitywater",
+    "kind": "gallery",
+    "title": "charity: water | Nonprofit Organization for Clean and Safe Water",
+    "url": "https://www.charitywater.org/about",
+    "words": {
+     "first": 28,
+     "total": 528
+    },
+    "hasD": true
+   },
+   {
+    "code": "B31",
+    "base": "B31-g-tartine",
+    "site": "tartine",
+    "kind": "gallery",
+    "title": "Tartine Bakery – Tartine is a thoughtful expression of modern craft th",
+    "url": "https://tartinebakery.com/",
+    "words": {
+     "first": 16,
+     "total": 411
+    },
+    "hasD": true
+   },
+   {
+    "code": "B32",
+    "base": "B32-g-heath",
+    "site": "heath",
+    "kind": "gallery",
+    "title": "In A New Light: Winter 2026 | Heath Ceramics",
+    "url": "https://www.heathceramics.com/blogs/heath-journal/in-a-new-light-winter-2026",
+    "words": {
+     "first": 168,
+     "total": 1048
+    },
+    "hasD": true
+   },
+   {
+    "code": "B33",
+    "base": "B33-g-nypl",
+    "site": "nypl",
+    "kind": "gallery",
+    "title": "About The New York Public Library",
+    "url": "https://www.nypl.org/help/about-nypl",
+    "words": {
+     "first": 97,
+     "total": 794
+    },
+    "hasD": true
+   },
+   {
+    "code": "B34",
+    "base": "B34-g-kinfolk",
+    "site": "kinfolk",
+    "kind": "gallery",
+    "title": "About - Kinfolk",
+    "url": "https://www.kinfolk.com/about",
+    "words": {
+     "first": 85,
+     "total": 1685
+    },
+    "hasD": true
+   },
+   {
+    "code": "B35",
+    "base": "B35-g-nationaltrust",
+    "site": "nationaltrust",
+    "kind": "gallery",
+    "title": "Discover British history | National Trust",
+    "url": "https://www.nationaltrust.org.uk/discover/history",
+    "words": {
+     "first": 45,
+     "total": 884
+    },
+    "hasD": true
+   },
+   {
+    "code": "B36",
+    "base": "B36-g-surfers-site",
+    "site": "surfers-site",
+    "kind": "gallery",
+    "title": "About - The Surfers Journal",
+    "url": "https://www.surfersjournal.com/about",
+    "words": {
+     "first": 88,
+     "total": 402
+    },
+    "hasD": true
+   },
+   {
+    "code": "B37",
+    "base": "B37-s-mas-charter-school",
+    "site": "mas-charter-school",
+    "kind": "school",
+    "title": "About - Mission Achievement and Success Charter School",
+    "url": "https://www.mascharterschool.com/about-us",
+    "words": {
+     "first": 14,
+     "total": 659
+    },
+    "hasD": true
+   },
+   {
+    "code": "B38",
+    "base": "B38-s-malden-catholic",
+    "site": "malden-catholic",
+    "kind": "school",
+    "title": "About Us - Malden Catholic",
+    "url": "https://www.maldencatholic.org/about-us",
+    "words": {
+     "first": 197,
+     "total": 490
+    },
+    "hasD": true
+   },
+   {
+    "code": "B39",
+    "base": "B39-s-salesianum-school",
+    "site": "salesianum-school",
+    "kind": "school",
+    "title": "Our Mission",
+    "url": "https://www.salesianum.org/about",
+    "words": {
+     "first": 69,
+     "total": 351
+    },
+    "hasD": true
+   },
+   {
+    "code": "B40",
+    "base": "B40-s-christopher-columbus-hs",
+    "site": "christopher-columbus-hs",
+    "kind": "school",
+    "title": "ABOUT CCHS - Christopher Columbus High School",
+    "url": "https://www.columbushs.com/about-us",
+    "words": {
+     "first": 176,
+     "total": 484
+    },
+    "hasD": true
+   },
+   {
+    "code": "B41",
+    "base": "B41-s-shady-side-academy",
+    "site": "shady-side-academy",
+    "kind": "school",
+    "title": "Our Story | Shady Side Academy | PreK-12 Pittsburgh School",
+    "url": "https://www.shadysideacademy.org/meet-us/our-story",
+    "words": {
+     "first": 48,
+     "total": 594
+    },
+    "hasD": true
+   },
+   {
+    "code": "B42",
+    "base": "B42-s-fairfield-college-prep",
+    "site": "fairfield-college-prep",
+    "kind": "school",
+    "title": "Mission & Vision | Fairfield College Preparatory School | Fairfield, C",
+    "url": "https://www.fairfieldprep.org/about/mission",
+    "words": {
+     "first": 43,
+     "total": 956
+    },
+    "hasD": true
+   },
+   {
+    "code": "B43",
+    "base": "B43-s-broward-county-public-schools",
+    "site": "broward-county-public-schools",
+    "kind": "school",
+    "title": "About Us",
+    "url": "https://www.browardschools.com/about-us",
+    "words": {
+     "first": 18,
+     "total": 1249
+    },
+    "hasD": true
+   },
+   {
+    "code": "B44",
+    "base": "B44-s-henderson-collegiate",
+    "site": "henderson-collegiate",
+    "kind": "school",
+    "title": "Mission & Values - Henderson Collegiate",
+    "url": "https://www.hendersoncollegiate.org/about/mission-and-values",
+    "words": {
+     "first": 4,
+     "total": 1136
+    },
+    "hasD": true
+   },
+   {
+    "code": "B45",
+    "base": "B45-s-ricardo-flores-magon-academy",
+    "site": "ricardo-flores-magon-academy",
+    "kind": "school",
+    "title": "About - Ricardo Flores Magon Academy",
+    "url": "https://www.magonacademy.org/about",
+    "words": {
+     "first": 18,
+     "total": 65
+    },
+    "hasD": true
+   },
+   {
+    "code": "B46",
+    "base": "B46-s-stem-school-highlands-ranch",
+    "site": "stem-school-highlands-ranch",
+    "kind": "school",
+    "title": "MISSION & VISION - STEM School Highlands Ranch",
+    "url": "https://www.stemk12.org/about/mission-vision",
+    "words": {
+     "first": 19,
+     "total": 787
+    },
+    "hasD": true
+   },
+   {
+    "code": "B47",
+    "base": "B47-s-metro-nashville-public-schools",
+    "site": "metro-nashville-public-schools",
+    "kind": "school",
+    "title": "About - Metropolitan Nashville Public Schools",
+    "url": "https://www.mnps.org/about",
+    "words": {
+     "first": 33,
+     "total": 721
+    },
+    "hasD": true
+   },
+   {
+    "code": "B48",
+    "base": "B48-s-eden-prairie-schools",
+    "site": "eden-prairie-schools",
+    "kind": "school",
+    "title": "Oral History Project - Community Member Eden Prairie Schools",
+    "url": "https://community.edenpr.org/oral-history-project",
+    "words": {
+     "first": 166,
+     "total": 605
+    },
+    "hasD": true
+   },
+   {
+    "code": "B49",
+    "base": "B49-s-warwick-valley-csd",
+    "site": "warwick-valley-csd",
+    "kind": "school",
+    "title": "About WVCSD - Warwick Valley Central School District",
+    "url": "https://www.warwickvalleyschools.com/district/about-wvcsd",
+    "words": {
+     "first": 119,
+     "total": 673
+    },
+    "hasD": true
+   },
+   {
+    "code": "B50",
+    "base": "B50-s-mckinney-isd-nspra",
+    "site": "mckinney-isd-nspra",
+    "kind": "school",
+    "title": "Vision, Mission & Beliefs | McKinney ISD",
+    "url": "https://www.mckinneyisd.net/page/vision-mission-beliefs/",
+    "words": {
+     "first": 51,
+     "total": 350
+    },
+    "hasD": true
+   },
+   {
+    "code": "B51",
+    "base": "B51-s-plano-isd",
+    "site": "plano-isd",
+    "kind": "school",
+    "title": "About Us",
+    "url": "https://www.pisd.edu/about-our-district",
+    "words": {
+     "first": 62,
+     "total": 146
+    },
+    "hasD": true
+   },
+   {
+    "code": "B52",
+    "base": "B52-s-immaculate-heart",
+    "site": "immaculate-heart",
+    "kind": "school",
+    "title": "inquire about ih",
+    "url": "https://www.immaculateheart.org/inquire/inquire-about-ih",
+    "words": {
+     "first": 56,
+     "total": 266
+    },
+    "hasD": true
+   },
+   {
+    "code": "B53",
+    "base": "B53-s-fayetteville-public-schools-nspr",
+    "site": "fayetteville-public-schools-nspr",
+    "kind": "school",
+    "title": "About Us | Fayetteville Public Schools",
+    "url": "https://district.fayar.net/o/fps/page/about-us",
+    "words": {
+     "first": 23,
+     "total": 472
+    },
+    "hasD": true
+   },
+   {
+    "code": "B54",
+    "base": "B54-s-adams-12-nspra",
+    "site": "adams-12-nspra",
+    "kind": "school",
+    "title": "About us - Adams 12 Five Star Schools",
+    "url": "https://www.adams12.org/our-district/about-us",
+    "words": {
+     "first": 54,
+     "total": 673
+    },
+    "hasD": true
+   },
+   {
+    "code": "B55",
+    "base": "B55-s-hotchkiss",
+    "site": "hotchkiss",
+    "kind": "school",
+    "title": "Edsel Ford Memorial Library - School Library CT | Hotchkiss",
+    "url": "https://www.hotchkiss.org/academics/edsel-ford-memorial-library/about",
+    "words": {
+     "first": 33,
+     "total": 399
+    },
+    "hasD": true
+   },
+   {
+    "code": "B56",
+    "base": "B56-s-lakeside",
+    "site": "lakeside",
+    "kind": "school",
+    "title": "Fast Facts - Lakeside School",
+    "url": "https://www.lakesideschool.org/about-us/fast-facts",
+    "words": {
+     "first": 15,
+     "total": 370
+    },
+    "hasD": true
+   },
+   {
+    "code": "B57",
+    "base": "B57-s-dalton",
+    "site": "dalton",
+    "kind": "school",
+    "title": "Mission, Vision, & Values | Dalton",
+    "url": "https://www.dalton.org/our-school/mission-and-values",
+    "words": {
+     "first": 184,
+     "total": 477
+    },
+    "hasD": true
+   },
+   {
+    "code": "B58",
+    "base": "B58-s-exeter",
+    "site": "exeter",
+    "kind": "school",
+    "title": "About - Phillips Exeter Academy",
+    "url": "https://exeter.edu/about/",
+    "words": {
+     "first": 36,
+     "total": 538
+    },
+    "hasD": true
+   },
+   {
+    "code": "B59",
+    "base": "B59-s-harvard-westlake",
+    "site": "harvard-westlake",
+    "kind": "school",
+    "title": "History of Harvard-Westake",
+    "url": "https://www.hw.com/about/History",
+    "words": {
+     "first": 7,
+     "total": 460
+    },
+    "hasD": true
+   },
+   {
+    "code": "B60",
+    "base": "B60-s-nueva",
+    "site": "nueva",
+    "kind": "school",
+    "title": "About - The Nueva School",
+    "url": "https://www.nuevaschool.org/about/leadership",
+    "words": {
+     "first": 38,
+     "total": 705
+    },
+    "hasD": true
+   },
+   {
+    "code": "B61",
+    "base": "B61-s-avenues",
+    "site": "avenues",
+    "kind": "school",
+    "title": "About Us | An Education That Transcends Ordinary | Avenues",
+    "url": "https://www.avenues.org/our-mission",
+    "words": {
+     "first": 114,
+     "total": 1126
+    },
+    "hasD": true
+   },
+   {
+    "code": "B62",
+    "base": "B62-s-thacher",
+    "site": "thacher",
+    "kind": "school",
+    "title": "The Thacher School | History and Heritage",
+    "url": "https://www.thacher.org/explore/history-and-heritage",
+    "words": {
+     "first": 81,
+     "total": 812
+    },
+    "hasD": true
+   },
+   {
+    "code": "B63",
+    "base": "B63-s-success-academy",
+    "site": "success-academy",
+    "kind": "school",
+    "title": "About Success Academy | Philosophy, Test Results, Values",
+    "url": "https://www.successacademies.org/about/",
+    "words": {
+     "first": 69,
+     "total": 497
+    },
+    "hasD": true
+   },
+   {
+    "code": "B64",
+    "base": "B64-s-deerfield",
+    "site": "deerfield",
+    "kind": "school",
+    "title": "History and Tradition – Deerfield Academy",
+    "url": "https://deerfield.edu/about/history-and-tradition",
+    "words": {
+     "first": 3,
+     "total": 1365
+    },
+    "hasD": true
+   },
+   {
+    "code": "B65",
+    "base": "B65-s-khan-lab",
+    "site": "khan-lab",
+    "kind": "school",
+    "title": "Get to Know Us",
+    "url": "https://khanlabschool.org/Get-to-Know-Us",
+    "words": {
+     "first": 29,
+     "total": 464
+    },
+    "hasD": true
+   }
+  ],
+  "programs": [
+   {
+    "code": "P01",
+    "base": "P01-s-mas-charter-school",
+    "site": "mas-charter-school",
+    "kind": "school",
+    "title": "Academics - Mission Achievement and Success Charter School",
+    "url": "https://www.mascharterschool.com/academics",
+    "words": {
+     "first": 23,
+     "total": 285
+    },
+    "hasD": true
+   },
+   {
+    "code": "P02",
+    "base": "P02-s-malden-catholic",
+    "site": "malden-catholic",
+    "kind": "school",
+    "title": "Academics - Malden Catholic",
+    "url": "https://www.maldencatholic.org/academics",
+    "words": {
+     "first": 150,
+     "total": 420
+    },
+    "hasD": true
+   },
+   {
+    "code": "P03",
+    "base": "P03-s-salesianum-school",
+    "site": "salesianum-school",
+    "kind": "school",
+    "title": "The Byrne Scholars Program",
+    "url": "https://www.salesianum.org/admissions/tuition-scholarships-and-financial-aid/byrne-scholars-program",
+    "words": {
+     "first": 133,
+     "total": 604
+    },
+    "hasD": true
+   },
+   {
+    "code": "P04",
+    "base": "P04-s-christopher-columbus-hs",
+    "site": "christopher-columbus-hs",
+    "kind": "school",
+    "title": "Why an All-Male Learning Environment? - Christopher Columbus High Scho",
+    "url": "https://www.columbushs.com/about-us/all-male-learning-environment",
+    "words": {
+     "first": 151,
+     "total": 652
+    },
+    "hasD": true
+   },
+   {
+    "code": "P05",
+    "base": "P05-s-shady-side-academy",
+    "site": "shady-side-academy",
+    "kind": "school",
+    "title": "Discover Our Private School Program | Shady Side Academy",
+    "url": "https://www.shadysideacademy.org/meet-us/our-program",
+    "words": {
+     "first": 44,
+     "total": 684
+    },
+    "hasD": true
+   },
+   {
+    "code": "P06",
+    "base": "P06-s-fairfield-college-prep",
+    "site": "fairfield-college-prep",
+    "kind": "school",
+    "title": "6th & 7th Grade Information Night | Fairfield College Preparatory Scho",
+    "url": "https://www.fairfieldprep.org/admission/info-night",
+    "words": {
+     "first": 20,
+     "total": 152
+    },
+    "hasD": true
+   },
+   {
+    "code": "P07",
+    "base": "P07-s-broward-county-public-schools",
+    "site": "broward-county-public-schools",
+    "kind": "school",
+    "title": "Academics",
+    "url": "https://www.browardschools.com/academics",
+    "words": {
+     "first": 92,
+     "total": 426
+    },
+    "hasD": true
+   },
+   {
+    "code": "P08",
+    "base": "P08-s-henderson-collegiate",
+    "site": "henderson-collegiate",
+    "kind": "school",
+    "title": "Academics - Henderson Collegiate",
+    "url": "https://www.hendersoncollegiate.org/academics",
+    "words": {
+     "first": 3,
+     "total": 553
+    },
+    "hasD": true
+   },
+   {
+    "code": "P09",
+    "base": "P09-s-ricardo-flores-magon-academy",
+    "site": "ricardo-flores-magon-academy",
+    "kind": "school",
+    "title": "Academics & Programs - Ricardo Flores Magon Academy",
+    "url": "https://www.magonacademy.org/academics-programs",
+    "words": {
+     "first": 21,
+     "total": 68
+    },
+    "hasD": true
+   },
+   {
+    "code": "P10",
+    "base": "P10-s-stem-school-highlands-ranch",
+    "site": "stem-school-highlands-ranch",
+    "kind": "school",
+    "title": "STEM DIFFERENCE - STEM School Highlands Ranch",
+    "url": "https://www.stemk12.org/academics/stem-difference",
+    "words": {
+     "first": 31,
+     "total": 714
+    },
+    "hasD": true
+   },
+   {
+    "code": "P11",
+    "base": "P11-s-metro-nashville-public-schools",
+    "site": "metro-nashville-public-schools",
+    "kind": "school",
+    "title": "Academics - Metropolitan Nashville Public Schools",
+    "url": "https://www.mnps.org/academics",
+    "words": {
+     "first": 58,
+     "total": 562
+    },
+    "hasD": true
+   },
+   {
+    "code": "P12",
+    "base": "P12-s-eden-prairie-schools",
+    "site": "eden-prairie-schools",
+    "kind": "school",
+    "title": "MN’s Best Online School | EP Online",
+    "url": "https://www.edenpr.org/online-learning",
+    "words": {
+     "first": 120,
+     "total": 599
+    },
+    "hasD": true
+   },
+   {
+    "code": "P13",
+    "base": "P13-s-warwick-valley-csd",
+    "site": "warwick-valley-csd",
+    "kind": "school",
+    "title": "Academic Intervention Services - Warwick Valley Central School Distric",
+    "url": "https://www.warwickvalleyschools.com/instruction/ais",
+    "words": {
+     "first": 74,
+     "total": 558
+    },
+    "hasD": true
+   },
+   {
+    "code": "P14",
+    "base": "P14-s-littleton-public-schools-nspra",
+    "site": "littleton-public-schools-nspra",
+    "kind": "school",
+    "title": "Curriculum | A Destination District",
+    "url": "https://www.littletonpublicschools.net/o/lps/page/curriculum",
+    "words": {
+     "first": 132,
+     "total": 285
+    },
+    "hasD": true
+   },
+   {
+    "code": "P15",
+    "base": "P15-s-newport-news-public-schools-nspr",
+    "site": "newport-news-public-schools-nspr",
+    "kind": "school",
+    "title": "Magnet & Specialty Programs",
+    "url": "https://www.nnschools.org/magnet/",
+    "words": {
+     "first": 112,
+     "total": 1088
+    },
+    "hasD": true
+   },
+   {
+    "code": "P16",
+    "base": "P16-s-plano-isd",
+    "site": "plano-isd",
+    "kind": "school",
+    "title": "Bond Programs",
+    "url": "https://www.pisd.edu/about-our-district/bond-programs",
+    "words": {
+     "first": 120,
+     "total": 150
+    },
+    "hasD": true
+   },
+   {
+    "code": "P17",
+    "base": "P17-s-valdosta-city-schools-nspra",
+    "site": "valdosta-city-schools-nspra",
+    "kind": "school",
+    "title": "Documents | Valdosta City Schools",
+    "url": "https://www.gocats.org/documents/academic-calendars/337979",
+    "words": {
+     "first": 47,
+     "total": 119
+    },
+    "hasD": true
+   },
+   {
+    "code": "P18",
+    "base": "P18-s-immaculate-heart",
+    "site": "immaculate-heart",
+    "kind": "school",
+    "title": "Academics at IH",
+    "url": "https://www.immaculateheart.org/academics",
+    "words": {
+     "first": 63,
+     "total": 502
+    },
+    "hasD": false
+   },
+   {
+    "code": "P19",
+    "base": "P19-s-fayetteville-public-schools-nspr",
+    "site": "fayetteville-public-schools-nspr",
+    "kind": "school",
+    "title": "Programs | Fayetteville Public Schools",
+    "url": "https://district.fayar.net/o/fps/page/programs",
+    "words": {
+     "first": 17,
+     "total": 51
+    },
+    "hasD": true
+   },
+   {
+    "code": "P20",
+    "base": "P20-s-adams-12-nspra",
+    "site": "adams-12-nspra",
+    "kind": "school",
+    "title": "2016 Bond Program - Adams 12 Five Star Schools",
+    "url": "https://www.adams12.org/our-district/bond-program/2016-bond-program",
+    "words": {
+     "first": 73,
+     "total": 253
+    },
+    "hasD": true
+   },
+   {
+    "code": "P21",
+    "base": "P21-s-hotchkiss",
+    "site": "hotchkiss",
+    "kind": "school",
+    "title": "Academics - Private High School in CT | Hotchkiss",
+    "url": "https://www.hotchkiss.org/academics/the-academic-experience",
+    "words": {
+     "first": 162,
+     "total": 443
+    },
+    "hasD": true
+   },
+   {
+    "code": "P22",
+    "base": "P22-s-lakeside",
+    "site": "lakeside",
+    "kind": "school",
+    "title": "Academic Overview - Lakeside School",
+    "url": "https://www.lakesideschool.org/academics/academic-overview",
+    "words": {
+     "first": 53,
+     "total": 817
+    },
+    "hasD": true
+   },
+   {
+    "code": "P23",
+    "base": "P23-s-dalton",
+    "site": "dalton",
+    "kind": "school",
+    "title": "The Dalton Plan | Dalton",
+    "url": "https://www.dalton.org/learning/the-dalton-plan",
+    "words": {
+     "first": 119,
+     "total": 640
+    },
+    "hasD": true
+   },
+   {
+    "code": "P24",
+    "base": "P24-s-exeter",
+    "site": "exeter",
+    "kind": "school",
+    "title": "Academics - Phillips Exeter Academy",
+    "url": "https://exeter.edu/academics/",
+    "words": {
+     "first": 47,
+     "total": 592
+    },
+    "hasD": true
+   },
+   {
+    "code": "P25",
+    "base": "P25-s-harvard-westlake",
+    "site": "harvard-westlake",
+    "kind": "school",
+    "title": "Academics > About the Curriculum",
+    "url": "https://www.hw.com/academics/About-the-Curriculum",
+    "words": {
+     "first": 36,
+     "total": 202
+    },
+    "hasD": true
+   },
+   {
+    "code": "P26",
+    "base": "P26-s-nueva",
+    "site": "nueva",
+    "kind": "school",
+    "title": "Conferences & Enrichment | The Nueva School",
+    "url": "https://www.nuevaschool.org/about/conferences-and-institutes/institutes",
+    "words": {
+     "first": 28,
+     "total": 269
+    },
+    "hasD": true
+   },
+   {
+    "code": "P27",
+    "base": "P27-s-avenues",
+    "site": "avenues",
+    "kind": "school",
+    "title": "Global Curriculum | Avenues World Elements (AWE) | Avenues",
+    "url": "https://www.avenues.org/global-curriculum",
+    "words": {
+     "first": 60,
+     "total": 509
+    },
+    "hasD": true
+   },
+   {
+    "code": "P28",
+    "base": "P28-s-thacher",
+    "site": "thacher",
+    "kind": "school",
+    "title": "The Thacher School | Pegasus Fly-In Program",
+    "url": "https://www.thacher.org/admission/pegasus-fly-in-program",
+    "words": {
+     "first": 197,
+     "total": 496
+    },
+    "hasD": true
+   },
+   {
+    "code": "P29",
+    "base": "P29-s-success-academy",
+    "site": "success-academy",
+    "kind": "school",
+    "title": "Academic Calendars K-12 | Success Academy NYC",
+    "url": "https://www.successacademies.org/academic-calendars/",
+    "words": {
+     "first": 85,
+     "total": 178
+    },
+    "hasD": true
+   },
+   {
+    "code": "P30",
+    "base": "P30-s-deerfield",
+    "site": "deerfield",
+    "kind": "school",
+    "title": "Academic Affairs – Deerfield Academy",
+    "url": "https://deerfield.edu/academics/dean",
+    "words": {
+     "first": 40,
+     "total": 768
+    },
+    "hasD": true
+   },
+   {
+    "code": "P31",
+    "base": "P31-s-khan-lab",
+    "site": "khan-lab",
+    "kind": "school",
+    "title": "Academic Programs",
+    "url": "https://khanlabschool.org/Academic-Programs",
+    "words": {
+     "first": 36,
+     "total": 541
+    },
+    "hasD": true
+   }
+  ],
+  "tuition": [
+   {
+    "code": "T01",
+    "base": "T01-s-salesianum-school",
+    "site": "salesianum-school",
+    "kind": "school",
+    "title": "Tuition, Scholarships & Financial Aid | Salesianum",
+    "url": "https://www.salesianum.org/admissions/tuition-scholarships-and-financial-aid",
+    "words": {
+     "first": 116,
+     "total": 517
+    },
+    "hasD": true
+   },
+   {
+    "code": "T02",
+    "base": "T02-s-christopher-columbus-hs",
+    "site": "christopher-columbus-hs",
+    "kind": "school",
+    "title": "Tuition - Christopher Columbus High School",
+    "url": "https://www.columbushs.com/admission/tuition",
+    "words": {
+     "first": 94,
+     "total": 424
+    },
+    "hasD": true
+   },
+   {
+    "code": "T03",
+    "base": "T03-s-shady-side-academy",
+    "site": "shady-side-academy",
+    "kind": "school",
+    "title": "Tuition & Financial Aid | Shady Side Academy",
+    "url": "https://www.shadysideacademy.org/explore-admission/tuition",
+    "words": {
+     "first": 65,
+     "total": 917
+    },
+    "hasD": true
+   },
+   {
+    "code": "T04",
+    "base": "T04-s-fairfield-college-prep",
+    "site": "fairfield-college-prep",
+    "kind": "school",
+    "title": "Tuition/Financial Aid | Fairfield College Preparatory School",
+    "url": "https://www.fairfieldprep.org/admission/affording-prep",
+    "words": {
+     "first": 40,
+     "total": 349
+    },
+    "hasD": true
+   },
+   {
+    "code": "T05",
+    "base": "T05-s-plano-isd",
+    "site": "plano-isd",
+    "kind": "school",
+    "title": "Tuition and Fees for After School Care - Plano Independent School Dist",
+    "url": "https://www.pisd.edu/students-families-a6/pasar-after-school-care/tuition-and-fees",
+    "words": {
+     "first": 118,
+     "total": 454
+    },
+    "hasD": true
+   },
+   {
+    "code": "T06",
+    "base": "T06-s-immaculate-heart",
+    "site": "immaculate-heart",
+    "kind": "school",
+    "title": "Immaculate Heart Middle & High School Tuition & Aid",
+    "url": "https://www.immaculateheart.org/admissions/tuition-and-financial-aid",
+    "words": {
+     "first": 69,
+     "total": 623
+    },
+    "hasD": true
+   },
+   {
+    "code": "T07",
+    "base": "T07-s-adams-12-nspra",
+    "site": "adams-12-nspra",
+    "kind": "school",
+    "title": "Financial Aid - Adams 12 Five Star Schools",
+    "url": "https://www.adams12.org/academics/career-and-college-success/college-pathways-to-success/financial-aid",
+    "words": {
+     "first": 98,
+     "total": 162
+    },
+    "hasD": true
+   },
+   {
+    "code": "T08",
+    "base": "T08-s-hotchkiss",
+    "site": "hotchkiss",
+    "kind": "school",
+    "title": "College Financial Aid - College Prep School CT | Hotchkiss",
+    "url": "https://www.hotchkiss.org/academics/college-advising/financial-aid",
+    "words": {
+     "first": 25,
+     "total": 430
+    },
+    "hasD": true
+   },
+   {
+    "code": "T09",
+    "base": "T09-s-lakeside",
+    "site": "lakeside",
+    "kind": "school",
+    "title": "Tuition & Financial Aid - Lakeside School",
+    "url": "https://www.lakesideschool.org/admissions/tuition-and-financial-aid",
+    "words": {
+     "first": 126,
+     "total": 596
+    },
+    "hasD": true
+   },
+   {
+    "code": "T10",
+    "base": "T10-s-dalton",
+    "site": "dalton",
+    "kind": "school",
+    "title": "Affording Dalton | Dalton",
+    "url": "https://www.dalton.org/apply/affording-dalton",
+    "words": {
+     "first": 108,
+     "total": 735
+    },
+    "hasD": true
+   },
+   {
+    "code": "T11",
+    "base": "T11-s-exeter",
+    "site": "exeter",
+    "kind": "school",
+    "title": "Financial Aid & Tuition - Phillips Exeter Academy",
+    "url": "https://www.exeter.edu/admissions/financial-aid/",
+    "words": {
+     "first": 53,
+     "total": 400
+    },
+    "hasD": true
+   },
+   {
+    "code": "T12",
+    "base": "T12-s-harvard-westlake",
+    "site": "harvard-westlake",
+    "kind": "school",
+    "title": "Tuition and Financial Aid",
+    "url": "https://www.hw.com/admission/Tuition-and-Financial-Aid",
+    "words": {
+     "first": 42,
+     "total": 419
+    },
+    "hasD": true
+   },
+   {
+    "code": "T13",
+    "base": "T13-s-thacher",
+    "site": "thacher",
+    "kind": "school",
+    "title": "The Thacher School | Tuition & Expenses",
+    "url": "https://www.thacher.org/admission/affording-thacher/tuition--expenses",
+    "words": {
+     "first": 59,
+     "total": 449
+    },
+    "hasD": true
+   },
+   {
+    "code": "T14",
+    "base": "T14-s-deerfield",
+    "site": "deerfield",
+    "kind": "school",
+    "title": "Financial Aid – Deerfield Academy",
+    "url": "https://deerfield.edu/admission/financial-aid",
+    "words": {
+     "first": 75,
+     "total": 1573
+    },
+    "hasD": true
+   },
+   {
+    "code": "T15",
+    "base": "T15-s-khan-lab",
+    "site": "khan-lab",
+    "kind": "school",
+    "title": "Tuition and Affordability",
+    "url": "https://khanlabschool.org/Tuition-Affordability",
+    "words": {
+     "first": 70,
+     "total": 597
+    },
+    "hasD": true
+   }
+  ],
+  "visit": [
+   {
+    "code": "V01",
+    "base": "V01-g-belgrade-arbor",
+    "site": "belgrade-arbor",
+    "kind": "gallery",
+    "title": "Contact | Belgrade Arbor",
+    "url": "https://belgradearbor.rs/en/contact",
+    "words": {
+     "first": 117,
+     "total": 248
+    },
+    "hasD": true
+   },
+   {
+    "code": "V02",
+    "base": "V02-g-overlake",
+    "site": "overlake",
+    "kind": "gallery",
+    "title": "Visit | The Overlake School",
+    "url": "https://www.overlake.org/admissions/visit",
+    "words": {
+     "first": 81,
+     "total": 456
+    },
+    "hasD": true
+   },
+   {
+    "code": "V03",
+    "base": "V03-g-carles-faus",
+    "site": "carles-faus",
+    "kind": "gallery",
+    "title": "Contacto — Carles Faus Arquitectura",
+    "url": "https://www.carlesfaus.com/contacto",
+    "words": {
+     "first": 100,
+     "total": 100
+    },
+    "hasD": true
+   },
+   {
+    "code": "V04",
+    "base": "V04-g-gufram",
+    "site": "gufram",
+    "kind": "gallery",
+    "title": "Gufram",
+    "url": "https://gufram.it/en/contact/",
+    "words": {
+     "first": 5,
+     "total": 21
+    },
+    "hasD": true
+   },
+   {
+    "code": "V05",
+    "base": "V05-g-design-society",
+    "site": "design-society",
+    "kind": "gallery",
+    "title": "Contact — The Design Society Lyon",
+    "url": "https://www.thedesignsociety.fr/contact",
+    "words": {
+     "first": 151,
+     "total": 151
+    },
+    "hasD": true
+   },
+   {
+    "code": "V06",
+    "base": "V06-g-nakashima",
+    "site": "nakashima",
+    "kind": "gallery",
+    "title": "Visit — George Nakashima Woodworkers",
+    "url": "https://nakashimawoodworkers.com/visit/",
+    "words": {
+     "first": 58,
+     "total": 336
+    },
+    "hasD": true
+   },
+   {
+    "code": "V07",
+    "base": "V07-g-osmo",
+    "site": "osmo",
+    "kind": "gallery",
+    "title": "Osmo Supply - Dev Toolkit Built to Flex",
+    "url": "https://www.osmo.supply/",
+    "words": {
+     "first": 186,
+     "total": 1179
+    },
+    "hasD": true
+   },
+   {
+    "code": "V08",
+    "base": "V08-g-frans-hals",
+    "site": "frans-hals",
+    "kind": "gallery",
+    "title": "Plan your visit to Frans Hals Museum in Haarlem",
+    "url": "https://franshalsmuseum.nl/en/visit-us",
+    "words": {
+     "first": 23,
+     "total": 190
+    },
+    "hasD": true
+   },
+   {
+    "code": "V09",
+    "base": "V09-g-letude",
+    "site": "letude",
+    "kind": "gallery",
+    "title": "Contact — L'Étude",
+    "url": "https://letude.group/contact",
+    "words": {
+     "first": 39,
+     "total": 71
+    },
+    "hasD": true
+   },
+   {
+    "code": "V10",
+    "base": "V10-g-smithsonian",
+    "site": "smithsonian",
+    "kind": "gallery",
+    "title": "My Visit | Smithsonian Institution",
+    "url": "https://www.si.edu/myvisit",
+    "words": {
+     "first": 72,
+     "total": 154
+    },
+    "hasD": true
+   },
+   {
+    "code": "V11",
+    "base": "V11-g-studio-museum",
+    "site": "studio-museum",
+    "kind": "gallery",
+    "title": "Visit the Studio Museum in Harlem | Studio Museum in Harlem",
+    "url": "https://www.studiomuseum.org/visit",
+    "words": {
+     "first": 85,
+     "total": 573
+    },
+    "hasD": true
+   },
+   {
+    "code": "V12",
+    "base": "V12-g-amsterdam-museum",
+    "site": "amsterdam-museum",
+    "kind": "gallery",
+    "title": "See and Do | Amsterdam Museum",
+    "url": "https://www.amsterdammuseum.nl/en/see-and-do/agenda",
+    "words": {
+     "first": 39,
+     "total": 743
+    },
+    "hasD": true
+   },
+   {
+    "code": "V13",
+    "base": "V13-g-mam",
+    "site": "mam",
+    "kind": "gallery",
+    "title": "Milwaukee Art Museum | Visit",
+    "url": "https://mam.org/visit",
+    "words": {
+     "first": 28,
+     "total": 782
+    },
+    "hasD": true
+   },
+   {
+    "code": "V14",
+    "base": "V14-g-rom",
+    "site": "rom",
+    "kind": "gallery",
+    "title": "Museum maps & tours | Royal Ontario Museum",
+    "url": "https://www.rom.on.ca/visit/museum-maps-tours",
+    "words": {
+     "first": 219,
+     "total": 825
+    },
+    "hasD": true
+   },
+   {
+    "code": "V15",
+    "base": "V15-g-branksome",
+    "site": "branksome",
+    "kind": "gallery",
+    "title": "Contact Branksome Hall | Toronto’s Leading IB World School",
+    "url": "https://branksome.on.ca/about/contact-us/",
+    "words": {
+     "first": 27,
+     "total": 527
+    },
+    "hasD": true
+   },
+   {
+    "code": "V16",
+    "base": "V16-g-la-palatine",
+    "site": "la-palatine",
+    "kind": "gallery",
+    "title": "Ensemble La Palatine",
+    "url": "https://www.ensemblelapalatine.com/",
+    "words": {
+     "first": 28,
+     "total": 1269
+    },
+    "hasD": true
+   },
+   {
+    "code": "V17",
+    "base": "V17-g-sinai-temple",
+    "site": "sinai-temple",
+    "kind": "gallery",
+    "title": "Contact Us - Sinai Temple",
+    "url": "https://www.sinaitemple.org/contact/",
+    "words": {
+     "first": 48,
+     "total": 97
+    },
+    "hasD": true
+   },
+   {
+    "code": "V18",
+    "base": "V18-g-frederick-gunn",
+    "site": "frederick-gunn",
+    "kind": "gallery",
+    "title": "Inquire - The Frederick Gunn School",
+    "url": "https://www.frederickgunn.org/admissions/inquire",
+    "words": {
+     "first": 5,
+     "total": 135
+    },
+    "hasD": true
+   },
+   {
+    "code": "V19",
+    "base": "V19-g-palmer",
+    "site": "palmer",
+    "kind": "gallery",
+    "title": "Contact • Palmer Dinnerware",
+    "url": "https://www.palmer-dinnerware.com/contact",
+    "words": {
+     "first": 54,
+     "total": 127
+    },
+    "hasD": true
+   },
+   {
+    "code": "V20",
+    "base": "V20-g-united-carriers",
+    "site": "united-carriers",
+    "kind": "gallery",
+    "title": "Contact",
+    "url": "https://unitedcarriers.com/contact",
+    "words": {
+     "first": 106,
+     "total": 213
+    },
+    "hasD": true
+   },
+   {
+    "code": "V21",
+    "base": "V21-g-btay",
+    "site": "btay",
+    "kind": "gallery",
+    "title": "Vancouver Web Designer | Brittany Taylor",
+    "url": "https://btay.ca/",
+    "words": {
+     "first": 19,
+     "total": 487
+    },
+    "hasD": true
+   },
+   {
+    "code": "V22",
+    "base": "V22-g-westminster-abbey",
+    "site": "westminster-abbey",
+    "kind": "gallery",
+    "title": "Visit the Abbey | Westminster Abbey",
+    "url": "https://www.westminster-abbey.org/visit-us/",
+    "words": {
+     "first": 57,
+     "total": 936
+    },
+    "hasD": true
+   },
+   {
+    "code": "V23",
+    "base": "V23-g-andmade",
+    "site": "andmade",
+    "kind": "gallery",
+    "title": "Contact - ANDMADE Inc.",
+    "url": "https://andmade.jp/contact/",
+    "words": {
+     "first": 68,
+     "total": 82
+    },
+    "hasD": true
+   },
+   {
+    "code": "V24",
+    "base": "V24-g-sagrada",
+    "site": "sagrada",
+    "kind": "gallery",
+    "title": "Tickets - Sagrada Família - Sagrada Familia",
+    "url": "https://sagradafamilia.org/en/tickets",
+    "words": {
+     "first": 45,
+     "total": 147
+    },
+    "hasD": true
+   },
+   {
+    "code": "V25",
+    "base": "V25-g-vam",
+    "site": "vam",
+    "kind": "gallery",
+    "title": "Visit the V&A",
+    "url": "https://www.vam.ac.uk/visit",
+    "words": {
+     "first": 38,
+     "total": 571
+    },
+    "hasD": true
+   },
+   {
+    "code": "V26",
+    "base": "V26-g-govuk",
+    "site": "govuk",
+    "kind": "gallery",
+    "title": "Find contact details for services - GOV.UK",
+    "url": "https://www.gov.uk/contact",
+    "words": {
+     "first": 92,
+     "total": 461
+    },
+    "hasD": true
+   },
+   {
+    "code": "V27",
+    "base": "V27-g-boston-gov",
+    "site": "boston-gov",
+    "kind": "gallery",
+    "title": "Contact Boston City Hall | Boston.gov",
+    "url": "https://www.boston.gov/departments/mayors-office/contact-boston-city-hall",
+    "words": {
+     "first": 196,
+     "total": 1581
+    },
+    "hasD": true
+   },
+   {
+    "code": "V28",
+    "base": "V28-g-charitywater",
+    "site": "charitywater",
+    "kind": "gallery",
+    "title": "Contact Us | charity: water",
+    "url": "https://www.charitywater.org/contact",
+    "words": {
+     "first": 50,
+     "total": 259
+    },
+    "hasD": true
+   },
+   {
+    "code": "V29",
+    "base": "V29-g-heath",
+    "site": "heath",
+    "kind": "gallery",
+    "title": "Locations | Heath Ceramics",
+    "url": "https://www.heathceramics.com/pages/locations",
+    "words": {
+     "first": 84,
+     "total": 573
+    },
+    "hasD": true
+   },
+   {
+    "code": "V30",
+    "base": "V30-g-nypl",
+    "site": "nypl",
+    "kind": "gallery",
+    "title": "Plan Your Visit to the Stephen A. Schwarzman Building | The New York P",
+    "url": "https://www.nypl.org/spotlight/schwarzman-plan-your-visit",
+    "words": {
+     "first": 89,
+     "total": 1424
+    },
+    "hasD": true
+   },
+   {
+    "code": "V31",
+    "base": "V31-g-kinfolk",
+    "site": "kinfolk",
+    "kind": "gallery",
+    "title": "Home Tour: Alekos Fassianos - Kinfolk",
+    "url": "https://www.kinfolk.com/stories/home-tour-alekos-fassianos/",
+    "words": {
+     "first": 26,
+     "total": 292
+    },
+    "hasD": true
+   },
+   {
+    "code": "V32",
+    "base": "V32-g-nationaltrust",
+    "site": "nationaltrust",
+    "kind": "gallery",
+    "title": "Best Days Out & Places To Visit in the UK | National Trust",
+    "url": "https://www.nationaltrust.org.uk/visit",
+    "words": {
+     "first": 31,
+     "total": 668
+    },
+    "hasD": true
+   },
+   {
+    "code": "V33",
+    "base": "V33-g-surfers-site",
+    "site": "surfers-site",
+    "kind": "gallery",
+    "title": "Contact Us - The Surfers Journal",
+    "url": "https://www.surfersjournal.com/contact/",
+    "words": {
+     "first": 105,
+     "total": 155
+    },
+    "hasD": true
+   },
+   {
+    "code": "V34",
+    "base": "V34-s-mas-charter-school",
+    "site": "mas-charter-school",
+    "kind": "school",
+    "title": "Visiting Hours & Tours - Mission Achievement and Success Charter Schoo",
+    "url": "https://www.mascharterschool.com/enroll-register/visiting-hours-tours",
+    "words": {
+     "first": 48,
+     "total": 565
+    },
+    "hasD": true
+   },
+   {
+    "code": "V35",
+    "base": "V35-s-malden-catholic",
+    "site": "malden-catholic",
+    "kind": "school",
+    "title": "Visit MC - Malden Catholic",
+    "url": "https://www.maldencatholic.org/admissions/shadow",
+    "words": {
+     "first": 109,
+     "total": 233
+    },
+    "hasD": true
+   },
+   {
+    "code": "V36",
+    "base": "V36-s-salesianum-school",
+    "site": "salesianum-school",
+    "kind": "school",
+    "title": "Visit Our Campus | Salesianum",
+    "url": "https://www.salesianum.org/admissions/visit-our-campus",
+    "words": {
+     "first": 116,
+     "total": 294
+    },
+    "hasD": true
+   },
+   {
+    "code": "V37",
+    "base": "V37-s-christopher-columbus-hs",
+    "site": "christopher-columbus-hs",
+    "kind": "school",
+    "title": "Open House - Christopher Columbus High School",
+    "url": "https://www.columbushs.com/admission/open-house",
+    "words": {
+     "first": 165,
+     "total": 486
+    },
+    "hasD": true
+   },
+   {
+    "code": "V38",
+    "base": "V38-s-shady-side-academy",
+    "site": "shady-side-academy",
+    "kind": "school",
+    "title": "Schedule a Campus Visit | Shady Side Academy",
+    "url": "https://www.shadysideacademy.org/explore-admission/visit",
+    "words": {
+     "first": 14,
+     "total": 191
+    },
+    "hasD": true
+   },
+   {
+    "code": "V39",
+    "base": "V39-s-fairfield-college-prep",
+    "site": "fairfield-college-prep",
+    "kind": "school",
+    "title": "Visit Our Campus | Fairfield College Preparatory School | Fairfield, C",
+    "url": "https://www.fairfieldprep.org/admission/openhouse",
+    "words": {
+     "first": 68,
+     "total": 186
+    },
+    "hasD": true
+   },
+   {
+    "code": "V40",
+    "base": "V40-s-broward-county-public-schools",
+    "site": "broward-county-public-schools",
+    "kind": "school",
+    "title": "Contact Us",
+    "url": "https://www.browardschools.com/contact",
+    "words": {
+     "first": 105,
+     "total": 575
+    },
+    "hasD": true
+   },
+   {
+    "code": "V41",
+    "base": "V41-s-henderson-collegiate",
+    "site": "henderson-collegiate",
+    "kind": "school",
+    "title": "Contact Us - Henderson Collegiate",
+    "url": "https://www.hendersoncollegiate.org/about/contact-us",
+    "words": {
+     "first": 4,
+     "total": 350
+    },
+    "hasD": true
+   },
+   {
+    "code": "V42",
+    "base": "V42-s-ricardo-flores-magon-academy",
+    "site": "ricardo-flores-magon-academy",
+    "kind": "school",
+    "title": "Schedule your Tour - Ricardo Flores Magon Academy",
+    "url": "https://www.magonacademy.org/about/schedule-your-tour",
+    "words": {
+     "first": 38,
+     "total": 161
+    },
+    "hasD": true
+   },
+   {
+    "code": "V43",
+    "base": "V43-s-stem-school-highlands-ranch",
+    "site": "stem-school-highlands-ranch",
+    "kind": "school",
+    "title": "CONTACT US - STEM School Highlands Ranch",
+    "url": "https://www.stemk12.org/about/contact",
+    "words": {
+     "first": 98,
+     "total": 412
+    },
+    "hasD": true
+   },
+   {
+    "code": "V44",
+    "base": "V44-s-metro-nashville-public-schools",
+    "site": "metro-nashville-public-schools",
+    "kind": "school",
+    "title": "Family Information Center - Metropolitan Nashville Public Schools",
+    "url": "https://www.mnps.org/students-families/family-information-center",
+    "words": {
+     "first": 45,
+     "total": 539
+    },
+    "hasD": true
+   },
+   {
+    "code": "V45",
+    "base": "V45-s-eden-prairie-schools",
+    "site": "eden-prairie-schools",
+    "kind": "school",
+    "title": "Tours - Eden Prairie Schools",
+    "url": "https://www.edenpr.org/tours",
+    "words": {
+     "first": 124,
+     "total": 384
+    },
+    "hasD": true
+   },
+   {
+    "code": "V46",
+    "base": "V46-s-newport-news-public-schools-nspr",
+    "site": "newport-news-public-schools-nspr",
+    "kind": "school",
+    "title": "Contact Us",
+    "url": "https://www.nnschools.org/contact/",
+    "words": {
+     "first": 83,
+     "total": 320
+    },
+    "hasD": true
+   },
+   {
+    "code": "V47",
+    "base": "V47-s-mckinney-isd-nspra",
+    "site": "mckinney-isd-nspra",
+    "kind": "school",
+    "title": "Contact Communications | McKinney ISD",
+    "url": "https://www.mckinneyisd.net/page/contact-us",
+    "words": {
+     "first": 47,
+     "total": 303
+    },
+    "hasD": true
+   },
+   {
+    "code": "V48",
+    "base": "V48-s-plano-isd",
+    "site": "plano-isd",
+    "kind": "school",
+    "title": "Staff Directory",
+    "url": "https://www.pisd.edu/about-our-district/staff-directory",
+    "words": {
+     "first": 36,
+     "total": 197
+    },
+    "hasD": true
+   },
+   {
+    "code": "V49",
+    "base": "V49-s-immaculate-heart",
+    "site": "immaculate-heart",
+    "kind": "school",
+    "title": "Admissions Events",
+    "url": "https://www.immaculateheart.org/admissions/admissions-events",
+    "words": {
+     "first": 68,
+     "total": 1335
+    },
+    "hasD": true
+   },
+   {
+    "code": "V50",
+    "base": "V50-s-adams-12-nspra",
+    "site": "adams-12-nspra",
+    "kind": "school",
+    "title": "Contact Financial Services - Adams 12 Five Star Schools",
+    "url": "https://www.adams12.org/our-district/financials/contact-financial-services",
+    "words": {
+     "first": 62,
+     "total": 114
+    },
+    "hasD": true
+   },
+   {
+    "code": "V51",
+    "base": "V51-s-hotchkiss",
+    "site": "hotchkiss",
+    "kind": "school",
+    "title": "Campus Visits - Independent Boarding School | Hotchkiss",
+    "url": "https://www.hotchkiss.org/admission/schedule-visit",
+    "words": {
+     "first": 66,
+     "total": 225
+    },
+    "hasD": true
+   },
+   {
+    "code": "V52",
+    "base": "V52-s-lakeside",
+    "site": "lakeside",
+    "kind": "school",
+    "title": "Contact Us - Lakeside School",
+    "url": "https://www.lakesideschool.org/about-us/contact-us",
+    "words": {
+     "first": 63,
+     "total": 1146
+    },
+    "hasD": true
+   },
+   {
+    "code": "V53",
+    "base": "V53-s-exeter",
+    "site": "exeter",
+    "kind": "school",
+    "title": "Visit Exeter - Phillips Exeter Academy",
+    "url": "https://exeter.edu/admissions/visit/",
+    "words": {
+     "first": 95,
+     "total": 286
+    },
+    "hasD": true
+   },
+   {
+    "code": "V54",
+    "base": "V54-s-harvard-westlake",
+    "site": "harvard-westlake",
+    "kind": "school",
+    "title": "Contact Us",
+    "url": "https://www.hw.com/about/Contact-Us",
+    "words": {
+     "first": 26,
+     "total": 472
+    },
+    "hasD": true
+   },
+   {
+    "code": "V55",
+    "base": "V55-s-nueva",
+    "site": "nueva",
+    "kind": "school",
+    "title": "Welcome to Nueva Admissions | The Nueva School",
+    "url": "https://www.nuevaschool.org/admissions/visit-and-apply",
+    "words": {
+     "first": 51,
+     "total": 503
+    },
+    "hasD": true
+   },
+   {
+    "code": "V56",
+    "base": "V56-s-thacher",
+    "site": "thacher",
+    "kind": "school",
+    "title": "The Thacher School | Visit Thacher",
+    "url": "https://www.thacher.org/admission/visit-thacher",
+    "words": {
+     "first": 91,
+     "total": 365
+    },
+    "hasD": true
+   },
+   {
+    "code": "V57",
+    "base": "V57-s-success-academy",
+    "site": "success-academy",
+    "kind": "school",
+    "title": "Parent Tours & Events - Get to Know Us | Success Academy NYC",
+    "url": "https://www.successacademies.org/events/",
+    "words": {
+     "first": 68,
+     "total": 245
+    },
+    "hasD": true
+   },
+   {
+    "code": "V58",
+    "base": "V58-s-deerfield",
+    "site": "deerfield",
+    "kind": "school",
+    "title": "Visiting Deerfield – Deerfield Academy",
+    "url": "https://deerfield.edu/about/visit",
+    "words": {
+     "first": 12,
+     "total": 823
+    },
+    "hasD": true
+   },
+   {
+    "code": "V59",
+    "base": "V59-s-khan-lab",
+    "site": "khan-lab",
+    "kind": "school",
+    "title": "Visit Khan Lab School",
+    "url": "https://khanlabschool.org/Visit",
+    "words": {
+     "first": 98,
+     "total": 539
+    },
+    "hasD": true
+   }
+  ],
+  "calendar": [
+   {
+    "code": "C01",
+    "base": "C01-s-mas-charter-school",
+    "site": "mas-charter-school",
+    "kind": "school",
+    "title": "News - Mission Achievement and Success Charter School",
+    "url": "https://www.mascharterschool.com/about-us/news",
+    "words": {
+     "first": 46,
+     "total": 2073
+    },
+    "hasD": true
+   },
+   {
+    "code": "C02",
+    "base": "C02-s-malden-catholic",
+    "site": "malden-catholic",
+    "kind": "school",
+    "title": "Latest News - Malden Catholic",
+    "url": "https://www.maldencatholic.org/about-us/news-of-mc",
+    "words": {
+     "first": 51,
+     "total": 193
+    },
+    "hasD": true
+   },
+   {
+    "code": "C03",
+    "base": "C03-s-salesianum-school",
+    "site": "salesianum-school",
+    "kind": "school",
+    "title": "Calendar | Salesianum",
+    "url": "https://www.salesianum.org/calendar",
+    "words": {
+     "first": 77,
+     "total": 185
+    },
+    "hasD": true
+   },
+   {
+    "code": "C04",
+    "base": "C04-s-christopher-columbus-hs",
+    "site": "christopher-columbus-hs",
+    "kind": "school",
+    "title": "Calendar - Christopher Columbus High School",
+    "url": "https://www.columbushs.com/news-calendar/calendar",
+    "words": {
+     "first": 67,
+     "total": 442
+    },
+    "hasD": true
+   },
+   {
+    "code": "C05",
+    "base": "C05-s-shady-side-academy",
+    "site": "shady-side-academy",
+    "kind": "school",
+    "title": "Admission Events | Shady Side Academy",
+    "url": "https://www.shadysideacademy.org/explore-admission/events",
+    "words": {
+     "first": 26,
+     "total": 264
+    },
+    "hasD": true
+   },
+   {
+    "code": "C06",
+    "base": "C06-s-fairfield-college-prep",
+    "site": "fairfield-college-prep",
+    "kind": "school",
+    "title": "News & Media | Fairfield College Preparatory School",
+    "url": "https://www.fairfieldprep.org/about/news-media",
+    "words": {
+     "first": 35,
+     "total": 355
+    },
+    "hasD": true
+   },
+   {
+    "code": "C07",
+    "base": "C07-s-broward-county-public-schools",
+    "site": "broward-county-public-schools",
+    "kind": "school",
+    "title": "Newsroom",
+    "url": "https://www.browardschools.com/bcps-departments/newsroom",
+    "words": {
+     "first": 36,
+     "total": 626
+    },
+    "hasD": true
+   },
+   {
+    "code": "C08",
+    "base": "C08-s-henderson-collegiate",
+    "site": "henderson-collegiate",
+    "kind": "school",
+    "title": "Calendar - Henderson Collegiate",
+    "url": "https://www.hendersoncollegiate.org/about/calendar",
+    "words": {
+     "first": 26,
+     "total": 283
+    },
+    "hasD": true
+   },
+   {
+    "code": "C09",
+    "base": "C09-s-ricardo-flores-magon-academy",
+    "site": "ricardo-flores-magon-academy",
+    "kind": "school",
+    "title": "Game Calendar - Ricardo Flores Magon Academy",
+    "url": "https://www.magonacademy.org/athletics/game-calendar",
+    "words": {
+     "first": 110,
+     "total": 254
+    },
+    "hasD": true
+   },
+   {
+    "code": "C10",
+    "base": "C10-s-stem-school-highlands-ranch",
+    "site": "stem-school-highlands-ranch",
+    "kind": "school",
+    "title": "ACTIVITIES AND EVENTS CALENDAR - STEM School Highlands Ranch",
+    "url": "https://www.stemk12.org/calendars/school-calendar",
+    "words": {
+     "first": 113,
+     "total": 525
+    },
+    "hasD": true
+   },
+   {
+    "code": "C11",
+    "base": "C11-s-metro-nashville-public-schools",
+    "site": "metro-nashville-public-schools",
+    "kind": "school",
+    "title": "District Calendar - Metropolitan Nashville Public Schools",
+    "url": "https://www.mnps.org/about/district-calendar",
+    "words": {
+     "first": 44,
+     "total": 285
+    },
+    "hasD": true
+   },
+   {
+    "code": "C12",
+    "base": "C12-s-eden-prairie-schools",
+    "site": "eden-prairie-schools",
+    "kind": "school",
+    "title": "Calendars - Current Families Eden Prairie Schools",
+    "url": "https://my.edenpr.org/calendars",
+    "words": {
+     "first": 100,
+     "total": 430
+    },
+    "hasD": true
+   },
+   {
+    "code": "C13",
+    "base": "C13-s-warwick-valley-csd",
+    "site": "warwick-valley-csd",
+    "kind": "school",
+    "title": "Calendar - Warwick Valley Central School District",
+    "url": "https://www.warwickvalleyschools.com/district/calendar",
+    "words": {
+     "first": 30,
+     "total": 216
+    },
+    "hasD": true
+   },
+   {
+    "code": "C14",
+    "base": "C14-s-littleton-public-schools-nspra",
+    "site": "littleton-public-schools-nspra",
+    "kind": "school",
+    "title": "News | A Destination District",
+    "url": "https://www.littletonpublicschools.net/news",
+    "words": {
+     "first": 56,
+     "total": 899
+    },
+    "hasD": true
+   },
+   {
+    "code": "C15",
+    "base": "C15-s-newport-news-public-schools-nspr",
+    "site": "newport-news-public-schools-nspr",
+    "kind": "school",
+    "title": "Newport News Educational Foundation",
+    "url": "https://www.nnschools.org/nnef/",
+    "words": {
+     "first": 36,
+     "total": 923
+    },
+    "hasD": true
+   },
+   {
+    "code": "C16",
+    "base": "C16-s-mckinney-isd-nspra",
+    "site": "mckinney-isd-nspra",
+    "kind": "school",
+    "title": "Events | McKinney ISD",
+    "url": "https://www.mckinneyisd.net/events",
+    "words": {
+     "first": 27,
+     "total": 162
+    },
+    "hasD": true
+   },
+   {
+    "code": "C17",
+    "base": "C17-s-plano-isd",
+    "site": "plano-isd",
+    "kind": "school",
+    "title": "Calendar - Plano Independent School District",
+    "url": "https://www.pisd.edu/about-our-district/calendar",
+    "words": {
+     "first": 73,
+     "total": 104
+    },
+    "hasD": true
+   },
+   {
+    "code": "C18",
+    "base": "C18-s-valdosta-city-schools-nspra",
+    "site": "valdosta-city-schools-nspra",
+    "kind": "school",
+    "title": "News | Valdosta City Schools",
+    "url": "https://www.gocats.org/news",
+    "words": {
+     "first": 62,
+     "total": 917
+    },
+    "hasD": true
+   },
+   {
+    "code": "C19",
+    "base": "C19-s-immaculate-heart",
+    "site": "immaculate-heart",
+    "kind": "school",
+    "title": "Calendar",
+    "url": "https://www.immaculateheart.org/calendar",
+    "words": {
+     "first": 63,
+     "total": 200
+    },
+    "hasD": true
+   },
+   {
+    "code": "C20",
+    "base": "C20-s-fayetteville-public-schools-nspr",
+    "site": "fayetteville-public-schools-nspr",
+    "kind": "school",
+    "title": "Events | Fayetteville Public Schools",
+    "url": "https://district.fayar.net/events",
+    "words": {
+     "first": 30,
+     "total": 699
+    },
+    "hasD": true
+   },
+   {
+    "code": "C21",
+    "base": "C21-s-adams-12-nspra",
+    "site": "adams-12-nspra",
+    "kind": "school",
+    "title": "Calendar - Adams 12 Five Star Schools",
+    "url": "https://www.adams12.org/our-district/calendar",
+    "words": {
+     "first": 63,
+     "total": 197
+    },
+    "hasD": true
+   },
+   {
+    "code": "C22",
+    "base": "C22-s-hotchkiss",
+    "site": "hotchkiss",
+    "kind": "school",
+    "title": "Art News - Private Schools in Lakeville, CT | Hotchkiss",
+    "url": "https://www.hotchkiss.org/arts/news",
+    "words": {
+     "first": 67,
+     "total": 395
+    },
+    "hasD": true
+   },
+   {
+    "code": "C23",
+    "base": "C23-s-lakeside",
+    "site": "lakeside",
+    "kind": "school",
+    "title": "News & Announcements - Lakeside School",
+    "url": "https://www.lakesideschool.org/fs/pages/77",
+    "words": {
+     "first": 31,
+     "total": 2494
+    },
+    "hasD": true
+   },
+   {
+    "code": "C24",
+    "base": "C24-s-dalton",
+    "site": "dalton",
+    "kind": "school",
+    "title": "Holidays & Closures | Dalton",
+    "url": "https://www.dalton.org/academic-calendar",
+    "words": {
+     "first": 181,
+     "total": 646
+    },
+    "hasD": true
+   },
+   {
+    "code": "C25",
+    "base": "C25-s-exeter",
+    "site": "exeter",
+    "kind": "school",
+    "title": "Website - Upcoming Admissions Events",
+    "url": "https://www.exeter.edu/admissions/admission-events/",
+    "words": {
+     "first": 73,
+     "total": 1169
+    },
+    "hasD": true
+   },
+   {
+    "code": "C26",
+    "base": "C26-s-harvard-westlake",
+    "site": "harvard-westlake",
+    "kind": "school",
+    "title": "Calendar",
+    "url": "https://www.hw.com/calendar",
+    "words": {
+     "first": 46,
+     "total": 1565
+    },
+    "hasD": true
+   },
+   {
+    "code": "C27",
+    "base": "C27-s-nueva",
+    "site": "nueva",
+    "kind": "school",
+    "title": "News | The Nueva School",
+    "url": "https://www.nuevaschool.org/about/news-events/news",
+    "words": {
+     "first": 16,
+     "total": 203
+    },
+    "hasD": true
+   },
+   {
+    "code": "C28",
+    "base": "C28-s-avenues",
+    "site": "avenues",
+    "kind": "school",
+    "title": "Admissions | School Events | Avenues New York",
+    "url": "https://www.avenues.org/new-york/events",
+    "words": {
+     "first": 91,
+     "total": 403
+    },
+    "hasD": true
+   },
+   {
+    "code": "C29",
+    "base": "C29-s-thacher",
+    "site": "thacher",
+    "kind": "school",
+    "title": "Thacher Today News and Media. Find out what is happening. View photos.",
+    "url": "https://www.thacher.org/explore/thacher-today/news--media",
+    "words": {
+     "first": 105,
+     "total": 559
+    },
+    "hasD": true
+   },
+   {
+    "code": "C30",
+    "base": "C30-s-deerfield",
+    "site": "deerfield",
+    "kind": "school",
+    "title": "Athletics Event – Deerfield Academy",
+    "url": "https://deerfield.edu/athletics/events",
+    "words": {
+     "first": 31,
+     "total": 1517
+    },
+    "hasD": true
+   },
+   {
+    "code": "C31",
+    "base": "C31-s-khan-lab",
+    "site": "khan-lab",
+    "kind": "school",
+    "title": "School Calendar",
+    "url": "https://khanlabschool.org/School-Calendar",
+    "words": {
+     "first": 131,
+     "total": 440
+    },
+    "hasD": true
+   }
+  ]
+ },
+ "cmp": [
+  {
+   "t": "home",
+   "refFirst": 41,
+   "refTotal": 532,
+   "ourFirst": 83,
+   "ourTotal": 633,
+   "n": 83
+  },
+  {
+   "t": "admissions",
+   "refFirst": 51,
+   "refTotal": 537,
+   "ourFirst": 88,
+   "ourTotal": 381,
+   "n": 27
+  },
+  {
+   "t": "about",
+   "refFirst": 54,
+   "refTotal": 593,
+   "ourFirst": 132,
+   "ourTotal": 488,
+   "n": 65
+  },
+  {
+   "t": "programs",
+   "refFirst": 60,
+   "refTotal": 502,
+   "ourFirst": 87,
+   "ourTotal": 415,
+   "n": 31
+  },
+  {
+   "t": "tuition",
+   "refFirst": 70,
+   "refTotal": 454,
+   "ourFirst": 90,
+   "ourTotal": 350,
+   "n": 15
+  },
+  {
+   "t": "visit",
+   "refFirst": 63,
+   "refTotal": 350,
+   "ourFirst": 78,
+   "ourTotal": 236,
+   "n": 59
+  },
+  {
+   "t": "calendar",
+   "refFirst": 56,
+   "refTotal": 430,
+   "ourFirst": 104,
+   "ourTotal": 495,
+   "n": 31
+  }
+ ]
+}
