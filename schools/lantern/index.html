@@ -88,7 +88,7 @@ a{color:inherit;text-decoration-thickness:1px;text-underline-offset:4px}
 .cover{position:relative;isolation:isolate;min-height:100svh;display:flex;flex-direction:column;color:var(--on-indigo);background:var(--indigo)}
 .cover :focus-visible{outline-color:var(--on-indigo)}
 .cover__pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 30%;z-index:-2}
-.cover::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgb(21 26 53 / .72) 0,rgb(21 26 53 / 0) 22%,rgb(21 26 53 / 0) 40%,rgb(21 26 53 / .86) 66%,rgb(21 26 53 / .94) 100%)}
+.cover::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgb(21 26 53 / .85) 0,rgb(21 26 53 / 0) 14%,rgb(21 26 53 / 0) 20%,rgb(21 26 53 / .92) 38%,rgb(21 26 53 / .95) 100%)}
 .cover > .wrap{width:100%}
 .cover__top{display:flex;align-items:center;gap:var(--t24);min-height:64px;padding-top:var(--t8)}
 .brand{display:flex;align-items:center;gap:var(--t16);text-decoration:none;margin-right:auto;min-height:48px;font-size:var(--f-body);line-height:1.1;font-weight:500}
@@ -108,11 +108,18 @@ html:not(.js) .menu[hidden]{display:block;position:static}
 .cover__note[hidden]{display:none}
 .cover h1{max-width:15ch;margin-bottom:var(--t8)}
 .cover .lock{color:var(--on-indigo);max-width:40ch}
-.signoff{color:var(--on-indigo-2);max-width:44ch}
-.signoff a{display:inline-block;padding:var(--t8) 0;min-height:44px;color:var(--on-indigo)}
-.cover__credit{position:absolute;right:var(--gut);bottom:var(--t16);color:var(--on-indigo-2);display:none}
+.signoff{color:var(--on-indigo);max-width:44ch}
+.signoff a,.inl a{display:inline-block;min-width:44px;min-height:44px;padding:var(--t8) var(--t8);margin:0 calc(-1*var(--t8));text-align:center;color:inherit}
+.cover__credit{position:absolute;right:var(--gut);bottom:var(--t16);color:var(--on-indigo);display:none}
 /* the bar that appears once the cover is past (desktop) */
-.pastbar{display:none}
+.pastbar{position:fixed;left:0;right:0;top:0;z-index:20;background:var(--indigo);color:var(--on-indigo);border-bottom:1px solid var(--indigo-2);visibility:hidden}
+.pastbar.on{visibility:visible}
+.pastbar .wrap{display:flex;align-items:center;gap:var(--t24);width:100%;min-height:56px}
+.pastbar .brand{font-size:var(--f-chrome);gap:var(--t8)}
+.pastbar .act{font-size:var(--f-chrome)}
+.run-call{display:inline-flex;align-items:center;min-height:44px;font-size:var(--f-chrome)}
+.pastbar :focus-visible{outline-color:var(--on-indigo)}
+html{scroll-padding-top:var(--t96)}
 @media (min-width:900px){
   .cover{min-height:min(100svh,940px)}
   .cover__top{min-height:80px}
@@ -121,12 +128,10 @@ html:not(.js) .menu[hidden]{display:block;position:static}
   .brand{font-size:var(--f-h3)}
   .cover__body{padding-bottom:var(--t64)}
   .cover__body > *{max-width:640px}
-  .cover::before{background:linear-gradient(180deg,rgb(21 26 53 / .7) 0,rgb(21 26 53 / 0) 18%),linear-gradient(90deg,rgb(21 26 53 / .9) 0,rgb(21 26 53 / .7) 38%,rgb(21 26 53 / 0) 66%)}
+  .cover::before{background:linear-gradient(180deg,rgb(21 26 53 / .92) 0,rgb(21 26 53 / .75) 7%,rgb(21 26 53 / 0) 14%,rgb(21 26 53 / 0) 22%,rgb(21 26 53 / .88) 38%,rgb(21 26 53 / .95) 100%)}
+  .cover .lock{display:none}
   .cover__credit{display:block}
-  .pastbar{display:flex;position:fixed;left:0;right:0;top:0;z-index:20;background:var(--indigo);color:var(--on-indigo);border-bottom:1px solid var(--indigo-2);visibility:hidden}
-  .pastbar.on{visibility:visible}
-  .pastbar .wrap{display:flex;align-items:center;gap:var(--t40);width:100%;min-height:64px}
-  .pastbar .brand{font-size:var(--f-body)}
+  .pastbar .wrap{min-height:64px;gap:var(--t40)}
 }
 @media (max-width:899px){
   .cover__body{gap:var(--t4)}
@@ -140,7 +145,7 @@ html:not(.js) .menu[hidden]{display:block;position:static}
 .essay{padding:var(--t96) 0}
 .essay__head .r-body{color:var(--muted);margin-top:var(--t16)}
 .chapters{display:flex;flex-wrap:wrap;gap:0 var(--t24);margin-top:var(--t16)}
-.chapters a{display:inline-flex;align-items:center;min-height:44px}
+.chapters a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:48px}
 .entry{margin-top:var(--t64)}
 .entry figure img{width:100%;object-fit:cover}
 .entry figcaption{margin-top:var(--t8);color:var(--muted);max-width:52ch}
@@ -172,6 +177,9 @@ html:not(.js) .menu[hidden]{display:block;position:static}
 /* the line that keeps going (the one signature moment) */
 .line{margin-top:var(--t96)}
 .line .lead{color:var(--on-indigo-2);margin-top:var(--t16)}
+.cm{margin-bottom:var(--t40)}
+.cm img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.cmcap{margin-top:var(--t8);color:var(--muted);max-width:52ch}
 .track{position:relative;height:64px;margin-top:var(--t40)}
 .track__base{position:absolute;left:0;right:0;top:24px;height:2px;background:var(--indigo-2)}
 .track__run{position:absolute;left:0;right:0;top:24px;height:4px;background:var(--on-indigo);transform-origin:left center;transform:scaleX(1)}
@@ -269,7 +277,7 @@ legend{padding:0}
 @media (min-width:900px){.journal li{grid-template-columns:repeat(8,minmax(0,1fr));column-gap:var(--colgap)}.journal time{grid-column:1/3;padding-top:var(--t4)}.journal li p{grid-column:3/8}}
 
 /* footer */
-.ft{padding:var(--t64) 0 calc(var(--t40) + var(--railh,0px))}
+.ft{padding:var(--t64) 0 var(--t40)}
 .ft a{color:var(--on-indigo)}
 .ft .name{font-size:var(--f-h3);line-height:1.2;font-weight:500;margin-bottom:var(--t16);color:var(--on-indigo)}
 .ft h3{font-size:var(--f-body);font-weight:500;margin-bottom:var(--t8);color:var(--on-indigo)}
@@ -281,16 +289,11 @@ legend{padding:0}
 .ft summary{cursor:pointer;min-height:44px;display:inline-flex;align-items:center;color:var(--on-indigo)}
 .ft details ul{margin-top:var(--t8)}
 
-/* phone rail: a quiet line, no entrance animation */
-.rail{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--indigo);color:var(--on-indigo);display:none;align-items:center;gap:var(--t24);padding:0 var(--gut) env(safe-area-inset-bottom);min-height:56px}
-.rail.on{display:flex}
-.rail .act{margin-right:auto}
-@media (min-width:900px){.rail{display:none!important}}
 html.tour,html.tour *{cursor:none!important}
 
 @media print{
   body{background:#fff;color:#000;font-size:11pt}
-  .chrome,.mh,.open,.essay,.apply,.give,.vol,.journal,.rail,.skip,.noprint{display:none!important}
+  .pastbar,.cover,.essay,.after,.apply,.give,.vol,.journal,.rail,.skip,.noprint{display:none!important}
   .daysec{padding:0;background:#fff}
   .doc tr.ext td{background:#e6e6e6;-webkit-print-color-adjust:exact;print-color-adjust:exact}
   .ft{background:#fff;color:#000;padding:12pt 0 0}
@@ -310,8 +313,8 @@ html.tour,html.tour *{cursor:none!important}
 <main id="main">
 <header class="cover" id="top">
   <picture class="cover__pic">
-    <source media="(max-width: 899px)" srcset="assets/r2/cover-800.webp" width="800" height="1347">
-    <img src="assets/r2/cover-1600.webp" width="1600" height="900" fetchpriority="high" decoding="async" alt="A teacher points to a line on a math worksheet while a student writes beside him, late in the afternoon" data-i-alt="heroAlt">
+    <source media="(max-width: 899px)" srcset="assets/r2/cover-800.webp" width="720" height="1280">
+    <img src="assets/r2/cover-1600.webp" width="1600" height="893" fetchpriority="high" decoding="async" alt="Late-afternoon supper at a long wooden table: a teacher passes a pot of rice to middle-school students, sun coming through the windows" data-i-alt="heroAlt">
   </picture>
   <div class="wrap cover__top">
     <a class="brand" href="#top">
@@ -343,14 +346,15 @@ html.tour,html.tour *{cursor:none!important}
     <p><a class="act" href="#apply" id="openApply" data-i="openApply">Apply for 5th grade, it's free</a></p>
     <p class="signoff r-body" data-i="signoff">Questions? <a href="tel:+19785550174">Call</a> or <a href="sms:+19785550174">text</a> Ms. Vega, (978)&nbsp;555-0174.</p>
   </div>
-  <p class="cover__credit r-chrome" data-i="coverCredit">Cover: sample photograph. Study hall, 4:10 PM.</p>
+  <p class="cover__credit r-chrome" data-i="coverCredit">Cover: sample photograph. Supper, 4:50 PM.</p>
 </header>
-<div class="pastbar" id="pastbar" aria-hidden="true">
+<nav class="pastbar" id="pastbar" aria-label="Running head" data-i-aria="runAria">
   <div class="wrap">
-    <a class="brand" href="#top" tabindex="-1"><span>Lantern Middle School</span></a>
-    <a class="act" href="#apply" tabindex="-1" data-i="mhApply">Apply, it's free</a>
+    <a class="brand" href="#top"><svg width="14" height="18" viewBox="0 0 24 32" aria-hidden="true"><path d="M8 2h8M5 6h14v20H5zM2 30h20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/><rect x="9" y="10" width="6" height="12" fill="currentColor"/></svg><span>Lantern Journal</span></a>
+    <a class="run-call" href="tel:+19785550174" data-i="runCall">Call or text</a>
+    <a class="act" href="#apply" data-i="mhApply">Apply, it's free</a>
   </div>
-</div>
+</nav>
 
 <section class="essay dark" id="four-years" aria-labelledby="essay-h">
   <div class="wrap">
@@ -365,7 +369,7 @@ html.tour,html.tour *{cursor:none!important}
     </div>
 
     <article class="entry e5 g" id="g5" aria-labelledby="g5h">
-      <figure class="c1-7"><img loading="lazy" decoding="async" src="assets/r2/e5-1400.webp" srcset="assets/r2/e5-700.webp 700w, assets/r2/e5-1400.webp 1400w" sizes="(min-width:900px) 850px, 92vw" width="1400" height="802" alt="A hand with a freshly sharpened pencil on the first page of a notebook" data-i-alt="e5alt"><figcaption class="r-chrome" data-i="e5cap">The first week of September. A new notebook, a sharpened pencil, and the first thing written in it is the date.</figcaption></figure>
+      <figure class="c1-7"><img loading="lazy" decoding="async" src="assets/r2/e5-1400.webp" srcset="assets/r2/e5-700.webp 700w, assets/r2/e5-1400.webp 1200w" sizes="(min-width:900px) 850px, 92vw" width="1200" height="686" alt="Fifth graders eat breakfast at long tables, some still wearing their backpacks, while a teacher pours milk at the far end" data-i-alt="e5alt"><figcaption class="r-chrome" data-i="e5cap">The first week of September, 7:35 in the morning. Some of them still have their backpacks on. Nobody opens a book until everyone has eaten.</figcaption></figure>
       <div class="text c3-8">
         <p class="when r-chrome" data-i="e5when">Grade 5, September</p>
         <h3 id="g5h" class="r-h3" data-i="e5h">The first morning starts at 7:30</h3>
@@ -391,7 +395,7 @@ html.tour,html.tour *{cursor:none!important}
     </article>
 
     <article class="entry e7 g" id="g7" aria-labelledby="g7h">
-      <figure class="c1-8"><img loading="lazy" decoding="async" src="assets/r2/e7-1600.webp" srcset="assets/r2/e7-800.webp 800w, assets/r2/e7-1600.webp 1600w" sizes="(min-width:900px) 1120px, 92vw" width="1600" height="800" alt="Seen from behind, a paddler crosses a still lake at sunrise" data-i-alt="e7alt"><figcaption class="r-chrome" data-i="e7cap">Lake week, 6:20 in the morning. Ms. Ruiz and a seventh grader take the canoe out before the others are awake.</figcaption></figure>
+      <figure class="c1-8"><img loading="lazy" decoding="async" src="assets/r2/e7-1600.webp" srcset="assets/r2/e7-800.webp 800w, assets/r2/e7-1600.webp 1600w" sizes="(min-width:900px) 1120px, 92vw" width="1600" height="800" alt="Seen from the dock, two people paddle a canoe away across a misty lake at sunrise" data-i-alt="e7alt"><figcaption class="r-chrome" data-i="e7cap">Lake week, 6:20 in the morning. Ms. Ruiz and a seventh grader take the canoe out before the others are awake.</figcaption></figure>
       <div class="text c4-8">
         <p class="when r-chrome" data-i="e7when">Grade 7, July</p>
         <h3 id="g7h" class="r-h3" data-i="e7h">Summer is part of the school year</h3>
@@ -420,10 +424,11 @@ html.tour,html.tour *{cursor:none!important}
         <p class="r-body" data-i="eap1">Our graduate-support director keeps a list of every alum and calls each one every month, through high school and through college.</p>
         <p class="r-body" data-i="eap2">The calls are about ordinary things: a grade that slipped, a financial-aid form due Friday, a ride to the first campus visit. When something needs more than a call, a tutor or a volunteer mentor steps in.</p>
       </div>
-      <figure class="c6-8"><img loading="lazy" decoding="async" src="assets/r2/ea-800.webp" srcset="assets/r2/ea-500.webp 500w, assets/r2/ea-800.webp 800w" sizes="(min-width:900px) 380px, 92vw" width="800" height="1000" alt="Graduates in caps and gowns seen from behind at a commencement" data-i-alt="eaalt"><figcaption class="r-chrome" data-i="eacap">Commencement, eight years after a fifth-grade September. Ms. Vega sat in the second row.</figcaption></figure>
+      <figure class="c6-8"><img loading="lazy" decoding="async" src="assets/r2/ea-800.webp" srcset="assets/r2/ea-500.webp 500w, assets/r2/ea-800.webp 800w" sizes="(min-width:900px) 380px, 92vw" width="800" height="1000" alt="The graduate-support director on the phone at her desk by the window, a ledger and a lit desk lamp beside her" data-i-alt="eaalt"><figcaption class="r-chrome" data-i="eacap">A Tuesday in March, 5:30 PM. Ms. Ortega, our graduate-support director, makes the last calls of the day from a list she keeps by hand.</figcaption></figure>
     </article>
 
     <figure class="line g" id="line" aria-labelledby="lineh">
+      <div class="c1-8 cm"><img loading="lazy" decoding="async" src="assets/r2/cm-1600.webp" srcset="assets/r2/cm-800.webp 800w, assets/r2/cm-1600.webp 1400w" sizes="(min-width:900px) 1120px, 92vw" width="1400" height="781" alt="A commencement under a white tent, seen from behind the seated graduates; one graduate in the aisle turns back toward the families" data-i-alt="cmalt"><p class="r-chrome cmcap" data-i="cmcap">Commencement, eight years after a fifth-grade September. One of ours turned around to find his family in the last row.</p></div>
       <div class="c1-4">
         <h3 id="lineh" class="r-h3" data-i="lineH">How long Lantern stays with a student</h3>
         <p class="r-moment" data-i="lineBig">12 years</p>
@@ -658,11 +663,6 @@ html.tour,html.tour *{cursor:none!important}
   </div>
 </footer>
 
-<div class="rail" id="rail" role="region" aria-label="Quick actions" data-i-aria="railAria">
-  <a class="act" href="#apply" data-i="railApply">Apply, it's free</a>
-  <a class="tl" href="tel:+19785550174" data-i="railCall">Call</a>
-  <a class="tl" href="sms:+19785550174" data-i="railText">Text</a>
-</div>
 
 <script>
 (function(){
@@ -673,8 +673,8 @@ var ES={
 skip:"Saltar al contenido principal",navAria:"Contenido",nav1:"Cuatro años",nav2:"Solicitar",nav3:"El día",nav4:"Donar",nav5:"Contacto",
 nav1b:"Cuatro años",nav2b:"Solicitar",nav3b:"El día",nav4b:"Donar",nav5b:"Contacto",nav6b:"Voluntariado",
 telAria:"Llamar a la oficina, (978) 555-0174",telAria2:"Llamar a la oficina, (978) 555-0174",mhApply:"Solicitar, es gratis",menuBtn:"Menú",
-h1:"Alguien se queda con sus hijos hasta las cinco, y los sigue acompañando por años",issue:"Lantern Journal · N.º 12 · Noviembre",signoff:"¿Preguntas? <a href=\"tel:+19785550174\">Llame</a> o <a href=\"sms:+19785550174\">envíe un texto</a> a la maestra Vega, (978)&nbsp;555-0174.",coverCredit:"Portada: fotografía de ejemplo. Sala de estudio, 4:10 p. m.",
-heroAlt:"Un maestro señala una línea en una hoja de matemáticas mientras un estudiante escribe a su lado, al final de la tarde",
+h1:"Alguien se queda con sus hijos hasta las cinco, y los sigue acompañando por años",issue:"Lantern Journal · N.º 12 · Noviembre",signoff:"¿Preguntas? <a href=\"tel:+19785550174\">Llame</a> o <a href=\"sms:+19785550174\">envíe un texto</a> a la maestra Vega, (978)&nbsp;555-0174.",coverCredit:"Portada: fotografía de ejemplo. La cena, 4:50 p. m.",
+heroAlt:"Cena al final de la tarde en una mesa larga de madera: una maestra pasa una olla de arroz a estudiantes de escuela intermedia, con el sol entrando por las ventanas",
 heroCap:"Sala de estudio, 4:10 p. m. Foto de ejemplo.",
 lock:"Somos una escuela intermedia gratuita para los grados 5 a 8 en Lawrence. Las puertas abren a las 7:30 y la última luz se apaga después de las cinco.",
 openApply:"Solicite un cupo para 5.º grado, es gratis",
@@ -683,13 +683,13 @@ calls:"<a href=\"tel:+19785550174\">Llame</a> o <a href=\"sms:+19785550174\">env
 sup:"Quienes nos apoyan: done o sea voluntario",
 essayH:"Cuatro años, y lo que viene después",essayDek:"Un retrato compuesto de los años de nuestros estudiantes, desde la primera mañana de quinto grado hasta la universidad, contado como lo contaríamos en la cena. Los nombres, los detalles y las fotografías son de ejemplo.",
 chapAria:"Capítulos",ch1:"5.º grado",ch2:"6.º grado",ch3:"7.º grado",ch4:"8.º grado",ch5:"Después",
-e5alt:"Una mano con un lápiz recién afilado sobre la primera página de una libreta",e5cap:"La primera semana de septiembre. Una libreta nueva, un lápiz afilado, y lo primero que se escribe es la fecha.",
+e5alt:"Estudiantes de quinto grado desayunan en mesas largas, algunos todavía con la mochila puesta, mientras una maestra sirve leche al fondo",e5cap:"La primera semana de septiembre, 7:35 de la mañana. Algunos todavía llevan la mochila puesta. Nadie abre un libro hasta que todos hayan comido.",
 e5when:"5.º grado, septiembre",e5h:"La primera mañana empieza a las 7:30",
 e5p:"Primero se desayuna, en mesas largas, antes de abrir un libro. Después vienen lectura, escritura y matemáticas, en grupos de dieciséis (ejemplo). Cada estudiante tiene un consejero, y el consejero llama a la casa todos los viernes, en español o en inglés.",
 e6when:"6.º grado, el día largo",e6h:"La tarea se hace aquí, no en la mesa de la cocina",
 e6p:"A las 3:45 el día no termina. La sala de estudio sigue hasta las 4:45 con los mismos maestros que dieron la clase. Después, una cena caliente, y a casa a las 5:15.",m411:"Una pregunta hecha en la sala de estudio a las 4:10 tiene respuesta a las 4:11, del mismo maestro que dio la clase.",
 t345:"Sala de estudio con los maestros",t445:"Cena juntos",t500:"Recogida, o a casa en grupo",
-e7alt:"Visto de espaldas, alguien rema en una canoa sobre un lago tranquilo al amanecer",e7cap:"Semana del lago, 6:20 de la mañana. La maestra Ruiz y un estudiante de séptimo sacan la canoa antes de que los demás se despierten.",
+e7alt:"Vistos desde el muelle, dos personas reman en una canoa sobre un lago con neblina al amanecer",e7cap:"Semana del lago, 6:20 de la mañana. La maestra Ruiz y un estudiante de séptimo sacan la canoa antes de que los demás se despierten.",
 e7when:"7.º grado, julio",e7h:"El verano también es parte del año escolar",
 e7p:"Cinco semanas cada julio: lectura en las mañanas, clases de natación en las tardes y una semana en un campamento junto a un lago en New Hampshire (ejemplo). Para muchos estudiantes es la primera vez fuera de casa. Es gratis, como todo lo demás.",
 e8alt:"Una hoja de álgebra escrita a mano junto a una calculadora gráfica",e8cap:"Un jueves de enero. Factorización, la semana antes del examen de admisión a la secundaria.",
@@ -698,8 +698,8 @@ e8p:"Álgebra en octavo grado. En el otoño visitamos escuelas secundarias con c
 eawhen:"Después, ocho años más",eah:"La graduación es donde empieza la segunda parte",
 eap1:"Nuestra directora de apoyo a egresados tiene una lista de todos los egresados y llama a cada uno todos los meses, durante la secundaria y la universidad.",
 eap2:"Las llamadas son sobre cosas comunes: una nota que bajó, un formulario de ayuda financiera que vence el viernes, transporte para la primera visita a una universidad. Cuando algo necesita más que una llamada, entra un tutor o un mentor voluntario.",
-eaalt:"Graduados con birrete y toga vistos de espaldas en una ceremonia de graduación",eacap:"Graduación, ocho años después de un septiembre de quinto grado. La maestra Vega se sentó en la segunda fila.",
-lineH:"Cuánto tiempo acompaña Lantern a un estudiante",grp1:"En Lantern",grp1s:"De 5.º a 8.º grado",grp2:"Escuela secundaria",grp2s:"Llamadas mensuales",grp3:"Universidad o formación técnica",grp3s:"Cuatro años más",
+eaalt:"La directora de apoyo a egresados habla por teléfono en su escritorio junto a la ventana, con un libro de registro y una lámpara encendida",eacap:"Un martes de marzo, 5:30 p. m. La maestra Ortega, nuestra directora de apoyo a egresados, hace las últimas llamadas del día desde una lista que lleva a mano.",
+cmalt:"Una graduación bajo una carpa blanca, vista desde detrás de los graduados sentados; un graduado en el pasillo se voltea hacia las familias",cmcap:"Graduación, ocho años después de un septiembre de quinto grado. Uno de los nuestros se volteó a buscar a su familia en la última fila.",lineH:"Cuánto tiempo acompaña Lantern a un estudiante",grp1:"En Lantern",grp1s:"De 5.º a 8.º grado",grp2:"Escuela secundaria",grp2s:"Llamadas mensuales",grp3:"Universidad o formación técnica",grp3s:"Cuatro años más",
 lineCap:"La mayoría de las escuelas intermedias se despiden en junio de octavo grado. En Lantern la línea sigue: cuatro años en el edificio y ocho más de llamadas mensuales, durante la secundaria y la universidad.",lineBig:"12 años",
 outH:"Resultados de ejemplo",outNote:"Cifras de demostración. Una versión real indica el grupo, el período y cómo se verificó cada cifra.",
 oth1:"Qué medimos",oth2:"Resultado",oth3:"Quiénes y cuándo",
@@ -747,7 +747,7 @@ cr3:"Canoa: RichardBH, CC BY 2.0, Wikimedia Commons. Editada: recortada, en blan
 cr4:"Álgebra: Kurt Kaiser, CC0, Wikimedia Commons. Editada: recortada, en blanco y negro.",
 cr5:"Graduación: McElspeth, CC0, Wikimedia Commons (de Pixabay). Editada: recortada.",
 cr6:"Tutor en la pizarra: Preply.com Images, CC BY 2.0, Wikimedia Commons. Editada: en blanco y negro.",
-railAria:"Acciones rápidas",railApply:"Solicitar, es gratis",railCall:"Llamar",railText:"Texto"
+runAria:"Encabezado de la revista",runCall:"Llame o escriba"
 };
 var S={
 en:{title:"Lantern Middle School · Tuition-free middle school, grades 5 to 8 · Lawrence, MA",desc:"Lantern Middle School is a tuition-free independent middle school in Lawrence, MA for grades 5 to 8: small classes, a 7:30 to 5:00 day, a summer program and support through college. Apply in English or Spanish.",
@@ -826,10 +826,9 @@ Q('#volForm').addEventListener('submit',function(e){
 });
 
 /* phone rail + desktop masthead action, once the opening is past */
-var rail=Q('#rail'),mh=Q('#pastbar'),open=Q('.cover');
-html.style.setProperty('--railh',innerWidth<900?'56px':'0px');
+var mh=Q('#pastbar'),open=Q('.cover');
 if('IntersectionObserver' in window){
-  new IntersectionObserver(function(es){var past=!es[0].isIntersecting;rail.classList.toggle('on',past);mh.classList.toggle('on',past)},{rootMargin:'-120px 0px 0px 0px'}).observe(open);
+  new IntersectionObserver(function(es){var past=!es[0].isIntersecting;mh.classList.toggle('on',past)},{rootMargin:'-120px 0px 0px 0px'}).observe(open);
   /* the one signature moment: the line keeps going past graduation */
   var line=Q('#line');
   if(!reduce)new IntersectionObserver(function(es,ob){if(es[0].isIntersecting){line.classList.add('drawn');ob.disconnect()}},{threshold:.6}).observe(line);

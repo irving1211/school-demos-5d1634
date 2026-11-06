@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>St. Columba Parish School · Catholic Pre-K to 8 school in Lawrence, MA</title>
+<title>St. Columba Parish School · Catholic Pre-K–8 · Lawrence MA</title>
 <meta name="description" content="A Catholic Pre-K to Grade 8 school in Lawrence, MA. See what tuition would cost your family, walk through a school day from 7 AM care to 6 PM pickup, and book a visit, in English or Spanish.">
 <meta name="theme-color" content="#172b50">
 <link rel="canonical" href="https://stcolumba.example/">
@@ -31,9 +31,9 @@
 @font-face{font-family:"Alegreya FB";src:local("Georgia");size-adjust:90%;ascent-override:96%;descent-override:30%}
 @font-face{font-family:"Alegreya Sans FB";src:local("Arial");size-adjust:88%;ascent-override:100%;descent-override:30%}
 :root{
-  --navy:#172b50;--navy-deep:#101d35;--navy-pale:#e1e7ef;
-  --paper:#f5f2ea;--paper-light:#fcfaf5;--rule:#c9cfd9;
-  --garnet:#8e1b2e;--garnet-press:#711525;
+  --navy:#172b50;--navy-pale:#e1e7ef;
+  --paper:#f5f2ea;--paper-light:#fcfaf5;
+  --garnet:#8e1b2e;
   --ink:#101d35;--ink-2:#3d4a63;--on-navy-2:#d5dbe6;
   --s1:4px;--s2:8px;--s3:16px;--s4:24px;--s5:40px;--s6:64px;--s7:96px;--s8:144px;
   --t1:13px;--t2:16px;--t3:21px;--t4:28px;--t5:40px;--t6:64px;--t7:96px;
@@ -66,8 +66,8 @@ button,input,select{font:inherit;color:inherit}
 .docket{display:inline-flex;flex-direction:column;align-items:flex-start}
 .docket-tab{font:500 var(--t1)/1 var(--sans);color:var(--navy);background:var(--navy-pale);padding:var(--s1) var(--s3);border-radius:2px 2px 0 0}
 .docket-btn{display:inline-flex;align-items:center;min-height:48px;padding:0 var(--s4);background:var(--garnet);color:var(--paper-light);font:700 var(--t2)/1.1 var(--serif);text-decoration:none;border:0;border-radius:0 2px 2px 2px;cursor:pointer;transition:background-color .12s ease;-webkit-tap-highlight-color:transparent}
-@media (hover:hover){.docket-btn:hover{background:var(--garnet-press)}}
-.docket-btn:active,.docket-btn.is-press{background:var(--garnet-press);box-shadow:inset 0 3px 0 rgba(0,0,0,.25)}
+@media (hover:hover){.docket-btn:hover{box-shadow:inset 0 0 0 100px rgba(0,0,0,.18)}}
+.docket-btn:active,.docket-btn.is-press{box-shadow:inset 0 0 0 100px rgba(0,0,0,.22),inset 0 3px 0 rgba(0,0,0,.3)}
 .pale .docket-tab{background:var(--paper-light)}
 
 .slot{white-space:nowrap}
@@ -87,73 +87,81 @@ button,input,select{font:inherit;color:inherit}
 .sc{font-variant-caps:all-small-caps;font-synthesis-small-caps:auto;letter-spacing:.06em;font-variant-numeric:lining-nums}
 .cap{font:400 var(--t1)/1.4 var(--sans);color:var(--ink-2);margin-top:var(--s2);font-variant-numeric:lining-nums}
 .mast{background:var(--paper)}
-.mast-grid{display:grid;grid-template-columns:1fr auto;grid-template-areas:"l b" "n n" "r r";align-items:center;column-gap:var(--s3)}
-.ear-l{grid-area:l}.cbtn{grid-area:b}.nameplate{grid-area:n}.ear-r{grid-area:r}.edition{grid-area:e;display:none}
-.ear a,.cbtn{display:inline-flex;align-items:center;min-height:44px;color:inherit}
-.ear-l a{text-decoration:none}.ear-l a[aria-current="true"]{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:2px}
-.ear-r{text-align:center;margin-top:calc(-1 * var(--s2))}
-.ear-r a{text-decoration:underline;text-underline-offset:3px}
-.sep{color:var(--ink-2)}
-.cbtn{justify-self:end;background:none;border:0;padding:0;cursor:pointer;text-decoration:underline;text-underline-offset:4px;font-size:var(--t2)}
-html:not(.js) .cbtn{display:none}
-.nameplate{display:block;text-align:center;text-decoration:none;padding:var(--s2) 0}
+.mast-grid{display:grid;grid-template-columns:1fr;grid-template-areas:"n" "f";justify-items:center;text-align:center}
+.nameplate{grid-area:n;display:flex;align-items:center;justify-content:center;min-height:44px;text-decoration:none;padding:var(--s3) 0 0}
 .np{display:block;font:700 var(--t3)/1.05 var(--serif);letter-spacing:-.01em}
-.edition{text-align:center;font-style:italic;color:var(--ink-2);padding-bottom:var(--s2)}
+.ear{display:none;font:italic 400 var(--t1)/1.4 var(--serif);color:var(--ink-2)}
+.edition{display:none;grid-area:e;font-style:italic;color:var(--ink-2)}
+.folio{grid-area:f;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;column-gap:var(--s3);padding-bottom:var(--s1)}
+.folio a{display:inline-flex;align-items:center;min-height:44px;color:inherit;text-underline-offset:3px}
+.langs a{text-decoration:none}.langs a[aria-current="true"]{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px}
+.folio .sms{padding:0 var(--s2)}
+.sep,.fsep{color:var(--ink-2)}
 .dl-row{border-top:1px solid var(--navy);border-bottom:4px double var(--navy)}
 .dateline{text-align:center;padding:var(--s2) 0;font:400 var(--t1)/1.4 var(--sans);font-variant-numeric:lining-nums}
 .mast.is-delay .dateline{color:var(--garnet)}
-.contents{border-bottom:1px solid var(--rule)}
+.contents{border-bottom:1px solid color-mix(in srgb,var(--navy) 26%,transparent);text-align:center}
+.cbtn{background:none;border:0;padding:0;min-height:44px;cursor:pointer;text-decoration:underline;text-underline-offset:4px;font-size:var(--t2);color:inherit}
+html:not(.js) .cbtn{display:none}
 .contents ul{display:flex;flex-wrap:wrap;justify-content:center;gap:0 var(--s4)}
+.js .contents ul{display:none}.js .contents.open ul{display:flex}
 .contents a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none}
 .contents a:hover{text-decoration:underline}
-.js .contents{display:none}.js .contents.open{display:block}
 
 .front{display:grid;padding-bottom:var(--s5)}
 .lead{padding:var(--s4) var(--pad) var(--s3)}
-.lead h1{font:700 var(--t4)/1.04 var(--serif);text-wrap:balance}
+.lead h1{font:700 var(--t5)/1.02 var(--serif);letter-spacing:-.02em;text-wrap:balance}
 .notice-box{margin:0 var(--pad) var(--s3);border:2px solid var(--garnet);padding:var(--s3)}
 .notice-box[hidden]{display:none}
 .nb-label{color:var(--garnet);font-weight:700}
 .plate img{width:100%;height:auto;aspect-ratio:2/1;object-fit:cover}
 .plate .cap{padding:0 var(--pad)}
-.say{padding:var(--s4) var(--pad) 0}
+.say{padding:var(--s3) var(--pad) 0}
 .say-h{color:var(--ink-2);border-top:1px solid var(--navy);padding-top:var(--s2)}
-.stmt{font:400 var(--t3)/1.6 var(--serif);margin-top:var(--s2)}
-.stmt select{font-size:var(--t3)}
-.amt{font-size:var(--t4)}
+.stmt{font:400 var(--t2)/1.75 var(--serif);margin-top:var(--s1)}
+.stmt select{font-size:var(--t2)}
+.amt{font-size:var(--t3)}
 .stmt-sub{font:400 var(--t1)/1.4 var(--sans);color:var(--ink-2);margin-top:var(--s1)}
-.act{display:flex;flex-direction:column;align-items:flex-start;gap:var(--s2);padding:var(--s4) 0 0}
+.act{display:flex;flex-direction:column;align-items:flex-start;gap:var(--s2);padding:var(--s3) 0 0}
 .oh-line{font:400 var(--t1)/1.4 var(--sans);color:var(--ink-2)}
 
 .cols{border-top:1px solid var(--navy)}
 .cols-grid{display:grid}
-.col{padding:var(--s4) 0;border-bottom:1px solid var(--rule)}
-.col-h{font:700 var(--t2)/1.3 var(--serif);border-bottom:1px solid var(--navy);padding-bottom:var(--s1);margin-bottom:var(--s2)}
+.col{padding:var(--s4) 0;border-bottom:1px solid color-mix(in srgb,var(--navy) 26%,transparent)}
+.col-h{font:700 var(--t3)/1.2 var(--serif);border-bottom:1px solid var(--navy);padding-bottom:var(--s1);margin-bottom:var(--s2)}
 .col-t+.col-t{margin-top:var(--s2)}
 .sig{margin-top:var(--s2);font-style:italic}
 .wk li{padding:var(--s1) 0}
 .wk b{font-weight:700;margin-right:var(--s1)}
 
+@media (min-width:700px) and (max-width:1023px){
+  .plate img{aspect-ratio:3/1}
+  .stmt{font-size:var(--t3)}.stmt select{font-size:var(--t3)}.amt{font-size:var(--t4)}
+  .say{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);column-gap:var(--s5);align-items:end}
+  .say-h{grid-column:1/-1}.say .act{grid-column:2;grid-row:2/4;padding:0 0 0 var(--s4);border-left:1px solid color-mix(in srgb,var(--navy) 26%,transparent);align-self:stretch;justify-content:center}
+  .lead h1{font-size:var(--t6)}
+}
 @media (min-width:700px){
   .cols-grid{grid-template-columns:repeat(3,minmax(0,1fr));column-gap:var(--s4)}
   .col{border-bottom:0;padding:var(--s4) 0 var(--s5)}
-  .col+.col{border-left:1px solid var(--rule);padding-left:var(--s4)}
+  .col+.col{border-left:1px solid color-mix(in srgb,var(--navy) 26%,transparent);padding-left:var(--s4)}
 }
 @media (min-width:1024px){
-  .mast-grid{grid-template-columns:1fr auto 1fr;grid-template-areas:"l n r" "e e e";padding-top:var(--s2)}
-  .cbtn{display:none}
+  .mast-grid{grid-template-columns:1fr auto 1fr;grid-template-areas:"l n r" "e e e" "f f f";column-gap:var(--s5)}
+  .ear{display:block;align-self:center}.ear-l{grid-area:l;justify-self:start;text-align:left}.ear-r{grid-area:r;justify-self:end;text-align:right}
   .edition{display:block}
-  .ear-r{text-align:right;margin-top:0}
   .np{font-size:var(--t5);letter-spacing:-.02em}
-  .js .contents,.contents{display:block}
-  .front{grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gut);max-width:var(--wrap);margin:0 auto;padding:0 var(--pad) var(--s6)}
-  .lead{grid-column:1/-1;padding:var(--s5) 0 var(--s4)}
+  .cbtn{display:none}
+  .js .contents ul,.contents ul{display:flex}
+  .front{grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gut);max-width:var(--wrap);margin:0 auto;padding:0 var(--pad) var(--s5)}
+  .lead{grid-column:1/-1;padding:var(--s4) 0 var(--s4)}
   .lead h1{font-size:var(--t6);line-height:1.02;max-width:none}
   .notice-box{grid-column:1/8;margin:0 0 var(--s3)}
   .plate{grid-column:1/8}
-  .plate img{aspect-ratio:3/2}
+  .plate img{aspect-ratio:2/1}
+  .stmt{font-size:var(--t3)}.stmt select{font-size:var(--t3)}.amt{font-size:var(--t4)}
   .plate .cap{padding:0}
-  .say{grid-column:8/13;grid-row:2/5;padding:0 0 0 var(--s4);border-left:1px solid var(--rule)}
+  .say{grid-column:8/13;grid-row:2/5;padding:0 0 0 var(--s4);border-left:1px solid color-mix(in srgb,var(--navy) 26%,transparent)}
   .front:has(.notice-box:not([hidden])) .say{grid-row:2/6}
   .say-h{border-top:0;padding-top:0}
 }
@@ -172,15 +180,15 @@ html:not(.js) .cbtn{display:none}
 .print-head{display:none}
 table{border-collapse:collapse;width:100%;font:500 var(--t2)/1.4 var(--sans);font-variant-numeric:lining-nums tabular-nums}
 caption{text-align:left;padding-bottom:var(--s3);color:var(--ink-2);font:500 var(--t1)/1.4 var(--sans)}
-th,td{text-align:left;padding:var(--s3) var(--s3) var(--s3) 0;border-bottom:1px solid var(--rule);vertical-align:top}
+th,td{text-align:left;padding:var(--s3) var(--s3) var(--s3) 0;border-bottom:1px solid color-mix(in srgb,var(--navy) 26%,transparent);vertical-align:top}
 thead th{border-bottom:2px solid var(--navy);color:var(--ink-2);font-size:var(--t1)}
 td.n,th.n{text-align:right;white-space:nowrap;padding-right:0;padding-left:var(--s3)}
 .tbl{display:none}
-.recs li{padding:var(--s3) 0;border-bottom:1px solid var(--rule)}
+.recs li{padding:var(--s3) 0;border-bottom:1px solid color-mix(in srgb,var(--navy) 26%,transparent)}
 .recs dl{display:grid;grid-template-columns:1fr auto;gap:var(--s1) var(--s3);margin-top:var(--s2);font:500 var(--t2)/1.4 var(--sans)}
 .recs dt{color:var(--ink-2)}
 .recs dd{text-align:right;font-variant-numeric:lining-nums tabular-nums}
-.terms div{padding:var(--s3) 0;border-bottom:1px solid var(--rule)}
+.terms div{padding:var(--s3) 0;border-bottom:1px solid color-mix(in srgb,var(--navy) 26%,transparent)}
 .terms dt{font-weight:700}
 .terms dd{color:var(--ink-2)}
 .printlk{background:none;border:0;padding:0;cursor:pointer;color:var(--navy)}
@@ -188,8 +196,8 @@ td.n,th.n{text-align:right;white-space:nowrap;padding-right:0;padding-left:var(-
 .known{display:grid;gap:var(--s5)}
 .photo img{width:100%;height:auto;object-fit:cover}
 .photo figcaption{margin-top:var(--s2);color:var(--ink-2)}
-.safe{margin-top:var(--s4);border-top:1px solid var(--rule)}
-.safe li{padding:var(--s3) 0;border-bottom:1px solid var(--rule)}
+.safe{margin-top:var(--s4);border-top:1px solid color-mix(in srgb,var(--navy) 26%,transparent)}
+.safe li{padding:var(--s3) 0;border-bottom:1px solid color-mix(in srgb,var(--navy) 26%,transparent)}
 
 .day{background:var(--navy);color:var(--paper)}
 .day .mark{color:var(--paper)}
@@ -217,7 +225,7 @@ td.n,th.n{text-align:right;white-space:nowrap;padding-right:0;padding-left:var(-
 @media (hover:hover){.sched button:hover{color:var(--paper)}}
 
 .faith{display:grid;gap:var(--s5)}
-.masses{margin-top:var(--s4);padding-top:var(--s3);border-top:1px solid var(--rule)}
+.masses{margin-top:var(--s4);padding-top:var(--s3);border-top:1px solid color-mix(in srgb,var(--navy) 26%,transparent)}
 
 .visit{display:grid;gap:var(--s5);margin-top:var(--s5)}
 form.vf{display:grid;gap:var(--s3);max-width:520px}
@@ -232,7 +240,7 @@ form.vf{display:grid;gap:var(--s3);max-width:520px}
 .confirm{display:none;border-top:3px solid var(--navy);padding-top:var(--s3);max-width:520px}
 .confirm.show{display:block}
 .confirm p{margin-top:var(--s2)}
-.steps li{display:grid;grid-template-columns:104px 1fr;gap:var(--s3);padding:var(--s3) 0;border-bottom:1px solid var(--rule)}
+.steps li{display:grid;grid-template-columns:104px 1fr;gap:var(--s3);padding:var(--s3) 0;border-bottom:1px solid color-mix(in srgb,var(--navy) 26%,transparent)}
 .steps .d{font-weight:700;color:var(--navy);font-variant-numeric:lining-nums}
 .steps span{display:block;color:var(--ink-2)}
 
@@ -240,30 +248,24 @@ form.vf{display:grid;gap:var(--s3);max-width:520px}
 .elev{width:100%;height:auto;color:var(--navy)}
 
 .fam{display:grid;gap:var(--s5);margin-top:var(--s5)}
-.index a{display:flex;justify-content:space-between;align-items:baseline;gap:var(--s3);min-height:48px;padding:var(--s2) 0;border-bottom:1px solid var(--rule);text-decoration:none}
+.index a{display:flex;justify-content:space-between;align-items:baseline;gap:var(--s3);min-height:48px;padding:var(--s2) 0;border-bottom:1px solid color-mix(in srgb,var(--navy) 26%,transparent);text-decoration:none}
 .index a b{font:700 var(--t2)/1.3 var(--serif)}
 .index a span{color:var(--ink-2);text-align:right}
 @media (hover:hover){.index a:hover b{text-decoration:underline}}
-.cal li{display:grid;grid-template-columns:120px 1fr;gap:var(--s3);padding:var(--s2) 0;border-bottom:1px solid var(--rule)}
+.cal li{display:grid;grid-template-columns:120px 1fr;gap:var(--s3);padding:var(--s2) 0;border-bottom:1px solid color-mix(in srgb,var(--navy) 26%,transparent)}
 .cal time{color:var(--navy)}
 .uni{display:grid;grid-template-columns:64px 1fr;gap:var(--s3);margin-top:var(--s3)}
 .swatch{width:64px;height:80px;background:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'><rect width='64' height='64' fill='%23172b50'/><rect y='16' width='64' height='2' fill='%23e1e7ef'/><rect y='20' width='64' height='14' fill='%23101d35'/><rect y='34' width='64' height='3' fill='%238e1b2e'/><rect y='37' width='64' height='14' fill='%23101d35'/><rect y='53' width='64' height='2' fill='%23e1e7ef'/><rect y='62' width='64' height='2' fill='%23fcfaf5'/><g opacity='.55'><rect x='16' width='2' height='64' fill='%23e1e7ef'/><rect x='20' width='14' height='64' fill='%23101d35'/><rect x='34' width='3' height='64' fill='%238e1b2e'/><rect x='37' width='14' height='64' fill='%23101d35'/><rect x='53' width='2' height='64' fill='%23e1e7ef'/><rect x='62' width='2' height='64' fill='%23fcfaf5'/></g><path stroke='%23000' stroke-opacity='.18' stroke-width='.8' d='M-64 64L0 0M-61 64L3 0M-58 64L6 0M-55 64L9 0M-52 64L12 0M-49 64L15 0M-46 64L18 0M-43 64L21 0M-40 64L24 0M-37 64L27 0M-34 64L30 0M-31 64L33 0M-28 64L36 0M-25 64L39 0M-22 64L42 0M-19 64L45 0M-16 64L48 0M-13 64L51 0M-10 64L54 0M-7 64L57 0M-4 64L60 0M-1 64L63 0M2 64L66 0M5 64L69 0M8 64L72 0M11 64L75 0M14 64L78 0M17 64L81 0M20 64L84 0M23 64L87 0M26 64L90 0M29 64L93 0M32 64L96 0M35 64L99 0M38 64L102 0M41 64L105 0M44 64L108 0M47 64L111 0M50 64L114 0M53 64L117 0M56 64L120 0M59 64L123 0M62 64L126 0'/></svg>");background-size:40px 40px;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 .uni p+p{margin-top:var(--s2)}
 .menu-h{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:0 var(--s3)}
 
-.foot{background:var(--navy-deep);color:var(--paper);padding:var(--s6) 0 var(--s5)}
+.foot{background:var(--ink);color:var(--paper);padding:var(--s6) 0 var(--s5)}
 .foot-grid{display:grid;gap:var(--s5)}
 .foot h2{color:var(--on-navy-2);margin-bottom:var(--s2)}
 .foot p,.foot address{font-style:normal;color:#e6e9ef}
 .foot a{color:var(--paper)}
 .foot-base{margin-top:var(--s5);padding-top:var(--s3);border-top:1px solid rgba(245,242,234,.25);color:var(--on-navy-2)}
 
-.rail{position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--paper);border-top:2px solid var(--navy);padding:var(--s2) var(--pad) calc(var(--s2) + env(safe-area-inset-bottom));display:none;align-items:center;justify-content:space-between;gap:var(--s3)}
-.rail.on{display:flex}
-.rail .docket-tab{display:none}
-.rail .lks{display:flex;gap:var(--s3)}
-html:not(.js) .rail{display:none!important}
-@media (max-width:1023px){body{padding-bottom:var(--s7)}}
 
 @media (min-width:700px){
   :root{--pad:40px}
@@ -291,7 +293,6 @@ html:not(.js) .rail{display:none!important}
   .fam .fam-a{grid-column:1/5}.fam .fam-b{grid-column:6/13}
   .foot-grid{grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gut)}
   .foot-grid>:nth-child(1){grid-column:1/5}.foot-grid>:nth-child(2){grid-column:5/9}.foot-grid>:nth-child(3){grid-column:9/13}
-  .rail{display:none!important}
 }
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
 html.tour,html.tour *{cursor:none!important}
@@ -312,14 +313,14 @@ html.tour,html.tour *{cursor:none!important}
 
 <header class="mast" id="mast">
   <div class="wrap mast-grid">
-    <p class="ear ear-l sc"><span class="langs" role="group" aria-label="Language" data-ia="aria-label:langLabel"><a href="?lang=en" hreflang="en" lang="en" data-lang="en" aria-current="true">English</a><span class="sep" aria-hidden="true"> · </span><a href="?lang=es" hreflang="es" lang="es" data-lang="es" aria-current="false">Español</a></span></p>
-    <button class="cbtn sc" type="button" aria-expanded="false" aria-controls="mnav" data-i="contentsBtn">Contents</button>
+    <p class="ear ear-l" data-i="earL">The weekly circular<br>Vol. 98, No. 9</p>
     <a class="nameplate" href="#main"><span class="np">St. Columba Parish School</span></a>
-    <p class="ear ear-r sc"><span data-i="earOffice">Office</span> <a href="tel:+19785550137">(978) 555-0137</a><span data-i="earCall">, call or</span> <a href="sms:+19785550137" data-i="earText">text</a></p>
-    <p class="edition" data-i="edition">The parish school of St. Columba Church, Lawrence, Massachusetts · Pre-K to Grade 8 · Since 1928</p>
+    <p class="ear ear-r" data-i="earR">Pre-K to Grade 8<br>Since 1928</p>
+    <p class="edition" data-i="edition">The parish school of St. Columba Church, Lawrence, Massachusetts</p>
+    <p class="folio sc"><span class="langs" role="group" aria-label="Language" data-ia="aria-label:langLabel"><a href="?lang=en" hreflang="en" lang="en" data-lang="en" aria-current="true">English</a><span class="sep" aria-hidden="true"> · </span><a href="?lang=es" hreflang="es" lang="es" data-lang="es" aria-current="false">Español</a></span><span class="fsep" aria-hidden="true">|</span><span><span data-i="earOffice">Office</span> <a href="tel:+19785550137">(978) 555-0137</a><span data-i="earCall">, call or</span><a class="sms" href="sms:+19785550137" data-i="earText">text</a></span></p>
   </div>
   <div class="dl-row"><div class="wrap"><p class="dateline" id="dateline" role="status">No delays or closings today. Updated 6:40 AM</p></div></div>
-  <nav class="contents sc" id="mnav" aria-label="Contents" data-ia="aria-label:contentsBtn"><div class="wrap"><ul>
+  <nav class="contents sc" id="mnav" aria-label="Contents" data-ia="aria-label:contentsBtn"><div class="wrap"><button class="cbtn sc" type="button" aria-expanded="false" aria-controls="mnav-list" data-i="contentsBtn">Contents</button><ul id="mnav-list">
     <li><a href="#tuition" data-i="navTuition">Tuition</a></li><li><a href="#day" data-i="navDay">School day</a></li><li><a href="#faith" data-i="navFaith">Faith</a></li><li><a href="#visit" data-i="navVisit">Visit</a></li><li><a href="#families" data-i="navFamilies">Families</a></li><li><a href="#lunch" data-i="qLunch">Lunch menu</a></li>
   </ul></div></nav>
 </header>
@@ -377,7 +378,7 @@ html.tour,html.tour *{cursor:none!important}
     <div class="print-head">St. Columba Parish School · 210 Iona Street, Lawrence, MA 01841 · (978) 555-0137</div>
     <div class="sec-h">
       <h2 class="h2" id="tu-h" data-i="tuH">Tuition and aid, 2027–28</h2>
-      <p class="body" style="margin-top:var(--s3)" data-i="tuP">Every figure on one sheet you can print and read at home. Sample figures for this demo.</p>
+      <p class="body" style="margin-top:var(--s3)" data-i="tuP">Every figure on one sheet you can print and read at home. Figures are samples.</p>
       <p class="no-print c" style="margin-top:var(--s2)"><button class="lk printlk" type="button" data-print="tuition" data-i="printSheet">Print this sheet</button></p>
     </div>
     <div class="sheet-body">
@@ -486,7 +487,7 @@ html.tour,html.tour *{cursor:none!important}
       <div class="vbox">
         <form class="vf" id="vf" novalidate>
           <div class="fld c"><label for="vname" data-i="vName">Your name</label><input id="vname" name="name" autocomplete="name" required aria-describedby="vname-err"><span class="err" id="vname-err" aria-live="polite"></span></div>
-          <div class="fld c"><label for="vcontact" data-i="vContact">Phone or email</label><input id="vcontact" name="contact" autocomplete="tel" required aria-describedby="vcontact-err"><span class="err" id="vcontact-err" aria-live="polite"></span></div>
+          <div class="fld c"><label for="vcontact" data-i="vContact">Phone or email</label><input id="vcontact" name="contact" autocomplete="tel" inputmode="tel" required aria-describedby="vcontact-err"><span class="err" id="vcontact-err" aria-live="polite"></span></div>
           <div class="fld c"><label for="vgrade" data-i="vGrade">Grade next fall</label>
             <select id="vgrade" name="grade"><option data-i="oPrek">Pre-K</option><option data-i="oK">Kindergarten</option><option data-i="o15">Grades 1 to 5</option><option data-i="o68">Grades 6 to 8</option></select></div>
           <fieldset class="when"><legend class="c" data-i="vWhen">When would you like to come?</legend>
@@ -495,7 +496,7 @@ html.tour,html.tour *{cursor:none!important}
             <label class="opt"><input type="radio" name="when" value="call"><span data-i="wCall">Call me first</span></label>
           </fieldset>
           <div class="docket"><span class="docket-tab" aria-hidden="true" data-i="tabVisits">Visits</span><button class="docket-btn" type="submit" id="vsubmit" data-i="vSubmit">Schedule my visit</button></div>
-          <p class="c" style="color:var(--ink-2)" data-i="vHint">We call or text within one school day. This demo sends nothing.</p>
+          <p class="c" style="color:var(--ink-2)" data-i="vHint">We call or text within one school day. We use your details only to arrange your visit and never share them.</p>
         </form>
         <div class="confirm" id="confirm" tabindex="-1"><h3 class="h3" data-i="cfH">You are on the list</h3><p id="cfText"></p></div>
       </div>
@@ -507,7 +508,7 @@ html.tour,html.tour *{cursor:none!important}
           <li><span class="d" data-i="st3d">By Feb. 15</span><div><b data-i="st3t">Ask for aid</b><span data-i="st3x">One form, in English or Spanish.</span></div></li>
           <li><span class="d" data-i="st4d">Mar. 6</span><div><b data-i="st4t">Hear back</b><span data-i="st4x">The decision and the aid letter come together.</span></div></li>
         </ol>
-        <p class="c" style="margin-top:var(--s2);color:var(--ink-2)" data-i="stSample">Sample dates for this demo.</p>
+        <p class="c" style="margin-top:var(--s2);color:var(--ink-2)" data-i="stSample">Dates are samples.</p>
       </div>
     </div>
   </div>
@@ -604,11 +605,11 @@ html.tour,html.tour *{cursor:none!important}
         <p style="margin-top:var(--s2)" data-i="hours">Office hours: Monday to Friday, 7:30 AM to 4:00 PM</p>
       </div>
       <div>
-        <h2 class="c" data-i="accH">Accessibility</h2>
+        <h2 class="h3" data-i="accH">Accessibility</h2>
         <p data-i="accP">We want every family to be able to use this site, with a screen reader, a keyboard or a zoomed-in phone. We build and test it to WCAG 2.1 AA. If anything gets in your way, email <a href="mailto:access@stcolumba.example">access@stcolumba.example</a> or call (978) 555-0137, and we will fix it or get you the information another way within two school days.</p>
       </div>
       <div>
-        <h2 class="c" data-i="ndH">Nondiscrimination</h2>
+        <h2 class="h3" data-i="ndH">Nondiscrimination</h2>
         <p data-i="ndP">St. Columba Parish School admits students of any race, color, and national or ethnic origin to all the rights, privileges, programs and activities generally available to students at the school. It does not discriminate on the basis of race, color, or national or ethnic origin in its educational policies, admissions, financial aid, athletics or other school programs. Families of every faith are welcome.</p>
       </div>
     </div>
@@ -619,8 +620,6 @@ html.tour,html.tour *{cursor:none!important}
   </div>
 </footer>
 
-<div class="rail" id="rail">
-  <div class="docket"><span class="docket-tab" aria-hidden="true" data-i="tabVisits">Visits</span><a class="docket-btn" href="#visit" data-i="goVisit">Schedule a visit</a></div>
   <a class="lk rail-tel" href="tel:+19785550137">(978) 555-0137</a>
 </div>
 
@@ -633,7 +632,7 @@ var $=function(s,c){return (c||document).querySelector(s)},$$=function(s,c){retu
 var lang='en';
 
 var ES={
-earOffice:"Oficina",earCall:", llame o envíe un",earText:"texto",edition:"La escuela parroquial de la iglesia de St. Columba, Lawrence, Massachusetts · Pre-K a 8.º grado · Desde 1928",nbLabel:"Aviso",
+earOffice:"Oficina",earL:"La circular semanal<br>Vol. 98, núm. 9",earR:"Pre-K a 8.º grado<br>Desde 1928",earCall:", llame o envíe un",earText:"texto",edition:"La escuela parroquial de la iglesia de St. Columba, Lawrence, Massachusetts",nbLabel:"Aviso",
 sayH:"Costos, 2027–28",ohLine:"Casa abierta el sábado 21 de nov., de 10 a 12.",colsLabel:"Esta semana en St. Columba",
 prH:"De la directora",prT:"Bienvenidos, vecinos. Este otoño abrimos un segundo salón de cuidado después de clases, así que ninguna familia espera en una lista para el cuidado de 3 a 6 p. m. Si está pensando en el próximo año, venga cualquier mañana de clases antes de las 8:30. Casi siempre estoy en la puerta principal, y después mi oficina está abierta.",prSig:"Sra. Teresa Duarte, directora",
 wkH:"Esta semana",wk1d:"Mié.",wk1:"No hay clases, Día de los Veteranos.",wk2d:"Jue.",wk2:"Feria de ciencias de 4.º grado, gimnasio, 2:00. Las familias son bienvenidas.",wk3d:"Vie.",wk3:"Misa escolar, 9:00, iglesia de St. Columba.",wk4d:"Sáb.",wk4:"Casa abierta, de 10 a 12. La Sra. Marisol Vega responde preguntas sobre la ayuda financiera, en inglés y en español.",
@@ -648,7 +647,7 @@ sA:"Para",lKids:"Hijos",k1:"un hijo",k2:"dos hijos",k3:"tres o más",sB:"en",lBa
 sC:", como",lHouse:"Su familia",h0:"no feligreses",h1o:"feligreses",h2o:"no feligreses con ayuda",h3o:"feligreses con ayuda",
 sD:", el costo es de",sE:"al mes.",sYear:"al año en 2027–28, en 10 pagos. Tarifas de ejemplo.",sSheet:"Hoja completa",
 tabVisits:"Visitas",goVisit:"Agendar una visita",callLk:"Llamar a la oficina",textLk:"Enviar un texto",railCall:"Llamar",railText:"Texto",
-tuH:"Costos y ayuda financiera, 2027–28",tuP:"Todas las cifras en una sola hoja que puede imprimir y leer en casa. Cifras de ejemplo para esta demostración.",
+tuH:"Costos y ayuda financiera, 2027–28",tuP:"Todas las cifras en una sola hoja que puede imprimir y leer en casa. Las cifras son de ejemplo.",
 printSheet:"Imprimir esta hoja",tuCap:"Costo anual por grado (ejemplo)",thGrade:"Grado",thTuition:"Costo anual",thParish:"Tarifa de feligreses",thMonthly:"Al mes, 10 pagos",
 rPrek:"Pre-K, día completo (4 años)",rK5:"Kínder a 5.º grado",rM8:"6.º a 8.º grado",mPrek:"$920 o $840",mK5:"$690 o $600",mM8:"$730 o $640",
 dSib:"Hermanos",ddSib:"Segundo hijo, 15% de descuento. Del tercer hijo en adelante, 30% de descuento.",
@@ -670,10 +669,10 @@ viH:"Venga a ver una mañana de clases",ohLabel:"Casa abierta",ohDate:"21 de nov
 ohBody:"Conozca a los maestros, siéntese en un salón y pregunte por la ayuda financiera. Habrá personal que habla español. También damos visitas cualquier mañana de clases.",
 vName:"Su nombre",vContact:"Teléfono o correo electrónico",vGrade:"Grado en el otoño",oPrek:"Pre-K",oK:"Kínder",o15:"1.º a 5.º grado",o68:"6.º a 8.º grado",
 vWhen:"¿Cuándo le gustaría venir?",wOh:"La casa abierta, 21 de nov.",wTour:"Una visita en una mañana de clases",wCall:"Llámenme primero",vSubmit:"Agendar mi visita",
-vHint:"Le llamamos o escribimos en un día escolar. Esta demostración no envía nada.",cfH:"Ya está en la lista",
+vHint:"Le llamamos o escribimos en un día escolar. Usamos sus datos solo para coordinar su visita y nunca los compartimos.",cfH:"Ya está en la lista",
 stepsH:"Cómo solicitar para el otoño de 2027",st1d:"Nov. a ene.",st1t:"Visite",st1x:"La casa abierta o una visita en una mañana de clases.",
 st2d:"Antes del 31 de ene.",st2t:"Solicite",st2x:"Un formulario corto y la libreta de notas del año pasado. Cuota de $50, se la exoneramos si lo pide.",
-st3d:"Antes del 15 de feb.",st3t:"Pida ayuda",st3x:"Un solo formulario, en inglés o en español.",st4d:"6 de mar.",st4t:"Reciba respuesta",st4x:"La decisión y la carta de ayuda llegan juntas.",stSample:"Fechas de ejemplo para esta demostración.",
+st3d:"Antes del 15 de feb.",st3t:"Pida ayuda",st3x:"Un solo formulario, en inglés o en español.",st4d:"6 de mar.",st4t:"Reciba respuesta",st4x:"La decisión y la carta de ayuda llegan juntas.",stSample:"Las fechas son de ejemplo.",
 elevAlt:"Dibujo del arquitecto del St. Columba Hall: un edificio de ladrillo con un frontón central, una ventana redonda y un pequeño campanario",elevCap:"Fachada sobre Iona Street (boceto del arquitecto, ejemplo)",
 haH:"Noticias de la obra: St. Columba Hall",haP:"Estamos recaudando $4.2 millones para un gimnasio, una cafetería y dos salones de ciencias unidos al edificio escolar de los años veinte. Hasta ahora hay $3.1 millones prometidos (ejemplo), y la construcción está prevista para la primavera de 2027.",
 give:"Lea el plan de la obra y haga un donativo",
@@ -805,8 +804,6 @@ $$('[data-print]').forEach(function(b){b.addEventListener('click',function(){
 })});
 addEventListener('afterprint',function(){root.removeAttribute('data-print');$$('.print-on').forEach(function(x){x.classList.remove('print-on')});$$('.no-doc').forEach(function(x){x.classList.remove('no-doc')})});
 
-var rail=$('#rail');
-if('IntersectionObserver' in window){new IntersectionObserver(function(es){es.forEach(function(en){rail.classList.toggle('on',!en.isIntersecting&&en.boundingClientRect.top<0)})}).observe($('.act'))}
 
 var boot=root.getAttribute('data-boot-lang');if(boot==='es')applyLang('es');else renderStatus();
 

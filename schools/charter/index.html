@@ -149,8 +149,9 @@ a.row:hover .rl{text-decoration:underline;text-decoration-thickness:3px}
 .ev li{display:grid;grid-template-columns:7em minmax(0,1fr);gap:var(--s3);padding:var(--s2) 0;border-bottom:1px solid var(--rule);line-height:1.45}
 .ev .r-fig{font-size:var(--t-small);padding-top:var(--s1)}
 /* ===== FOOTER: the institutional directory ===== */
-.foot{background:var(--teal-deep);color:var(--paper);padding:var(--pad-std) 0 var(--s8)}
-.f-grid{display:grid;gap:var(--s5)}
+.foot{background:var(--teal-deep);color:var(--paper);padding:var(--pad-std) 0 var(--pad-std)}
+.f-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--s5)}
+.foot a[href^="mailto"]{overflow-wrap:anywhere}
 .foot h2{font-weight:700;font-size:var(--t-row);line-height:1.2;padding-bottom:var(--s2);border-bottom:3px solid var(--paper)}
 .foot address{font-style:normal;margin-top:var(--s3);line-height:1.5}
 .foot .bldg{display:block;color:var(--teal-soft)}
@@ -166,12 +167,6 @@ a.row:hover .rl{text-decoration:underline;text-decoration-thickness:3px}
 .f-base{margin-top:var(--s5);padding-top:var(--s3);border-top:1px solid var(--teal-line);display:flex;flex-wrap:wrap;gap:var(--s2) var(--s5);align-items:center;font-size:var(--t-small);color:var(--teal-soft)}
 .credits summary{cursor:pointer;min-height:44px;display:flex;align-items:center;text-decoration:underline;text-underline-offset:.2em;color:var(--paper)}
 .credits ul{display:grid;gap:var(--s2);padding-bottom:var(--s2)}
-/* ===== phone rail: once the application row has scrolled away (no entrance animation) ===== */
-.rail{position:fixed;left:0;right:0;bottom:0;z-index:40;background:var(--teal-deep);display:none;align-items:stretch;padding-bottom:env(safe-area-inset-bottom)}
-.rail.on{display:flex}
-.rail .go{flex:1;display:flex;align-items:center;min-height:56px;padding:0 var(--s4);background:var(--saffron);color:var(--teal-deep);font-weight:700;text-decoration:none}
-.rail .rcall{display:flex;align-items:center;padding:0 var(--s4);color:var(--paper);font-weight:700;text-decoration:none}
-html:not(.js) .rail{display:none!important}
 section[id],footer[id],#coming,#apply{scroll-margin-top:var(--s3)}
 /* ===== desktop ===== */
 @media (min-width:900px){
@@ -188,14 +183,13 @@ section[id],footer[id],#coming,#apply{scroll-margin-top:var(--s3)}
   .lunch-grid{grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:var(--s6);align-items:start}
   .f-grid{grid-template-columns:minmax(0,5fr) minmax(0,4fr);gap:var(--s6)}
   .foot{padding-bottom:var(--pad-compact)}
-  .rail{display:none!important}
 }
 .tour,.tour *{cursor:none!important}
 /* ===== print: only the lunch menu and calendar ===== */
 .print-head{display:none}
 @media print{
   body{background:#fff;color:#000;font-size:11pt}
-  .counter,.arrival,.adm,.rail,.skip,.printb,.lunch-fig,.foot{display:none!important}
+  .counter,.arrival,.adm,.skip,.printb,.lunch-fig,.foot{display:none!important}
   .lunch{padding:0}
   .lunch-grid{display:block}
   .print-head{display:block;margin-bottom:12pt;padding-bottom:6pt;border-bottom:2pt solid #000}
@@ -362,10 +356,6 @@ section[id],footer[id],#coming,#apply{scroll-margin-top:var(--s3)}
   </div>
 </footer>
 
-<div class="rail on-dark" id="rail">
-  <a class="go" href="#apply" data-k="railApply">Apply for 2027‑28</a>
-  <a class="rcall" href="tel:+19785550136" data-k="callLink">Call</a>
-</div>
 <p class="sr" id="live" aria-live="polite"></p>
 
 <!-- review: Kreyòl and Portuguese strings below need a native speaker's review before launch -->
@@ -535,9 +525,6 @@ if(!start){try{start=sessionStorage.getItem("mc-lang")}catch(e){}}
 D.getElementById("days").textContent=tr("en","daysLeft").replace("{n}",daysLeft());
 if(start&&start!=="en"&&LANGS.indexOf(start)>-1)setLang(start,{instant:true,silent:true});
 if(P.get("alert")==="1")setAlert("delay");
-/* phone rail: appears once the first application line has scrolled away */
-var rail=D.getElementById("rail");
-if("IntersectionObserver" in window)new IntersectionObserver(function(es){es.forEach(function(e){rail.classList.toggle("on",!e.isIntersecting&&e.boundingClientRect.top<0)})}).observe(D.getElementById("hero-apply"));
 D.getElementById("print").addEventListener("click",function(){window.print()});
 
 /* ?tour=1 for the promo recording */

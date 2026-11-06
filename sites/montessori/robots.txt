@@ -1,0 +1,5 @@
+# Private preview of a concept demo (fictional school). Not for indexing.
+User-agent: *
+Disallow: /
+
+Sitemap: https://irving1211.github.io/school-demos-5d1634/sites/montessori/sitemap.xml

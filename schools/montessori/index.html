@@ -23,7 +23,7 @@
 <script>document.documentElement.className='js';</script>
 <style>
 @font-face{font-family:'Gantari';src:url(assets/fonts/gantari-latin.woff2) format('woff2');font-weight:100 900;font-display:swap}
-@font-face{font-family:'Gantari fb';src:local('Arial');size-adjust:98%;ascent-override:96%;descent-override:26%;line-gap-override:0%}
+@font-face{font-family:'Gantari fb';src:local('Arial');size-adjust:102.2%;ascent-override:96%;descent-override:26%;line-gap-override:0%}
 :root{
   /* colour: walnut (one hue family), linen (neutral), green (actions only) */
   --linen:#f7f4ee;--light:#fffcf7;--pale:#e4ddd3;--oat:#ece4d8;
@@ -198,6 +198,17 @@ a:hover{text-decoration-thickness:2px}
   .cmp tr{display:block;border-top:1px solid var(--pale);padding:var(--s3) 0}.cmp th,.cmp td{display:block;border:0;padding:0}.cmp td{margin-top:var(--s2)}
   .cmp td::before{content:attr(data-h);display:block;font-size:var(--t-chrome);font-weight:600;color:var(--walnut-2)}}
 .acad .after{margin-top:var(--s5)}
+.acad-g{row-gap:var(--s4)}
+.acad-fig img{width:100%;height:auto;aspect-ratio:1000/747}
+.acad-fig figcaption,.obs-fig figcaption,.band figcaption{padding-top:var(--s2)}
+@media (min-width:900px){.acad-tbl{grid-column:1/9;grid-row:1}.acad-fig{grid-column:9/13;grid-row:1;align-self:start}}
+.obs-fig{margin-top:var(--s5);max-width:360px}
+.obs-fig img{width:100%;height:auto}
+.obs-fig figcaption{color:var(--pale)}
+.band{margin:var(--s6) calc(var(--gut)*-1) 0}
+.band img{width:100%;height:auto}
+.band figcaption{padding:var(--s2) var(--gut) 0}
+@media (min-width:900px){.band{margin:var(--s6) 0 0}.band figcaption{padding:var(--s2) 0 0}}
 
 /* observe (walnut ground) */
 .obs{background:var(--walnut);color:var(--light);padding:var(--s7) 0}
@@ -296,7 +307,7 @@ label.f input:focus,label.f select:focus{outline:3px solid var(--walnut);outline
   <figure class="open-photo">
     <picture>
       <source media="(max-width: 767px)" srcset="assets/work-table-800.webp" width="800" height="600">
-      <img src="assets/work-table-1600.webp" width="1600" height="900" fetchpriority="high" alt="Seen from above: a child's hands at work on a wooden table during the morning work period" data-ia="alt:heroAlt">
+      <img src="assets/work-table-1600.webp" width="1600" height="900" fetchpriority="high" alt="Seen from above: on a linen mat on a wooden table, a tray of golden bead cups, a thousand-cube, two hundred-squares and number cards; a child's hand sets down a ten-bar" data-ia="alt:heroAlt">
     </picture>
   </figure>
   <div class="cards">
@@ -388,6 +399,12 @@ label.f input:focus,label.f select:focus{outline:3px solid var(--walnut);outline
   <div class="wrap">
     <h2 id="acad-h" class="r-h2" data-i="acadH">Is it academic enough?</h2>
     <p class="r-body" data-i="acadLede">Yes. Children understand with their hands first, then do the same steps on paper. Ages are typical, not deadlines.</p>
+    <div class="g acad-g">
+    <figure class="acad-fig">
+      <img src="assets/alphabet-1000.webp" width="1000" height="747" loading="lazy" decoding="async" alt="Seen from above: a child lifts a red letter t from a wooden moveable-alphabet box to finish the word cat, next to a picture card of a cat" data-ia="alt:alphaAlt">
+      <figcaption class="r-meta" data-i="alphaCap">Building “cat” with the moveable alphabet, one letter at a time.</figcaption>
+    </figure>
+    <div class="acad-tbl">
     <table class="cmp">
       <thead><tr><th scope="col" data-i="cAge">Age</th><th scope="col" data-i="cMath">Math</th><th scope="col" data-i="cRead">Reading and writing</th></tr></thead>
       <tbody>
@@ -397,6 +414,8 @@ label.f input:focus,label.f select:focus{outline:3px solid var(--walnut);outline
         <tr><th scope="row">12–14<span data-i="ageAd">Adolescent</span></th><td data-h="Math" data-ia="data-h:cMath"><span data-i="m1214">Pre-algebra and algebra, ready for high school.</span></td><td data-h="Reading and writing" data-ia="data-h:cRead"><span data-i="r1214">Essays and seminars: arguing a point in writing and out loud.</span></td></tr>
       </tbody>
     </table>
+    </div>
+    </div>
     <p class="r-body after" data-i="proofP">By the end of Children’s House, many children read short books and add numbers into the thousands with the beads. At each conference we show you exactly where your child is, in plain words, with the work in front of you.</p>
   </div>
 </section>
@@ -412,6 +431,10 @@ label.f input:focus,label.f select:focus{outline:3px solid var(--walnut);outline
         <li data-i="f3">In English or Spanish</li>
         <li data-i="f4">We text you within one school day to confirm</li>
       </ul>
+      <figure class="obs-fig">
+        <img src="assets/tray-600.webp" width="597" height="800" loading="lazy" decoding="async" alt="A small boy in a green sweater carries a wooden tray with a glass pitcher and a glass past low wooden shelves" data-ia="alt:trayAlt">
+        <figcaption class="r-meta" data-i="trayCap">What you might see: a child carrying water to his table, slowly, with both hands.</figcaption>
+      </figure>
     </div>
     <div class="form" id="form">
       <form id="obs-form" novalidate>
@@ -479,6 +502,13 @@ label.f input:focus,label.f select:focus{outline:3px solid var(--walnut);outline
       <p class="r-body" data-i="aidP">Tuition help is based on need, not grades. About 1 in 3 families receive some (sample). Ask us in English or Spanish; the answer is private.</p>
       <button class="tx" type="button" data-print="tbl" data-i="print">Print this table</button>
     </div>
+    <figure class="band">
+      <picture>
+        <source media="(max-width: 767px)" srcset="assets/farmstand-800.webp" width="800" height="600">
+        <img src="assets/farmstand-1600.webp" width="1600" height="685" loading="lazy" decoding="async" alt="Outside the school, a teenager weighs apples on a hanging scale while another writes in a ledger; a parent with a canvas bag waits" data-ia="alt:farmAlt">
+      </picture>
+      <figcaption class="r-meta" data-i="farmCap">Adolescents run the fall farm stand and keep its books.</figcaption>
+    </figure>
   </div>
 </section>
 
@@ -528,6 +558,7 @@ label.f input:focus,label.f select:focus{outline:3px solid var(--walnut);outline
         <ul>
           <li data-i="cr1">“Sandpaper letters”, Lisa Maruna, CC BY 2.0, via Wikimedia Commons (cropped, color-graded)</li>
           <li data-i="cr2">“Classroom detail II”, tillwe, CC BY-SA 2.0, via Flickr (color-graded)</li>
+          <li data-i="cr5">Worktable, alphabet, tray and farm stand: generated sample photographs made for this demo.</li>
           <li data-i="cr4">Map outlines: Natural Earth, public domain. Material studies: original renders for this demo.</li>
         </ul>
       </details>
@@ -559,7 +590,7 @@ callNum:'Llamar al (978)&nbsp;555-0136',textS:'Mensaje',callR:'Llamar',textLabel
 h1:'aquí los niños aprenden con las manos',
 lead:'De 18 meses a 8.º grado, en Methuen. Un trabajo a la vez.',askUs:'Pregúntenos:',textUs:'o por mensaje',sampleP:'Fotografías de muestra',
 nextObs:'Próxima mañana para observar: martes 10 de nov., 8:45&nbsp;a.&nbsp;m.',
-heroAlt:'Vista desde arriba: las manos de un niño trabajando sobre una mesa de madera durante el período de trabajo de la mañana',
+heroAlt:'Vista desde arriba: sobre un mantel de lino en una mesa de madera, una bandeja con vasitos de perlas doradas, un cubo de mil, dos cuadrados de cien y tarjetas de números; la mano de un niño coloca una barra de diez',
 heroCap:'Trabajo con letras de lija. Foto de muestra.',
 workH:'El trabajo, edad por edad',agesLabel:'Grupo de edad',ageTodA:'18 meses–3',
 ageTod:'Comunidad infantil',ageCh:'Casa de los Niños',ageLe:'Primaria baja',ageUe:'Primaria alta',ageAd:'Adolescentes',
@@ -597,7 +628,7 @@ hours:'Horario de oficina: lunes a viernes, de 7:30 a. m. a 5:30 p. m.',
 a11yH:'Accesibilidad',a11yP:'Queremos que todas las familias puedan usar este sitio, en inglés y en español. Si algo le impide usarlo, llame o envíe un mensaje al (978) 555-0136, o escriba a access@fernhill.example. Lo arreglaremos y le haremos llegar la información de otra forma en un plazo de dos días escolares.',
 ndH:'No discriminación',ndP:'Fernhill Montessori admite estudiantes de cualquier raza, color, origen nacional, origen étnico, religión, sexo, orientación sexual, identidad de género o discapacidad a todos los derechos, programas y actividades de la escuela, y no discrimina en la admisión, la ayuda con la matrícula ni en ningún programa escolar.',
 demoLine:'Demostración de concepto · escuela ficticia · IC Business Systems',credits:'Créditos de las fotos',
-cr1:'«Sandpaper letters», Lisa Maruna, CC BY 2.0, vía Wikimedia Commons (recortada, con ajuste de color)',cr2:'«Classroom detail II», tillwe, CC BY-SA 2.0, vía Flickr (con ajuste de color)',cr4:'Contornos del mapa: Natural Earth, dominio público. Estudios de materiales: imágenes originales para esta demostración.'
+cr1:'«Sandpaper letters», Lisa Maruna, CC BY 2.0, vía Wikimedia Commons (recortada, con ajuste de color)',cr2:'«Classroom detail II», tillwe, CC BY-SA 2.0, vía Flickr (con ajuste de color)',alphaAlt:'Vista desde arriba: un niño saca una letra t roja de una caja de alfabeto móvil de madera para completar la palabra cat, junto a una tarjeta con el dibujo de un gato',alphaCap:'Formando «cat» con el alfabeto móvil, una letra a la vez.',trayAlt:'Un niño pequeño con un suéter verde lleva una bandeja de madera con una jarra y un vaso de vidrio junto a unos estantes bajos de madera',trayCap:'Lo que podría ver: un niño que lleva agua a su mesa, despacio, con las dos manos.',farmAlt:'Afuera de la escuela, un adolescente pesa manzanas en una balanza colgante mientras otra anota en un libro de cuentas; una madre con una bolsa de tela espera',farmCap:'Los adolescentes manejan el puesto de cosecha de otoño y llevan sus cuentas.',cr5:'Mesa de trabajo, alfabeto, bandeja y puesto: fotografías de muestra generadas para esta demostración.',cr4:'Contornos del mapa: Natural Earth, dominio público. Estudios de materiales: imágenes originales para esta demostración.'
 };
 const EN={},ENA={};
 

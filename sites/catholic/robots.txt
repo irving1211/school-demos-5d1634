@@ -1,0 +1,3 @@
+# Private preview of a concept site: keep it out of search engines.
+User-agent: *
+Disallow: /
