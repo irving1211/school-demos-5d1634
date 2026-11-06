@@ -10,11 +10,11 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Lantern Middle School · Lawrence, MA">
 <meta property="og:description" content="A free middle school for grades 5 to 8 in Lawrence, MA, open until five and with students through college. Apply in English or Spanish.">
-<meta property="og:image" content="assets/r2/hero-1600.webp">
+<meta property="og:image" content="assets/r2/hero-1200sq.webp">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="es_US">
 <link rel="preload" href="assets/r2/hero-800.webp" as="image" media="(max-width: 899px)" fetchpriority="high">
-<link rel="preload" href="assets/r2/hero-1600.webp" as="image" media="(min-width: 900px)" fetchpriority="high">
+<link rel="preload" href="assets/r2/hero-1200sq.webp" as="image" media="(min-width: 900px)" fetchpriority="high">
 <script>
 (function(){var h=document.documentElement;h.className+=' js';try{if(matchMedia('(prefers-reduced-motion: reduce)').matches||/[?&]motion=off/.test(location.search))h.className+=' rm';}catch(e){}})();
 </script>
@@ -83,36 +83,37 @@ a{color:inherit;text-decoration-thickness:1px;text-underline-offset:4px}
 .submit:active{background:var(--amber-press)}
 @media (prefers-reduced-motion:reduce){.act,.submit{transition:none}}
 
-/* ----- chrome strip: status + languages + phone, one line ----- */
-.chrome{background:var(--paper-light);border-bottom:1px solid var(--indigo-line);color:var(--indigo-soft)}
+/* ----- chrome strip: status + languages, one quiet line ----- */
+.chrome{background:var(--indigo-2);color:var(--on-indigo-2)}
 .chrome__in{display:flex;align-items:center;justify-content:space-between;gap:var(--t16);min-height:44px}
-.chrome.is-delay{background:var(--indigo);color:var(--on-indigo);border-color:var(--indigo)}
-.chrome.is-delay .langs a,.chrome.is-delay .ch-tel{color:var(--on-indigo)}
+.chrome :focus-visible{outline-color:var(--on-indigo)}
+.chrome.is-delay{background:var(--paper-light);color:var(--indigo)}
+.chrome.is-delay .langs a{color:var(--indigo)}
+.chrome.is-delay :focus-visible{outline-color:var(--indigo)}
 .status{padding:var(--t8) 0}
 .chrome.is-delay .status{font-weight:500}
 .ch-right{display:flex;align-items:center;gap:var(--t16);flex:0 0 auto}
 .langs{display:flex;gap:var(--t16)}
-.langs a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none;color:var(--indigo)}
+.langs a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none;color:var(--on-indigo)}
 .langs a[aria-current="true"]{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px}
-.ch-tel{display:none;color:var(--indigo);text-decoration:none;min-height:44px;align-items:center}
-@media (min-width:900px){.ch-tel{display:inline-flex}.ch-right{gap:var(--t40)}}
 
 /* ----- masthead ----- */
-.mh{background:var(--paper);border-bottom:1px solid var(--indigo-line);position:relative;z-index:20}
+.mh{background:var(--indigo);color:var(--on-indigo);border-bottom:1px solid var(--indigo-2);position:relative;z-index:20}
+.mh :focus-visible{outline-color:var(--on-indigo)}
 @media (min-width:900px){.mh{position:sticky;top:0}}
 .mh__row{display:flex;align-items:center;gap:var(--t24);min-height:64px}
 .brand{display:flex;align-items:center;gap:var(--t16);text-decoration:none;margin-right:auto;min-height:48px;font-size:var(--f-body);line-height:1.1;font-weight:500}
 .brand svg{flex:0 0 auto}
 .index{display:none}
-.index a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none}
+.index a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none;color:var(--on-indigo)}
 .index a:hover{text-decoration:underline}
 .mh__apply{display:none}
 .mh.past .mh__apply{display:inline-flex}
-.menu-btn{background:none;border:0;padding:0;min-height:48px;min-width:48px;font:400 var(--f-chrome)/1 var(--serif);color:var(--indigo);text-decoration:underline;text-underline-offset:4px;cursor:pointer}
-.menu{border-top:1px solid var(--indigo-line);padding:var(--t8) 0 var(--t24)}
+.menu-btn{background:none;border:0;padding:0;min-height:48px;min-width:48px;font:400 var(--f-chrome)/1 var(--serif);color:var(--on-indigo);text-decoration:underline;text-underline-offset:4px;cursor:pointer}
+.menu{border-top:1px solid var(--indigo-2);padding:var(--t8) 0 var(--t24)}
 .menu ul{list-style:none;padding:0;display:grid}
 html:not(.js) .menu[hidden]{display:block}
-.menu a{display:flex;align-items:center;min-height:48px;text-decoration:none;border-bottom:1px solid var(--indigo-line)}
+.menu a{display:flex;align-items:center;min-height:48px;text-decoration:none;border-bottom:1px solid var(--indigo-2)}
 @media (min-width:900px){
   .mh__row{gap:var(--t40)}
   .index{display:flex;gap:var(--t24)}
@@ -121,60 +122,61 @@ html:not(.js) .menu[hidden]{display:block}
 }
 @media (max-width:899px){.mh.past .mh__apply{display:none}}
 
-/* ----- opening ----- */
-.open{padding:var(--t40) 0 var(--t96)}
-.open h1{max-width:26ch}
-.open__fig img{width:100%;aspect-ratio:3/2;object-fit:cover}
-.open__fig figcaption{margin-top:var(--t8);color:var(--indigo-soft)}
-.open__rail{display:flex;flex-direction:column;gap:var(--t8)}
-.open__rail .sup{color:var(--indigo-soft);margin-top:var(--t16)}
-.open__rail .sup a{color:var(--indigo)}
+/* ----- opening: evening, photo bleeds right; on phones the photo leads ----- */
+.open{padding:0 0 var(--t96)}
+.open__text{display:flex;flex-direction:column;gap:var(--t16)}
+.open h1{max-width:16ch}
+.open .lock{color:var(--on-indigo-2);max-width:36ch}
+.open__fig img{width:100%;object-fit:cover}
+.open__fig figcaption{margin-top:var(--t8);color:var(--on-indigo-2)}
+.open .p-act{margin-top:var(--t8)}
+.open .sup a{color:var(--on-indigo-2)}
 @media (min-width:900px){
-  .open .g{row-gap:var(--t40)}
-  .open__fig{margin-left:calc(-1*max(var(--gut),(100vw - var(--max))/2))}
-  .open__fig figcaption{padding-left:max(var(--gut),(100vw - var(--max))/2)}
-  .open__fig img{aspect-ratio:16/10}
+  .open .g{align-items:start}
+  .open__text{grid-column:1/5;grid-row:1;padding-top:var(--t96)}
+  .open__fig{grid-column:5/9;grid-row:1;margin-right:calc(-1*max(var(--gut),(100vw - var(--max))/2))}
+  .open__fig img{aspect-ratio:1/1;max-height:calc(100svh - 108px)}
+  .open__fig figcaption{padding-right:max(var(--gut),(100vw - var(--max))/2)}
 }
 @media (max-width:899px){
-  .open{padding-top:var(--t24);padding-bottom:var(--t64)}
-  .open .g{row-gap:var(--t16)}
-  .open h1{order:1}
-  .open__rail{display:contents}
-  .open__rail .lock{order:2}
-  .open__fig{order:3}
+  .open{padding-bottom:var(--t64)}
+  .open .g{row-gap:var(--t24)}
+  .open__fig{order:-1;margin:0 calc(-1*var(--gut))}
   .open__fig img{aspect-ratio:4/3}
-  .open__fig .more{display:none}
-  .open__rail .p-act{order:4}
-  .open__rail .calls{order:5;margin-top:calc(-1*var(--t16))}
-  .open__rail .sup{display:none}
-  .open__fig{margin:0 calc(-1*var(--gut))}
   .open__fig figcaption{padding:0 var(--gut)}
+  .open__text{gap:var(--t8)}
+  .open .sup{display:none}
   html[lang=es] .open h1{font-size:var(--f-h2);line-height:1.08}
 }
 
-/* ----- essay (indigo) ----- */
+/* ----- essay: the four years, printed on paper ----- */
 .dark{background:var(--indigo);color:var(--on-indigo)}
 .essay{padding:var(--t96) 0}
-.essay__head .r-body{color:var(--on-indigo-2);margin-top:var(--t16)}
+.essay__head .r-body{color:var(--indigo-soft);margin-top:var(--t16)}
 .chapters{display:flex;flex-wrap:wrap;gap:0 var(--t24);margin-top:var(--t16)}
-.chapters a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-indigo)}
+.chapters a{display:inline-flex;align-items:center;min-height:44px}
 .entry{margin-top:var(--t64)}
 .entry figure img{width:100%;object-fit:cover}
-.entry figcaption{margin-top:var(--t8);color:var(--on-indigo-2)}
-.entry .when{color:var(--on-indigo-2);margin-bottom:var(--t8)}
+.entry figcaption{margin-top:var(--t8);color:var(--indigo-soft)}
+.entry .when{color:var(--indigo-soft);margin-bottom:var(--t8)}
+.dark .entry figcaption,.dark .entry .when{color:var(--on-indigo-2)}
 .entry h3{margin-bottom:var(--t16);max-width:24ch}
 .entry .r-body + .r-body{margin-top:var(--t16)}
 .e5 img{aspect-ratio:7/4}
 .e7 img{aspect-ratio:2/1}
 .e8 img{aspect-ratio:4/3}
 .ea img{aspect-ratio:4/5}
-.moment p{color:var(--on-indigo-2);margin-top:var(--t16);max-width:32ch}
+.moment .r-moment{margin:0}
+.moment p{color:var(--indigo-soft);margin-top:var(--t16);max-width:32ch}
 .times{list-style:none;padding:0;margin-top:var(--t24)}
-.times li{display:grid;grid-template-columns:4.5rem 1fr;gap:var(--t16);align-items:baseline;padding:var(--t8) 0;border-top:1px solid var(--indigo-2)}
+.times li{display:grid;grid-template-columns:4.5rem 1fr;gap:var(--t16);align-items:baseline;padding:var(--t8) 0;border-top:1px solid var(--indigo-line)}
 .times b{font-size:var(--f-h3);font-variant-numeric:tabular-nums lining-nums}
-.times span{color:var(--on-indigo-2)}
+.times span{color:var(--indigo-soft)}
+.after{padding:var(--t96) 0}
+.after .entry{margin-top:0}
 @media (min-width:900px){
   .essay{padding:var(--t144) 0}
+  .after{padding:var(--t144) 0}
   .entry{margin-top:var(--t96)}
   .e5 .text,.e7 .text{margin-top:var(--t24)}
 }
@@ -308,7 +310,6 @@ html.tour,html.tour *{cursor:none!important}
   .ft .g > :not(.ft__visit),.ft__base{display:none!important}
 }
 
-.moment .r-moment{color:var(--on-indigo);margin:0}
 .line h3{margin-bottom:var(--t16)}
 .line .r-moment{color:var(--on-indigo)}
 </style>
@@ -353,28 +354,28 @@ html.tour,html.tour *{cursor:none!important}
 </header>
 
 <main id="main">
-<section class="open" aria-labelledby="h1">
+<section class="open dark" aria-labelledby="h1">
   <div class="wrap">
     <div class="g">
-      <h1 id="h1" class="r-display c1-8" data-i="h1">Someone stays with your child until five, and for years after</h1>
-      <figure class="open__fig c1-5">
-        <picture>
-          <source media="(max-width: 899px)" srcset="assets/r2/hero-800.webp" width="800" height="533">
-          <img src="assets/r2/hero-1600.webp" width="1600" height="1067" fetchpriority="high" decoding="async" alt="A teacher points to a line on a math worksheet while a student writes beside him" data-i-alt="heroAlt">
-        </picture>
-        <figcaption class="r-chrome" data-i="heroCap">Study hall, 4:10 PM. Sample photo.</figcaption>
-      </figure>
-      <div class="open__rail c6-8">
+      <div class="open__text">
+        <h1 id="h1" class="r-display" data-i="h1">Someone stays with your child until five, and for years after</h1>
         <p class="r-body lock" data-i="lock">A free middle school for grades 5 to 8 in Lawrence, open from 7:30 to 5:00.</p>
         <p class="p-act"><a class="act" href="#apply" id="openApply" data-i="openApply">Apply for 5th grade, it's free</a></p>
         <p class="calls r-body inl" data-i="calls"><a href="tel:+19785550174">Call</a> or <a href="sms:+19785550174">text</a> (978)&nbsp;555-0174</p>
         <p class="sup r-chrome"><a class="tl" href="#give" data-i="sup">Supporters: give or volunteer</a></p>
       </div>
+      <figure class="open__fig">
+        <picture>
+          <source media="(max-width: 899px)" srcset="assets/r2/hero-800.webp" width="800" height="600">
+          <img src="assets/r2/hero-1200sq.webp" width="1200" height="1200" fetchpriority="high" decoding="async" alt="A teacher points to a line on a math worksheet while a student writes beside him" data-i-alt="heroAlt">
+        </picture>
+        <figcaption class="r-chrome" data-i="heroCap">Study hall, 4:10 PM. Sample photo.</figcaption>
+      </figure>
     </div>
   </div>
 </section>
 
-<section class="essay dark" id="four-years" aria-labelledby="essay-h">
+<section class="essay" id="four-years" aria-labelledby="essay-h">
   <div class="wrap">
     <div class="g essay__head">
       <div class="c1-5">
@@ -430,6 +431,11 @@ html.tour,html.tour *{cursor:none!important}
       </div>
     </article>
 
+  </div>
+</section>
+
+<section class="after dark" aria-labelledby="afh">
+  <div class="wrap">
     <article class="entry ea g" id="after" aria-labelledby="afh">
       <div class="c1-5">
         <p class="when r-chrome" data-i="eawhen">After, eight more years</p>

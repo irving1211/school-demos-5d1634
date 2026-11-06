@@ -1,18 +1,15 @@
-# Fernhill Montessori (concept demo) · asset credits
+# Fernhill Montessori (concept demo, round 2) · asset credits
 
-All edits: cropped, color-graded to one warm treatment with ImageMagick (`-modulate 101,90,100`, slight red lift and blue cut, `-sigmoidal-contrast 1.6,45%`), exported as WebP. Nothing downloaded was executed.
+Photos: cropped and color-graded to one warm treatment with ImageMagick (`-modulate 101,90,100`, slight red lift and blue cut, `-sigmoidal-contrast 1.6,45%`), exported as WebP. Nothing downloaded was executed. Every photo slot is a placeholder for the school's own photography.
 
 | File | Source page | Creator | Licence | Used for | Edits |
 |---|---|---|---|---|---|
-| hero-sandpaper-1600.webp, hero-sandpaper-800.webp | https://commons.wikimedia.org/wiki/File:Sandpaper_letters.jpg | Lisa Maruna | CC BY 2.0 | Hero photo (desktop 16:9, phone 2:1 crop) | crop, grade, resize |
-| shelves-1000.webp | https://commons.wikimedia.org/wiki/File:Montessorishelves.jpg | Clematitedusud | CC BY-SA 4.0 | "Montessori, plainly" photo | crop 4:3, auto-level, grade |
-| golden-bead-tray-1000.webp | https://commons.wikimedia.org/wiki/File:Montessori_Materiel_(golden_beads)_Wi_School.jpg | Clematytedusud | CC BY-SA 3.0 | Academics proof photo + no-JS fallback for the bead stage | crop 4:3 (map background removed), grade |
-| Map outlines (inline SVG paths in index.html) | https://github.com/nvkelso/natural-earth-vector (ne_110m_land) | Natural Earth | Public domain | Puzzle-map material (two hemispheres, azimuthal equidistant, simplified) | projected and simplified in code |
-| fonts/young-serif-latin.woff2 | https://fonts.google.com/specimen/Young+Serif | Bastien Sozeau / Noirblanc | SIL OFL 1.1 | Headings | latin subset, self-hosted |
-| fonts/hanken-grotesk-latin.woff2 | https://fonts.google.com/specimen/Hanken+Grotesk | Alfredo Marco Pradil / Hanken Design Co. | SIL OFL 1.1 | Body text | latin subset, self-hosted |
+| work-sandpaper-1600.webp, work-sandpaper-800.webp | https://commons.wikimedia.org/wiki/File:Sandpaper_letters.jpg | Lisa Maruna | CC BY 2.0 | Opening photo (desktop 16:10, phone 4:3) | crop, grade, resize |
+| classroom-window-1000.webp | https://www.flickr.com/photos/98652633@N00/7980475228 ("Classroom detail II") | tillwe | CC BY-SA 2.0 | "Montessori, plainly" photo | grade, resize |
+| studies/gb1.webp, gb10.webp, gb100.webp, gb1000.webp, tower.webp, cyl.webp, stair.webp, box.webp | original | made for this demo in Blender 5.2 (Cycles, orthographic 3/4 view, diffuse area light, shadow catcher) | own work | Material object studies; the four golden-bead pieces share one camera scale | trimmed, flattened onto linen #F7F4EE, WebP (59 KB total) |
+| Map outlines (inline SVG paths in index.html) | https://github.com/nvkelso/natural-earth-vector (ne_110m_land) | Natural Earth | Public domain | Puzzle-map study | projected and simplified in code |
+| fonts/gantari-latin.woff2 | https://fonts.google.com/specimen/Gantari | Lafontype | SIL OFL 1.1 | The only typeface | latin subset, self-hosted |
 
-All Montessori materials (golden beads, pink tower, sandpaper letters, moveable alphabet, cylinder block, bead stair, grammar symbols, fraction insets, checkerboard, toddler work) are drawn in code (canvas + SVG); no images.
+Not used by the round-2 page (kept from round 1, nothing loads them): hero-sandpaper-1600.webp, hero-sandpaper-800.webp, shelves-1000.webp (Clematitedusud, CC BY-SA 4.0), golden-bead-tray-1000.webp (Clematytedusud, CC BY-SA 3.0), fonts/young-serif-latin.woff2, fonts/hanken-grotesk-latin.woff2.
 
-Children's privacy: the hero shows only a child's hands (no face). Replace with the school's own photos on purchase.
-
-The CC BY / BY-SA credits are shown in the footer under "Photo credits".
+Children's privacy: the opening photo shows only a child's hands. The CC BY / BY-SA credits are shown in the footer under "Photo credits".
