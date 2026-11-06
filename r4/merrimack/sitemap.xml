@@ -37,15 +37,51 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://irving1211.github.io/school-demos-5d1634/r4/merrimack/visit/"/>
   </url>
   <url>
-    <loc>https://irving1211.github.io/school-demos-5d1634/r4/merrimack/full-site/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://irving1211.github.io/school-demos-5d1634/r4/merrimack/full-site/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://irving1211.github.io/school-demos-5d1634/r4/merrimack/es/full-site/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://irving1211.github.io/school-demos-5d1634/r4/merrimack/full-site/"/>
+    <loc>https://irving1211.github.io/school-demos-5d1634/r4/merrimack/families/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://irving1211.github.io/school-demos-5d1634/r4/merrimack/families/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://irving1211.github.io/school-demos-5d1634/r4/merrimack/es/families/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://irving1211.github.io/school-demos-5d1634/r4/merrimack/families/"/>
   </url>
   <url>
-    <loc>https://irving1211.github.io/school-demos-5d1634/r4/merrimack/es/full-site/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://irving1211.github.io/school-demos-5d1634/r4/merrimack/full-site/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://irving1211.github.io/school-demos-5d1634/r4/merrimack/es/full-site/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://irving1211.github.io/school-demos-5d1634/r4/merrimack/full-site/"/>
+    <loc>https://irving1211.github.io/school-demos-5d1634/r4/merrimack/es/families/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://irving1211.github.io/school-demos-5d1634/r4/merrimack/families/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://irving1211.github.io/school-demos-5d1634/r4/merrimack/es/families/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://irving1211.github.io/school-demos-5d1634/r4/merrimack/families/"/>
+  </url>
+  <url>
+    <loc>https://irving1211.github.io/school-demos-5d1634/r4/merrimack/calendar/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://irving1211.github.io/school-demos-5d1634/r4/merrimack/calendar/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://irving1211.github.io/school-demos-5d1634/r4/merrimack/es/calendar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://irving1211.github.io/school-demos-5d1634/r4/merrimack/calendar/"/>
+  </url>
+  <url>
+    <loc>https://irving1211.github.io/school-demos-5d1634/r4/merrimack/es/calendar/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://irving1211.github.io/school-demos-5d1634/r4/merrimack/calendar/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://irving1211.github.io/school-demos-5d1634/r4/merrimack/es/calendar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://irving1211.github.io/school-demos-5d1634/r4/merrimack/calendar/"/>
+  </url>
+  <url>
+    <loc>https://irving1211.github.io/school-demos-5d1634/r4/merrimack/our-school/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://irving1211.github.io/school-demos-5d1634/r4/merrimack/our-school/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://irving1211.github.io/school-demos-5d1634/r4/merrimack/es/our-school/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://irving1211.github.io/school-demos-5d1634/r4/merrimack/our-school/"/>
+  </url>
+  <url>
+    <loc>https://irving1211.github.io/school-demos-5d1634/r4/merrimack/es/our-school/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://irving1211.github.io/school-demos-5d1634/r4/merrimack/our-school/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://irving1211.github.io/school-demos-5d1634/r4/merrimack/es/our-school/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://irving1211.github.io/school-demos-5d1634/r4/merrimack/our-school/"/>
+  </url>
+  <url>
+    <loc>https://irving1211.github.io/school-demos-5d1634/r4/merrimack/office/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://irving1211.github.io/school-demos-5d1634/r4/merrimack/office/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://irving1211.github.io/school-demos-5d1634/r4/merrimack/es/office/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://irving1211.github.io/school-demos-5d1634/r4/merrimack/office/"/>
+  </url>
+  <url>
+    <loc>https://irving1211.github.io/school-demos-5d1634/r4/merrimack/es/office/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://irving1211.github.io/school-demos-5d1634/r4/merrimack/office/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://irving1211.github.io/school-demos-5d1634/r4/merrimack/es/office/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://irving1211.github.io/school-demos-5d1634/r4/merrimack/office/"/>
   </url>
 </urlset>
