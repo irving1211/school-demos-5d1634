@@ -1,0 +1,252 @@
+{
+  "schema": "site-foundation/routes@1",
+  "generator": "@icbs/site-foundation@0.4.1",
+  "deployment": "demo",
+  "origin": "https://irving1211.github.io",
+  "base": "/school-demos-5d1634/sites/montessori/",
+  "langs": [
+    "en",
+    "es"
+  ],
+  "defaultLocale": "en",
+  "routes": [
+    {
+      "path": "/",
+      "id": "home",
+      "lang": "en",
+      "template": "home",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/montessori/",
+      "equivalents": {
+        "en": "/",
+        "es": "/es/"
+      }
+    },
+    {
+      "path": "/es/",
+      "id": "home",
+      "lang": "es",
+      "template": "home",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/montessori/es/",
+      "equivalents": {
+        "en": "/",
+        "es": "/es/"
+      }
+    },
+    {
+      "path": "/montessori/",
+      "id": "montessori",
+      "lang": "en",
+      "template": "montessori",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/montessori/montessori/",
+      "equivalents": {
+        "en": "/montessori/",
+        "es": "/es/montessori/"
+      }
+    },
+    {
+      "path": "/es/montessori/",
+      "id": "montessori",
+      "lang": "es",
+      "template": "montessori",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/montessori/es/montessori/",
+      "equivalents": {
+        "en": "/montessori/",
+        "es": "/es/montessori/"
+      }
+    },
+    {
+      "path": "/programs/",
+      "id": "programs",
+      "lang": "en",
+      "template": "programs",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/montessori/programs/",
+      "equivalents": {
+        "en": "/programs/",
+        "es": "/es/programs/"
+      }
+    },
+    {
+      "path": "/es/programs/",
+      "id": "programs",
+      "lang": "es",
+      "template": "programs",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/montessori/es/programs/",
+      "equivalents": {
+        "en": "/programs/",
+        "es": "/es/programs/"
+      }
+    },
+    {
+      "path": "/admissions/",
+      "id": "admissions",
+      "lang": "en",
+      "template": "admissions",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/montessori/admissions/",
+      "equivalents": {
+        "en": "/admissions/",
+        "es": "/es/admissions/"
+      }
+    },
+    {
+      "path": "/es/admissions/",
+      "id": "admissions",
+      "lang": "es",
+      "template": "admissions",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/montessori/es/admissions/",
+      "equivalents": {
+        "en": "/admissions/",
+        "es": "/es/admissions/"
+      }
+    },
+    {
+      "path": "/observe/",
+      "id": "observe",
+      "lang": "en",
+      "template": "observe",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/montessori/observe/",
+      "equivalents": {
+        "en": "/observe/",
+        "es": "/es/observe/"
+      }
+    },
+    {
+      "path": "/es/observe/",
+      "id": "observe",
+      "lang": "es",
+      "template": "observe",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/montessori/es/observe/",
+      "equivalents": {
+        "en": "/observe/",
+        "es": "/es/observe/"
+      }
+    },
+    {
+      "path": "/calendar/",
+      "id": "calendar",
+      "lang": "en",
+      "template": "calendar",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/montessori/calendar/",
+      "equivalents": {
+        "en": "/calendar/",
+        "es": "/es/calendar/"
+      }
+    },
+    {
+      "path": "/es/calendar/",
+      "id": "calendar",
+      "lang": "es",
+      "template": "calendar",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/montessori/es/calendar/",
+      "equivalents": {
+        "en": "/calendar/",
+        "es": "/es/calendar/"
+      }
+    },
+    {
+      "path": "/about/",
+      "id": "about",
+      "lang": "en",
+      "template": "about",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/montessori/about/",
+      "equivalents": {
+        "en": "/about/",
+        "es": "/es/about/"
+      }
+    },
+    {
+      "path": "/es/about/",
+      "id": "about",
+      "lang": "es",
+      "template": "about",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/montessori/es/about/",
+      "equivalents": {
+        "en": "/about/",
+        "es": "/es/about/"
+      }
+    },
+    {
+      "path": "/contact/",
+      "id": "contact",
+      "lang": "en",
+      "template": "contact",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/montessori/contact/",
+      "equivalents": {
+        "en": "/contact/",
+        "es": "/es/contact/"
+      }
+    },
+    {
+      "path": "/es/contact/",
+      "id": "contact",
+      "lang": "es",
+      "template": "contact",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/montessori/es/contact/",
+      "equivalents": {
+        "en": "/contact/",
+        "es": "/es/contact/"
+      }
+    },
+    {
+      "path": "/policies/",
+      "id": "policies",
+      "lang": "en",
+      "template": "policies",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/montessori/policies/",
+      "equivalents": {
+        "en": "/policies/",
+        "es": "/es/policies/"
+      }
+    },
+    {
+      "path": "/es/policies/",
+      "id": "policies",
+      "lang": "es",
+      "template": "policies",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/montessori/es/policies/",
+      "equivalents": {
+        "en": "/policies/",
+        "es": "/es/policies/"
+      }
+    }
+  ],
+  "unrouted": [
+    "/404.html",
+    "/es/404/"
+  ]
+}

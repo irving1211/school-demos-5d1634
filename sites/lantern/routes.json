@@ -1,0 +1,589 @@
+{
+  "schema": "site-foundation/routes@1",
+  "generator": "@icbs/site-foundation@0.4.1",
+  "deployment": "demo",
+  "origin": "https://irving1211.github.io",
+  "base": "/school-demos-5d1634/sites/lantern/",
+  "langs": [
+    "en",
+    "es"
+  ],
+  "defaultLocale": "en",
+  "routes": [
+    {
+      "path": "/",
+      "id": "home",
+      "lang": "en",
+      "template": "home",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/lantern/",
+      "equivalents": {
+        "en": "/",
+        "es": "/es/"
+      }
+    },
+    {
+      "path": "/es/",
+      "id": "home",
+      "lang": "es",
+      "template": "home",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/lantern/es/",
+      "equivalents": {
+        "en": "/",
+        "es": "/es/"
+      }
+    },
+    {
+      "path": "/admissions/",
+      "id": "admissions",
+      "lang": "en",
+      "template": "admissions",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/lantern/admissions/",
+      "equivalents": {
+        "en": "/admissions/",
+        "es": "/es/admissions/"
+      }
+    },
+    {
+      "path": "/es/admissions/",
+      "id": "admissions",
+      "lang": "es",
+      "template": "admissions",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/lantern/es/admissions/",
+      "equivalents": {
+        "en": "/admissions/",
+        "es": "/es/admissions/"
+      }
+    },
+    {
+      "path": "/admissions/received/",
+      "id": "admissions-received",
+      "lang": "en",
+      "template": "received",
+      "indexable": false,
+      "sitemap": false,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/lantern/admissions/received/",
+      "equivalents": {
+        "en": "/admissions/received/",
+        "es": "/es/admissions/received/"
+      }
+    },
+    {
+      "path": "/es/admissions/received/",
+      "id": "admissions-received",
+      "lang": "es",
+      "template": "received",
+      "indexable": false,
+      "sitemap": false,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/lantern/es/admissions/received/",
+      "equivalents": {
+        "en": "/admissions/received/",
+        "es": "/es/admissions/received/"
+      }
+    },
+    {
+      "path": "/free/",
+      "id": "free",
+      "lang": "en",
+      "template": "free",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/lantern/free/",
+      "equivalents": {
+        "en": "/free/",
+        "es": "/es/free/"
+      }
+    },
+    {
+      "path": "/es/free/",
+      "id": "free",
+      "lang": "es",
+      "template": "free",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/lantern/es/free/",
+      "equivalents": {
+        "en": "/free/",
+        "es": "/es/free/"
+      }
+    },
+    {
+      "path": "/calendar/",
+      "id": "calendar",
+      "lang": "en",
+      "template": "calendar",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/lantern/calendar/",
+      "equivalents": {
+        "en": "/calendar/",
+        "es": "/es/calendar/"
+      }
+    },
+    {
+      "path": "/es/calendar/",
+      "id": "calendar",
+      "lang": "es",
+      "template": "calendar",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/lantern/es/calendar/",
+      "equivalents": {
+        "en": "/calendar/",
+        "es": "/es/calendar/"
+      }
+    },
+    {
+      "path": "/journal/",
+      "id": "journal",
+      "lang": "en",
+      "template": "journal",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/lantern/journal/",
+      "equivalents": {
+        "en": "/journal/",
+        "es": "/es/journal/"
+      }
+    },
+    {
+      "path": "/es/journal/",
+      "id": "journal",
+      "lang": "es",
+      "template": "journal",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/lantern/es/journal/",
+      "equivalents": {
+        "en": "/journal/",
+        "es": "/es/journal/"
+      }
+    },
+    {
+      "path": "/journal/first-week/",
+      "id": "journal-first-week",
+      "lang": "en",
+      "template": "post",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/lantern/journal/first-week/",
+      "equivalents": {
+        "en": "/journal/first-week/",
+        "es": "/es/journal/first-week/"
+      }
+    },
+    {
+      "path": "/es/journal/first-week/",
+      "id": "journal-first-week",
+      "lang": "es",
+      "template": "post",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/lantern/es/journal/first-week/",
+      "equivalents": {
+        "en": "/journal/first-week/",
+        "es": "/es/journal/first-week/"
+      }
+    },
+    {
+      "path": "/journal/four-high-schools/",
+      "id": "journal-four-high-schools",
+      "lang": "en",
+      "template": "post",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/lantern/journal/four-high-schools/",
+      "equivalents": {
+        "en": "/journal/four-high-schools/",
+        "es": "/es/journal/four-high-schools/"
+      }
+    },
+    {
+      "path": "/es/journal/four-high-schools/",
+      "id": "journal-four-high-schools",
+      "lang": "es",
+      "template": "post",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/lantern/es/journal/four-high-schools/",
+      "equivalents": {
+        "en": "/journal/four-high-schools/",
+        "es": "/es/journal/four-high-schools/"
+      }
+    },
+    {
+      "path": "/journal/information-evenings/",
+      "id": "journal-information-evenings",
+      "lang": "en",
+      "template": "post",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/lantern/journal/information-evenings/",
+      "equivalents": {
+        "en": "/journal/information-evenings/",
+        "es": "/es/journal/information-evenings/"
+      }
+    },
+    {
+      "path": "/es/journal/information-evenings/",
+      "id": "journal-information-evenings",
+      "lang": "es",
+      "template": "post",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/lantern/es/journal/information-evenings/",
+      "equivalents": {
+        "en": "/journal/information-evenings/",
+        "es": "/es/journal/information-evenings/"
+      }
+    },
+    {
+      "path": "/journal/thursday-tutors/",
+      "id": "journal-thursday-tutors",
+      "lang": "en",
+      "template": "post",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/lantern/journal/thursday-tutors/",
+      "equivalents": {
+        "en": "/journal/thursday-tutors/",
+        "es": "/es/journal/thursday-tutors/"
+      }
+    },
+    {
+      "path": "/es/journal/thursday-tutors/",
+      "id": "journal-thursday-tutors",
+      "lang": "es",
+      "template": "post",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/lantern/es/journal/thursday-tutors/",
+      "equivalents": {
+        "en": "/journal/thursday-tutors/",
+        "es": "/es/journal/thursday-tutors/"
+      }
+    },
+    {
+      "path": "/about/",
+      "id": "about",
+      "lang": "en",
+      "template": "about",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/lantern/about/",
+      "equivalents": {
+        "en": "/about/",
+        "es": "/es/about/"
+      }
+    },
+    {
+      "path": "/es/about/",
+      "id": "about",
+      "lang": "es",
+      "template": "about",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/lantern/es/about/",
+      "equivalents": {
+        "en": "/about/",
+        "es": "/es/about/"
+      }
+    },
+    {
+      "path": "/give/",
+      "id": "give",
+      "lang": "en",
+      "template": "give",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/lantern/give/",
+      "equivalents": {
+        "en": "/give/",
+        "es": "/es/give/"
+      }
+    },
+    {
+      "path": "/es/give/",
+      "id": "give",
+      "lang": "es",
+      "template": "give",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/lantern/es/give/",
+      "equivalents": {
+        "en": "/give/",
+        "es": "/es/give/"
+      }
+    },
+    {
+      "path": "/give/received/",
+      "id": "give-received",
+      "lang": "en",
+      "template": "received",
+      "indexable": false,
+      "sitemap": false,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/lantern/give/received/",
+      "equivalents": {
+        "en": "/give/received/",
+        "es": "/es/give/received/"
+      }
+    },
+    {
+      "path": "/es/give/received/",
+      "id": "give-received",
+      "lang": "es",
+      "template": "received",
+      "indexable": false,
+      "sitemap": false,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/lantern/es/give/received/",
+      "equivalents": {
+        "en": "/give/received/",
+        "es": "/es/give/received/"
+      }
+    },
+    {
+      "path": "/volunteer/",
+      "id": "volunteer",
+      "lang": "en",
+      "template": "volunteer",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/lantern/volunteer/",
+      "equivalents": {
+        "en": "/volunteer/",
+        "es": "/es/volunteer/"
+      }
+    },
+    {
+      "path": "/es/volunteer/",
+      "id": "volunteer",
+      "lang": "es",
+      "template": "volunteer",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/lantern/es/volunteer/",
+      "equivalents": {
+        "en": "/volunteer/",
+        "es": "/es/volunteer/"
+      }
+    },
+    {
+      "path": "/volunteer/received/",
+      "id": "volunteer-received",
+      "lang": "en",
+      "template": "received",
+      "indexable": false,
+      "sitemap": false,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/lantern/volunteer/received/",
+      "equivalents": {
+        "en": "/volunteer/received/",
+        "es": "/es/volunteer/received/"
+      }
+    },
+    {
+      "path": "/es/volunteer/received/",
+      "id": "volunteer-received",
+      "lang": "es",
+      "template": "received",
+      "indexable": false,
+      "sitemap": false,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/lantern/es/volunteer/received/",
+      "equivalents": {
+        "en": "/volunteer/received/",
+        "es": "/es/volunteer/received/"
+      }
+    },
+    {
+      "path": "/contact/",
+      "id": "contact",
+      "lang": "en",
+      "template": "contact",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/lantern/contact/",
+      "equivalents": {
+        "en": "/contact/",
+        "es": "/es/contact/"
+      }
+    },
+    {
+      "path": "/es/contact/",
+      "id": "contact",
+      "lang": "es",
+      "template": "contact",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/lantern/es/contact/",
+      "equivalents": {
+        "en": "/contact/",
+        "es": "/es/contact/"
+      }
+    },
+    {
+      "path": "/contact/received/",
+      "id": "contact-received",
+      "lang": "en",
+      "template": "received",
+      "indexable": false,
+      "sitemap": false,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/lantern/contact/received/",
+      "equivalents": {
+        "en": "/contact/received/",
+        "es": "/es/contact/received/"
+      }
+    },
+    {
+      "path": "/es/contact/received/",
+      "id": "contact-received",
+      "lang": "es",
+      "template": "received",
+      "indexable": false,
+      "sitemap": false,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/lantern/es/contact/received/",
+      "equivalents": {
+        "en": "/contact/received/",
+        "es": "/es/contact/received/"
+      }
+    },
+    {
+      "path": "/policies/",
+      "id": "policies",
+      "lang": "en",
+      "template": "policies",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/lantern/policies/",
+      "equivalents": {
+        "en": "/policies/",
+        "es": "/es/policies/"
+      }
+    },
+    {
+      "path": "/es/policies/",
+      "id": "policies",
+      "lang": "es",
+      "template": "policies",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/lantern/es/policies/",
+      "equivalents": {
+        "en": "/policies/",
+        "es": "/es/policies/"
+      }
+    },
+    {
+      "path": "/policies/accessibility/",
+      "id": "policy-accessibility",
+      "lang": "en",
+      "template": "policy",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/lantern/policies/accessibility/",
+      "equivalents": {
+        "en": "/policies/accessibility/",
+        "es": "/es/policies/accessibility/"
+      }
+    },
+    {
+      "path": "/es/policies/accessibility/",
+      "id": "policy-accessibility",
+      "lang": "es",
+      "template": "policy",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/lantern/es/policies/accessibility/",
+      "equivalents": {
+        "en": "/policies/accessibility/",
+        "es": "/es/policies/accessibility/"
+      }
+    },
+    {
+      "path": "/policies/nondiscrimination/",
+      "id": "policy-nondiscrimination",
+      "lang": "en",
+      "template": "policy",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/lantern/policies/nondiscrimination/",
+      "equivalents": {
+        "en": "/policies/nondiscrimination/",
+        "es": "/es/policies/nondiscrimination/"
+      }
+    },
+    {
+      "path": "/es/policies/nondiscrimination/",
+      "id": "policy-nondiscrimination",
+      "lang": "es",
+      "template": "policy",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/lantern/es/policies/nondiscrimination/",
+      "equivalents": {
+        "en": "/policies/nondiscrimination/",
+        "es": "/es/policies/nondiscrimination/"
+      }
+    },
+    {
+      "path": "/policies/privacy/",
+      "id": "policy-privacy",
+      "lang": "en",
+      "template": "policy",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/lantern/policies/privacy/",
+      "equivalents": {
+        "en": "/policies/privacy/",
+        "es": "/es/policies/privacy/"
+      }
+    },
+    {
+      "path": "/es/policies/privacy/",
+      "id": "policy-privacy",
+      "lang": "es",
+      "template": "policy",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/lantern/es/policies/privacy/",
+      "equivalents": {
+        "en": "/policies/privacy/",
+        "es": "/es/policies/privacy/"
+      }
+    },
+    {
+      "path": "/credits/",
+      "id": "credits",
+      "lang": "en",
+      "template": "credits",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/lantern/credits/",
+      "equivalents": {
+        "en": "/credits/",
+        "es": "/es/credits/"
+      }
+    },
+    {
+      "path": "/es/credits/",
+      "id": "credits",
+      "lang": "es",
+      "template": "credits",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/lantern/es/credits/",
+      "equivalents": {
+        "en": "/credits/",
+        "es": "/es/credits/"
+      }
+    }
+  ],
+  "unrouted": [
+    "/404.html"
+  ]
+}

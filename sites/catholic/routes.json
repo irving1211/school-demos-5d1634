@@ -1,0 +1,304 @@
+{
+  "schema": "site-foundation/routes@1",
+  "generator": "@icbs/site-foundation@0.4.1",
+  "deployment": "demo",
+  "origin": "https://irving1211.github.io",
+  "base": "/school-demos-5d1634/sites/catholic/",
+  "langs": [
+    "en",
+    "es"
+  ],
+  "defaultLocale": "en",
+  "routes": [
+    {
+      "path": "/",
+      "id": "home",
+      "lang": "en",
+      "template": "home",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/catholic/",
+      "equivalents": {
+        "en": "/",
+        "es": "/es/"
+      }
+    },
+    {
+      "path": "/es/",
+      "id": "home",
+      "lang": "es",
+      "template": "home",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/catholic/es/",
+      "equivalents": {
+        "en": "/",
+        "es": "/es/"
+      }
+    },
+    {
+      "path": "/tuition/",
+      "id": "tuition",
+      "lang": "en",
+      "template": "tuition",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/catholic/tuition/",
+      "equivalents": {
+        "en": "/tuition/",
+        "es": "/es/tuition/"
+      }
+    },
+    {
+      "path": "/es/tuition/",
+      "id": "tuition",
+      "lang": "es",
+      "template": "tuition",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/catholic/es/tuition/",
+      "equivalents": {
+        "en": "/tuition/",
+        "es": "/es/tuition/"
+      }
+    },
+    {
+      "path": "/admissions/",
+      "id": "admissions",
+      "lang": "en",
+      "template": "admissions",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/catholic/admissions/",
+      "equivalents": {
+        "en": "/admissions/",
+        "es": "/es/admissions/"
+      }
+    },
+    {
+      "path": "/es/admissions/",
+      "id": "admissions",
+      "lang": "es",
+      "template": "admissions",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/catholic/es/admissions/",
+      "equivalents": {
+        "en": "/admissions/",
+        "es": "/es/admissions/"
+      }
+    },
+    {
+      "path": "/admissions/confirmed/",
+      "id": "confirmed",
+      "lang": "en",
+      "template": "confirmed",
+      "indexable": false,
+      "sitemap": false,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/catholic/admissions/confirmed/",
+      "equivalents": {
+        "en": "/admissions/confirmed/",
+        "es": "/es/admissions/confirmed/"
+      }
+    },
+    {
+      "path": "/es/admissions/confirmed/",
+      "id": "confirmed",
+      "lang": "es",
+      "template": "confirmed",
+      "indexable": false,
+      "sitemap": false,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/catholic/es/admissions/confirmed/",
+      "equivalents": {
+        "en": "/admissions/confirmed/",
+        "es": "/es/admissions/confirmed/"
+      }
+    },
+    {
+      "path": "/school-day/",
+      "id": "day",
+      "lang": "en",
+      "template": "day",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/catholic/school-day/",
+      "equivalents": {
+        "en": "/school-day/",
+        "es": "/es/school-day/"
+      }
+    },
+    {
+      "path": "/es/school-day/",
+      "id": "day",
+      "lang": "es",
+      "template": "day",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/catholic/es/school-day/",
+      "equivalents": {
+        "en": "/school-day/",
+        "es": "/es/school-day/"
+      }
+    },
+    {
+      "path": "/faith/",
+      "id": "faith",
+      "lang": "en",
+      "template": "faith",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/catholic/faith/",
+      "equivalents": {
+        "en": "/faith/",
+        "es": "/es/faith/"
+      }
+    },
+    {
+      "path": "/es/faith/",
+      "id": "faith",
+      "lang": "es",
+      "template": "faith",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/catholic/es/faith/",
+      "equivalents": {
+        "en": "/faith/",
+        "es": "/es/faith/"
+      }
+    },
+    {
+      "path": "/calendar/",
+      "id": "calendar",
+      "lang": "en",
+      "template": "calendar",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/catholic/calendar/",
+      "equivalents": {
+        "en": "/calendar/",
+        "es": "/es/calendar/"
+      }
+    },
+    {
+      "path": "/es/calendar/",
+      "id": "calendar",
+      "lang": "es",
+      "template": "calendar",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/catholic/es/calendar/",
+      "equivalents": {
+        "en": "/calendar/",
+        "es": "/es/calendar/"
+      }
+    },
+    {
+      "path": "/families/",
+      "id": "families",
+      "lang": "en",
+      "template": "families",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/catholic/families/",
+      "equivalents": {
+        "en": "/families/",
+        "es": "/es/families/"
+      }
+    },
+    {
+      "path": "/es/families/",
+      "id": "families",
+      "lang": "es",
+      "template": "families",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/catholic/es/families/",
+      "equivalents": {
+        "en": "/families/",
+        "es": "/es/families/"
+      }
+    },
+    {
+      "path": "/about/",
+      "id": "about",
+      "lang": "en",
+      "template": "about",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/catholic/about/",
+      "equivalents": {
+        "en": "/about/",
+        "es": "/es/about/"
+      }
+    },
+    {
+      "path": "/es/about/",
+      "id": "about",
+      "lang": "es",
+      "template": "about",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/catholic/es/about/",
+      "equivalents": {
+        "en": "/about/",
+        "es": "/es/about/"
+      }
+    },
+    {
+      "path": "/contact/",
+      "id": "contact",
+      "lang": "en",
+      "template": "contact",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/catholic/contact/",
+      "equivalents": {
+        "en": "/contact/",
+        "es": "/es/contact/"
+      }
+    },
+    {
+      "path": "/es/contact/",
+      "id": "contact",
+      "lang": "es",
+      "template": "contact",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/catholic/es/contact/",
+      "equivalents": {
+        "en": "/contact/",
+        "es": "/es/contact/"
+      }
+    },
+    {
+      "path": "/policies/",
+      "id": "policies",
+      "lang": "en",
+      "template": "policies",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/catholic/policies/",
+      "equivalents": {
+        "en": "/policies/",
+        "es": "/es/policies/"
+      }
+    },
+    {
+      "path": "/es/policies/",
+      "id": "policies",
+      "lang": "es",
+      "template": "policies",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/catholic/es/policies/",
+      "equivalents": {
+        "en": "/policies/",
+        "es": "/es/policies/"
+      }
+    }
+  ],
+  "unrouted": [
+    "/404.html",
+    "/es/404/"
+  ]
+}

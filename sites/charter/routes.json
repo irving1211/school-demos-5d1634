@@ -1,0 +1,1279 @@
+{
+  "schema": "site-foundation/routes@1",
+  "generator": "@icbs/site-foundation@0.4.1",
+  "deployment": "demo",
+  "origin": "https://irving1211.github.io",
+  "base": "/school-demos-5d1634/sites/charter/",
+  "langs": [
+    "en",
+    "es",
+    "ht",
+    "pt"
+  ],
+  "defaultLocale": "en",
+  "routes": [
+    {
+      "path": "/",
+      "id": "home",
+      "lang": "en",
+      "template": "home",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/",
+      "equivalents": {
+        "en": "/",
+        "es": "/es/",
+        "ht": "/ht/",
+        "pt": "/pt/"
+      }
+    },
+    {
+      "path": "/es/",
+      "id": "home",
+      "lang": "es",
+      "template": "home",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/es/",
+      "equivalents": {
+        "en": "/",
+        "es": "/es/",
+        "ht": "/ht/",
+        "pt": "/pt/"
+      }
+    },
+    {
+      "path": "/ht/",
+      "id": "home",
+      "lang": "ht",
+      "template": "home",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/ht/",
+      "equivalents": {
+        "en": "/",
+        "es": "/es/",
+        "ht": "/ht/",
+        "pt": "/pt/"
+      }
+    },
+    {
+      "path": "/pt/",
+      "id": "home",
+      "lang": "pt",
+      "template": "home",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/pt/",
+      "equivalents": {
+        "en": "/",
+        "es": "/es/",
+        "ht": "/ht/",
+        "pt": "/pt/"
+      }
+    },
+    {
+      "path": "/families/",
+      "id": "families",
+      "lang": "en",
+      "template": "families",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/families/",
+      "equivalents": {
+        "en": "/families/",
+        "es": "/es/families/",
+        "ht": "/ht/families/",
+        "pt": "/pt/families/"
+      }
+    },
+    {
+      "path": "/es/families/",
+      "id": "families",
+      "lang": "es",
+      "template": "families",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/es/families/",
+      "equivalents": {
+        "en": "/families/",
+        "es": "/es/families/",
+        "ht": "/ht/families/",
+        "pt": "/pt/families/"
+      }
+    },
+    {
+      "path": "/ht/families/",
+      "id": "families",
+      "lang": "ht",
+      "template": "families",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/ht/families/",
+      "equivalents": {
+        "en": "/families/",
+        "es": "/es/families/",
+        "ht": "/ht/families/",
+        "pt": "/pt/families/"
+      }
+    },
+    {
+      "path": "/pt/families/",
+      "id": "families",
+      "lang": "pt",
+      "template": "families",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/pt/families/",
+      "equivalents": {
+        "en": "/families/",
+        "es": "/es/families/",
+        "ht": "/ht/families/",
+        "pt": "/pt/families/"
+      }
+    },
+    {
+      "path": "/families/report-an-absence/",
+      "id": "absence",
+      "lang": "en",
+      "template": "absence",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/families/report-an-absence/",
+      "equivalents": {
+        "en": "/families/report-an-absence/",
+        "es": "/es/families/report-an-absence/",
+        "ht": "/ht/families/report-an-absence/",
+        "pt": "/pt/families/report-an-absence/"
+      }
+    },
+    {
+      "path": "/es/families/report-an-absence/",
+      "id": "absence",
+      "lang": "es",
+      "template": "absence",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/es/families/report-an-absence/",
+      "equivalents": {
+        "en": "/families/report-an-absence/",
+        "es": "/es/families/report-an-absence/",
+        "ht": "/ht/families/report-an-absence/",
+        "pt": "/pt/families/report-an-absence/"
+      }
+    },
+    {
+      "path": "/ht/families/report-an-absence/",
+      "id": "absence",
+      "lang": "ht",
+      "template": "absence",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/ht/families/report-an-absence/",
+      "equivalents": {
+        "en": "/families/report-an-absence/",
+        "es": "/es/families/report-an-absence/",
+        "ht": "/ht/families/report-an-absence/",
+        "pt": "/pt/families/report-an-absence/"
+      }
+    },
+    {
+      "path": "/pt/families/report-an-absence/",
+      "id": "absence",
+      "lang": "pt",
+      "template": "absence",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/pt/families/report-an-absence/",
+      "equivalents": {
+        "en": "/families/report-an-absence/",
+        "es": "/es/families/report-an-absence/",
+        "ht": "/ht/families/report-an-absence/",
+        "pt": "/pt/families/report-an-absence/"
+      }
+    },
+    {
+      "path": "/families/bus-routes/",
+      "id": "bus",
+      "lang": "en",
+      "template": "bus",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/families/bus-routes/",
+      "equivalents": {
+        "en": "/families/bus-routes/",
+        "es": "/es/families/bus-routes/",
+        "ht": "/ht/families/bus-routes/",
+        "pt": "/pt/families/bus-routes/"
+      }
+    },
+    {
+      "path": "/es/families/bus-routes/",
+      "id": "bus",
+      "lang": "es",
+      "template": "bus",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/es/families/bus-routes/",
+      "equivalents": {
+        "en": "/families/bus-routes/",
+        "es": "/es/families/bus-routes/",
+        "ht": "/ht/families/bus-routes/",
+        "pt": "/pt/families/bus-routes/"
+      }
+    },
+    {
+      "path": "/ht/families/bus-routes/",
+      "id": "bus",
+      "lang": "ht",
+      "template": "bus",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/ht/families/bus-routes/",
+      "equivalents": {
+        "en": "/families/bus-routes/",
+        "es": "/es/families/bus-routes/",
+        "ht": "/ht/families/bus-routes/",
+        "pt": "/pt/families/bus-routes/"
+      }
+    },
+    {
+      "path": "/pt/families/bus-routes/",
+      "id": "bus",
+      "lang": "pt",
+      "template": "bus",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/pt/families/bus-routes/",
+      "equivalents": {
+        "en": "/families/bus-routes/",
+        "es": "/es/families/bus-routes/",
+        "ht": "/ht/families/bus-routes/",
+        "pt": "/pt/families/bus-routes/"
+      }
+    },
+    {
+      "path": "/families/parent-portal/",
+      "id": "portal",
+      "lang": "en",
+      "template": "portal",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/families/parent-portal/",
+      "equivalents": {
+        "en": "/families/parent-portal/",
+        "es": "/es/families/parent-portal/",
+        "ht": "/ht/families/parent-portal/",
+        "pt": "/pt/families/parent-portal/"
+      }
+    },
+    {
+      "path": "/es/families/parent-portal/",
+      "id": "portal",
+      "lang": "es",
+      "template": "portal",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/es/families/parent-portal/",
+      "equivalents": {
+        "en": "/families/parent-portal/",
+        "es": "/es/families/parent-portal/",
+        "ht": "/ht/families/parent-portal/",
+        "pt": "/pt/families/parent-portal/"
+      }
+    },
+    {
+      "path": "/ht/families/parent-portal/",
+      "id": "portal",
+      "lang": "ht",
+      "template": "portal",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/ht/families/parent-portal/",
+      "equivalents": {
+        "en": "/families/parent-portal/",
+        "es": "/es/families/parent-portal/",
+        "ht": "/ht/families/parent-portal/",
+        "pt": "/pt/families/parent-portal/"
+      }
+    },
+    {
+      "path": "/pt/families/parent-portal/",
+      "id": "portal",
+      "lang": "pt",
+      "template": "portal",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/pt/families/parent-portal/",
+      "equivalents": {
+        "en": "/families/parent-portal/",
+        "es": "/es/families/parent-portal/",
+        "ht": "/ht/families/parent-portal/",
+        "pt": "/pt/families/parent-portal/"
+      }
+    },
+    {
+      "path": "/families/uniforms/",
+      "id": "uniforms",
+      "lang": "en",
+      "template": "uniforms",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/families/uniforms/",
+      "equivalents": {
+        "en": "/families/uniforms/",
+        "es": "/es/families/uniforms/",
+        "ht": "/ht/families/uniforms/",
+        "pt": "/pt/families/uniforms/"
+      }
+    },
+    {
+      "path": "/es/families/uniforms/",
+      "id": "uniforms",
+      "lang": "es",
+      "template": "uniforms",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/es/families/uniforms/",
+      "equivalents": {
+        "en": "/families/uniforms/",
+        "es": "/es/families/uniforms/",
+        "ht": "/ht/families/uniforms/",
+        "pt": "/pt/families/uniforms/"
+      }
+    },
+    {
+      "path": "/ht/families/uniforms/",
+      "id": "uniforms",
+      "lang": "ht",
+      "template": "uniforms",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/ht/families/uniforms/",
+      "equivalents": {
+        "en": "/families/uniforms/",
+        "es": "/es/families/uniforms/",
+        "ht": "/ht/families/uniforms/",
+        "pt": "/pt/families/uniforms/"
+      }
+    },
+    {
+      "path": "/pt/families/uniforms/",
+      "id": "uniforms",
+      "lang": "pt",
+      "template": "uniforms",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/pt/families/uniforms/",
+      "equivalents": {
+        "en": "/families/uniforms/",
+        "es": "/es/families/uniforms/",
+        "ht": "/ht/families/uniforms/",
+        "pt": "/pt/families/uniforms/"
+      }
+    },
+    {
+      "path": "/families/text-alerts/",
+      "id": "alerts",
+      "lang": "en",
+      "template": "alerts",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/families/text-alerts/",
+      "equivalents": {
+        "en": "/families/text-alerts/",
+        "es": "/es/families/text-alerts/",
+        "ht": "/ht/families/text-alerts/",
+        "pt": "/pt/families/text-alerts/"
+      }
+    },
+    {
+      "path": "/es/families/text-alerts/",
+      "id": "alerts",
+      "lang": "es",
+      "template": "alerts",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/es/families/text-alerts/",
+      "equivalents": {
+        "en": "/families/text-alerts/",
+        "es": "/es/families/text-alerts/",
+        "ht": "/ht/families/text-alerts/",
+        "pt": "/pt/families/text-alerts/"
+      }
+    },
+    {
+      "path": "/ht/families/text-alerts/",
+      "id": "alerts",
+      "lang": "ht",
+      "template": "alerts",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/ht/families/text-alerts/",
+      "equivalents": {
+        "en": "/families/text-alerts/",
+        "es": "/es/families/text-alerts/",
+        "ht": "/ht/families/text-alerts/",
+        "pt": "/pt/families/text-alerts/"
+      }
+    },
+    {
+      "path": "/pt/families/text-alerts/",
+      "id": "alerts",
+      "lang": "pt",
+      "template": "alerts",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/pt/families/text-alerts/",
+      "equivalents": {
+        "en": "/families/text-alerts/",
+        "es": "/es/families/text-alerts/",
+        "ht": "/ht/families/text-alerts/",
+        "pt": "/pt/families/text-alerts/"
+      }
+    },
+    {
+      "path": "/admissions/",
+      "id": "admissions",
+      "lang": "en",
+      "template": "admissions",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/admissions/",
+      "equivalents": {
+        "en": "/admissions/",
+        "es": "/es/admissions/",
+        "ht": "/ht/admissions/",
+        "pt": "/pt/admissions/"
+      }
+    },
+    {
+      "path": "/es/admissions/",
+      "id": "admissions",
+      "lang": "es",
+      "template": "admissions",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/es/admissions/",
+      "equivalents": {
+        "en": "/admissions/",
+        "es": "/es/admissions/",
+        "ht": "/ht/admissions/",
+        "pt": "/pt/admissions/"
+      }
+    },
+    {
+      "path": "/ht/admissions/",
+      "id": "admissions",
+      "lang": "ht",
+      "template": "admissions",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/ht/admissions/",
+      "equivalents": {
+        "en": "/admissions/",
+        "es": "/es/admissions/",
+        "ht": "/ht/admissions/",
+        "pt": "/pt/admissions/"
+      }
+    },
+    {
+      "path": "/pt/admissions/",
+      "id": "admissions",
+      "lang": "pt",
+      "template": "admissions",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/pt/admissions/",
+      "equivalents": {
+        "en": "/admissions/",
+        "es": "/es/admissions/",
+        "ht": "/ht/admissions/",
+        "pt": "/pt/admissions/"
+      }
+    },
+    {
+      "path": "/free/",
+      "id": "free",
+      "lang": "en",
+      "template": "free",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/free/",
+      "equivalents": {
+        "en": "/free/",
+        "es": "/es/free/",
+        "ht": "/ht/free/",
+        "pt": "/pt/free/"
+      }
+    },
+    {
+      "path": "/es/free/",
+      "id": "free",
+      "lang": "es",
+      "template": "free",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/es/free/",
+      "equivalents": {
+        "en": "/free/",
+        "es": "/es/free/",
+        "ht": "/ht/free/",
+        "pt": "/pt/free/"
+      }
+    },
+    {
+      "path": "/ht/free/",
+      "id": "free",
+      "lang": "ht",
+      "template": "free",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/ht/free/",
+      "equivalents": {
+        "en": "/free/",
+        "es": "/es/free/",
+        "ht": "/ht/free/",
+        "pt": "/pt/free/"
+      }
+    },
+    {
+      "path": "/pt/free/",
+      "id": "free",
+      "lang": "pt",
+      "template": "free",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/pt/free/",
+      "equivalents": {
+        "en": "/free/",
+        "es": "/es/free/",
+        "ht": "/ht/free/",
+        "pt": "/pt/free/"
+      }
+    },
+    {
+      "path": "/calendar/",
+      "id": "calendar",
+      "lang": "en",
+      "template": "calendar",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/calendar/",
+      "equivalents": {
+        "en": "/calendar/",
+        "es": "/es/calendar/",
+        "ht": "/ht/calendar/",
+        "pt": "/pt/calendar/"
+      }
+    },
+    {
+      "path": "/es/calendar/",
+      "id": "calendar",
+      "lang": "es",
+      "template": "calendar",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/es/calendar/",
+      "equivalents": {
+        "en": "/calendar/",
+        "es": "/es/calendar/",
+        "ht": "/ht/calendar/",
+        "pt": "/pt/calendar/"
+      }
+    },
+    {
+      "path": "/ht/calendar/",
+      "id": "calendar",
+      "lang": "ht",
+      "template": "calendar",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/ht/calendar/",
+      "equivalents": {
+        "en": "/calendar/",
+        "es": "/es/calendar/",
+        "ht": "/ht/calendar/",
+        "pt": "/pt/calendar/"
+      }
+    },
+    {
+      "path": "/pt/calendar/",
+      "id": "calendar",
+      "lang": "pt",
+      "template": "calendar",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/pt/calendar/",
+      "equivalents": {
+        "en": "/calendar/",
+        "es": "/es/calendar/",
+        "ht": "/ht/calendar/",
+        "pt": "/pt/calendar/"
+      }
+    },
+    {
+      "path": "/about/",
+      "id": "about",
+      "lang": "en",
+      "template": "about",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/about/",
+      "equivalents": {
+        "en": "/about/",
+        "es": "/es/about/",
+        "ht": "/ht/about/",
+        "pt": "/pt/about/"
+      }
+    },
+    {
+      "path": "/es/about/",
+      "id": "about",
+      "lang": "es",
+      "template": "about",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/es/about/",
+      "equivalents": {
+        "en": "/about/",
+        "es": "/es/about/",
+        "ht": "/ht/about/",
+        "pt": "/pt/about/"
+      }
+    },
+    {
+      "path": "/ht/about/",
+      "id": "about",
+      "lang": "ht",
+      "template": "about",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/ht/about/",
+      "equivalents": {
+        "en": "/about/",
+        "es": "/es/about/",
+        "ht": "/ht/about/",
+        "pt": "/pt/about/"
+      }
+    },
+    {
+      "path": "/pt/about/",
+      "id": "about",
+      "lang": "pt",
+      "template": "about",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/pt/about/",
+      "equivalents": {
+        "en": "/about/",
+        "es": "/es/about/",
+        "ht": "/ht/about/",
+        "pt": "/pt/about/"
+      }
+    },
+    {
+      "path": "/contact/",
+      "id": "contact",
+      "lang": "en",
+      "template": "contact",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/contact/",
+      "equivalents": {
+        "en": "/contact/",
+        "es": "/es/contact/",
+        "ht": "/ht/contact/",
+        "pt": "/pt/contact/"
+      }
+    },
+    {
+      "path": "/es/contact/",
+      "id": "contact",
+      "lang": "es",
+      "template": "contact",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/es/contact/",
+      "equivalents": {
+        "en": "/contact/",
+        "es": "/es/contact/",
+        "ht": "/ht/contact/",
+        "pt": "/pt/contact/"
+      }
+    },
+    {
+      "path": "/ht/contact/",
+      "id": "contact",
+      "lang": "ht",
+      "template": "contact",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/ht/contact/",
+      "equivalents": {
+        "en": "/contact/",
+        "es": "/es/contact/",
+        "ht": "/ht/contact/",
+        "pt": "/pt/contact/"
+      }
+    },
+    {
+      "path": "/pt/contact/",
+      "id": "contact",
+      "lang": "pt",
+      "template": "contact",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/pt/contact/",
+      "equivalents": {
+        "en": "/contact/",
+        "es": "/es/contact/",
+        "ht": "/ht/contact/",
+        "pt": "/pt/contact/"
+      }
+    },
+    {
+      "path": "/policies/",
+      "id": "policies",
+      "lang": "en",
+      "template": "policies",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/policies/",
+      "equivalents": {
+        "en": "/policies/",
+        "es": "/es/policies/",
+        "ht": "/ht/policies/",
+        "pt": "/pt/policies/"
+      }
+    },
+    {
+      "path": "/es/policies/",
+      "id": "policies",
+      "lang": "es",
+      "template": "policies",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/es/policies/",
+      "equivalents": {
+        "en": "/policies/",
+        "es": "/es/policies/",
+        "ht": "/ht/policies/",
+        "pt": "/pt/policies/"
+      }
+    },
+    {
+      "path": "/ht/policies/",
+      "id": "policies",
+      "lang": "ht",
+      "template": "policies",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/ht/policies/",
+      "equivalents": {
+        "en": "/policies/",
+        "es": "/es/policies/",
+        "ht": "/ht/policies/",
+        "pt": "/pt/policies/"
+      }
+    },
+    {
+      "path": "/pt/policies/",
+      "id": "policies",
+      "lang": "pt",
+      "template": "policies",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/pt/policies/",
+      "equivalents": {
+        "en": "/policies/",
+        "es": "/es/policies/",
+        "ht": "/ht/policies/",
+        "pt": "/pt/policies/"
+      }
+    },
+    {
+      "path": "/policies/accessibility/",
+      "id": "pol-a11y",
+      "lang": "en",
+      "template": "policy",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/policies/accessibility/",
+      "equivalents": {
+        "en": "/policies/accessibility/",
+        "es": "/es/policies/accessibility/",
+        "ht": "/ht/policies/accessibility/",
+        "pt": "/pt/policies/accessibility/"
+      }
+    },
+    {
+      "path": "/es/policies/accessibility/",
+      "id": "pol-a11y",
+      "lang": "es",
+      "template": "policy",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/es/policies/accessibility/",
+      "equivalents": {
+        "en": "/policies/accessibility/",
+        "es": "/es/policies/accessibility/",
+        "ht": "/ht/policies/accessibility/",
+        "pt": "/pt/policies/accessibility/"
+      }
+    },
+    {
+      "path": "/ht/policies/accessibility/",
+      "id": "pol-a11y",
+      "lang": "ht",
+      "template": "policy",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/ht/policies/accessibility/",
+      "equivalents": {
+        "en": "/policies/accessibility/",
+        "es": "/es/policies/accessibility/",
+        "ht": "/ht/policies/accessibility/",
+        "pt": "/pt/policies/accessibility/"
+      }
+    },
+    {
+      "path": "/pt/policies/accessibility/",
+      "id": "pol-a11y",
+      "lang": "pt",
+      "template": "policy",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/pt/policies/accessibility/",
+      "equivalents": {
+        "en": "/policies/accessibility/",
+        "es": "/es/policies/accessibility/",
+        "ht": "/ht/policies/accessibility/",
+        "pt": "/pt/policies/accessibility/"
+      }
+    },
+    {
+      "path": "/policies/nondiscrimination/",
+      "id": "pol-nd",
+      "lang": "en",
+      "template": "policy",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/policies/nondiscrimination/",
+      "equivalents": {
+        "en": "/policies/nondiscrimination/",
+        "es": "/es/policies/nondiscrimination/",
+        "ht": "/ht/policies/nondiscrimination/",
+        "pt": "/pt/policies/nondiscrimination/"
+      }
+    },
+    {
+      "path": "/es/policies/nondiscrimination/",
+      "id": "pol-nd",
+      "lang": "es",
+      "template": "policy",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/es/policies/nondiscrimination/",
+      "equivalents": {
+        "en": "/policies/nondiscrimination/",
+        "es": "/es/policies/nondiscrimination/",
+        "ht": "/ht/policies/nondiscrimination/",
+        "pt": "/pt/policies/nondiscrimination/"
+      }
+    },
+    {
+      "path": "/ht/policies/nondiscrimination/",
+      "id": "pol-nd",
+      "lang": "ht",
+      "template": "policy",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/ht/policies/nondiscrimination/",
+      "equivalents": {
+        "en": "/policies/nondiscrimination/",
+        "es": "/es/policies/nondiscrimination/",
+        "ht": "/ht/policies/nondiscrimination/",
+        "pt": "/pt/policies/nondiscrimination/"
+      }
+    },
+    {
+      "path": "/pt/policies/nondiscrimination/",
+      "id": "pol-nd",
+      "lang": "pt",
+      "template": "policy",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/pt/policies/nondiscrimination/",
+      "equivalents": {
+        "en": "/policies/nondiscrimination/",
+        "es": "/es/policies/nondiscrimination/",
+        "ht": "/ht/policies/nondiscrimination/",
+        "pt": "/pt/policies/nondiscrimination/"
+      }
+    },
+    {
+      "path": "/policies/privacy/",
+      "id": "pol-privacy",
+      "lang": "en",
+      "template": "policy",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/policies/privacy/",
+      "equivalents": {
+        "en": "/policies/privacy/",
+        "es": "/es/policies/privacy/",
+        "ht": "/ht/policies/privacy/",
+        "pt": "/pt/policies/privacy/"
+      }
+    },
+    {
+      "path": "/es/policies/privacy/",
+      "id": "pol-privacy",
+      "lang": "es",
+      "template": "policy",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/es/policies/privacy/",
+      "equivalents": {
+        "en": "/policies/privacy/",
+        "es": "/es/policies/privacy/",
+        "ht": "/ht/policies/privacy/",
+        "pt": "/pt/policies/privacy/"
+      }
+    },
+    {
+      "path": "/ht/policies/privacy/",
+      "id": "pol-privacy",
+      "lang": "ht",
+      "template": "policy",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/ht/policies/privacy/",
+      "equivalents": {
+        "en": "/policies/privacy/",
+        "es": "/es/policies/privacy/",
+        "ht": "/ht/policies/privacy/",
+        "pt": "/pt/policies/privacy/"
+      }
+    },
+    {
+      "path": "/pt/policies/privacy/",
+      "id": "pol-privacy",
+      "lang": "pt",
+      "template": "policy",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/pt/policies/privacy/",
+      "equivalents": {
+        "en": "/policies/privacy/",
+        "es": "/es/policies/privacy/",
+        "ht": "/ht/policies/privacy/",
+        "pt": "/pt/policies/privacy/"
+      }
+    },
+    {
+      "path": "/policies/anti-bullying/",
+      "id": "pol-bully",
+      "lang": "en",
+      "template": "policy",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/policies/anti-bullying/",
+      "equivalents": {
+        "en": "/policies/anti-bullying/",
+        "es": "/es/policies/anti-bullying/",
+        "ht": "/ht/policies/anti-bullying/",
+        "pt": "/pt/policies/anti-bullying/"
+      }
+    },
+    {
+      "path": "/es/policies/anti-bullying/",
+      "id": "pol-bully",
+      "lang": "es",
+      "template": "policy",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/es/policies/anti-bullying/",
+      "equivalents": {
+        "en": "/policies/anti-bullying/",
+        "es": "/es/policies/anti-bullying/",
+        "ht": "/ht/policies/anti-bullying/",
+        "pt": "/pt/policies/anti-bullying/"
+      }
+    },
+    {
+      "path": "/ht/policies/anti-bullying/",
+      "id": "pol-bully",
+      "lang": "ht",
+      "template": "policy",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/ht/policies/anti-bullying/",
+      "equivalents": {
+        "en": "/policies/anti-bullying/",
+        "es": "/es/policies/anti-bullying/",
+        "ht": "/ht/policies/anti-bullying/",
+        "pt": "/pt/policies/anti-bullying/"
+      }
+    },
+    {
+      "path": "/pt/policies/anti-bullying/",
+      "id": "pol-bully",
+      "lang": "pt",
+      "template": "policy",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/pt/policies/anti-bullying/",
+      "equivalents": {
+        "en": "/policies/anti-bullying/",
+        "es": "/es/policies/anti-bullying/",
+        "ht": "/ht/policies/anti-bullying/",
+        "pt": "/pt/policies/anti-bullying/"
+      }
+    },
+    {
+      "path": "/policies/annual-report/",
+      "id": "pol-report",
+      "lang": "en",
+      "template": "policy",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/policies/annual-report/",
+      "equivalents": {
+        "en": "/policies/annual-report/",
+        "es": "/es/policies/annual-report/",
+        "ht": "/ht/policies/annual-report/",
+        "pt": "/pt/policies/annual-report/"
+      }
+    },
+    {
+      "path": "/es/policies/annual-report/",
+      "id": "pol-report",
+      "lang": "es",
+      "template": "policy",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/es/policies/annual-report/",
+      "equivalents": {
+        "en": "/policies/annual-report/",
+        "es": "/es/policies/annual-report/",
+        "ht": "/ht/policies/annual-report/",
+        "pt": "/pt/policies/annual-report/"
+      }
+    },
+    {
+      "path": "/ht/policies/annual-report/",
+      "id": "pol-report",
+      "lang": "ht",
+      "template": "policy",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/ht/policies/annual-report/",
+      "equivalents": {
+        "en": "/policies/annual-report/",
+        "es": "/es/policies/annual-report/",
+        "ht": "/ht/policies/annual-report/",
+        "pt": "/pt/policies/annual-report/"
+      }
+    },
+    {
+      "path": "/pt/policies/annual-report/",
+      "id": "pol-report",
+      "lang": "pt",
+      "template": "policy",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/pt/policies/annual-report/",
+      "equivalents": {
+        "en": "/policies/annual-report/",
+        "es": "/es/policies/annual-report/",
+        "ht": "/ht/policies/annual-report/",
+        "pt": "/pt/policies/annual-report/"
+      }
+    },
+    {
+      "path": "/policies/board-minutes/",
+      "id": "pol-board",
+      "lang": "en",
+      "template": "policy",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/policies/board-minutes/",
+      "equivalents": {
+        "en": "/policies/board-minutes/",
+        "es": "/es/policies/board-minutes/",
+        "ht": "/ht/policies/board-minutes/",
+        "pt": "/pt/policies/board-minutes/"
+      }
+    },
+    {
+      "path": "/es/policies/board-minutes/",
+      "id": "pol-board",
+      "lang": "es",
+      "template": "policy",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/es/policies/board-minutes/",
+      "equivalents": {
+        "en": "/policies/board-minutes/",
+        "es": "/es/policies/board-minutes/",
+        "ht": "/ht/policies/board-minutes/",
+        "pt": "/pt/policies/board-minutes/"
+      }
+    },
+    {
+      "path": "/ht/policies/board-minutes/",
+      "id": "pol-board",
+      "lang": "ht",
+      "template": "policy",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/ht/policies/board-minutes/",
+      "equivalents": {
+        "en": "/policies/board-minutes/",
+        "es": "/es/policies/board-minutes/",
+        "ht": "/ht/policies/board-minutes/",
+        "pt": "/pt/policies/board-minutes/"
+      }
+    },
+    {
+      "path": "/pt/policies/board-minutes/",
+      "id": "pol-board",
+      "lang": "pt",
+      "template": "policy",
+      "indexable": true,
+      "sitemap": true,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/pt/policies/board-minutes/",
+      "equivalents": {
+        "en": "/policies/board-minutes/",
+        "es": "/es/policies/board-minutes/",
+        "ht": "/ht/policies/board-minutes/",
+        "pt": "/pt/policies/board-minutes/"
+      }
+    },
+    {
+      "path": "/admissions/thank-you/",
+      "id": "admissions-thank-you",
+      "lang": "en",
+      "template": "thank-you",
+      "indexable": false,
+      "sitemap": false,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/admissions/thank-you/",
+      "equivalents": {
+        "en": "/admissions/thank-you/",
+        "es": "/es/admissions/thank-you/",
+        "ht": "/ht/admissions/thank-you/",
+        "pt": "/pt/admissions/thank-you/"
+      }
+    },
+    {
+      "path": "/es/admissions/thank-you/",
+      "id": "admissions-thank-you",
+      "lang": "es",
+      "template": "thank-you",
+      "indexable": false,
+      "sitemap": false,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/es/admissions/thank-you/",
+      "equivalents": {
+        "en": "/admissions/thank-you/",
+        "es": "/es/admissions/thank-you/",
+        "ht": "/ht/admissions/thank-you/",
+        "pt": "/pt/admissions/thank-you/"
+      }
+    },
+    {
+      "path": "/ht/admissions/thank-you/",
+      "id": "admissions-thank-you",
+      "lang": "ht",
+      "template": "thank-you",
+      "indexable": false,
+      "sitemap": false,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/ht/admissions/thank-you/",
+      "equivalents": {
+        "en": "/admissions/thank-you/",
+        "es": "/es/admissions/thank-you/",
+        "ht": "/ht/admissions/thank-you/",
+        "pt": "/pt/admissions/thank-you/"
+      }
+    },
+    {
+      "path": "/pt/admissions/thank-you/",
+      "id": "admissions-thank-you",
+      "lang": "pt",
+      "template": "thank-you",
+      "indexable": false,
+      "sitemap": false,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/pt/admissions/thank-you/",
+      "equivalents": {
+        "en": "/admissions/thank-you/",
+        "es": "/es/admissions/thank-you/",
+        "ht": "/ht/admissions/thank-you/",
+        "pt": "/pt/admissions/thank-you/"
+      }
+    },
+    {
+      "path": "/contact/thank-you/",
+      "id": "contact-thank-you",
+      "lang": "en",
+      "template": "thank-you",
+      "indexable": false,
+      "sitemap": false,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/contact/thank-you/",
+      "equivalents": {
+        "en": "/contact/thank-you/",
+        "es": "/es/contact/thank-you/",
+        "ht": "/ht/contact/thank-you/",
+        "pt": "/pt/contact/thank-you/"
+      }
+    },
+    {
+      "path": "/es/contact/thank-you/",
+      "id": "contact-thank-you",
+      "lang": "es",
+      "template": "thank-you",
+      "indexable": false,
+      "sitemap": false,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/es/contact/thank-you/",
+      "equivalents": {
+        "en": "/contact/thank-you/",
+        "es": "/es/contact/thank-you/",
+        "ht": "/ht/contact/thank-you/",
+        "pt": "/pt/contact/thank-you/"
+      }
+    },
+    {
+      "path": "/ht/contact/thank-you/",
+      "id": "contact-thank-you",
+      "lang": "ht",
+      "template": "thank-you",
+      "indexable": false,
+      "sitemap": false,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/ht/contact/thank-you/",
+      "equivalents": {
+        "en": "/contact/thank-you/",
+        "es": "/es/contact/thank-you/",
+        "ht": "/ht/contact/thank-you/",
+        "pt": "/pt/contact/thank-you/"
+      }
+    },
+    {
+      "path": "/pt/contact/thank-you/",
+      "id": "contact-thank-you",
+      "lang": "pt",
+      "template": "thank-you",
+      "indexable": false,
+      "sitemap": false,
+      "url": "https://irving1211.github.io/school-demos-5d1634/sites/charter/pt/contact/thank-you/",
+      "equivalents": {
+        "en": "/contact/thank-you/",
+        "es": "/es/contact/thank-you/",
+        "ht": "/ht/contact/thank-you/",
+        "pt": "/pt/contact/thank-you/"
+      }
+    }
+  ],
+  "unrouted": [
+    "/404.html"
+  ]
+}
