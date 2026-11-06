@@ -10,11 +10,11 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Lantern Middle School · Lawrence, MA">
 <meta property="og:description" content="A free middle school for grades 5 to 8 in Lawrence, MA, open until five and with students through college. Apply in English or Spanish.">
-<meta property="og:image" content="assets/r2/hero-1200sq.webp">
+<meta property="og:image" content="assets/r2/cover-1600.webp">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="es_US">
-<link rel="preload" href="assets/r2/hero-800.webp" as="image" media="(max-width: 899px)" fetchpriority="high">
-<link rel="preload" href="assets/r2/hero-1200sq.webp" as="image" media="(min-width: 900px)" fetchpriority="high">
+<link rel="preload" href="assets/r2/cover-800.webp" as="image" media="(max-width: 899px)" fetchpriority="high">
+<link rel="preload" href="assets/r2/cover-1600.webp" as="image" media="(min-width: 900px)" fetchpriority="high">
 <script>
 (function(){var h=document.documentElement;h.className+=' js';try{if(matchMedia('(prefers-reduced-motion: reduce)').matches||/[?&]motion=off/.test(location.search))h.className+=' rm';}catch(e){}})();
 </script>
@@ -34,10 +34,11 @@
   /* one spacing scale, 8 values */
   --t4:4px;--t8:8px;--t16:16px;--t24:24px;--t40:40px;--t64:64px;--t96:96px;--t144:144px;
   /* one type scale, steps of x1.25 or more: 14 chrome, 18 body, 24 h3, 32|48 h2, 40|72 h1, 64|104 moment */
-  --f-chrome:.875rem;--f-body:1.125rem;--f-h3:1.5rem;--f-h2:2rem;--f-h1:2.5rem;--f-moment:4rem;
+  --f-chrome:.9375rem;--f-body:1.1875rem;--f-h3:1.5625rem;--f-h2:2.125rem;--f-h1:2.75rem;--f-moment:4.5rem;
+  --muted:var(--indigo-soft);--rule:var(--indigo-line);--strong:var(--indigo);
   --gut:24px;--max:1120px;--colgap:24px;
 }
-@media (min-width:900px){:root{--gut:64px;--colgap:40px;--f-h2:3rem;--f-h1:4.5rem;--f-moment:6.5rem}}
+@media (min-width:900px){:root{--gut:64px;--colgap:40px;--f-h2:3.125rem;--f-h1:5rem;--f-moment:7.5rem}}
 *,*::before,*::after{box-sizing:border-box}
 html{overflow-x:clip;-webkit-text-size-adjust:100%;scroll-padding-top:var(--t96)}
 body{margin:0;background:var(--paper);color:var(--indigo);font:400 var(--f-body)/1.55 var(--serif);font-optical-sizing:auto;font-synthesis:none;overflow-x:clip}
@@ -83,82 +84,67 @@ a{color:inherit;text-decoration-thickness:1px;text-underline-offset:4px}
 .submit:active{background:var(--amber-press)}
 @media (prefers-reduced-motion:reduce){.act,.submit{transition:none}}
 
-/* ----- chrome strip: status + languages, one quiet line ----- */
-.chrome{background:var(--indigo-2);color:var(--on-indigo-2)}
-.chrome__in{display:flex;align-items:center;justify-content:space-between;gap:var(--t16);min-height:44px}
-.chrome :focus-visible{outline-color:var(--on-indigo)}
-.chrome.is-delay{background:var(--paper-light);color:var(--indigo)}
-.chrome.is-delay .langs a{color:var(--indigo)}
-.chrome.is-delay :focus-visible{outline-color:var(--indigo)}
-.status{padding:var(--t8) 0}
-.chrome.is-delay .status{font-weight:500}
-.ch-right{display:flex;align-items:center;gap:var(--t16);flex:0 0 auto}
-.langs{display:flex;gap:var(--t16)}
-.langs a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none;color:var(--on-indigo)}
-.langs a[aria-current="true"]{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px}
-
-/* ----- masthead ----- */
-.mh{background:var(--indigo);color:var(--on-indigo);border-bottom:1px solid var(--indigo-2);position:relative;z-index:20}
-.mh :focus-visible{outline-color:var(--on-indigo)}
-@media (min-width:900px){.mh{position:sticky;top:0}}
-.mh__row{display:flex;align-items:center;gap:var(--t24);min-height:64px}
+/* ----- the journal cover: full-bleed photograph, headline on it, issue line, no strip ----- */
+.cover{position:relative;isolation:isolate;min-height:100svh;display:flex;flex-direction:column;color:var(--on-indigo);background:var(--indigo)}
+.cover :focus-visible{outline-color:var(--on-indigo)}
+.cover__pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 30%;z-index:-2}
+.cover::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgb(21 26 53 / .72) 0,rgb(21 26 53 / 0) 22%,rgb(21 26 53 / 0) 40%,rgb(21 26 53 / .86) 66%,rgb(21 26 53 / .94) 100%)}
+.cover > .wrap{width:100%}
+.cover__top{display:flex;align-items:center;gap:var(--t24);min-height:64px;padding-top:var(--t8)}
 .brand{display:flex;align-items:center;gap:var(--t16);text-decoration:none;margin-right:auto;min-height:48px;font-size:var(--f-body);line-height:1.1;font-weight:500}
 .brand svg{flex:0 0 auto}
 .index{display:none}
-.index a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none;color:var(--on-indigo)}
+.index a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none}
 .index a:hover{text-decoration:underline}
-.mh__apply{display:none}
-.mh.past .mh__apply{display:inline-flex}
-.menu-btn{background:none;border:0;padding:0;min-height:48px;min-width:48px;font:400 var(--f-chrome)/1 var(--serif);color:var(--on-indigo);text-decoration:underline;text-underline-offset:4px;cursor:pointer}
-.menu{border-top:1px solid var(--indigo-2);padding:var(--t8) 0 var(--t24)}
+.menu-btn{background:none;border:0;padding:0;min-height:48px;min-width:48px;font:400 var(--f-chrome)/1 var(--serif);color:inherit;text-decoration:underline;text-underline-offset:4px;cursor:pointer}
+.menu{background:var(--indigo);padding:var(--t8) var(--gut) var(--t24);position:absolute;left:0;right:0;top:72px;z-index:5}
 .menu ul{list-style:none;padding:0;display:grid}
-html:not(.js) .menu[hidden]{display:block}
+html:not(.js) .menu[hidden]{display:block;position:static}
 .menu a{display:flex;align-items:center;min-height:48px;text-decoration:none;border-bottom:1px solid var(--indigo-2)}
+.cover__body{margin-top:auto;padding-bottom:var(--t40);display:flex;flex-direction:column;gap:var(--t8)}
+.issue{color:var(--on-indigo);margin-bottom:var(--t8)}
+.issue a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-indigo)}
+.cover__note{background:var(--amber);color:var(--indigo);padding:var(--t8) var(--t16);max-width:44ch;font-weight:500;margin-bottom:var(--t16)}
+.cover__note[hidden]{display:none}
+.cover h1{max-width:15ch;margin-bottom:var(--t8)}
+.cover .lock{color:var(--on-indigo);max-width:40ch}
+.signoff{color:var(--on-indigo-2);max-width:44ch}
+.signoff a{display:inline-block;padding:var(--t8) 0;min-height:44px;color:var(--on-indigo)}
+.cover__credit{position:absolute;right:var(--gut);bottom:var(--t16);color:var(--on-indigo-2);display:none}
+/* the bar that appears once the cover is past (desktop) */
+.pastbar{display:none}
 @media (min-width:900px){
-  .mh__row{gap:var(--t40)}
+  .cover{min-height:min(100svh,940px)}
+  .cover__top{min-height:80px}
   .index{display:flex;gap:var(--t24)}
   .menu-btn,.menu{display:none!important}
   .brand{font-size:var(--f-h3)}
-}
-@media (max-width:899px){.mh.past .mh__apply{display:none}}
-
-/* ----- opening: evening, photo bleeds right; on phones the photo leads ----- */
-.open{padding:0 0 var(--t96)}
-.open__text{display:flex;flex-direction:column;gap:var(--t16)}
-.open h1{max-width:16ch}
-.open .lock{color:var(--on-indigo-2);max-width:36ch}
-.open__fig img{width:100%;object-fit:cover}
-.open__fig figcaption{margin-top:var(--t8);color:var(--on-indigo-2)}
-.open .p-act{margin-top:var(--t8)}
-.open .sup a{color:var(--on-indigo-2)}
-@media (min-width:900px){
-  .open .g{align-items:start}
-  .open__text{grid-column:1/5;grid-row:1;padding-top:var(--t96)}
-  .open__fig{grid-column:5/9;grid-row:1;margin-right:calc(-1*max(var(--gut),(100vw - var(--max))/2))}
-  .open__fig img{aspect-ratio:1/1;max-height:calc(100svh - 108px)}
-  .open__fig figcaption{padding-right:max(var(--gut),(100vw - var(--max))/2)}
+  .cover__body{padding-bottom:var(--t64)}
+  .cover__body > *{max-width:640px}
+  .cover::before{background:linear-gradient(180deg,rgb(21 26 53 / .7) 0,rgb(21 26 53 / 0) 18%),linear-gradient(90deg,rgb(21 26 53 / .9) 0,rgb(21 26 53 / .7) 38%,rgb(21 26 53 / 0) 66%)}
+  .cover__credit{display:block}
+  .pastbar{display:flex;position:fixed;left:0;right:0;top:0;z-index:20;background:var(--indigo);color:var(--on-indigo);border-bottom:1px solid var(--indigo-2);visibility:hidden}
+  .pastbar.on{visibility:visible}
+  .pastbar .wrap{display:flex;align-items:center;gap:var(--t40);width:100%;min-height:64px}
+  .pastbar .brand{font-size:var(--f-body)}
 }
 @media (max-width:899px){
-  .open{padding-bottom:var(--t64)}
-  .open .g{row-gap:var(--t24)}
-  .open__fig{order:-1;margin:0 calc(-1*var(--gut))}
-  .open__fig img{aspect-ratio:4/3}
-  .open__fig figcaption{padding:0 var(--gut)}
-  .open__text{gap:var(--t8)}
-  .open .sup{display:none}
-  html[lang=es] .open h1{font-size:var(--f-h2);line-height:1.08}
+  .cover__body{gap:var(--t4)}
+  .cover__pic img{object-position:50% 25%}
+  html[lang=es] .cover h1{font-size:var(--f-h2);line-height:1.08}
+  .cover .lock{display:none}
 }
 
-/* ----- essay: the four years, printed on paper ----- */
-.dark{background:var(--indigo);color:var(--on-indigo)}
+/* ----- essay: the four years, a night chapter ----- */
+.dark{background:var(--indigo);color:var(--on-indigo);--muted:var(--on-indigo-2);--rule:var(--indigo-2);--strong:var(--on-indigo)}
 .essay{padding:var(--t96) 0}
-.essay__head .r-body{color:var(--indigo-soft);margin-top:var(--t16)}
+.essay__head .r-body{color:var(--muted);margin-top:var(--t16)}
 .chapters{display:flex;flex-wrap:wrap;gap:0 var(--t24);margin-top:var(--t16)}
 .chapters a{display:inline-flex;align-items:center;min-height:44px}
 .entry{margin-top:var(--t64)}
 .entry figure img{width:100%;object-fit:cover}
-.entry figcaption{margin-top:var(--t8);color:var(--indigo-soft)}
-.entry .when{color:var(--indigo-soft);margin-bottom:var(--t8)}
+.entry figcaption{margin-top:var(--t8);color:var(--muted);max-width:52ch}
+.entry .when{color:var(--muted);margin-bottom:var(--t8)}
 .dark .entry figcaption,.dark .entry .when{color:var(--on-indigo-2)}
 .entry h3{margin-bottom:var(--t16);max-width:24ch}
 .entry .r-body + .r-body{margin-top:var(--t16)}
@@ -167,17 +153,18 @@ html:not(.js) .menu[hidden]{display:block}
 .e8 img{aspect-ratio:4/3}
 .ea img{aspect-ratio:4/5}
 .moment .r-moment{margin:0}
-.moment p{color:var(--indigo-soft);margin-top:var(--t16);max-width:32ch}
-.moment p.r-moment{color:var(--indigo);margin:0}
+.moment p{color:var(--muted);margin-top:var(--t16);max-width:32ch}
+.moment p.r-moment{color:var(--strong);margin:0}
 .times{list-style:none;padding:0;margin-top:var(--t24)}
-.times li{display:grid;grid-template-columns:4.5rem 1fr;gap:var(--t16);align-items:baseline;padding:var(--t8) 0;border-top:1px solid var(--indigo-line)}
+.times li{display:grid;grid-template-columns:4.5rem 1fr;gap:var(--t16);align-items:baseline;padding:var(--t8) 0;border-top:1px solid var(--rule)}
 .times b{font-size:var(--f-h3);font-variant-numeric:tabular-nums lining-nums}
-.times span{color:var(--indigo-soft)}
-.after{padding:var(--t96) 0}
+.times span{color:var(--muted)}
+.after{padding:0 0 var(--t96)}
+.essay{padding-bottom:var(--t64)}
 .after .entry{margin-top:0}
 @media (min-width:900px){
   .essay{padding:var(--t144) 0}
-  .after{padding:var(--t144) 0}
+  .after{padding:0 0 var(--t144)}
   .entry{margin-top:var(--t96)}
   .e5 .text,.e7 .text{margin-top:var(--t24)}
 }
@@ -318,70 +305,59 @@ html.tour,html.tour *{cursor:none!important}
 <body>
 <a class="skip" href="#main" data-i="skip">Skip to main content</a>
 
-<div class="chrome r-chrome" id="chrome">
-  <div class="wrap chrome__in">
-    <p class="status" role="status"><span class="sdate" id="sdate"></span><span id="statusText">No delays today (6:40 AM)</span></p>
-    <div class="ch-right">
-      <div class="langs"><a href="?lang=en" lang="en" data-lang="en" aria-current="true">English</a><a href="?lang=es" lang="es" data-lang="es">Español</a></div>
-    </div>
-  </div>
-</div>
-<header class="mh" id="top">
-  <div class="wrap">
-    <div class="mh__row">
-      <a class="brand" href="#top">
-        <svg width="18" height="24" viewBox="0 0 24 32" aria-hidden="true"><path d="M8 2h8M5 6h14v20H5zM2 30h20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/><rect x="9" y="10" width="6" height="12" fill="currentColor"/></svg>
-        <span>Lantern Middle School</span>
-      </a>
-      <nav class="index r-chrome" aria-label="Contents" data-i-aria="navAria">
-        <a href="#four-years" data-i="nav1">Four years</a>
-        <a href="#apply" data-i="nav2">Apply</a>
-        <a href="#give" data-i="nav4">Give</a>
-      </nav>
-      <a class="act mh__apply" href="#apply" data-i="mhApply">Apply, it's free</a>
-      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" data-i="menuBtn">Menu</button>
-    </div>
-    <div class="menu" id="menu" hidden>
-      <ul>
-        <li><a href="#four-years" data-i="nav1b">Four years</a></li>
-        <li><a href="#apply" data-i="nav2b">Apply</a></li>
-        <li><a href="#day" data-i="nav3b">The day</a></li>
-        <li><a href="#give" data-i="nav4b">Give</a></li>
-        <li><a href="#volunteer" data-i="nav6b">Volunteer</a></li>
-        <li><a href="#contact" data-i="nav5b">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</header>
+
 
 <main id="main">
-<section class="open dark" aria-labelledby="h1">
-  <div class="wrap">
-    <div class="g">
-      <div class="open__text">
-        <h1 id="h1" class="r-display" data-i="h1">Someone stays with your child until five, and for years after</h1>
-        <p class="r-body lock" data-i="lock">A free middle school for grades 5 to 8 in Lawrence, open from 7:30 to 5:00.</p>
-        <p class="p-act"><a class="act" href="#apply" id="openApply" data-i="openApply">Apply for 5th grade, it's free</a></p>
-        <p class="calls r-body inl" data-i="calls"><a href="tel:+19785550174">Call</a> or <a href="sms:+19785550174">text</a> (978)&nbsp;555-0174</p>
-        <p class="sup r-chrome"><a class="tl" href="#give" data-i="sup">Supporters: give or volunteer</a></p>
-      </div>
-      <figure class="open__fig">
-        <picture>
-          <source media="(max-width: 899px)" srcset="assets/r2/hero-800.webp" width="800" height="600">
-          <img src="assets/r2/hero-1200sq.webp" width="1200" height="1200" fetchpriority="high" decoding="async" alt="A teacher points to a line on a math worksheet while a student writes beside him" data-i-alt="heroAlt">
-        </picture>
-        <figcaption class="r-chrome" data-i="heroCap">Study hall, 4:10 PM. Sample photo.</figcaption>
-      </figure>
-    </div>
+<header class="cover" id="top">
+  <picture class="cover__pic">
+    <source media="(max-width: 899px)" srcset="assets/r2/cover-800.webp" width="800" height="1347">
+    <img src="assets/r2/cover-1600.webp" width="1600" height="900" fetchpriority="high" decoding="async" alt="A teacher points to a line on a math worksheet while a student writes beside him, late in the afternoon" data-i-alt="heroAlt">
+  </picture>
+  <div class="wrap cover__top">
+    <a class="brand" href="#top">
+      <svg width="18" height="24" viewBox="0 0 24 32" aria-hidden="true"><path d="M8 2h8M5 6h14v20H5zM2 30h20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/><rect x="9" y="10" width="6" height="12" fill="currentColor"/></svg>
+      <span>Lantern Middle School</span>
+    </a>
+    <nav class="index r-chrome" aria-label="Contents" data-i-aria="navAria">
+      <a href="#four-years" data-i="nav1">Four years</a>
+      <a href="#apply" data-i="nav2">Apply</a>
+      <a href="#give" data-i="nav4">Give</a>
+    </nav>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" data-i="menuBtn">Menu</button>
   </div>
-</section>
+  <div class="menu" id="menu" hidden>
+    <ul>
+      <li><a href="#four-years" data-i="nav1b">Four years</a></li>
+      <li><a href="#apply" data-i="nav2b">Apply</a></li>
+      <li><a href="#day" data-i="nav3b">The day</a></li>
+      <li><a href="#give" data-i="nav4b">Give</a></li>
+      <li><a href="#volunteer" data-i="nav6b">Volunteer</a></li>
+      <li><a href="#contact" data-i="nav5b">Contact</a></li>
+    </ul>
+  </div>
+  <div class="wrap cover__body">
+    <p class="issue r-chrome"><span data-i="issue">Lantern Journal · No. 12 · November</span> · <span id="statusText" role="status">Lights on until five today</span> · <a href="?lang=es" id="langToggle" lang="es" hreflang="es">Leer en español</a></p>
+    <p class="cover__note r-chrome" id="coverNote" hidden></p>
+    <h1 id="h1" class="r-display" data-i="h1">Someone stays with your child until five, and for years after</h1>
+    <p class="r-body lock" data-i="lock">We are a free middle school for grades 5 to 8 in Lawrence. The doors open at 7:30, and the last light goes off after five.</p>
+    <p><a class="act" href="#apply" id="openApply" data-i="openApply">Apply for 5th grade, it's free</a></p>
+    <p class="signoff r-body" data-i="signoff">Questions? <a href="tel:+19785550174">Call</a> or <a href="sms:+19785550174">text</a> Ms. Vega, (978)&nbsp;555-0174.</p>
+  </div>
+  <p class="cover__credit r-chrome" data-i="coverCredit">Cover: sample photograph. Study hall, 4:10 PM.</p>
+</header>
+<div class="pastbar" id="pastbar" aria-hidden="true">
+  <div class="wrap">
+    <a class="brand" href="#top" tabindex="-1"><span>Lantern Middle School</span></a>
+    <a class="act" href="#apply" tabindex="-1" data-i="mhApply">Apply, it's free</a>
+  </div>
+</div>
 
-<section class="essay" id="four-years" aria-labelledby="essay-h">
+<section class="essay dark" id="four-years" aria-labelledby="essay-h">
   <div class="wrap">
     <div class="g essay__head">
       <div class="c1-5">
         <h2 id="essay-h" class="r-h2" data-i="essayH">Four years and after</h2>
-        <p class="r-body" data-i="essayDek">A composite of our students' years, from the first morning of fifth grade to a college campus. Names and details are samples.</p>
+        <p class="r-body" data-i="essayDek">A composite of our students' years, from the first morning of fifth grade to a college campus, told the way we would tell it at supper. Names, details and photographs are samples.</p>
         <nav class="chapters" aria-label="Chapters" data-i-aria="chapAria">
           <a href="#g5" data-i="ch1">Grade 5</a><a href="#g6" data-i="ch2">Grade 6</a><a href="#g7" data-i="ch3">Grade 7</a><a href="#g8" data-i="ch4">Grade 8</a><a href="#after" data-i="ch5">After</a>
         </nav>
@@ -389,7 +365,7 @@ html.tour,html.tour *{cursor:none!important}
     </div>
 
     <article class="entry e5 g" id="g5" aria-labelledby="g5h">
-      <figure class="c1-7"><img loading="lazy" decoding="async" src="assets/r2/e5-1400.webp" srcset="assets/r2/e5-700.webp 700w, assets/r2/e5-1400.webp 1400w" sizes="(min-width:900px) 850px, 92vw" width="1400" height="802" alt="A hand with a freshly sharpened pencil on the first page of a notebook" data-i-alt="e5alt"><figcaption class="r-chrome" data-i="e5cap">A new notebook, the first week of September. Sample photo.</figcaption></figure>
+      <figure class="c1-7"><img loading="lazy" decoding="async" src="assets/r2/e5-1400.webp" srcset="assets/r2/e5-700.webp 700w, assets/r2/e5-1400.webp 1400w" sizes="(min-width:900px) 850px, 92vw" width="1400" height="802" alt="A hand with a freshly sharpened pencil on the first page of a notebook" data-i-alt="e5alt"><figcaption class="r-chrome" data-i="e5cap">The first week of September. A new notebook, a sharpened pencil, and the first thing written in it is the date.</figcaption></figure>
       <div class="text c3-8">
         <p class="when r-chrome" data-i="e5when">Grade 5, September</p>
         <h3 id="g5h" class="r-h3" data-i="e5h">The first morning starts at 7:30</h3>
@@ -415,7 +391,7 @@ html.tour,html.tour *{cursor:none!important}
     </article>
 
     <article class="entry e7 g" id="g7" aria-labelledby="g7h">
-      <figure class="c1-8"><img loading="lazy" decoding="async" src="assets/r2/e7-1600.webp" srcset="assets/r2/e7-800.webp 800w, assets/r2/e7-1600.webp 1600w" sizes="(min-width:900px) 1120px, 92vw" width="1600" height="800" alt="Seen from behind, a paddler crosses a still lake at sunrise" data-i-alt="e7alt"><figcaption class="r-chrome" data-i="e7cap">Lake week, 6:20 AM. Sample photo.</figcaption></figure>
+      <figure class="c1-8"><img loading="lazy" decoding="async" src="assets/r2/e7-1600.webp" srcset="assets/r2/e7-800.webp 800w, assets/r2/e7-1600.webp 1600w" sizes="(min-width:900px) 1120px, 92vw" width="1600" height="800" alt="Seen from behind, a paddler crosses a still lake at sunrise" data-i-alt="e7alt"><figcaption class="r-chrome" data-i="e7cap">Lake week, 6:20 in the morning. Ms. Ruiz and a seventh grader take the canoe out before the others are awake.</figcaption></figure>
       <div class="text c4-8">
         <p class="when r-chrome" data-i="e7when">Grade 7, July</p>
         <h3 id="g7h" class="r-h3" data-i="e7h">Summer is part of the school year</h3>
@@ -424,7 +400,7 @@ html.tour,html.tour *{cursor:none!important}
     </article>
 
     <article class="entry e8 g" id="g8" aria-labelledby="g8h">
-      <figure class="c1-3"><img loading="lazy" decoding="async" src="assets/r2/e8-900.webp" srcset="assets/r2/e8-600.webp 600w, assets/r2/e8-900.webp 900w" sizes="(min-width:900px) 400px, 92vw" width="900" height="675" alt="A page of handwritten algebra next to a graphing calculator" data-i-alt="e8alt"><figcaption class="r-chrome" data-i="e8cap">Factoring, eighth-grade math. Sample photo.</figcaption></figure>
+      <figure class="c1-3"><img loading="lazy" decoding="async" src="assets/r2/e8-900.webp" srcset="assets/r2/e8-600.webp 600w, assets/r2/e8-900.webp 900w" sizes="(min-width:900px) 400px, 92vw" width="900" height="675" alt="A page of handwritten algebra next to a graphing calculator" data-i-alt="e8alt"><figcaption class="r-chrome" data-i="e8cap">A Thursday in January. Factoring, the week before the high-school entrance test.</figcaption></figure>
       <div class="c5-8">
         <p class="when r-chrome" data-i="e8when">Grade 8, next steps</p>
         <h3 id="g8h" class="r-h3" data-i="e8h">Choosing a high school, together</h3>
@@ -444,7 +420,7 @@ html.tour,html.tour *{cursor:none!important}
         <p class="r-body" data-i="eap1">Our graduate-support director keeps a list of every alum and calls each one every month, through high school and through college.</p>
         <p class="r-body" data-i="eap2">The calls are about ordinary things: a grade that slipped, a financial-aid form due Friday, a ride to the first campus visit. When something needs more than a call, a tutor or a volunteer mentor steps in.</p>
       </div>
-      <figure class="c6-8"><img loading="lazy" decoding="async" src="assets/r2/ea-800.webp" srcset="assets/r2/ea-500.webp 500w, assets/r2/ea-800.webp 800w" sizes="(min-width:900px) 380px, 92vw" width="800" height="1000" alt="Graduates in caps and gowns seen from behind at a commencement" data-i-alt="eaalt"><figcaption class="r-chrome" data-i="eacap">Commencement, eight years after Lantern. Sample photo.</figcaption></figure>
+      <figure class="c6-8"><img loading="lazy" decoding="async" src="assets/r2/ea-800.webp" srcset="assets/r2/ea-500.webp 500w, assets/r2/ea-800.webp 800w" sizes="(min-width:900px) 380px, 92vw" width="800" height="1000" alt="Graduates in caps and gowns seen from behind at a commencement" data-i-alt="eaalt"><figcaption class="r-chrome" data-i="eacap">Commencement, eight years after a fifth-grade September. Ms. Vega sat in the second row.</figcaption></figure>
     </article>
 
     <figure class="line g" id="line" aria-labelledby="lineh">
@@ -615,7 +591,7 @@ html.tour,html.tour *{cursor:none!important}
       <h2 id="vol-h" class="r-h2" data-i="volH">Volunteer or mentor</h2>
       <p class="r-body lede" data-i="volDek">Most of our tutors are neighbors with one free afternoon a week. Tell us what fits, and we will call you.</p>
     </div>
-    <figure class="c1-4" style="margin-top:var(--t24)"><img loading="lazy" decoding="async" src="assets/r2/vol-1000.webp" srcset="assets/r2/vol-640.webp 640w, assets/r2/vol-1000.webp 1000w" sizes="(min-width:900px) 520px, 92vw" width="1000" height="667" alt="Seen from behind, a volunteer tutor writes parts of speech on a whiteboard" data-i-alt="volAlt"><figcaption class="r-chrome" data-i="volCap">Thursday study hall. Sample photo.</figcaption></figure>
+    <figure class="c1-4" style="margin-top:var(--t24)"><img loading="lazy" decoding="async" src="assets/r2/vol-1000.webp" srcset="assets/r2/vol-640.webp 640w, assets/r2/vol-1000.webp 1000w" sizes="(min-width:900px) 520px, 92vw" width="1000" height="667" alt="Seen from behind, a volunteer tutor writes parts of speech on a whiteboard" data-i-alt="volAlt"><figcaption class="r-chrome" data-i="volCap">Thursday study hall. Mr. Duarte, a retired engineer, has tutored here every week for six years.</figcaption></figure>
     <form class="c5-8" id="volForm" novalidate style="margin-top:var(--t24)">
       <div class="field"><label for="vName" data-i="fName">Your name</label><input id="vName" name="name" autocomplete="name" required></div>
       <div class="field"><label for="vContact" data-i="fContact">Email or phone</label><input id="vContact" name="contact" autocomplete="email" required></div>
@@ -697,32 +673,32 @@ var ES={
 skip:"Saltar al contenido principal",navAria:"Contenido",nav1:"Cuatro años",nav2:"Solicitar",nav3:"El día",nav4:"Donar",nav5:"Contacto",
 nav1b:"Cuatro años",nav2b:"Solicitar",nav3b:"El día",nav4b:"Donar",nav5b:"Contacto",nav6b:"Voluntariado",
 telAria:"Llamar a la oficina, (978) 555-0174",telAria2:"Llamar a la oficina, (978) 555-0174",mhApply:"Solicitar, es gratis",menuBtn:"Menú",
-h1:"Alguien se queda con sus hijos hasta las cinco, y los sigue acompañando por años",
-heroAlt:"Un maestro señala una línea en una hoja de matemáticas mientras un estudiante escribe a su lado",
+h1:"Alguien se queda con sus hijos hasta las cinco, y los sigue acompañando por años",issue:"Lantern Journal · N.º 12 · Noviembre",signoff:"¿Preguntas? <a href=\"tel:+19785550174\">Llame</a> o <a href=\"sms:+19785550174\">envíe un texto</a> a la maestra Vega, (978)&nbsp;555-0174.",coverCredit:"Portada: fotografía de ejemplo. Sala de estudio, 4:10 p. m.",
+heroAlt:"Un maestro señala una línea en una hoja de matemáticas mientras un estudiante escribe a su lado, al final de la tarde",
 heroCap:"Sala de estudio, 4:10 p. m. Foto de ejemplo.",
-lock:"Una escuela intermedia gratuita para los grados 5 a 8 en Lawrence, abierta de 7:30 a 5:00.",
+lock:"Somos una escuela intermedia gratuita para los grados 5 a 8 en Lawrence. Las puertas abren a las 7:30 y la última luz se apaga después de las cinco.",
 openApply:"Solicite un cupo para 5.º grado, es gratis",
 openNote:"Unos diez minutos, en español o en inglés. Las solicitudes para el otoño de 2027 vencen el 5 de marzo (ejemplo).",
 calls:"<a href=\"tel:+19785550174\">Llame</a> o <a href=\"sms:+19785550174\">envíe un texto</a> al (978)&nbsp;555-0174",
 sup:"Quienes nos apoyan: done o sea voluntario",
-essayH:"Cuatro años, y lo que viene después",essayDek:"Un retrato compuesto de los años de nuestros estudiantes, desde la primera mañana de quinto grado hasta la universidad. Los nombres y detalles son de ejemplo.",
+essayH:"Cuatro años, y lo que viene después",essayDek:"Un retrato compuesto de los años de nuestros estudiantes, desde la primera mañana de quinto grado hasta la universidad, contado como lo contaríamos en la cena. Los nombres, los detalles y las fotografías son de ejemplo.",
 chapAria:"Capítulos",ch1:"5.º grado",ch2:"6.º grado",ch3:"7.º grado",ch4:"8.º grado",ch5:"Después",
-e5alt:"Una mano con un lápiz recién afilado sobre la primera página de una libreta",e5cap:"Una libreta nueva, la primera semana de septiembre. Foto de ejemplo.",
+e5alt:"Una mano con un lápiz recién afilado sobre la primera página de una libreta",e5cap:"La primera semana de septiembre. Una libreta nueva, un lápiz afilado, y lo primero que se escribe es la fecha.",
 e5when:"5.º grado, septiembre",e5h:"La primera mañana empieza a las 7:30",
 e5p:"Primero se desayuna, en mesas largas, antes de abrir un libro. Después vienen lectura, escritura y matemáticas, en grupos de dieciséis (ejemplo). Cada estudiante tiene un consejero, y el consejero llama a la casa todos los viernes, en español o en inglés.",
 e6when:"6.º grado, el día largo",e6h:"La tarea se hace aquí, no en la mesa de la cocina",
 e6p:"A las 3:45 el día no termina. La sala de estudio sigue hasta las 4:45 con los mismos maestros que dieron la clase. Después, una cena caliente, y a casa a las 5:15.",m411:"Una pregunta hecha en la sala de estudio a las 4:10 tiene respuesta a las 4:11, del mismo maestro que dio la clase.",
 t345:"Sala de estudio con los maestros",t445:"Cena juntos",t500:"Recogida, o a casa en grupo",
-e7alt:"Visto de espaldas, alguien rema en una canoa sobre un lago tranquilo al amanecer",e7cap:"Semana del lago, 6:20 a. m. Foto de ejemplo.",
+e7alt:"Visto de espaldas, alguien rema en una canoa sobre un lago tranquilo al amanecer",e7cap:"Semana del lago, 6:20 de la mañana. La maestra Ruiz y un estudiante de séptimo sacan la canoa antes de que los demás se despierten.",
 e7when:"7.º grado, julio",e7h:"El verano también es parte del año escolar",
 e7p:"Cinco semanas cada julio: lectura en las mañanas, clases de natación en las tardes y una semana en un campamento junto a un lago en New Hampshire (ejemplo). Para muchos estudiantes es la primera vez fuera de casa. Es gratis, como todo lo demás.",
-e8alt:"Una hoja de álgebra escrita a mano junto a una calculadora gráfica",e8cap:"Factorización, matemáticas de octavo grado. Foto de ejemplo.",
+e8alt:"Una hoja de álgebra escrita a mano junto a una calculadora gráfica",e8cap:"Un jueves de enero. Factorización, la semana antes del examen de admisión a la secundaria.",
 e8when:"8.º grado, lo que sigue",e8h:"Escoger la escuela secundaria, juntos",
 e8p:"Álgebra en octavo grado. En el otoño visitamos escuelas secundarias con cada familia y ayudamos con cada solicitud y cada formulario de beca. En el invierno, los estudiantes practican entrevistas con voluntarios hasta que las preguntas les parezcan normales.",
 eawhen:"Después, ocho años más",eah:"La graduación es donde empieza la segunda parte",
 eap1:"Nuestra directora de apoyo a egresados tiene una lista de todos los egresados y llama a cada uno todos los meses, durante la secundaria y la universidad.",
 eap2:"Las llamadas son sobre cosas comunes: una nota que bajó, un formulario de ayuda financiera que vence el viernes, transporte para la primera visita a una universidad. Cuando algo necesita más que una llamada, entra un tutor o un mentor voluntario.",
-eaalt:"Graduados con birrete y toga vistos de espaldas en una ceremonia de graduación",eacap:"Graduación, ocho años después de Lantern. Foto de ejemplo.",
+eaalt:"Graduados con birrete y toga vistos de espaldas en una ceremonia de graduación",eacap:"Graduación, ocho años después de un septiembre de quinto grado. La maestra Vega se sentó en la segunda fila.",
 lineH:"Cuánto tiempo acompaña Lantern a un estudiante",grp1:"En Lantern",grp1s:"De 5.º a 8.º grado",grp2:"Escuela secundaria",grp2s:"Llamadas mensuales",grp3:"Universidad o formación técnica",grp3s:"Cuatro años más",
 lineCap:"La mayoría de las escuelas intermedias se despiden en junio de octavo grado. En Lantern la línea sigue: cuatro años en el edificio y ocho más de llamadas mensuales, durante la secundaria y la universidad.",lineBig:"12 años",
 outH:"Resultados de ejemplo",outNote:"Cifras de demostración. Una versión real indica el grupo, el período y cómo se verificó cada cifra.",
@@ -753,7 +729,7 @@ freqLegend:"Con qué frecuencia",once:"Una vez",monthly:"Cada mes",amountLabel:"
 whereH:"A dónde va el dinero (ejemplo)",w1:"Maestros y el día largo",w2:"Programa de verano",w3:"Apoyo a egresados",w4:"Recaudación de fondos y oficina",w5:"Comidas",
 otherWays:"Para donar con cheque, acciones o un donativo equivalente de su empresa, llame a Daniel Ortiz (ejemplo) al (978) 555-0176.",
 volH:"Voluntariado y mentoría",volDek:"La mayoría de nuestros tutores son vecinos con una tarde libre a la semana. Díganos qué le conviene y le llamamos.",
-volAlt:"Visto de espaldas, un tutor voluntario escribe las partes de la oración en una pizarra blanca",volCap:"Sala de estudio del jueves. Foto de ejemplo.",
+volAlt:"Visto de espaldas, un tutor voluntario escribe las partes de la oración en una pizarra blanca",volCap:"Sala de estudio del jueves. El señor Duarte, ingeniero jubilado, da tutorías aquí todas las semanas desde hace seis años.",
 fName:"Su nombre",fContact:"Correo electrónico o teléfono",fHow:"¿Cómo le gustaría ayudar?",
 h1o:"Dar tutoría en la sala de estudio, de lunes a viernes de 3:45 a 4:45",h2o:"Ser mentor de un egresado, una llamada al mes",h3o:"Ayudar en el programa de verano en julio",h4o:"Hablar de su trabajo en el día de las carreras",fEs:"Puedo ayudar en español",fSubmit:"Enviar",
 jrH:"Del diario de la escuela",n1d:"3 de noviembre de 2026",n1:"Las noches informativas para el otoño de 2027 son el 18 de noviembre y el 13 de enero a las 6:00 p. m., en español y en inglés (ejemplo).",
@@ -775,14 +751,14 @@ railAria:"Acciones rápidas",railApply:"Solicitar, es gratis",railCall:"Llamar",
 };
 var S={
 en:{title:"Lantern Middle School · Tuition-free middle school, grades 5 to 8 · Lawrence, MA",desc:"Lantern Middle School is a tuition-free independent middle school in Lawrence, MA for grades 5 to 8: small classes, a 7:30 to 5:00 day, a summer program and support through college. Apply in English or Spanish.",
-  ok:"No delays today (6:40 AM)",delay:"Two-hour delay for snow: doors open at 9:30, breakfast is served. Updated 5:52 AM. Sample alert.",locale:"en-US",
+  ok:"Lights on until five today",okNote:"",delayShort:"Two-hour delay today",delay:"Two-hour delay for snow. Doors open at 9:30 and breakfast is served. Posted 5:52 AM. Sample notice.",toggle:"Leer en español",toggleLang:"es",locale:"en-US",
   give:function(a,m){return "Give "+a+(m?" every month":" once")},per:function(y){return y+" a year"},every:"Every month: ",
   mock:"Demo: no payment was taken. The school's real site opens a secure checkout here.",
   volOk:function(n){return "Thank you, "+n+". Our volunteer coordinator will call you within two school days. Demo: nothing was sent."},volErr:"Please add your name and an email or phone number.",
   gifts:["A week of after-school suppers for one student","A week of study-hall tutoring for one student","A month of after-school suppers for one student","Every book one student reads in a year","A week of the summer program for one student","Ten full school days for one student, 7:30 to 5:00","A summer program seat for one student, all five weeks","A year of graduate support for one alum: calls, tutoring, applications","A year of graduate support for two alums"],
   basis:["Sample cost: five suppers at $5","Sample cost: $50 a week","Sample cost: twenty suppers at $5","Sample cost: about $250 in books a year","Sample cost: $500 a week","Sample cost: about $100 a school day","Sample cost: $500 a week for five weeks","Sample cost: $5,000 an alum a year","Sample cost: $5,000 an alum a year"]},
 es:{title:"Lantern Middle School · Escuela intermedia gratuita, grados 5 a 8 · Lawrence, MA",desc:"Lantern Middle School es una escuela intermedia independiente y gratuita en Lawrence, MA, para los grados 5 a 8: grupos pequeños, un día de 7:30 a 5:00, programa de verano y apoyo hasta la universidad. Solicite en español o en inglés.",
-  ok:"Sin retrasos hoy (6:40 a. m.)",delay:"Dos horas de retraso por la nieve: las puertas abren a las 9:30 y habrá desayuno. Actualizado 5:52 a. m. Aviso de ejemplo.",locale:"es-US",
+  ok:"Hoy, luces encendidas hasta las cinco",okNote:"",delayShort:"Hoy, dos horas de retraso",delay:"Dos horas de retraso por la nieve. Las puertas abren a las 9:30 y habrá desayuno. Publicado a las 5:52 a. m. Aviso de ejemplo.",toggle:"Read in English",toggleLang:"en",locale:"es-US",
   give:function(a,m){return "Donar "+a+(m?" cada mes":" una vez")},per:function(y){return y+" al año"},every:"Cada mes: ",
   mock:"Demostración: no se cobró nada. En el sitio real de la escuela, aquí se abre un pago seguro.",
   volOk:function(n){return "Gracias, "+n+". Nuestra coordinadora de voluntarios le llamará en un plazo de dos días escolares. Demostración: no se envió nada."},volErr:"Por favor, escriba su nombre y un correo electrónico o teléfono.",
@@ -799,23 +775,20 @@ function setLang(l){
   QA('[data-i-alt]').forEach(function(el){el.alt=l==='es'?ES[el.getAttribute('data-i-alt')]:ENA.get(el).alt});
   QA('[data-i-aria]').forEach(function(el){el.setAttribute('aria-label',l==='es'?ES[el.getAttribute('data-i-aria')]:ENA.get(el).aria)});
   d.title=S[l].title;metaDesc.setAttribute('content',S[l].desc);
-  QA('.langs a').forEach(function(a){if(a.getAttribute('data-lang')===l)a.setAttribute('aria-current','true');else a.removeAttribute('aria-current')});
+  var tg=Q('#langToggle');tg.textContent=S[l].toggle;tg.setAttribute('lang',S[l].toggleLang);tg.setAttribute('hreflang',S[l].toggleLang);tg.setAttribute('href','?lang='+S[l].toggleLang);
   renderDate();renderGift();
   var m=Q('#volMsg');m.textContent='';m.className='formmsg';
   if(!Q('#giveMock').hidden)Q('#giveMock').textContent=S[l].mock;
   try{sessionStorage.setItem('lantern-lang',l)}catch(e){}
 }
-QA('.langs a').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();setLang(a.getAttribute('data-lang'))})});
+Q('#langToggle').addEventListener('click',function(e){e.preventDefault();setLang(lang==='en'?'es':'en')});
 
 /* dateline = today's status */
 var alertState=params.get('alert')==='1'?'delay':'ok';
 function renderDate(){
-  var t=new Date(),s='';
-  try{s=t.toLocaleDateString(S[lang].locale,{weekday:'long',month:'long',day:'numeric'})}catch(e){s=t.toDateString()}
-  s=s.charAt(0).toUpperCase()+s.slice(1);
-  Q('#sdate').textContent='';
-  Q('#statusText').textContent=alertState==='delay'?S[lang].delay:S[lang].ok;
-  Q('#chrome').classList.toggle('is-delay',alertState==='delay');
+  var d2=alertState==='delay';
+  Q('#statusText').textContent=d2?S[lang].delayShort:S[lang].ok;
+  var n=Q('#coverNote');n.hidden=!d2;n.textContent=d2?S[lang].delay:'';
 }
 function setAlert(s){alertState=s;renderDate()}
 
@@ -853,10 +826,10 @@ Q('#volForm').addEventListener('submit',function(e){
 });
 
 /* phone rail + desktop masthead action, once the opening is past */
-var rail=Q('#rail'),mh=Q('.mh'),open=Q('.open');
+var rail=Q('#rail'),mh=Q('#pastbar'),open=Q('.cover');
 html.style.setProperty('--railh',innerWidth<900?'56px':'0px');
 if('IntersectionObserver' in window){
-  new IntersectionObserver(function(es){var past=!es[0].isIntersecting;rail.classList.toggle('on',past);mh.classList.toggle('past',past)},{rootMargin:'-120px 0px 0px 0px'}).observe(open);
+  new IntersectionObserver(function(es){var past=!es[0].isIntersecting;rail.classList.toggle('on',past);mh.classList.toggle('on',past)},{rootMargin:'-120px 0px 0px 0px'}).observe(open);
   /* the one signature moment: the line keeps going past graduation */
   var line=Q('#line');
   if(!reduce)new IntersectionObserver(function(es,ob){if(es[0].isIntersecting){line.classList.add('drawn');ob.disconnect()}},{threshold:.6}).observe(line);
@@ -874,12 +847,12 @@ if(params.get('tour')==='1'){
     (function f(now){var p=Math.min(1,(now-t0)/dur),e=p<.5?4*p*p*p:1-Math.pow(-2*p+2,3)/2;scrollTo(0,y0+(y-y0)*e);if(p<1)requestAnimationFrame(f);else res()})(t0)})};
   var press=function(el){el.classList.add('is-pressed');return wait(260).then(function(){el.classList.remove('is-pressed')})};
   var topOf=function(el,off){return el.getBoundingClientRect().top+scrollY-(off||0)};
-  var hdr=function(){return innerWidth>=900?mh.offsetHeight:0};
+  var hdr=function(){return innerWidth>=900?64:0};
   (async function(){
     scrollTo(0,0);await wait(1400);
     setAlert('delay');await wait(2200);
-    var es=Q('.langs a[data-lang="es"]');await press(es);setLang('es');await wait(2600);
-    var en=Q('.langs a[data-lang="en"]');await press(en);setLang('en');setAlert('ok');await wait(800);
+    var tgl=Q('#langToggle');await press(tgl);setLang('es');await wait(2600);
+    await press(tgl);setLang('en');setAlert('ok');await wait(800);
     await scrollToY(topOf(Q('#four-years'),hdr()),1600);await wait(900);
     await scrollToY(topOf(Q('#g5'),hdr()+24),1800);await wait(900);
     await scrollToY(topOf(Q('#g7'),hdr()+24),2200);await wait(900);

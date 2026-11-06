@@ -25,18 +25,18 @@
 @font-face{font-family:'Gantari fb';src:local('Arial');size-adjust:98%;ascent-override:96%;descent-override:26%;line-gap-override:0%}
 :root{
   /* colour: walnut (one hue family), linen (neutral), green (actions only) */
-  --linen:#f7f4ee;--light:#fffcf7;--pale:#e4ddd3;
+  --linen:#f7f4ee;--light:#fffcf7;--pale:#e4ddd3;--oat:#ece4d8;
   --walnut:#3b2e26;--walnut-2:#65564a;
   --green:#24533d;--green-press:#193e2d;
   /* spacing: one scale, nothing outside it */
   --s1:4px;--s2:8px;--s3:16px;--s4:24px;--s5:40px;--s6:64px;--s7:96px;--s8:144px;
-  /* type scale (x1.25+ steps): 14 / 18 / 24 / 32 / 40 / 48 / 64 / 72 / 104 */
-  --t-chrome:14px;--t-body:18px;--t-lead:24px;--t-h2:32px;--t-h1:40px;--t-num:64px;
+  /* type scale (x1.2+ steps): 15 / 19 / 25 / 30 / 36 / 48 / 64 / 104 */
+  --t-chrome:15px;--t-body:19px;--t-lead:25px;--t-h2:30px;--t-h1:36px;--t-num:64px;
   --font:'Gantari','Gantari fb',Arial,sans-serif;
   --gut:16px;--gap:16px;--max:1280px;
   color-scheme:light;
 }
-@media (min-width:900px){:root{--gut:40px;--gap:24px;--t-h2:48px;--t-h1:72px;--t-num:104px}}
+@media (min-width:900px){:root{--gut:40px;--gap:24px;--t-h2:36px;--t-h1:48px;--t-num:104px}}
 *,*::before,*::after{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;font-synthesis:none}
 body{margin:0;background:var(--linen);color:var(--walnut);font:400 var(--t-body)/1.55 var(--font)}
@@ -78,54 +78,44 @@ a:hover{text-decoration-thickness:2px}
 .tx:hover{text-decoration-thickness:2px}
 .tx:active{color:var(--walnut-2)}
 
-/* chrome: one strip for identity, today's notice, phone and language */
-.chrome{border-bottom:1px solid var(--pale);font-size:var(--t-chrome)}
-.chrome .wrap{display:flex;flex-wrap:wrap;align-items:center;column-gap:var(--s4)}
-.name{font-weight:600;font-size:var(--t-body);text-decoration:none;min-height:44px;display:inline-flex;align-items:center;margin-right:auto}
-.notice{order:5;flex:1 1 100%;display:flex;flex-wrap:wrap;align-items:center;column-gap:var(--s3);border-top:1px solid var(--pale)}
-.notice p{margin-right:auto;padding:var(--s2) 0;color:var(--walnut-2)}
-.notice p b{color:var(--walnut);font-weight:600}
-.chrome.delay{background:var(--walnut);color:var(--light);border-bottom-color:var(--walnut)}
-.chrome.delay .notice{border-top-color:rgba(228,221,211,.3)}
-.chrome.delay .notice p,.chrome.delay .notice p b{color:var(--light)}
-.chrome a,.chrome button{min-height:44px;display:inline-flex;align-items:center}
-.chrome .tel{text-decoration:none;font-weight:600}
-.langs{display:flex;column-gap:var(--s2)}
-.langs a{text-decoration:none}
-.langs .both a+a::before{content:"/";color:var(--walnut-2);margin-right:var(--s2);text-decoration:none;display:inline-block}
-.langs a[aria-current="true"]{text-decoration:underline;text-decoration-thickness:2px;font-weight:600}
-.langs .both{display:none;align-items:center}
-.menu-btn{background:none;border:0;padding:0;font-weight:600;cursor:pointer;text-decoration:underline;text-underline-offset:4px}
-.menu{display:none;border-bottom:1px solid var(--pale);background:var(--light)}
+/* the opening: a wide photo of the worktable, words placed on it as label cards (no top strip) */
+.open{position:relative;background:var(--linen)}
+.open-photo{margin:0}
+.open-photo img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.cards{display:flex;flex-direction:column;align-items:flex-start;gap:var(--s2);padding:var(--s3) var(--gut) var(--s6)}
+.card{background:var(--light);color:var(--walnut);border-radius:2px;box-shadow:0 1px 0 rgba(59,46,38,.14),0 10px 24px -14px rgba(59,46,38,.45)}
+.card-row{display:flex;flex-wrap:wrap;gap:var(--s2);order:-1}
+.small{font-size:var(--t-chrome);line-height:1.4;padding:var(--s2) var(--s3);min-height:44px;display:inline-flex;align-items:center;gap:var(--s2)}
+.small a,.small button{min-height:44px;display:inline-flex;align-items:center;text-decoration:none;background:none;border:0;padding:0;cursor:pointer;font:inherit;color:inherit}
+.langs a{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.small.langs a[aria-current="true"]{font-weight:600;text-decoration:none;cursor:default}
+.small .sep{color:var(--walnut-2)}
+.note.delay{background:var(--walnut);color:var(--light)}
+.note.delay b{font-weight:600}
+.label{padding:var(--s3)}
+.label .name{font-size:var(--t-chrome);font-weight:600;letter-spacing:.01em;margin-bottom:var(--s2)}
+.label h1{font-size:var(--t-h1);line-height:1.08;font-weight:600;letter-spacing:-.02em;max-width:13ch;margin-bottom:var(--s2)}
+.label .what{font-size:var(--t-body);line-height:1.45;color:var(--walnut-2);max-width:30ch}
+.act{display:flex;flex-wrap:wrap;align-items:center;gap:var(--s3)}
+.ask{font-size:var(--t-body)}
+.ask a{font-weight:600}
+.ask .alt{font-weight:400;color:var(--walnut-2);text-decoration:underline;text-underline-offset:4px}
+.when{font-size:var(--t-chrome);color:var(--walnut-2);margin-top:var(--s3);padding-top:var(--s2);border-top:1px solid var(--pale)}
+.sample{font-size:var(--t-chrome);color:var(--walnut-2);padding:var(--s1) var(--s2);box-shadow:none;background:rgba(255,252,247,.85)}
+.menu{display:none;background:var(--light);margin-top:var(--s1)}
 .menu.open{display:block}
-.menu ul{padding:var(--s3) var(--gut) var(--s4);max-width:calc(var(--max) + 2*var(--gut));margin:0 auto;display:grid;gap:0}
+.menu ul{padding:var(--s2) var(--s3)}
 .menu a{display:flex;align-items:center;min-height:44px;font-size:var(--t-body);text-decoration:none}
 .menu a:hover{text-decoration:underline}
+.index{position:relative}
 @media (min-width:900px){
-  .chrome .wrap{flex-wrap:nowrap}
-  .notice{order:0;flex:1 1 0;min-width:0;border:0;margin-right:var(--s4)}
-  .notice p{flex:1 1 0;min-width:0}
-  .name{margin-right:var(--s4)}
-  .langs .both{display:flex;align-items:center;column-gap:var(--s2)}.langs .one{display:none}
-  .menu ul{grid-template-columns:repeat(3,auto);justify-content:start;column-gap:var(--s5)}
-}
-
-/* opening */
-.open{padding:var(--s4) 0 var(--s7)}
-.open-copy{grid-column:1/-1}
-.open h1{margin-bottom:var(--s3)}
-.open .r-lead{margin-bottom:var(--s4)}
-.act{display:flex;flex-direction:column;align-items:flex-start;gap:var(--s2)}
-.open-photo{grid-column:1/-1;margin:var(--s5) calc(var(--gut)*-1) 0}
-.open-photo img{width:100%;aspect-ratio:4/3;object-fit:cover}
-.open-photo figcaption{padding:var(--s2) var(--gut) 0}
-@media (min-width:900px){
-  .open{padding:0 0 var(--s7)}
-  .open .g{align-items:stretch}
-  .open-copy{grid-column:8/13;grid-row:1;align-self:center;padding:var(--s5) 0 var(--s5) var(--s5)}
-  .open-photo{grid-column:1/8;grid-row:1;margin:0 0 0 calc(var(--gut)*-1)}
-  .open-photo img{aspect-ratio:auto;height:min(640px,calc(100vh - 200px));min-height:440px}
-  .open-photo figcaption{padding:var(--s2) 0 0 var(--gut)}
+  .open-photo img{aspect-ratio:16/9;height:auto;max-height:calc(100vh - 24px);min-height:560px}
+  .cards{position:absolute;top:0;bottom:0;right:var(--gut);width:min(40%,500px);padding:var(--s4) 0;justify-content:center;gap:var(--s4)}
+  .card-row{position:absolute;top:var(--s4);right:0;order:0}
+  .label{padding:var(--s5);margin-left:var(--s5)}
+  .act{margin-left:var(--s2)}
+  .sample{position:absolute;bottom:var(--s3);right:0}
+  .menu{position:absolute;right:0;top:calc(100% + var(--s1));min-width:260px;z-index:10}
 }
 
 /* the worktable */
@@ -166,7 +156,7 @@ a:hover{text-decoration-thickness:2px}
 .shelf button[aria-pressed="true"]{text-decoration:none;font-weight:600;cursor:default}
 
 /* Montessori, plainly */
-.plain{padding:var(--s7) 0;background:var(--light)}
+.plain{padding:var(--s7) 0;background:var(--oat)}
 .plain figure{grid-column:1/-1;margin:0 calc(var(--gut)*-1) var(--s5)}
 .plain figure img{width:100%;aspect-ratio:3/2;object-fit:cover}
 .plain figcaption{padding:var(--s2) var(--gut) 0}
@@ -231,7 +221,7 @@ label.f input:focus,label.f select:focus{outline:3px solid var(--walnut);outline
 .after-tbl{margin-top:var(--s4);display:flex;flex-wrap:wrap;column-gap:var(--s5);align-items:center;justify-content:space-between}
 
 /* families */
-.fam{padding:var(--s6) 0;background:var(--light)}
+.fam{padding:var(--s6) 0;background:var(--oat)}
 .fam h2{grid-column:1/-1;margin-bottom:var(--s5)}
 .fam-links{grid-column:1/-1;margin-bottom:var(--s5)}
 .fam-links a{display:flex;justify-content:space-between;align-items:center;gap:var(--s3);min-height:56px;border-bottom:1px solid var(--pale);text-decoration:none;font-weight:600}
@@ -258,6 +248,8 @@ label.f input:focus,label.f select:focus{outline:3px solid var(--walnut);outline
 /* phone action rail (no entrance animation) */
 .rail{position:fixed;left:0;right:0;bottom:0;z-index:20;display:none;align-items:center;column-gap:var(--s3);padding:var(--s2) var(--gut) calc(var(--s2) + env(safe-area-inset-bottom));background:var(--light);border-top:1px solid var(--pale)}
 .rail .token{min-height:48px;padding:0 var(--s3);white-space:nowrap}
+.rail .ask{font-size:var(--t-chrome)}
+.rail .ask a{min-height:44px;display:inline-flex;align-items:center}
 .rail.on{display:flex}
 @media (min-width:900px){.rail{display:none!important}}
 @media (max-width:899px){body{padding-bottom:var(--s7)}}
@@ -282,50 +274,42 @@ label.f input:focus,label.f select:focus{outline:3px solid var(--walnut);outline
   <linearGradient id="g-wt" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e8c993"/><stop offset="1" stop-color="#dcb67c"/></linearGradient>
 </defs></svg>
 
-<header class="chrome">
-  <div class="wrap">
-    <a class="name" href="#main">Fernhill Montessori School</a>
-    <div class="notice" id="notice" role="status">
-      <p id="notice-p" data-i="alertOk">Open as usual today. Updated 6:40 AM.</p>
-      <a class="tel num" href="tel:+19785550136" data-i="callNum">Call (978)&nbsp;555-0136</a>
-      <a href="sms:+19785550136" aria-label="Text the office, (978) 555-0136" data-ia="aria-label:textLabel" data-i="textS">Text</a>
-    </div>
-    <div class="langs">
-      <span class="both"><a href="?lang=en" hreflang="en" lang="en" data-l="en" aria-current="true">English</a><a href="?lang=es" hreflang="es" lang="es" data-l="es">Español</a></span>
-      <span class="one"><a href="?lang=es" hreflang="es" lang="es" data-l="es" class="other">Español</a></span>
-    </div>
-    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" data-i="menu">Menu</button>
-  </div>
-</header>
-<nav class="menu" id="menu" aria-label="Menu" data-ia="aria-label:menuLabel">
-  <ul>
-    <li><a href="#work" data-i="navWork">The work, age by age</a></li>
-    <li><a href="#plainly" data-i="navPlain">What is Montessori</a></li>
-    <li><a href="#academics" data-i="navAcad">Is it academic enough?</a></li>
-    <li><a href="#observe" data-i="ctaObserve">Observe a class</a></li>
-    <li><a href="#programs" data-i="navProg">Programs and cost</a></li>
-    <li><a href="#families" data-i="navFam">For current families</a></li>
-  </ul>
-</nav>
-
 <main id="main">
 <section class="open" aria-labelledby="h1">
-  <div class="wrap g">
-    <div class="open-copy">
-      <h1 id="h1" class="r-display" data-i="h1">Children here learn with their hands</h1>
-      <p class="r-lead" data-i="lead">A Montessori school in Methuen for children from 18 months to grade 8.</p>
-      <div class="act" id="hero-acts">
-        <a class="token" href="#observe" data-i="ctaObserve">Observe a class</a>
-        <p class="r-meta" data-i="nextObs">Next observation: Tuesday, Nov 10, 8:45&nbsp;AM</p>
+  <figure class="open-photo">
+    <picture>
+      <source media="(max-width: 899px)" srcset="assets/work-table-800.webp" width="800" height="600">
+      <img src="assets/work-table-1600.webp" width="1600" height="900" fetchpriority="high" alt="Seen from above: a child's hands at work on a wooden table during the morning work period" data-ia="alt:heroAlt">
+    </picture>
+  </figure>
+  <div class="cards">
+    <div class="card-row">
+      <p class="card small note" id="notice" role="status"><span id="notice-p" data-i="alertOk">Open as usual today, 6:40 AM</span></p>
+      <p class="card small langs"><a href="?lang=en" hreflang="en" lang="en" data-l="en" aria-current="true">English</a><span class="sep" aria-hidden="true">/</span><a href="?lang=es" hreflang="es" lang="es" data-l="es">Español</a></p>
+      <div class="index"><p class="card small"><button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" data-i="menu">Index</button></p>
+        <nav class="menu card" id="menu" aria-label="Index" data-ia="aria-label:menuLabel">
+          <ul>
+            <li><a href="#work" data-i="navWork">The work, age by age</a></li>
+            <li><a href="#plainly" data-i="navPlain">What is Montessori</a></li>
+            <li><a href="#academics" data-i="navAcad">Is it academic enough?</a></li>
+            <li><a href="#observe" data-i="ctaObserve">Observe a class</a></li>
+            <li><a href="#programs" data-i="navProg">Programs and cost</a></li>
+            <li><a href="#families" data-i="navFam">For current families</a></li>
+          </ul>
+        </nav>
       </div>
     </div>
-    <figure class="open-photo">
-      <picture>
-        <source media="(max-width: 899px)" srcset="assets/work-sandpaper-800.webp" width="800" height="600">
-        <img src="assets/work-sandpaper-1600.webp" width="1600" height="1000" fetchpriority="high" alt="A child traces a sandpaper letter m on a pink board with two fingers while the other hand holds the board still" data-ia="alt:heroAlt">
-      </picture>
-      <figcaption class="r-meta" data-i="heroCap">Sandpaper letter work. Sample photo.</figcaption>
-    </figure>
+    <div class="card label">
+      <p class="name">Fernhill Montessori School</p>
+      <h1 id="h1" data-i="h1">children here learn with their hands</h1>
+      <p class="what" data-i="lead">From 18 months to grade 8, in Methuen. One piece of work at a time.</p>
+      <p class="when" data-i="nextObs">Next morning to observe: Tuesday, Nov 10, 8:45&nbsp;AM</p>
+    </div>
+    <div class="act" id="hero-acts">
+      <a class="token" href="#observe" data-i="ctaObserve">Observe a class</a>
+      <p class="card small ask"><span data-i="askUs">Ask us:</span> <a class="num" href="tel:+19785550136" style="white-space:nowrap">(978) 555-0136</a> <a class="alt" href="sms:+19785550136" aria-label="or text us at (978) 555-0136" data-ia="aria-label:textLabel" data-i="textUs">or text</a></p>
+    </div>
+    <p class="card small sample" data-i="sampleP">Sample photographs</p>
   </div>
 </section>
 
@@ -365,7 +349,7 @@ label.f input:focus,label.f select:focus{outline:3px solid var(--walnut);outline
   <div class="wrap g">
     <figure>
       <img src="assets/classroom-window-1000.webp" width="1000" height="667" loading="lazy" decoding="async" alt="A classroom windowsill with fresh branches in small vases and a botany card on a wooden stand" data-ia="alt:windowAlt">
-      <figcaption class="r-meta" data-i="windowCap">The nature table by a classroom window, set for the week’s botany work. Sample photo.</figcaption>
+      <figcaption class="r-meta" data-i="windowCap">The nature table by a classroom window, set for the week’s botany work.</figcaption>
     </figure>
     <div class="plain-txt">
       <h2 id="plain-h" class="r-h2" data-i="plainH">Montessori, plainly</h2>
@@ -536,8 +520,7 @@ label.f input:focus,label.f select:focus{outline:3px solid var(--walnut);outline
 
 <div class="rail" id="rail">
   <a class="token" href="#observe" data-i="ctaObserve">Observe a class</a>
-  <a class="tx" href="tel:+19785550136" data-i="callR">Call</a>
-  <a class="tx" href="sms:+19785550136" data-i="textS">Text</a>
+  <p class="ask"><span data-i="askUs">Ask us:</span> <a class="num" href="tel:+19785550136" style="white-space:nowrap">(978) 555-0136</a></p>
 </div>
 
 <script>
@@ -551,21 +534,21 @@ const L=o=>o==null?'':typeof o==='string'?o:(o[lang]??o.en);
 const ES={
 docTitle:'Escuela Montessori Fernhill · Montessori de 18 meses a 8.º grado · Methuen, MA',
 metaDesc:'Fernhill Montessori es una escuela independiente en Methuen, MA, para niños de 18 meses a 8.º grado. Vea el trabajo que haría su hijo, reserve una mañana para observar una clase y compare programas y costos. En inglés y en español.',
-skip:'Saltar al contenido principal',menuLabel:'Menú',menu:'Menú',
+skip:'Saltar al contenido principal',menuLabel:'Índice',menu:'Índice',
 navWork:'El trabajo, edad por edad',navPlain:'Qué es Montessori',navProg:'Programas y costos',navFam:'Para las familias actuales',navAcad:'¿Es lo bastante académico?',
 ctaObserve:'Observar una clase',
-alertOk:'Hoy abrimos como siempre. Actualizado a las 6:40 a. m.',
-callNum:'Llamar al (978)&nbsp;555-0136',textS:'Mensaje',callR:'Llamar',textLabel:'Mensaje de texto a la oficina, (978) 555-0136',
-h1:'Aquí los niños aprenden con las manos',
-lead:'Una escuela Montessori en Methuen para niños de 18 meses a 8.º grado.',
-nextObs:'Próxima observación: martes 10 de nov., 8:45&nbsp;a.&nbsp;m.',
-heroAlt:'Un niño recorre con dos dedos la letra m de lija sobre una tabla rosada mientras sostiene la tabla con la otra mano',
+alertOk:'Hoy abrimos como siempre, 6:40 a. m.',
+callNum:'Llamar al (978)&nbsp;555-0136',textS:'Mensaje',callR:'Llamar',textLabel:'o por mensaje al (978) 555-0136',
+h1:'aquí los niños aprenden con las manos',
+lead:'De 18 meses a 8.º grado, en Methuen. Un trabajo a la vez.',askUs:'Pregúntenos:',textUs:'o por mensaje',sampleP:'Fotografías de muestra',
+nextObs:'Próxima mañana para observar: martes 10 de nov., 8:45&nbsp;a.&nbsp;m.',
+heroAlt:'Vista desde arriba: las manos de un niño trabajando sobre una mesa de madera durante el período de trabajo de la mañana',
 heroCap:'Trabajo con letras de lija. Foto de muestra.',
 workH:'El trabajo, edad por edad',agesLabel:'Grupo de edad',ageTodA:'18 meses–3',
 ageTod:'Comunidad infantil',ageCh:'Casa de los Niños',ageLe:'Primaria baja',ageUe:'Primaria alta',ageAd:'Adolescentes',
 gbStart:'Construirlo desde una perla',shelfL:'También en el estante a esta edad',
 windowAlt:'El alféizar de un salón con ramas frescas en floreros pequeños y una lámina de botánica en un atril de madera',
-windowCap:'La mesa de la naturaleza junto a una ventana del salón, preparada para el trabajo de botánica de la semana. Foto de muestra.',
+windowCap:'La mesa de la naturaleza junto a una ventana del salón, preparada para el trabajo de botánica de la semana.',
 plainH:'Montessori, en palabras simples',
 plainLede:'Montessori es una forma de enseñar que nació en Roma en 1907 con la doctora Maria Montessori, una médica. Los niños trabajan con materiales reales, eligen su trabajo dentro de límites claros y avanzan a su propio ritmo en salones de edades mixtas, con una maestra formada que observa y guía a cada niño.',
 q1:'¿No es solo jugar?',a1:'Es trabajo que el niño elige. Cada material enseña una cosa a propósito y le muestra al niño sus propios errores: un cilindro que no cabe, una torre que se inclina. Los niños aprenden a corregirse sin esperar a un adulto.',
@@ -606,7 +589,7 @@ const T={
  say:[{en:'One golden bead is one unit.',es:'Una perla dorada es una unidad.'},{en:'Ten units make one ten-bar.',es:'Diez unidades forman una barra de diez.'},{en:'Ten ten-bars make one hundred-square.',es:'Diez barras de diez forman un cuadrado de cien.'},{en:'Ten hundred-squares make one thousand-cube. This is how a five-year-old meets the thousands: by holding them.',es:'Diez cuadrados de cien forman un cubo de mil. Así conoce los miles un niño de cinco años: sosteniéndolos.'}],
  w:[{en:'unit',es:'unidad'},{en:'ten',es:'decena'},{en:'hundred',es:'centena'},{en:'thousand',es:'millar'}],
  trayAria:{en:'The golden bead material at true relative scale: one unit bead, a ten-bar, a hundred-square and a thousand-cube',es:'El material de perlas doradas a escala real: una perla de unidad, una barra de diez, un cuadrado de cien y un cubo de mil'},
- alertDelay:{en:'<b>Delay today:</b> school opens at 10:15 AM, early care at 9:00 AM. Updated 5:52 AM.',es:'<b>Retraso hoy:</b> la escuela abre a las 10:15 a. m. y el cuidado temprano a las 9:00 a. m. Actualizado a las 5:52 a. m.'},
+ alertDelay:{en:'<b>Delay today:</b> school opens 10:15 AM, early care 9:00 AM (5:52 AM)',es:'<b>Retraso hoy:</b> la escuela abre a las 10:15 a. m., el cuidado temprano a las 9:00 a. m. (5:52 a. m.)'},
  errDay:{en:'Please pick a morning.',es:'Por favor, elija una mañana.'},errTime:{en:'Please pick a time.',es:'Por favor, elija una hora.'},
  errName:{en:'Please add your name.',es:'Por favor, escriba su nombre.'},errPhone:{en:'Please add a phone number we can text.',es:'Por favor, escriba un teléfono que reciba mensajes.'},
  doneH:{en:'You’re on the list',es:'Ya está en la lista'},
@@ -742,15 +725,14 @@ $('#stepbtn').addEventListener('click',()=>{gbTouched=true;gbStep=gbStep===3?0:g
 function applyLang(l){lang=l;document.documentElement.lang=l;
  $$('[data-i]').forEach(el=>{const k=el.dataset.i;if(!(k in EN))EN[k]=el.innerHTML;const v=l==='es'?(ES[k]??EN[k]):EN[k];if(el.innerHTML!==v)el.innerHTML=v});
  $$('[data-ia]').forEach(el=>el.dataset.ia.split(';').forEach(p=>{const[a,k]=p.split(':'),key=k+'@'+a;if(!(key in ENA))ENA[key]=el.getAttribute(a);el.setAttribute(a,l==='es'?(ES[k]??ENA[key]):ENA[key])}));
- $$('.langs .both a').forEach(a=>{if(a.dataset.l===l)a.setAttribute('aria-current','true');else a.removeAttribute('aria-current')});
- const o=$('.langs .other'),ol=l==='es'?'en':'es';o.dataset.l=ol;o.lang=ol;o.hreflang=ol;o.href='?lang='+ol;o.textContent=ol==='es'?'Español':'English';
+ $$('.langs a').forEach(a=>{if(a.dataset.l===l)a.setAttribute('aria-current','true');else a.removeAttribute('aria-current')});
  setAlert();renderMat();if($('#form').classList.contains('is-done'))doneText();
  try{sessionStorage.setItem('fh-lang',l)}catch(e){}}
 document.addEventListener('click',e=>{const a=e.target.closest('.langs a[data-l]');if(!a)return;e.preventDefault();applyLang(a.dataset.l)});
 
 /* ---------- notice ---------- */
 let delay=Q.get('alert')==='1';
-function setAlert(){$('.chrome').classList.toggle('delay',delay);if(delay)$('#notice-p').innerHTML=L(T.alertDelay)}
+function setAlert(){$('#notice').classList.toggle('delay',delay);if(delay)$('#notice-p').innerHTML=L(T.alertDelay)}
 
 /* ---------- menu ---------- */
 const mb=$('.menu-btn'),menu=$('#menu');mb.addEventListener('click',()=>{const o=mb.getAttribute('aria-expanded')!=='true';mb.setAttribute('aria-expanded',o);menu.classList.toggle('open',o)});
