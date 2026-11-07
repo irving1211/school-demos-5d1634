@@ -1,0 +1,1714 @@
+{
+ "cards": [
+  {
+   "code": "N001",
+   "base": "N001-n-dental-smilebar-home",
+   "site": "smilebar",
+   "kind": "niche:dental",
+   "niche": "dental",
+   "title": "Invisalign Boston · Diamond+ Provider Since 2018 | Smilebar",
+   "url": "https://smilebar.com/",
+   "words": {
+    "first": 104,
+    "total": 1744
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N002",
+   "base": "N002-n-dental-grand-street-home",
+   "site": "grand-street",
+   "kind": "niche:dental",
+   "niche": "dental",
+   "title": "Dentist in Brooklyn & Williamsburg | Best Dentist Near Me",
+   "url": "https://www.grandstreetdental.com/",
+   "words": {
+    "first": 21,
+    "total": 421
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N003",
+   "base": "N003-n-dental-tend-home",
+   "site": "tend",
+   "kind": "niche:dental",
+   "niche": "dental",
+   "title": "Modern, Judgment-Free Dental Care | Tend Dental",
+   "url": "https://www.hellotend.com/",
+   "words": {
+    "first": 151,
+    "total": 2743
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N004",
+   "base": "N004-n-dental-tend-book",
+   "site": "tend",
+   "kind": "niche:dental",
+   "niche": "dental",
+   "title": "Choose City | Booking",
+   "url": "https://www.hellotend.com/booking/markets",
+   "words": {
+    "first": 25,
+    "total": 82
+   },
+   "hasD": true,
+   "type": "book"
+  },
+  {
+   "code": "N005",
+   "base": "N005-n-dental-wall-street-ortho-home",
+   "site": "wall-street-ortho",
+   "kind": "niche:dental",
+   "niche": "dental",
+   "title": "Wall Street Orthodontics | NYC's Financial District",
+   "url": "https://wallstreetortho.com/",
+   "words": {
+    "first": 98,
+    "total": 1342
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N006",
+   "base": "N006-n-dental-swish-home",
+   "site": "swish",
+   "kind": "niche:dental",
+   "niche": "dental",
+   "title": "Austin, TX Dental Services for the Whole Family | Swish Dental®️",
+   "url": "https://www.swishsmiles.com/",
+   "words": {
+    "first": 51,
+    "total": 1241
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N007",
+   "base": "N007-n-dental-swish-book",
+   "site": "swish",
+   "kind": "niche:dental",
+   "niche": "dental",
+   "title": "Find a Swish Dental®️ Location Near You",
+   "url": "https://www.swishsmiles.com/schedule-dental-appointment",
+   "words": {
+    "first": 52,
+    "total": 210
+   },
+   "hasD": true,
+   "type": "book"
+  },
+  {
+   "code": "N008",
+   "base": "N008-n-dental-west-village-home",
+   "site": "west-village",
+   "kind": "niche:dental",
+   "niche": "dental",
+   "title": "West Village Dental Studio - Greenwich Village NYC Dentist",
+   "url": "https://www.westvillagedentalstudio.com/",
+   "words": {
+    "first": 23,
+    "total": 617
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N009",
+   "base": "N009-n-dental-west-village-book",
+   "site": "west-village",
+   "kind": "niche:dental",
+   "niche": "dental",
+   "title": "Appointments West Village Dental Studio - West Village, NYC",
+   "url": "https://www.westvillagedentalstudio.com/appointments/",
+   "words": {
+    "first": 30,
+    "total": 77
+   },
+   "hasD": true,
+   "type": "book"
+  },
+  {
+   "code": "N010",
+   "base": "N010-n-dental-del-mar-home",
+   "site": "del-mar",
+   "kind": "niche:dental",
+   "niche": "dental",
+   "title": "Dentist in Del Mar, CA | Locally Owned & Operated",
+   "url": "https://www.dentistdelmar.com/",
+   "words": {
+    "first": 39,
+    "total": 1040
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N011",
+   "base": "N011-n-dental-zen-dentist-home",
+   "site": "zen-dentist",
+   "kind": "niche:dental",
+   "niche": "dental",
+   "title": "Zen Dental Studio | Dentist in San Francisco & Mountain View",
+   "url": "https://www.zen.dentist/",
+   "words": {
+    "first": 25,
+    "total": 1240
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N012",
+   "base": "N012-n-dental-zen-dentist-book",
+   "site": "zen-dentist",
+   "kind": "niche:dental",
+   "niche": "dental",
+   "title": "Insurance, Membership & Patient Info | Zen Dental Studio",
+   "url": "https://www.zen.dentist/patients",
+   "words": {
+    "first": 52,
+    "total": 1107
+   },
+   "hasD": true,
+   "type": "book"
+  },
+  {
+   "code": "N013",
+   "base": "N013-n-medspa-seaport-home",
+   "site": "seaport",
+   "kind": "niche:medspa",
+   "niche": "medspa",
+   "title": "Seaport Medspa | Boston's Best Botox, Fillers & PRP",
+   "url": "https://www.seaportmedspa.com/",
+   "words": {
+    "first": 25,
+    "total": 1659
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N014",
+   "base": "N014-n-medspa-revive-home",
+   "site": "revive",
+   "kind": "niche:medspa",
+   "niche": "medspa",
+   "title": "Revive Med Spa | Top California Medical Spa & Botox Experts",
+   "url": "https://www.revive.md/",
+   "words": {
+    "first": 205,
+    "total": 794
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N015",
+   "base": "N015-n-medspa-revive-book",
+   "site": "revive",
+   "kind": "niche:medspa",
+   "niche": "medspa",
+   "title": "revivemd - Online Booking - Services",
+   "url": "https://store.revive.md/webstoreNew/services",
+   "words": {
+    "first": 27,
+    "total": 188
+   },
+   "hasD": true,
+   "type": "book"
+  },
+  {
+   "code": "N016",
+   "base": "N016-n-medspa-tribeca-home",
+   "site": "tribeca",
+   "kind": "niche:medspa",
+   "niche": "medspa",
+   "title": "Medical Spa in New York, NY | Skin Care Clinic | Tribeca MedSpa",
+   "url": "https://www.tribecamedspa.com/",
+   "words": {
+    "first": 103,
+    "total": 542
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N017",
+   "base": "N017-n-medspa-tribeca-book",
+   "site": "tribeca",
+   "kind": "niche:medspa",
+   "niche": "medspa",
+   "title": "Join Our Team | MedSpa Career Opportunities NY | Tribeca MedSpa",
+   "url": "https://www.tribecamedspa.com/our-team/join-our-team/",
+   "words": {
+    "first": 146,
+    "total": 580
+   },
+   "hasD": true,
+   "type": "book"
+  },
+  {
+   "code": "N018",
+   "base": "N018-n-medspa-glanz-home",
+   "site": "glanz",
+   "kind": "niche:medspa",
+   "niche": "medspa",
+   "title": "Endocrinology, Medspa, Botox, & Laser Treatments | GLANZ | Doral, FL",
+   "url": "https://glanzaesthetics.com/",
+   "words": {
+    "first": 36,
+    "total": 1019
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N019",
+   "base": "N019-n-medspa-glanz-book",
+   "site": "glanz",
+   "kind": "niche:medspa",
+   "niche": "medspa",
+   "title": "Schedule Consultation | GLANZ | Doral, FL",
+   "url": "https://www.glanzaesthetics.com/schedule-appointment",
+   "words": {
+    "first": 69,
+    "total": 327
+   },
+   "hasD": true,
+   "type": "book"
+  },
+  {
+   "code": "N020",
+   "base": "N020-n-medspa-laseraway-home",
+   "site": "laseraway",
+   "kind": "niche:medspa",
+   "niche": "medspa",
+   "title": "LaserAway - Advanced Laser Hair Removal & Skin Treatments",
+   "url": "https://www.laseraway.com/",
+   "words": {
+    "first": 25,
+    "total": 1085
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N021",
+   "base": "N021-n-medspa-laseraway-book",
+   "site": "laseraway",
+   "kind": "niche:medspa",
+   "niche": "medspa",
+   "title": "Book Now - LaserAway",
+   "url": "https://www.laseraway.com/book-now/",
+   "words": {
+    "first": 26,
+    "total": 38
+   },
+   "hasD": true,
+   "type": "book"
+  },
+  {
+   "code": "N022",
+   "base": "N022-n-medspa-one-medical-home",
+   "site": "one-medical",
+   "kind": "niche:medspa",
+   "niche": "medspa",
+   "title": "Exceptional Primary Care - Find a Doctor Near You | One Medical",
+   "url": "https://www.onemedical.com/",
+   "words": {
+    "first": 91,
+    "total": 555
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N023",
+   "base": "N023-n-medspa-one-medical-book",
+   "site": "one-medical",
+   "kind": "niche:medspa",
+   "niche": "medspa",
+   "title": "Give the gift of One Medical | One Medical",
+   "url": "https://www.onemedical.com/gift/",
+   "words": {
+    "first": 125,
+    "total": 396
+   },
+   "hasD": true,
+   "type": "book"
+  },
+  {
+   "code": "N024",
+   "base": "N024-n-medspa-parsley-home",
+   "site": "parsley",
+   "kind": "niche:medspa",
+   "niche": "medspa",
+   "title": "Functional Medicine Clinicians: Root-Cause & Holistic Healthcare | Par",
+   "url": "https://www.parsleyhealth.com/",
+   "words": {
+    "first": 66,
+    "total": 989
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N025",
+   "base": "N025-n-medspa-parsley-book",
+   "site": "parsley",
+   "kind": "niche:medspa",
+   "niche": "medspa",
+   "title": "Root-Cause Medicine & Whole-Body Care Designed for You | Parsley Healt",
+   "url": "https://www.parsleyhealth.com/care?entry=nav-complete-care",
+   "words": {
+    "first": 75,
+    "total": 1234
+   },
+   "hasD": true,
+   "type": "book"
+  },
+  {
+   "code": "N026",
+   "base": "N026-n-salon-fellow-barber-home",
+   "site": "fellow-barber",
+   "kind": "niche:salon",
+   "niche": "salon",
+   "title": "Fellow Barber: Elevated barbershops and quality grooming products",
+   "url": "https://www.fellowbarber.com/",
+   "words": {
+    "first": 2,
+    "total": 161
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N027",
+   "base": "N027-n-salon-fellow-barber-book",
+   "site": "fellow-barber",
+   "kind": "niche:salon",
+   "niche": "salon",
+   "title": "Locations – Fellow Barber",
+   "url": "https://www.fellowbarber.com/pages/locations",
+   "words": {
+    "first": 10,
+    "total": 237
+   },
+   "hasD": true,
+   "type": "book"
+  },
+  {
+   "code": "N028",
+   "base": "N028-n-salon-resident-barber-home",
+   "site": "resident-barber",
+   "kind": "niche:salon",
+   "niche": "salon",
+   "title": "Top Rated Barbershop in Park Slope, Brooklyn - Resident Barber",
+   "url": "https://residentbarber.com/",
+   "words": {
+    "first": 23,
+    "total": 377
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N029",
+   "base": "N029-n-salon-throne-home",
+   "site": "throne",
+   "kind": "niche:salon",
+   "niche": "salon",
+   "title": "Throne Barbershop Home -",
+   "url": "https://thronepdx.com/",
+   "words": {
+    "first": 17,
+    "total": 604
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N030",
+   "base": "N030-n-salon-throne-book",
+   "site": "throne",
+   "kind": "niche:salon",
+   "niche": "salon",
+   "title": "Locations -",
+   "url": "https://thronepdx.com/locations/",
+   "words": {
+    "first": 35,
+    "total": 660
+   },
+   "hasD": true,
+   "type": "book"
+  },
+  {
+   "code": "N031",
+   "base": "N031-n-salon-mr-winstons-home",
+   "site": "mr-winstons",
+   "kind": "niche:salon",
+   "niche": "salon",
+   "title": "Premier Barbershop in DFW | Mr. Winston's Barbershop",
+   "url": "https://www.mrwinstons.com/",
+   "words": {
+    "first": 136,
+    "total": 902
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N032",
+   "base": "N032-n-salon-drybar-home",
+   "site": "drybar",
+   "kind": "niche:salon",
+   "niche": "salon",
+   "title": "Drybar | Premium Hair Care Created for the Perfect Blowout",
+   "url": "https://www.drybar.com/",
+   "words": {
+    "first": 38,
+    "total": 259
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N033",
+   "base": "N033-n-salon-rosemont-home",
+   "site": "rosemont",
+   "kind": "niche:salon",
+   "niche": "salon",
+   "title": "The Rosemont Barbers | Award Winning Barbershop in RiNo, Denver",
+   "url": "https://www.therosemontbarbers.com/",
+   "words": {
+    "first": 31,
+    "total": 430
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N034",
+   "base": "N034-n-salon-rosemont-book",
+   "site": "rosemont",
+   "kind": "niche:salon",
+   "niche": "salon",
+   "title": "The Rosemont Barbers | Award Winning Barbershop in RiNo, Denver",
+   "url": "https://therosemontbarbers.com/",
+   "words": {
+    "first": 31,
+    "total": 430
+   },
+   "hasD": true,
+   "type": "book"
+  },
+  {
+   "code": "N035",
+   "base": "N035-n-salon-logan-parlor-home",
+   "site": "logan-parlor",
+   "kind": "niche:salon",
+   "niche": "salon",
+   "title": "Logan Parlor | Chicago Hair Salon & Barber | Gender Free Services",
+   "url": "https://loganparlor.com/",
+   "words": {
+    "first": 66,
+    "total": 1373
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N036",
+   "base": "N036-n-salon-milk-honey-home",
+   "site": "milk-honey",
+   "kind": "niche:salon",
+   "niche": "salon",
+   "title": "milk + honey | Spa, medSPA, Salon & Products",
+   "url": "https://milkandhoney.com/",
+   "words": {
+    "first": 54,
+    "total": 852
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N037",
+   "base": "N037-n-salon-milk-honey-book",
+   "site": "milk-honey",
+   "kind": "niche:salon",
+   "niche": "salon",
+   "title": "milkandhoneyspas - Online Booking - Services",
+   "url": "https://book.milkandhoney.com/webstoreNew/services",
+   "words": {
+    "first": 158,
+    "total": 225
+   },
+   "hasD": true,
+   "type": "book"
+  },
+  {
+   "code": "N038",
+   "base": "N038-n-restaurant-nacheaux-home",
+   "site": "nacheaux",
+   "kind": "niche:restaurant",
+   "niche": "restaurant",
+   "title": "Fusion | Nacheaux | Portland",
+   "url": "https://www.nacheauxpdx.com/",
+   "words": {
+    "first": 207,
+    "total": 693
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N039",
+   "base": "N039-n-restaurant-nacheaux-menu",
+   "site": "nacheaux",
+   "kind": "niche:restaurant",
+   "niche": "restaurant",
+   "title": "Bakery Orders | Nacheaux | Portland",
+   "url": "https://www.nacheauxpdx.com/bakeryorders",
+   "words": {
+    "first": 149,
+    "total": 436
+   },
+   "hasD": true,
+   "type": "menu"
+  },
+  {
+   "code": "N040",
+   "base": "N040-n-restaurant-loro-home",
+   "site": "loro",
+   "kind": "niche:restaurant",
+   "niche": "restaurant",
+   "title": "Loro BBQ & Asian Fusion",
+   "url": "https://www.loroeats.com/",
+   "words": {
+    "first": 209,
+    "total": 955
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N041",
+   "base": "N041-n-restaurant-loro-menu",
+   "site": "loro",
+   "kind": "niche:restaurant",
+   "niche": "restaurant",
+   "title": "Loro Kirby Menu",
+   "url": "https://www.loroeats.com/locations/houston/kirby/menu/",
+   "words": {
+    "first": 192,
+    "total": 1017
+   },
+   "hasD": true,
+   "type": "menu"
+  },
+  {
+   "code": "N042",
+   "base": "N042-n-restaurant-leaven-home",
+   "site": "leaven",
+   "kind": "niche:restaurant",
+   "niche": "restaurant",
+   "title": "Leaven & Co.",
+   "url": "https://www.leavenco.nyc/",
+   "words": {
+    "first": 42,
+    "total": 154
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N043",
+   "base": "N043-n-restaurant-leaven-menu",
+   "site": "leaven",
+   "kind": "niche:restaurant",
+   "niche": "restaurant",
+   "title": "Order Wholesale Bread Online – NYC Commercial Bread Delivery & Samples",
+   "url": "https://www.leavenco.nyc/order1",
+   "words": {
+    "first": 84,
+    "total": 101
+   },
+   "hasD": true,
+   "type": "menu"
+  },
+  {
+   "code": "N044",
+   "base": "N044-n-restaurant-wild-goose-home",
+   "site": "wild-goose",
+   "kind": "niche:restaurant",
+   "niche": "restaurant",
+   "title": "Wild Goose Bakery",
+   "url": "https://www.wildgoosebakery.com/",
+   "words": {
+    "first": 13,
+    "total": 225
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N045",
+   "base": "N045-n-restaurant-wild-goose-menu",
+   "site": "wild-goose",
+   "kind": "niche:restaurant",
+   "niche": "restaurant",
+   "title": "Pre-Order Bread & Bespoke Cakes London | Wild Goose — Wild Goose Baker",
+   "url": "https://www.wildgoosebakery.com/order-online",
+   "words": {
+    "first": 94,
+    "total": 735
+   },
+   "hasD": true,
+   "type": "menu"
+  },
+  {
+   "code": "N046",
+   "base": "N046-n-restaurant-blue-bottle-home",
+   "site": "blue-bottle",
+   "kind": "niche:restaurant",
+   "niche": "restaurant",
+   "title": "Blue Bottle Coffee | Specialty Coffee",
+   "url": "https://bluebottlecoffee.com/",
+   "words": {
+    "first": 127,
+    "total": 1536
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N047",
+   "base": "N047-n-restaurant-blue-bottle-menu",
+   "site": "blue-bottle",
+   "kind": "niche:restaurant",
+   "niche": "restaurant",
+   "title": "Holiday Collection | Blue Bottle Coffee",
+   "url": "https://bluebottlecoffee.com/us/eng/shop/holiday-collection",
+   "words": {
+    "first": 66,
+    "total": 1736
+   },
+   "hasD": true,
+   "type": "menu"
+  },
+  {
+   "code": "N048",
+   "base": "N048-n-restaurant-eleven-madison-home",
+   "site": "eleven-madison",
+   "kind": "niche:restaurant",
+   "niche": "restaurant",
+   "title": "Eleven Madison Park",
+   "url": "https://www.elevenmadisonpark.com/",
+   "words": {
+    "first": 64,
+    "total": 101
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N049",
+   "base": "N049-n-restaurant-eleven-madison-menu",
+   "site": "eleven-madison",
+   "kind": "niche:restaurant",
+   "niche": "restaurant",
+   "title": "Gift Cards — Eleven Madison Park",
+   "url": "https://www.elevenmadisonpark.com/shop",
+   "words": {
+    "first": 71,
+    "total": 104
+   },
+   "hasD": true,
+   "type": "menu"
+  },
+  {
+   "code": "N050",
+   "base": "N050-n-restaurant-magnolia-home",
+   "site": "magnolia",
+   "kind": "niche:restaurant",
+   "niche": "restaurant",
+   "title": "Magnolia Bakery | Home",
+   "url": "https://www.magnoliabakery.com/",
+   "words": {
+    "first": 1007,
+    "total": 2071
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N051",
+   "base": "N051-n-restaurant-magnolia-menu",
+   "site": "magnolia",
+   "kind": "niche:restaurant",
+   "niche": "restaurant",
+   "title": "Collections – Magnolia Bakery",
+   "url": "https://www.magnoliabakery.com/collections",
+   "words": {
+    "first": 1160,
+    "total": 4349
+   },
+   "hasD": true,
+   "type": "menu"
+  },
+  {
+   "code": "N052",
+   "base": "N052-n-homeservices-ninja-plumber-home",
+   "site": "ninja-plumber",
+   "kind": "niche:homeservices",
+   "niche": "homeservices",
+   "title": "Ninja Plumber Home | Ninja Plumber",
+   "url": "https://www.ninjaplumber.com/",
+   "words": {
+    "first": 71,
+    "total": 1091
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N053",
+   "base": "N053-n-homeservices-my-buddy-plumber-home",
+   "site": "my-buddy-plumber",
+   "kind": "niche:homeservices",
+   "niche": "homeservices",
+   "title": "Plumbing or HVAC Problems? | My Buddy the Plumber, Electric, Heating &",
+   "url": "https://www.mybuddytheplumber.com/",
+   "words": {
+    "first": 65,
+    "total": 666
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N054",
+   "base": "N054-n-homeservices-my-buddy-plumber-contact",
+   "site": "my-buddy-plumber",
+   "kind": "niche:homeservices",
+   "niche": "homeservices",
+   "title": "Contact Us | My Buddy the Plumber, Electric, Heating & Air",
+   "url": "https://www.mybuddytheplumber.com/contact/",
+   "words": {
+    "first": 18,
+    "total": 85
+   },
+   "hasD": true,
+   "type": "contact"
+  },
+  {
+   "code": "N055",
+   "base": "N055-n-homeservices-penguin-air-home",
+   "site": "penguin-air",
+   "kind": "niche:homeservices",
+   "niche": "homeservices",
+   "title": "HVAC, Plumbing, and Electrical Contractor Phoenix, AZ | Penguin Air, P",
+   "url": "https://www.penguinair.com/",
+   "words": {
+    "first": 31,
+    "total": 394
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N056",
+   "base": "N056-n-homeservices-penguin-air-contact",
+   "site": "penguin-air",
+   "kind": "niche:homeservices",
+   "niche": "homeservices",
+   "title": "Contact Us | Penguin Air, Plumbing & Electrical",
+   "url": "https://www.penguinair.com/contact-us/",
+   "words": {
+    "first": 45,
+    "total": 144
+   },
+   "hasD": true,
+   "type": "contact"
+  },
+  {
+   "code": "N057",
+   "base": "N057-n-homeservices-bone-dry-home",
+   "site": "bone-dry",
+   "kind": "niche:homeservices",
+   "niche": "homeservices",
+   "title": "Bone Dry Roofing | Roofing, Gutters, Masonry & More",
+   "url": "https://bonedry.com/",
+   "words": {
+    "first": 54,
+    "total": 2252
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N058",
+   "base": "N058-n-homeservices-bone-dry-contact",
+   "site": "bone-dry",
+   "kind": "niche:homeservices",
+   "niche": "homeservices",
+   "title": "Bone Dry Roofing Locations | Find Your Local Office",
+   "url": "https://bonedry.com/locations/",
+   "words": {
+    "first": 47,
+    "total": 1113
+   },
+   "hasD": true,
+   "type": "contact"
+  },
+  {
+   "code": "N059",
+   "base": "N059-n-homeservices-hunter-green-home",
+   "site": "hunter-green",
+   "kind": "niche:homeservices",
+   "niche": "homeservices",
+   "title": "Huntergreen",
+   "url": "https://www.huntergreen.nyc/",
+   "words": {
+    "first": 3,
+    "total": 187
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N060",
+   "base": "N060-n-homeservices-hunter-green-contact",
+   "site": "hunter-green",
+   "kind": "niche:homeservices",
+   "niche": "homeservices",
+   "title": "Services - Huntergreen",
+   "url": "https://www.huntergreen.nyc/contact-us",
+   "words": {
+    "first": 56,
+    "total": 100
+   },
+   "hasD": true,
+   "type": "contact"
+  },
+  {
+   "code": "N061",
+   "base": "N061-n-homeservices-altruistic-ac-home",
+   "site": "altruistic-ac",
+   "kind": "niche:homeservices",
+   "niche": "homeservices",
+   "title": "HVAC & Plumbing Services in Austin, TX | Altruistic AC & Heating & Plu",
+   "url": "https://altruisticac.com/",
+   "words": {
+    "first": 73,
+    "total": 576
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N062",
+   "base": "N062-n-homeservices-altruistic-ac-contact",
+   "site": "altruistic-ac",
+   "kind": "niche:homeservices",
+   "niche": "homeservices",
+   "title": "Contact Altruistic AC | HVAC & Plumbing Services",
+   "url": "https://altruisticac.com/contact/",
+   "words": {
+    "first": 31,
+    "total": 437
+   },
+   "hasD": true,
+   "type": "contact"
+  },
+  {
+   "code": "N063",
+   "base": "N063-n-professional-thlg-home",
+   "site": "thlg",
+   "kind": "niche:professional",
+   "niche": "professional",
+   "title": "Texas Horizons Law Group - Board-Certified Attorneys",
+   "url": "https://thlg.law/",
+   "words": {
+    "first": 260,
+    "total": 1545
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N064",
+   "base": "N064-n-professional-exceed-legal-home",
+   "site": "exceed-legal",
+   "kind": "niche:professional",
+   "niche": "professional",
+   "title": "Exceed Legal | Boise Business Law, Estate Planning, Real Estate Attorn",
+   "url": "https://exceed.legal/",
+   "words": {
+    "first": 148,
+    "total": 921
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N065",
+   "base": "N065-n-professional-fuchsberg-home",
+   "site": "fuchsberg",
+   "kind": "niche:professional",
+   "niche": "professional",
+   "title": "Medical Malpractice & Injury | Jacob D. Fuchsberg Law Firm",
+   "url": "https://www.fuchsberg.com/",
+   "words": {
+    "first": 66,
+    "total": 2052
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N066",
+   "base": "N066-n-professional-fuchsberg-contact",
+   "site": "fuchsberg",
+   "kind": "niche:professional",
+   "niche": "professional",
+   "title": "Free Lawyer Consultation | Jacob D. Fuchsberg Law Firm",
+   "url": "https://www.fuchsberg.com/contact",
+   "words": {
+    "first": 14,
+    "total": 285
+   },
+   "hasD": true,
+   "type": "contact"
+  },
+  {
+   "code": "N067",
+   "base": "N067-n-professional-little-fish-home",
+   "site": "little-fish",
+   "kind": "niche:professional",
+   "niche": "professional",
+   "title": "Advisory Accounting for Service Providers",
+   "url": "https://www.littlefishaccounting.com/",
+   "words": {
+    "first": 92,
+    "total": 673
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N068",
+   "base": "N068-n-professional-little-fish-contact",
+   "site": "little-fish",
+   "kind": "niche:professional",
+   "niche": "professional",
+   "title": "Contact Us",
+   "url": "https://www.littlefishaccounting.com/contact",
+   "words": {
+    "first": 55,
+    "total": 376
+   },
+   "hasD": true,
+   "type": "contact"
+  },
+  {
+   "code": "N069",
+   "base": "N069-n-professional-lemonade-home",
+   "site": "lemonade",
+   "kind": "niche:professional",
+   "niche": "professional",
+   "title": "Lemonade: An Insurance Company Built for the 21st Century",
+   "url": "https://www.lemonade.com/",
+   "words": {
+    "first": 21,
+    "total": 1231
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N070",
+   "base": "N070-n-professional-anders-cpa-home",
+   "site": "anders-cpa",
+   "kind": "niche:professional",
+   "niche": "professional",
+   "title": "Anders - Business Advisory, Audit, Assurance, and Tax Services",
+   "url": "https://anderscpa.com/",
+   "words": {
+    "first": 78,
+    "total": 344
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N071",
+   "base": "N071-n-professional-anders-cpa-contact",
+   "site": "anders-cpa",
+   "kind": "niche:professional",
+   "niche": "professional",
+   "title": "Contact - Anders",
+   "url": "https://anderscpa.com/contact/",
+   "words": {
+    "first": 41,
+    "total": 110
+   },
+   "hasD": true,
+   "type": "contact"
+  },
+  {
+   "code": "N072",
+   "base": "N072-n-professional-crunch-home",
+   "site": "crunch",
+   "kind": "niche:professional",
+   "niche": "professional",
+   "title": "Online Accountants - Unlimited Expert Advice & Service | Crunch",
+   "url": "https://www.crunch.co.uk/",
+   "words": {
+    "first": 98,
+    "total": 677
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N073",
+   "base": "N073-n-professional-crunch-contact",
+   "site": "crunch",
+   "kind": "niche:professional",
+   "niche": "professional",
+   "title": "Contact Sales | Crunch",
+   "url": "https://www.crunch.co.uk/contact-sales",
+   "words": {
+    "first": 25,
+    "total": 248
+   },
+   "hasD": true,
+   "type": "contact"
+  },
+  {
+   "code": "N074",
+   "base": "N074-n-fitness-temple-noble-art-home",
+   "site": "temple-noble-art",
+   "kind": "niche:fitness",
+   "niche": "fitness",
+   "title": "Club de Boxe à Paris – Temple | Noble Art",
+   "url": "https://www.temple-nobleart.com/",
+   "words": {
+    "first": 74,
+    "total": 1549
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N075",
+   "base": "N075-n-fitness-studio-locomotion-home",
+   "site": "studio-locomotion",
+   "kind": "niche:fitness",
+   "niche": "fitness",
+   "title": "Locomotion",
+   "url": "https://www.studiolocomotion.com/",
+   "words": {
+    "first": 37,
+    "total": 228
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N076",
+   "base": "N076-n-professional-kin-home",
+   "site": "kin",
+   "kind": "niche:professional",
+   "niche": "professional",
+   "title": "Kin - Affordable home insurance made easy",
+   "url": "https://www.kin.com/",
+   "words": {
+    "first": 40,
+    "total": 599
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N077",
+   "base": "N077-n-professional-kin-contact",
+   "site": "kin",
+   "kind": "niche:professional",
+   "niche": "professional",
+   "title": "Contact Kin Insurance | Help & support",
+   "url": "https://www.kin.com/contact/",
+   "words": {
+    "first": 49,
+    "total": 600
+   },
+   "hasD": true,
+   "type": "contact"
+  },
+  {
+   "code": "N078",
+   "base": "N078-n-fitness-unplugged-yoga-home",
+   "site": "unplugged-yoga",
+   "kind": "niche:fitness",
+   "niche": "fitness",
+   "title": "Unplugged Yoga | Yoga Studio Ashgrove & Brisbane",
+   "url": "https://unpluggedyoga.com.au/",
+   "words": {
+    "first": 51,
+    "total": 1708
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N079",
+   "base": "N079-n-fitness-gymbox-home",
+   "site": "gymbox",
+   "kind": "niche:fitness",
+   "niche": "fitness",
+   "title": "Gymbox | 10 London Gyms. 70+ Classes. Book Your Free Trial.",
+   "url": "https://www.gymbox.com/",
+   "words": {
+    "first": 27,
+    "total": 291
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N080",
+   "base": "N080-n-fitness-gymbox-book",
+   "site": "gymbox",
+   "kind": "niche:fitness",
+   "niche": "fitness",
+   "title": "Join Gymbox Today",
+   "url": "https://join-now.gymbox.com/",
+   "words": {
+    "first": 66,
+    "total": 196
+   },
+   "hasD": true,
+   "type": "book"
+  },
+  {
+   "code": "N081",
+   "base": "N081-n-fitness-stax-cycle-home",
+   "site": "stax-cycle",
+   "kind": "niche:fitness",
+   "niche": "fitness",
+   "title": "Online Spin and Sculpt Fitness Classes | Stax Cycle Club | Calgary",
+   "url": "https://www.staxcycleclub.com/",
+   "words": {
+    "first": 15,
+    "total": 1432
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N082",
+   "base": "N082-n-fitness-stax-cycle-book",
+   "site": "stax-cycle",
+   "kind": "niche:fitness",
+   "niche": "fitness",
+   "title": "SIGN-UP | STAX CYCLE CLUB",
+   "url": "https://www.staxcycleclub.com/on-demand",
+   "words": {
+    "first": 56,
+    "total": 267
+   },
+   "hasD": true,
+   "type": "book"
+  },
+  {
+   "code": "N083",
+   "base": "N083-n-fitness-kxu-home",
+   "site": "kxu",
+   "kind": "niche:fitness",
+   "niche": "fitness",
+   "title": "Home - KXU",
+   "url": "https://www.kxu.co.uk/",
+   "words": {
+    "first": 35,
+    "total": 61
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N084",
+   "base": "N084-n-fitness-kxu-book",
+   "site": "kxu",
+   "kind": "niche:fitness",
+   "niche": "fitness",
+   "title": "UNLIMITED MEMBERSHIP - KXU",
+   "url": "https://www.kxu.co.uk/unlimited-membership/",
+   "words": {
+    "first": 9,
+    "total": 366
+   },
+   "hasD": true,
+   "type": "book"
+  },
+  {
+   "code": "N085",
+   "base": "N085-n-auto-dana-bros-home",
+   "site": "dana-bros",
+   "kind": "niche:auto",
+   "niche": "auto",
+   "title": "Dana Bros Auto & Diesel Service | Mesa & Queen Creek",
+   "url": "https://www.danabros.com/",
+   "words": {
+    "first": 74,
+    "total": 549
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N086",
+   "base": "N086-n-auto-otto-haus-home",
+   "site": "otto-haus",
+   "kind": "niche:auto",
+   "niche": "auto",
+   "title": "Ottohaus Of Charleston | North Charleston",
+   "url": "https://www.ottohausofcharleston.com/",
+   "words": {
+    "first": 88,
+    "total": 443
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N087",
+   "base": "N087-n-auto-autoworks-atx-home",
+   "site": "autoworks-atx",
+   "kind": "niche:auto",
+   "niche": "auto",
+   "title": "Auto Repair in San Antonio, TX | AutoWorks",
+   "url": "https://www.autoworksatx.com/",
+   "words": {
+    "first": 165,
+    "total": 1385
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N088",
+   "base": "N088-n-auto-bradshaws-home",
+   "site": "bradshaws",
+   "kind": "niche:auto",
+   "niche": "auto",
+   "title": "Portland Auto Repair",
+   "url": "https://www.bradshawsauto.com/",
+   "words": {
+    "first": 106,
+    "total": 466
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N089",
+   "base": "N089-n-auto-bradshaws-book",
+   "site": "bradshaws",
+   "kind": "niche:auto",
+   "niche": "auto",
+   "title": "Appointments",
+   "url": "https://www.bradshawsauto.com/appointments",
+   "words": {
+    "first": 108,
+    "total": 176
+   },
+   "hasD": true,
+   "type": "book"
+  },
+  {
+   "code": "N090",
+   "base": "N090-n-auto-dynamic-detailing-home",
+   "site": "dynamic-detailing",
+   "kind": "niche:auto",
+   "niche": "auto",
+   "title": "Treatments For Luxury Vehicles | Dynamic Detailing Chicago",
+   "url": "https://dynamicdetailingchicago.com/",
+   "words": {
+    "first": 169,
+    "total": 470
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N091",
+   "base": "N091-n-auto-dynamic-detailing-book",
+   "site": "dynamic-detailing",
+   "kind": "niche:auto",
+   "niche": "auto",
+   "title": "Contact Us at Dynamic Detailing Chicago",
+   "url": "https://dynamicdetailingchicago.com/contact/",
+   "words": {
+    "first": 93,
+    "total": 218
+   },
+   "hasD": true,
+   "type": "book"
+  },
+  {
+   "code": "N092",
+   "base": "N092-n-auto-savage-hybrid-home",
+   "site": "savage-hybrid",
+   "kind": "niche:auto",
+   "niche": "auto",
+   "title": "Philadelphia Auto Repair - Savage Automotive and Hybrid Shop",
+   "url": "https://www.savagehybridshop.com/",
+   "words": {
+    "first": 81,
+    "total": 713
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N093",
+   "base": "N093-n-auto-savage-hybrid-book",
+   "site": "savage-hybrid",
+   "kind": "niche:auto",
+   "niche": "auto",
+   "title": "Appointments - Savage Automotive and Hybrid Shop",
+   "url": "https://www.savagehybridshop.com/appointments",
+   "words": {
+    "first": 45,
+    "total": 130
+   },
+   "hasD": true,
+   "type": "book"
+  },
+  {
+   "code": "N094",
+   "base": "N094-n-auto-miller-auto-home",
+   "site": "miller-auto",
+   "kind": "niche:auto",
+   "niche": "auto",
+   "title": "Auto Repair in Phoenix, AZ | Miller Auto Repair Shop",
+   "url": "https://www.millerautorepairshop.com/",
+   "words": {
+    "first": 91,
+    "total": 1601
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N095",
+   "base": "N095-n-auto-collins-autocare-home",
+   "site": "collins-autocare",
+   "kind": "niche:auto",
+   "niche": "auto",
+   "title": "Auto Repair Bammel, Houston TX - Mechanic Repairs - Brake Services",
+   "url": "https://collinsautocare.com/",
+   "words": {
+    "first": 33,
+    "total": 1031
+   },
+   "hasD": true,
+   "type": "home"
+  },
+  {
+   "code": "N096",
+   "base": "N096-n-auto-collins-autocare-book",
+   "site": "collins-autocare",
+   "kind": "niche:auto",
+   "niche": "auto",
+   "title": "Book an Appointment | Collins Auto Care | Houston TX",
+   "url": "https://collinsautocare.com/appointments/",
+   "words": {
+    "first": 29,
+    "total": 57
+   },
+   "hasD": true,
+   "type": "book"
+  },
+  {
+   "code": "N097",
+   "base": "N097-n-dental-smilebar-services",
+   "site": "smilebar",
+   "kind": "niche:dental",
+   "niche": "dental",
+   "title": "How Invisalign at Smilebar Works · Fewer Visits | Smilebar",
+   "url": "https://www.smilebar.com/how-smilebar-works/",
+   "words": {
+    "first": 162,
+    "total": 1006
+   },
+   "hasD": true,
+   "type": "services"
+  },
+  {
+   "code": "N098",
+   "base": "N098-n-dental-del-mar-services",
+   "site": "del-mar",
+   "kind": "niche:dental",
+   "niche": "dental",
+   "title": "Del Mar Sleep Apnea Treatment | Del Mar Dental Studio",
+   "url": "https://www.dentistdelmar.com/services/sleep-apnea-treatment-in-del-mar",
+   "words": {
+    "first": 159,
+    "total": 1282
+   },
+   "hasD": true,
+   "type": "services"
+  },
+  {
+   "code": "N099",
+   "base": "N099-n-dental-wall-street-ortho-services",
+   "site": "wall-street-ortho",
+   "kind": "niche:dental",
+   "niche": "dental",
+   "title": "Orthodontic Services NYC, Lower Manhattan | Wall Street Orthodontics",
+   "url": "https://www.wallstreetortho.com/services/",
+   "words": {
+    "first": 141,
+    "total": 952
+   },
+   "hasD": true,
+   "type": "services"
+  },
+  {
+   "code": "N100",
+   "base": "N100-n-dental-grand-street-services",
+   "site": "grand-street",
+   "kind": "niche:dental",
+   "niche": "dental",
+   "title": "Dental Services in Williamsburg | Dentist Brooklyn | Near Me",
+   "url": "https://www.grandstreetdental.com/services/",
+   "words": {
+    "first": 36,
+    "total": 773
+   },
+   "hasD": true,
+   "type": "services"
+  },
+  {
+   "code": "N101",
+   "base": "N101-n-medspa-seaport-services",
+   "site": "seaport",
+   "kind": "niche:medspa",
+   "niche": "medspa",
+   "title": "Treatment Areas | Seaport MedSpa",
+   "url": "https://www.seaportmedspa.com/treatment-areas",
+   "words": {
+    "first": 135,
+    "total": 422
+   },
+   "hasD": true,
+   "type": "services"
+  },
+  {
+   "code": "N102",
+   "base": "N102-n-salon-resident-barber-services",
+   "site": "resident-barber",
+   "kind": "niche:salon",
+   "niche": "salon",
+   "title": "Barber Services Park Slope Brooklyn - Resident Barber",
+   "url": "https://residentbarber.com/services/",
+   "words": {
+    "first": 16,
+    "total": 133
+   },
+   "hasD": true,
+   "type": "services"
+  },
+  {
+   "code": "N103",
+   "base": "N103-n-salon-mr-winstons-services",
+   "site": "mr-winstons",
+   "kind": "niche:salon",
+   "niche": "salon",
+   "title": "Premium Barber Services | Mr. Winston's Barbershop",
+   "url": "https://www.mrwinstons.com/main-services",
+   "words": {
+    "first": 138,
+    "total": 814
+   },
+   "hasD": true,
+   "type": "services"
+  },
+  {
+   "code": "N104",
+   "base": "N104-n-salon-drybar-services",
+   "site": "drybar",
+   "kind": "niche:salon",
+   "niche": "salon",
+   "title": "Treat & Protect Dry or Damaged Hair | Drybar",
+   "url": "https://www.drybar.com/hair-care-products/treatments-heat-protection",
+   "words": {
+    "first": 73,
+    "total": 362
+   },
+   "hasD": true,
+   "type": "services"
+  },
+  {
+   "code": "N105",
+   "base": "N105-n-salon-logan-parlor-services",
+   "site": "logan-parlor",
+   "kind": "niche:salon",
+   "niche": "salon",
+   "title": "Gender Free Services | Logan Parlor | Chicago Hair Salon & Barber",
+   "url": "https://loganparlor.com/services",
+   "words": {
+    "first": 119,
+    "total": 942
+   },
+   "hasD": true,
+   "type": "services"
+  },
+  {
+   "code": "N106",
+   "base": "N106-n-professional-exceed-legal-services",
+   "site": "exceed-legal",
+   "kind": "niche:professional",
+   "niche": "professional",
+   "title": "Guardianship Attorney Boise | Guardianship Services | Exceed Legal",
+   "url": "https://exceed.legal/boise-guardianship-services",
+   "words": {
+    "first": 181,
+    "total": 1174
+   },
+   "hasD": true,
+   "type": "services"
+  },
+  {
+   "code": "N107",
+   "base": "N107-n-professional-lemonade-services",
+   "site": "lemonade",
+   "kind": "niche:professional",
+   "niche": "professional",
+   "title": "What Does Renters Insurance Cover in 2026? Lemonade",
+   "url": "https://www.lemonade.com/renters/explained/what-is-renters-insurance-and-whats-covered/",
+   "words": {
+    "first": 85,
+    "total": 2733
+   },
+   "hasD": true,
+   "type": "services"
+  },
+  {
+   "code": "N108",
+   "base": "N108-n-auto-dana-bros-services",
+   "site": "dana-bros",
+   "kind": "niche:auto",
+   "niche": "auto",
+   "title": "Auto & Diesel Repair Mesa & Queen Creek | Dana Bros",
+   "url": "https://www.danabros.com/services",
+   "words": {
+    "first": 158,
+    "total": 430
+   },
+   "hasD": true,
+   "type": "services"
+  },
+  {
+   "code": "N109",
+   "base": "N109-n-auto-autoworks-atx-services",
+   "site": "autoworks-atx",
+   "kind": "niche:auto",
+   "niche": "auto",
+   "title": "Auto Repair Services in San Antonio, TX | AutoWorks",
+   "url": "https://www.autoworksatx.com/services",
+   "words": {
+    "first": 101,
+    "total": 419
+   },
+   "hasD": true,
+   "type": "services"
+  },
+  {
+   "code": "N110",
+   "base": "N110-n-auto-otto-haus-services",
+   "site": "otto-haus",
+   "kind": "niche:auto",
+   "niche": "auto",
+   "title": "Services | Ottohaus Of Charleston | North Charleston",
+   "url": "https://www.ottohausofcharleston.com/services/",
+   "words": {
+    "first": 17,
+    "total": 498
+   },
+   "hasD": true,
+   "type": "services"
+  },
+  {
+   "code": "N111",
+   "base": "N111-n-fitness-unplugged-yoga-services",
+   "site": "unplugged-yoga",
+   "kind": "niche:fitness",
+   "niche": "fitness",
+   "title": "Timetable & Pricing | Unplugged Yoga Ashgrove",
+   "url": "https://unpluggedyoga.com.au/timetable-and-pricing/",
+   "words": {
+    "first": 23,
+    "total": 711
+   },
+   "hasD": true,
+   "type": "services"
+  },
+  {
+   "code": "N112",
+   "base": "N112-n-auto-miller-auto-services",
+   "site": "miller-auto",
+   "kind": "niche:auto",
+   "niche": "auto",
+   "title": "Auto Services in Phoenix, AZ | Miller Auto Repair Shop",
+   "url": "https://www.millerautorepairshop.com/services",
+   "words": {
+    "first": 79,
+    "total": 373
+   },
+   "hasD": true,
+   "type": "services"
+  },
+  {
+   "code": "N113",
+   "base": "N113-n-fitness-studio-locomotion-contact",
+   "site": "studio-locomotion",
+   "kind": "niche:fitness",
+   "niche": "fitness",
+   "title": "Locomotion / CONTACT",
+   "url": "https://www.studiolocomotion.com/contact",
+   "words": {
+    "first": 33,
+    "total": 136
+   },
+   "hasD": true,
+   "type": "contact"
+  },
+  {
+   "code": "N114",
+   "base": "N114-n-fitness-temple-noble-art-contact",
+   "site": "temple-noble-art",
+   "kind": "niche:fitness",
+   "niche": "fitness",
+   "title": "Envoyez un mail à contact@temple-nobleart.fr",
+   "url": "https://www.temple-nobleart.com/contact/",
+   "words": {
+    "first": 43,
+    "total": 152
+   },
+   "hasD": true,
+   "type": "contact"
+  }
+ ]
+}
