@@ -1,0 +1,50 @@
+{
+  "project": "dental-v3",
+  "stage": "signature",
+  "title": "Dental: pick the signature moment",
+  "question": "Which 'I wish I'd had this sooner' moment should Canal Street Family Dental have? Each would sit right under the homepage hero, in the v3 plum style.",
+  "recommend": "A",
+  "options": [
+    {
+      "id": "A",
+      "name": "A new tooth, part by part (implant take-apart)",
+      "images": [
+        "D:/AgenticHub/projects/niche-demos-spike/dental-v3/gates/signature/A-implant-v3.jpg",
+        "D:/AgenticHub/projects/niche-demos-spike/dental-v3/gates/signature/A-implant-built.jpg"
+      ],
+      "why": "The crown lifts, the abutment rises, the post unscrews out of the bone, then it all screws back and clicks home. It turns the most expensive, scariest treatment into something a patient understands in 5 seconds, and it's the moment you liked most. Already built in 3D (second picture is the real one running), so it only needs the v3 plum skin.",
+      "evidence": "Your reaction to the first demo ('shows you the service and explains it'); no dental site in the research does this (0 of 16 dental ideas had a real example).",
+      "tradeoff": "Speaks to implant patients, a smaller group than everyone with a cavity. Heaviest of the four on a phone (3D), though it ran at 60 fps on a real GPU."
+    },
+    {
+      "id": "B",
+      "name": "What waiting costs (cavity time-lapse)",
+      "images": [
+        "D:/AgenticHub/projects/niche-demos-spike/dental-v3/gates/signature/B-cavity.jpg"
+      ],
+      "why": "Drag the slider from today to 2 years: a white spot becomes a hole and reaches the nerve, and the fix and sample cost jump at each point (fluoride, filling, root canal + crown). It answers 'it doesn't hurt yet, I'll wait' and sells the cheap early visit, which is where a family practice grows.",
+      "evidence": "Ranked #1 in the research for reach x value x build (everyone has a tooth). Real reference: Oral-B's static stages-of-decay page; nobody makes it interactive.",
+      "tradeoff": "Less 'wow' to look at than the 3D implant; it wins on usefulness, not spectacle. Costs must be labelled sample."
+    },
+    {
+      "id": "C",
+      "name": "A root canal, step by step",
+      "images": [
+        "D:/AgenticHub/projects/niche-demos-spike/dental-v3/gates/signature/C-rootcanal.jpg"
+      ],
+      "why": "Tap through Numb, Clean, Fill, Seal: the tooth opens into a cut-away, a file cleans the canal, it fills and a crown seals it, with a 'what you feel' line under each step (pressure, not pain, after numbing). Same take-it-apart feeling as the implant, aimed at the fear dentists hear most.",
+      "evidence": "Ranked #2 in the research; the American Association of Endodontists explains this only as a static article.",
+      "tradeoff": "Reuses the implant's 3D parts, so it costs about as much to build; never say 'painless'."
+    },
+    {
+      "id": "D",
+      "name": "How calm do you want to be? (comfort ladder)",
+      "images": [
+        "D:/AgenticHub/projects/niche-demos-spike/dental-v3/gates/signature/D-comfort.jpg"
+      ],
+      "why": "Slide between numbing, laughing gas, a calming pill and IV sedation: each shows what you feel, what you remember, whether you can drive after and who watches you. It's the one that gets anxious people to book at all.",
+      "evidence": "Ranked #3 in the research; no dental site found with this as an interactive tool.",
+      "tradeoff": "Pure interface, no 'wow' picture; quickest to build. The practice must confirm which options it really offers."
+    }
+  ]
+}
